@@ -6,14 +6,14 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:repository="http://www.springframework.org/schema/data/repository"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
-        http://www.springframework.org/schema/data/jpa
-    http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd
-        http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
-        http://www.springframework.org/schema/data/repository
-        http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd">
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+       http://www.springframework.org/schema/data/repository
+       http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd">
 
     <!--
         Configures the location of static resources such as css files.

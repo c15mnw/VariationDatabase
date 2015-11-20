@@ -254,50 +254,26 @@ public class DTOSNPChromosome {
     public int getPositionAsInteger() {
     	return ObjectConverter.convert(position, Integer.class);
     }
-    public boolean getStrain7AlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strain7AlleleFixed, Integer.class), Boolean.class);
-    }
     public long getStrain7AlleleRatioAsLong() {
     	return ObjectConverter.convert(strain7AlleleRatio, Long.class);
-    }
-    public boolean getStrainPAlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strainPAlleleFixed, Integer.class), Boolean.class);
     }
     public long getStrainPAlleleRatioAsLong() {
     	return ObjectConverter.convert(strainPAlleleRatio, Long.class);
     }
-    public boolean getStrainWAlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strainWAlleleFixed, Integer.class), Boolean.class);
-    }
     public long getStrainWAlleleRatioAsLong() {
     	return ObjectConverter.convert(strainWAlleleRatio, Long.class);
-    }
-    public boolean getStrainNAlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strainNAlleleFixed, Integer.class), Boolean.class);
     }
     public long getStrainNAlleleRatioAsLong() {
     	return ObjectConverter.convert(strainNAlleleRatio, Long.class);
     }
-    public boolean getStrain15IAlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strain15IAlleleFixed, Integer.class), Boolean.class);
-    }
     public long getStrain15IAlleleRatioAsLong() {
     	return ObjectConverter.convert(strain15IAlleleRatio, Long.class);
-    }
-    public boolean getStrainZEROAlleleFixedAsBoolean() {  
-    	return ObjectConverter.convert(ObjectConverter.convert(strainZEROAlleleFixed, Integer.class), Boolean.class);
     }
     public long getStrainZEROAlleleRatioAsLong() {
     	return ObjectConverter.convert(strainZEROAlleleRatio, Long.class);
     }
-    public boolean getStrain6AlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strain6AlleleFixed, Integer.class), Boolean.class);
-    }
     public long getStrain6AlleleRatioAsLong() {
     	return ObjectConverter.convert(strain6AlleleRatio, Long.class);
-    }
-    public boolean getStrainCAlleleFixedAsBoolean() {
-    	return ObjectConverter.convert(ObjectConverter.convert(strainCAlleleFixed, Integer.class), Boolean.class);
     }
     public long getStrainCAlleleRatioAsLong() {
     	return ObjectConverter.convert(strainCAlleleRatio, Long.class);
@@ -631,28 +607,28 @@ public class DTOSNPChromosome {
         		this.getEnsemblTranscript(),
         		this.getEnsemblAnnotation(),
         		this.getStrain7Allele(),
-        		this.getStrain7AlleleFixedAsBoolean(),
+        		this.getStrain7AlleleFixed(),
         		this.getStrain7AlleleRatioAsLong(),
         		this.getStrainPAllele(),
-        		this.getStrainPAlleleFixedAsBoolean(),
+        		this.getStrainPAlleleFixed(),
         		this.getStrainPAlleleRatioAsLong(),
         		this.getStrainWAllele(),
-        		this.getStrainWAlleleFixedAsBoolean(),
+        		this.getStrainWAlleleFixed(),
         		this.getStrainWAlleleRatioAsLong(),
         		this.getStrainNAllele(),
-        		this.getStrainNAlleleFixedAsBoolean(),
+        		this.getStrainNAlleleFixed(),
         		this.getStrainNAlleleRatioAsLong(),
         		this.getStrain15IAllele(),
-        		this.getStrain15IAlleleFixedAsBoolean(),
+        		this.getStrain15IAlleleFixed(),
         		this.getStrain15IAlleleRatioAsLong(),
         		this.getStrainZEROAllele(),
-        		this.getStrainZEROAlleleFixedAsBoolean(),
+        		this.getStrainZEROAlleleFixed(),
         		this.getStrainZEROAlleleRatioAsLong(),
         		this.getStrain6Allele(),
-        		this.getStrain6AlleleFixedAsBoolean(),
+        		this.getStrain6AlleleFixed(),
         		this.getStrain6AlleleRatioAsLong(),
         		this.getStrainCAllele(),
-        		this.getStrainCAlleleFixedAsBoolean(),
+        		this.getStrainCAlleleFixed(),
         		this.getStrainCAlleleRatioAsLong()
         		).build();
         

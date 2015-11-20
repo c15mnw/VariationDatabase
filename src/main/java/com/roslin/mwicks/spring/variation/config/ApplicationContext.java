@@ -44,8 +44,6 @@ import java.util.Properties;
 @Configuration
 @ComponentScan(basePackages = {"com.roslin.mwicks.spring.variation.controller",
                                "com.roslin.mwicks.spring.variation.service"})
-//                               "com.roslin.mwicks.spring.variation.message",
-//                               "com.roslin.mwicks.spring.variation.model"})
 @EnableTransactionManagement
 @EnableWebMvc
 @ImportResource("classpath:applicationContext.xml")

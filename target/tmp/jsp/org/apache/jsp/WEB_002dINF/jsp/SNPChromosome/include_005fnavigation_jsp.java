@@ -55,7 +55,9 @@ public final class include_005fnavigation_jsp extends org.apache.jasper.runtime.
       out.write("\n");
       out.write("\n");
       out.write("<div>\n");
-      out.write("    <a href=\"/\">");
+      out.write("    <a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/\">");
       if (_jspx_meth_spring_message_0(_jspx_page_context))
         return;
       out.write("</a>\n");

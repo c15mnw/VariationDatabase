@@ -63,7 +63,9 @@ public final class page_005fsearch_jsp extends org.apache.jasper.runtime.HttpJsp
         return;
       out.write("</title>\n");
       out.write("    \n");
-      out.write("    <link rel=\"stylesheet\" href=\"/static/css/possible.css\" type=\"text/css\"/> \n");
+      out.write("    <link rel=\"stylesheet\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/static/css/possible.css\" type=\"text/css\"/> \n");
       out.write("    \n");
       out.write("</head>\n");
       out.write("\n");
@@ -80,7 +82,7 @@ public final class page_005fsearch_jsp extends org.apache.jasper.runtime.HttpJsp
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "include_messages.jsp", out, false);
       out.write('\n');
       out.write('\n');
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "include_search_form.jsp", out, false);
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "include_form_search.jsp", out, false);
       out.write("\n");
       out.write("\n");
       out.write("</body>\n");

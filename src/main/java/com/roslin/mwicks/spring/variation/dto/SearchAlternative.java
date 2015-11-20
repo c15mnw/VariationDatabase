@@ -16,7 +16,7 @@ package com.roslin.mwicks.spring.variation.dto;
  * @author Mike Wicks
  */
 public enum SearchAlternative {
-	NONE,
+	STRAIN_NONE,
 	STRAIN_7,
 	STRAIN_P,
 	STRAIN_W,

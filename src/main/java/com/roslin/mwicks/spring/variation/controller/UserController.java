@@ -18,7 +18,8 @@ public class UserController {
  
     private static DummyDB dummyDB = new DummyDB();
  
-    @RequestMapping(value = "/indexOLD", method = RequestMethod.GET)
+    /*
+    @RequestMapping(value = "${pageContext.request.contextPath}/indexOLD", method = RequestMethod.GET)
     public ModelAndView index() {
  
         User userForm = new User();
@@ -26,21 +27,20 @@ public class UserController {
         return new ModelAndView("user", "userForm", userForm);
     }
  
-    @RequestMapping(value = "/get_country_list", 
-                    method = RequestMethod.GET, 
-                    headers="Accept=*/*")
+    @RequestMapping(value = "${pageContext.request.contextPath}/get_country_list", 
+                    method = RequestMethod.GET)
     public @ResponseBody List<String> getCountryList(@RequestParam("term") String query) {
         List<String> countryList = dummyDB.getCountryList(query);
          
         return countryList;
     }
  
-    @RequestMapping(value = "/get_tech_list", 
-                    method = RequestMethod.GET, 
-                    headers="Accept=*/*")
+    @RequestMapping(value = "${pageContext.request.contextPath}/get_tech_list", 
+                    method = RequestMethod.GET)
     public @ResponseBody List<String> getTechList(@RequestParam("term") String query) {
         List<String> countryList = dummyDB.getTechList(query);
          
         return countryList;
     }
+    */
 }

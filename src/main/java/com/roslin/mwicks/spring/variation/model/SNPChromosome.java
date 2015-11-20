@@ -15,128 +15,16 @@ import com.roslin.mwicks.utility.ObjectConverter;
  * @author Mike Wicks
  */
 @Entity
-@NamedQueries(
-		{
-		    //Query 1
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrainP", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			         		"and not ( p.strain7Allele = p.strainPAllele )" ),
-			//Query 2
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrainW", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strainWAllele )" ),
-			//Query 3
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrainN", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strainNAllele )" ),
-			//Query 4
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrain15I", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strain15IAllele )" ),
-			//Query 5
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrainZERO", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strainZEROAllele )" ),
-			//Query 6
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strain6Allele )" ),
-			//Query 7
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain7NEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain7Allele = p.strainCAllele )" ),
-			//Query 8
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrainW", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strainWAllele )" ),
-			//Query 9
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrainN", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strainNAllele )" ),
-			//Query 10
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrain15I", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strain15IAllele )" ),
-			//Query 11
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrainZERO", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strainZEROAllele )" ),
-			//Query 12
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strain6Allele )" ),
-			//Query 13
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainPNEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainPAllele = p.strainCAllele )" ),
-			//Query 14
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainWNEStrainN", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainWAllele = p.strainNAllele )" ),
-			//Query 15
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainWNEStrain15I", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainWAllele = p.strain15IAllele )" ),
-			//Query 16
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainWNEStrainZERO", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainWAllele = p.strainZEROAllele )" ),
-			//Query 17
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainWNEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainWAllele = p.strain6Allele )" ),
-			//Query 18
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainWNEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainWAllele = p.strainCAllele )" ),
-			//Query 19
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainNNEStrain15I", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainNAllele = p.strain15IAllele )" ),
-			//Query 20
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainNNEStrainZERO", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainNAllele = p.strainZEROAllele )" ),
-			//Query 21
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainNNEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainNAllele = p.strain6Allele )" ),
-			//Query 22
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainNNEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainNAllele = p.strainCAllele )" ),
-			//Query 23
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain15INEStrainZERO", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain15IAllele = p.strainZEROAllele )" ),
-			//Query 24
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain15INEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain15IAllele = p.strain6Allele )" ),
-			//Query 25
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain15INEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain15IAllele = p.strainCAllele )" ),
-			//Query 26
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainZERONEStrain6", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainZEROAllele = p.strain6Allele )" ),
-			//Query 27
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrainZERONEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strainZEROAllele = p.strainCAllele )" ),
-			//Query 28
-			@NamedQuery(name = "snpchromosome.findByRangeANDStrain6NEStrainC", 
-			         query = "Select p from SNPChromosome p where p.position > ?1 and p.position < ?2 " +
-			                 "and not ( p.strain6Allele = p.strainCAllele )" )
-			}
-		)	
-
-@Table(name = "VSC_SNP_CHROMOSOME")
 @Transactional
 
 public class SNPChromosome {
     
+    // Constants ----------------------------------------------------------------------------------
+	protected static final String TRUE = "True";
+	protected static final String FALSE = "False";
+	protected static final String NA = "N/A";
+
+	// Properties ---------------------------------------------------------------------------------
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "VSS_OID", nullable = false)
@@ -173,7 +61,7 @@ public class SNPChromosome {
     private String strain7Allele;
     
     @Column(name = "VSS_STRAIN_7_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strain7AlleleFixed;
+    private String strain7AlleleFixed;
     
     @Column(name = "VSS_STRAIN_7_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain7AlleleRatio;
@@ -182,7 +70,7 @@ public class SNPChromosome {
     private String strainPAllele;
     
     @Column(name = "VSS_STRAIN_P_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strainPAlleleFixed;
+    private String strainPAlleleFixed;
     
     @Column(name = "VSS_STRAIN_P_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainPAlleleRatio;
@@ -191,7 +79,7 @@ public class SNPChromosome {
     private String strainWAllele;
     
     @Column(name = "VSS_STRAIN_W_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strainWAlleleFixed;
+    private String strainWAlleleFixed;
     
     @Column(name = "VSS_STRAIN_W_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainWAlleleRatio;
@@ -200,7 +88,7 @@ public class SNPChromosome {
     private String strainNAllele;
     
     @Column(name = "VSS_STRAIN_N_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strainNAlleleFixed;
+    private String strainNAlleleFixed;
     
     @Column(name = "VSS_STRAIN_N_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainNAlleleRatio;
@@ -209,7 +97,7 @@ public class SNPChromosome {
     private String strain15IAllele;
     
     @Column(name = "VSS_STRAIN_15I_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strain15IAlleleFixed;
+    private String strain15IAlleleFixed;
     
     @Column(name = "VSS_STRAIN_15I_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain15IAlleleRatio;
@@ -218,7 +106,7 @@ public class SNPChromosome {
     private String strainZEROAllele;
     
     @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strainZEROAlleleFixed;
+    private String strainZEROAlleleFixed;
     
     @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainZEROAlleleRatio;
@@ -227,7 +115,7 @@ public class SNPChromosome {
     private String strain6Allele;
     
     @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strain6AlleleFixed;
+    private String strain6AlleleFixed;
     
     @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain6AlleleRatio;
@@ -236,7 +124,7 @@ public class SNPChromosome {
     private String strainCAllele;
     
     @Column(name = "VSS_STRAIN_C_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private boolean strainCAlleleFixed;
+    private String strainCAlleleFixed;
     
     @Column(name = "VSS_STRAIN_C_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainCAlleleRatio;
@@ -254,139 +142,203 @@ public class SNPChromosome {
 
     // Getters ------------------------------------------------------------------------------------
     public long getOid() {
-    	return oid;
+    	return this.oid;
     }
     public String getSnpId() {
-    	return snpId;
+    	return this.snpId;
     }
     public String getChromosomeId() {
-    	return chromosomeId;
+    	return this.chromosomeId;
     }
     public int getPosition() {
-    	return position;
+    	return this.position;
     }
     public String getReference() {
-    	return reference;    
+    	return this.reference;    
     }
     public String getAlternative() {
-    	return alternative;
+    	return this.alternative;
     }
     public String getRegion() {
-    	return region;
+    	return this.region;
     }
     public String getEnsemblGene() {
-    	return ensemblGene;
+    	return this.ensemblGene;
     }
     public String getEnsemblTranscript() {
-    	return ensemblTranscript;
+    	return this.ensemblTranscript;
     }
     public String getEnsemblAnnotation() {
-    	return ensemblAnnotation;
+    	return this.ensemblAnnotation;
     }
     public String getStrain7Allele() {
-    	return strain7Allele;
+    	return this.strain7Allele;
     }
-    public boolean getStrain7AlleleFixed() {
-    	return strain7AlleleFixed;
+    public String getStrain7AlleleFixed() {
+    	return this.strain7AlleleFixed;
     }
     public boolean isStrain7AlleleFixed() {
-    	return strain7AlleleFixed;
+    	if ( this.strain7AlleleFixed.equals(FALSE) || this.strain7AlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strain7AlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrain7AlleleRatio() {
-    	return strain7AlleleRatio;
+    	return this.strain7AlleleRatio;
     }
     public String getStrainPAllele() {
-    	return strainPAllele;
+    	return this.strainPAllele;
     }
-    public boolean getStrainPAlleleFixed() {
-    	return strainPAlleleFixed;
+    public String getStrainPAlleleFixed() {
+    	return this.strainPAlleleFixed;
     }
     public boolean isStrainPAlleleFixed() {
-    	return strainPAlleleFixed;
+    	if ( this.strainPAlleleFixed.equals(FALSE) || this.strainPAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strainPAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrainPAlleleRatio() {
-    	return strainPAlleleRatio;
+    	return this.strainPAlleleRatio;
     }
     public String getStrainWAllele() {
-    	return strainWAllele;
+    	return this.strainWAllele;
     }
-    public boolean getStrainWAlleleFixed() {
-    	return strainWAlleleFixed;
+    public String getStrainWAlleleFixed() {
+    	return this.strainWAlleleFixed;
     }
     public boolean isStrainWAlleleFixed() {
-    	return strainWAlleleFixed;
+    	if ( this.strainWAlleleFixed.equals(FALSE) || this.strainWAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strainWAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrainWAlleleRatio() {
-    	return strainWAlleleRatio;
+    	return this.strainWAlleleRatio;
     }
     public String getStrainNAllele() {
-    	return strainNAllele;
+    	return this.strainNAllele;
     }
-    public boolean getStrainNAlleleFixed() {
-    	return strainNAlleleFixed;
+    public String getStrainNAlleleFixed() {
+    	return this.strainNAlleleFixed;
     }
     public boolean isStrainNAlleleFixed() {
-    	return strainNAlleleFixed;
+    	if ( this.strainNAlleleFixed.equals(FALSE) || this.strainNAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strainNAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrainNAlleleRatio() {
-    	return strainNAlleleRatio;
+    	return this.strainNAlleleRatio;
     }
     public String getStrain15IAllele() {
-    	return strain15IAllele;
+    	return this.strain15IAllele;
     }
-    public boolean getStrain15IAlleleFixed() {
-    	return strain15IAlleleFixed;
+    public String getStrain15IAlleleFixed() {
+    	return this.strain15IAlleleFixed;
     }
     public boolean isStrain15IAlleleFixed() {
-    	return strain15IAlleleFixed;
+    	if ( this.strain15IAlleleFixed.equals(FALSE) || this.strain15IAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strain15IAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrain15IAlleleRatio() {
-    	return strain15IAlleleRatio;
+    	return this.strain15IAlleleRatio;
     }
     public String getStrainZEROAllele() {
-    	return strainZEROAllele;
+    	return this.strainZEROAllele;
     }
-    public boolean getStrainZEROAlleleFixed() {  
-    	return strainZEROAlleleFixed;
+    public String getStrainZEROAlleleFixed() {  
+    	return this.strainZEROAlleleFixed;
     }
     public boolean isStrainZEROAlleleFixed() {
-    	return strainZEROAlleleFixed;
+    	if ( this.strainZEROAlleleFixed.equals(FALSE) || this.strainZEROAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strainZEROAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrainZEROAlleleRatio() {
-    	return strainZEROAlleleRatio;
+    	return this.strainZEROAlleleRatio;
     }
     public String getStrain6Allele() {
-    	return strain6Allele;
+    	return this.strain6Allele;
     }
-    public boolean getStrain6AlleleFixed() {
-    	return strain6AlleleFixed;
+    public String getStrain6AlleleFixed() {
+    	return this.strain6AlleleFixed;
     }
     public boolean isStrain6AlleleFixed() {
-    	return strain6AlleleFixed;
+    	if ( this.strain6AlleleFixed.equals(FALSE) || this.strain6AlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strain6AlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrain6AlleleRatio() {
-    	return strain6AlleleRatio;
+    	return this.strain6AlleleRatio;
     }
     public String getStrainCAllele() {
-    	return strainCAllele;
+    	return this.strainCAllele;
     }
-    public boolean getStrainCAlleleFixed() {
-    	return strainCAlleleFixed;
+    public String getStrainCAlleleFixed() {
+    	return this.strainCAlleleFixed;
     }
     public boolean isStrainCAlleleFixed() {
-    	return strainCAlleleFixed;
+    	if ( this.strainCAlleleFixed.equals(FALSE) || this.strainCAlleleFixed.equals(NA) ) {
+    		return false;
+    	}
+    	if ( this.strainCAlleleFixed.equals(TRUE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
     }
     public long getStrainCAlleleRatio() {
-    	return strainCAlleleRatio;
+    	return this.strainCAlleleRatio;
     }
     public Date getCreationTime() {
-    	return creationTime;
+    	return this.creationTime;
     }
     public Date getModificationTime() {
-    	return modificationTime;
+    	return this.modificationTime;
     }
     public long getVersion() {
-        return version;
+        return this.version;
     }
     
     // Getters As Strings -------------------------------------------------------------------------
@@ -601,7 +553,7 @@ public class SNPChromosome {
     public void setStrain7Allele(String strain7Allele) {
     	this.strain7Allele = strain7Allele;
     }
-    public void setStrain7AlleleFixed(boolean strain7AlleleFixed) {
+    public void setStrain7AlleleFixed(String strain7AlleleFixed) {
     	this.strain7AlleleFixed = strain7AlleleFixed;
     }
     public void setStrain7AlleleRatio(long strain7AlleleRatio) {
@@ -610,7 +562,7 @@ public class SNPChromosome {
     public void setStrainPAllele(String strainPAllele) {
     	this.strainPAllele = strainPAllele;
     }
-    public void setStrainPAlleleFixed(boolean strainPAlleleFixed) {
+    public void setStrainPAlleleFixed(String strainPAlleleFixed) {
     	this.strainPAlleleFixed = strainPAlleleFixed;
     }
     public void setStrainPAlleleRatio(long strainPAlleleRatio) {
@@ -619,7 +571,7 @@ public class SNPChromosome {
     public void setStrainWAllele(String strainWAllele) {
     	this.strainWAllele = strainWAllele;
     }
-    public void setStrainWAlleleFixed(boolean strainWAlleleFixed) {
+    public void setStrainWAlleleFixed(String strainWAlleleFixed) {
     	this.strainWAlleleFixed = strainWAlleleFixed;
     }
     public void setStrainWAlleleRatio(long strainWAlleleRatio) {
@@ -628,7 +580,7 @@ public class SNPChromosome {
     public void setStrainNAllele(String strainNAllele) {
     	this.strainNAllele = strainNAllele;
     }
-    public void setStrainNAlleleFixed(boolean strainNAlleleFixed) {
+    public void setStrainNAlleleFixed(String strainNAlleleFixed) {
     	this.strainNAlleleFixed = strainNAlleleFixed;
     }
     public void setStrainNAlleleRatio(long strainNAlleleRatio) {
@@ -637,7 +589,7 @@ public class SNPChromosome {
     public void setStrain15IAllele(String strain15IAllele) {
     	this.strain15IAllele = strain15IAllele;
     }
-    public void setStrain15IAlleleFixed(boolean strain15IAlleleFixed) {
+    public void setStrain15IAlleleFixed(String strain15IAlleleFixed) {
     	this.strain15IAlleleFixed = strain15IAlleleFixed;
     }
     public void setStrain15IAlleleRatio(long strain15IAlleleRatio) {
@@ -646,7 +598,7 @@ public class SNPChromosome {
     public void setStrainZEROAllele(String strainZEROAllele) {
     	this.strainZEROAllele = strainZEROAllele;
     }
-    public void setStrainZEROAlleleFixed(boolean strainZEROAlleleFixed) {  
+    public void setStrainZEROAlleleFixed(String strainZEROAlleleFixed) {  
     	this.strainZEROAlleleFixed = strainZEROAlleleFixed;
     }
     public void setStrainZEROAlleleRatio(long strainZEROAlleleRatio) {
@@ -655,7 +607,7 @@ public class SNPChromosome {
     public void setStrain6Allele(String strain6Allele) {
     	this.strain6Allele = strain6Allele;
     }
-    public void setStrain6AlleleFixed(boolean strain6AlleleFixed) {
+    public void setStrain6AlleleFixed(String strain6AlleleFixed) {
     	this.strain6AlleleFixed = strain6AlleleFixed;
     }
     public void setStrain6AlleleRatio(long strain6AlleleRatio) {
@@ -664,7 +616,7 @@ public class SNPChromosome {
     public void setStrainCAllele(String strainCAllele) {
     	this.strainCAllele = strainCAllele;
     }
-    public void setStrainCAlleleFixed(boolean strainCAlleleFixed) {
+    public void setStrainCAlleleFixed(String strainCAlleleFixed) {
     	this.strainCAlleleFixed = strainCAlleleFixed;
     }
     public void setStrainCAlleleRatio(long strainCAlleleRatio) {
@@ -753,28 +705,28 @@ public class SNPChromosome {
     		String ensemblTranscript,
     		String ensemblAnnotation,
     		String strain7Allele,
-    		boolean strain7AlleleFixed,
+    		String strain7AlleleFixed,
     		long strain7AlleleRatio,
     		String strainPAllele,
-    		boolean strainPAlleleFixed,
+    		String strainPAlleleFixed,
     		long strainPAlleleRatio,
     		String strainWAllele,
-    		boolean strainWAlleleFixed,
+    		String strainWAlleleFixed,
     		long strainWAlleleRatio,
     		String strainNAllele,
-    		boolean strainNAlleleFixed,
+    		String strainNAlleleFixed,
     		long strainNAlleleRatio,
     		String strain15IAllele,
-    		boolean strain15IAlleleFixed,
+    		String strain15IAlleleFixed,
     		long strain15IAlleleRatio,
     		String strainZEROAllele,
-    		boolean strainZEROAlleleFixed,
+    		String strainZEROAlleleFixed,
     		long strainZEROAlleleRatio,
     		String strain6Allele,
-    		boolean strain6AlleleFixed,
+    		String strain6AlleleFixed,
     		long strain6AlleleRatio,
     		String strainCAllele,
-    		boolean strainCAlleleFixed,
+    		String strainCAlleleFixed,
     		long strainCAlleleRatio ) {
 
     	this.snpId = snpId;
@@ -871,7 +823,7 @@ public class SNPChromosome {
      * @param strainCAlleleFixed For Strain C is this fixed or not
      * @param strainCAlleleRatio For Strain C for not fixed alleles what is the ratio that this occurs else 1 for fixed
      * 
-     * @return  A new Builder instance.
+     * @return this. A new Builder instance.
      */
     public static Builder getBuilder(
     		String snpId,
@@ -884,28 +836,28 @@ public class SNPChromosome {
     		String ensemblTranscript,
     		String ensemblAnnotation,
     		String strain7Allele,
-    		boolean strain7AlleleFixed,
+    		String strain7AlleleFixed,
     		long strain7AlleleRatio,
     		String strainPAllele,
-    		boolean strainPAlleleFixed,
+    		String strainPAlleleFixed,
     		long strainPAlleleRatio,
     		String strainWAllele,
-    		boolean strainWAlleleFixed,
+    		String strainWAlleleFixed,
     		long strainWAlleleRatio,
     		String strainNAllele,
-    		boolean strainNAlleleFixed,
+    		String strainNAlleleFixed,
     		long strainNAlleleRatio,
     		String strain15IAllele,
-    		boolean strain15IAlleleFixed,
+    		String strain15IAlleleFixed,
     		long strain15IAlleleRatio,
     		String strainZEROAllele,
-    		boolean strainZEROAlleleFixed,
+    		String strainZEROAlleleFixed,
     		long strainZEROAlleleRatio,
     		String strain6Allele,
-    		boolean strain6AlleleFixed,
+    		String strain6AlleleFixed,
     		long strain6AlleleRatio,
     		String strainCAllele,
-    		boolean strainCAlleleFixed,
+    		String strainCAlleleFixed,
     		long strainCAlleleRatio ) {
     	
         return new Builder(
@@ -998,28 +950,28 @@ public class SNPChromosome {
         		String ensemblTranscript,
         		String ensemblAnnotation,
         		String strain7Allele,
-        		boolean strain7AlleleFixed,
+        		String strain7AlleleFixed,
         		long strain7AlleleRatio,
         		String strainPAllele,
-        		boolean strainPAlleleFixed,
+        		String strainPAlleleFixed,
         		long strainPAlleleRatio,
         		String strainWAllele,
-        		boolean strainWAlleleFixed,
+        		String strainWAlleleFixed,
         		long strainWAlleleRatio,
         		String strainNAllele,
-        		boolean strainNAlleleFixed,
+        		String strainNAlleleFixed,
         		long strainNAlleleRatio,
         		String strain15IAllele,
-        		boolean strain15IAlleleFixed,
+        		String strain15IAlleleFixed,
         		long strain15IAlleleRatio,
         		String strainZEROAllele,
-        		boolean strainZEROAlleleFixed,
+        		String strainZEROAlleleFixed,
         		long strainZEROAlleleRatio,
         		String strain6Allele,
-        		boolean strain6AlleleFixed,
+        		String strain6AlleleFixed,
         		long strain6AlleleRatio,
         		String strainCAllele,
-        		boolean strainCAlleleFixed,
+        		String strainCAlleleFixed,
         		long strainCAlleleRatio ) {
         	
             built = new SNPChromosome();
@@ -1062,7 +1014,7 @@ public class SNPChromosome {
         /**
          * Builds the new SNPChromosome object.
          * 
-         * @return  The created SNPChromosome object.
+         * @return this. The created SNPChromosome object.
          */
         public SNPChromosome build() {
         	

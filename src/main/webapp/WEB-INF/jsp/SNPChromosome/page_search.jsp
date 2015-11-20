@@ -7,7 +7,7 @@
 <head>
     <title><spring:message code="spring.data.jpa.variation.title"/></title>
     
-    <link rel="stylesheet" href="/static/css/possible.css" type="text/css"/> 
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/possible.css" type="text/css"/> 
     
 </head>
 
@@ -19,7 +19,7 @@
 
 <jsp:include page="include_messages.jsp"/>
 
-<jsp:include page="include_search_form.jsp"/>
+<jsp:include page="include_form_search.jsp"/>
 
 </body>
 </html>

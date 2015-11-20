@@ -7,13 +7,11 @@
 <head>
     <title><spring:message code="spring.data.jpa.variation.results"/></title>
     
-    <link rel="stylesheet" href="/static/css/possible.css" type="text/css"/> 
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/possible.css" type="text/css"/> 
     
 </head>
 
 <body>
-
-<jsp:include page="include_search_criteria_hidden.jsp"/>
 
 <jsp:include page="include_navigation.jsp"/>
 
@@ -21,11 +19,11 @@
 
 <jsp:include page="include_messages.jsp"/>
 
-<jsp:include page="include_download_form.jsp"/>
+<jsp:include page="include_form_download.jsp"/>
 
-<jsp:include page="include_pagination_search.jsp"/>
+<jsp:include page="include_search_pagination.jsp"/>
 
-<jsp:include page="include_snpchromosome_list.jsp"/>
+<jsp:include page="include_list_snpchromosome.jsp"/>
 
 </body>
 
