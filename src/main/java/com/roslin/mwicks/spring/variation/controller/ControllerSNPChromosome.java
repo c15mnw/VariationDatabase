@@ -29,48 +29,43 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoo
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoordinateNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleEqualsAlternativeAllele;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleNotSupplied;
-
-import com.roslin.mwicks.spring.variation.model.CSVResponse;
-import com.roslin.mwicks.spring.variation.model.EnsemblGene;
-import com.roslin.mwicks.spring.variation.model.PageSNPChromosome;
-
-import com.roslin.mwicks.spring.variation.model.SNPChromosome;
-
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceEnsemblGene;
-
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome1;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome3;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome4;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome5;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome6;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome7;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome8;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome9;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome10;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome11;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome12;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome13;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome14;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome15;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome16;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome17;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome18;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome19;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome20;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome21;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome22;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome23;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome24;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome25;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome26;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome27;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome28;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosome32;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosomeW;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosomeZ;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosomeLGE22C19W28_E50C23;
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceSNPChromosomeLGE64;
-
+import com.roslin.mwicks.spring.variation.model.ensemblegene.EnsemblGene;
+import com.roslin.mwicks.spring.variation.model.other.CSVResponse;
+import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
+import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome1;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome10;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome11;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome12;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome13;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome14;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome15;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome16;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome17;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome18;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome19;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome20;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome21;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome22;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome23;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome24;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome25;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome26;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome27;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome28;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome3;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome32;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome4;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome5;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome6;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome7;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome8;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome9;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE22C19W28_E50C23;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeW;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeZ;
 import com.roslin.mwicks.utility.ObjectConverter;
 
 

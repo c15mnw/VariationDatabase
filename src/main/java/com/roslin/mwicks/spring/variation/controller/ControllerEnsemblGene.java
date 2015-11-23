@@ -10,9 +10,8 @@ import javax.annotation.Resource;
 
 import java.util.List;
 
-import com.roslin.mwicks.spring.variation.serviceinterface.ServiceEnsemblGene;
-
-import com.roslin.mwicks.spring.variation.model.EnsemblGene;
+import com.roslin.mwicks.spring.variation.model.ensemblegene.EnsemblGene;
+import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
 /**
  * @author Mike Wicks

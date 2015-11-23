@@ -6,8 +6,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-import com.roslin.mwicks.spring.variation.model.EnsemblGene;
-
+import com.roslin.mwicks.spring.variation.model.ensemblegene.EnsemblGene;
 import com.roslin.mwicks.utility.ObjectConverter;
 import com.roslin.mwicks.utility.StringUtility;
 

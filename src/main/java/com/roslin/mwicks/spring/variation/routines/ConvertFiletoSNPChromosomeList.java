@@ -8,10 +8,8 @@ import java.util.List;
 
 import com.roslin.mwicks.utility.CsvUtil;
 import com.roslin.mwicks.utility.FileUtil;
-
-import com.roslin.mwicks.spring.variation.model.SNPChromosome;
-
 import com.roslin.mwicks.spring.variation.dto.DTOSNPChromosome;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 
 
 public final class ConvertFiletoSNPChromosomeList {

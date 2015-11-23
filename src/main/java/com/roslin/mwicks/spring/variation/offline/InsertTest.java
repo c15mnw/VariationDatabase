@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.roslin.mwicks.utility.FileUtil;
 import com.roslin.mwicks.utility.Wrapper;
-import com.roslin.mwicks.spring.variation.model.SNPChromosome;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.routines.ConvertFiletoSNPChromosomeList;
 
 

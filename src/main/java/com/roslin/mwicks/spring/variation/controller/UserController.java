@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.roslin.mwicks.spring.variation.dummy.DummyDB;
-import com.roslin.mwicks.spring.variation.model.User;
+import com.roslin.mwicks.spring.variation.model.other.User;
 
 
 @Controller
@@ -26,6 +26,7 @@ public class UserController {
  
         return new ModelAndView("user", "userForm", userForm);
     }
+    */
  
     @RequestMapping(value = "${pageContext.request.contextPath}/get_country_list", 
                     method = RequestMethod.GET)
@@ -42,5 +43,4 @@ public class UserController {
          
         return countryList;
     }
-    */
 }

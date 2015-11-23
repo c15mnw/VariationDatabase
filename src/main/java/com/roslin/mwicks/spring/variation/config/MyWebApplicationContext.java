@@ -43,7 +43,8 @@ import java.util.Properties;
  */
 @Configuration
 @ComponentScan(basePackages = {"com.roslin.mwicks.spring.variation.controller",
-                               "com.roslin.mwicks.spring.variation.service"})
+                               "com.roslin.mwicks.spring.variation.service.snpchromosome," +
+                               "com.roslin.mwicks.spring.variation.service.ensemblgene"})
 @EnableTransactionManagement
 @EnableWebMvc
 @ImportResource("classpath:applicationContext.xml")
