@@ -47,7 +47,9 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome15$Builder.c
 com/roslin/mwicks/spring/variation/dto/DTOSNPChromosome.class
 com/roslin/mwicks/spring/variation/offline/InsertData$Config.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome23.class
+com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGene$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome13.class
+com/roslin/mwicks/spring/variation/autocomplete/AutocompleteDB.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome4.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome12.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome10.class
@@ -88,6 +90,7 @@ com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromos
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome9.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome11$Builder.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome26.class
+com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGene.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome8.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome19.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome8.class
@@ -95,7 +98,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome25$Builder.c
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome27.class
 com/roslin/mwicks/spring/variation/serviceinterface/ensemblgene/ServiceEnsemblGene.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome10$Builder.class
-com/roslin/mwicks/spring/variation/controller/UserController.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome14.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome7.class
 com/roslin/mwicks/spring/variation/controller/ControllerEnsemblGene.class
@@ -120,7 +122,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome22$Builder.c
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome17.class
 com/roslin/mwicks/spring/variation/config/DataJPAExampleInitializer.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome5.class
-com/roslin/mwicks/spring/variation/model/other/User.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome27.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome27$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome5.class
@@ -145,7 +146,6 @@ com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromos
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosomeLGE64.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome25.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome22.class
-com/roslin/mwicks/spring/variation/model/ensemblegene/EnsemblGene$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeLGE22C19W28_E50C23.class
 com/roslin/mwicks/spring/variation/offline/InsertData.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosomeW.class
@@ -155,7 +155,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeW.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome28.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome6.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome$Builder.class
-com/roslin/mwicks/spring/variation/model/ensemblegene/EnsemblGene.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome13.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome1$Builder.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome4.class
@@ -172,7 +171,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome17$Builder.c
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome23.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosomeZ.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome15.class
-com/roslin/mwicks/spring/variation/dummy/DummyDB.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome24.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome12.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosomeLGE22C19W28_E50C23.class
@@ -185,7 +183,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome18.class
 com/roslin/mwicks/spring/variation/exception/ExceptionEnsemblGeneNotFound.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome25.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome4$Builder.class
-com/roslin/mwicks/spring/variation/dummy/AutocompleteDB.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome16.class
 com/roslin/mwicks/spring/variation/dto/DTOEnsemblGene.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome22.class

@@ -1,13 +1,14 @@
 package com.roslin.mwicks.spring.variation.service.ensemblgene;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
-import com.roslin.mwicks.spring.variation.model.ensemblegene.EnsemblGene;
+import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 import com.roslin.mwicks.spring.variation.repository.ensemblgene.RepositoryEnsemblGene;
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import org.springframework.transaction.annotation.Transactional;
@@ -37,6 +38,18 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     	LOGGER.debug("Searching SNPChromosomes with search criteria: " + strGeneName);
 
     	List<EnsemblGene> ensemblgenes = repositoryensemblgene.findByGeneName(strGeneName);
+        
+    	return ensemblgenes;
+    }
+    
+
+    @Transactional(readOnly = true)
+    @Override
+    public Page<EnsemblGene> findByEnsemblIdLike(String strGeneName, Pageable pageable) {
+        
+    	LOGGER.debug("Searching SNPChromosomes with search criteria: " + strGeneName);
+
+    	Page<EnsemblGene> ensemblgenes = repositoryensemblgene.findByEnsemblIdLike(strGeneName, pageable);
         
     	return ensemblgenes;
     }

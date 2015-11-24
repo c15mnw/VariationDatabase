@@ -1,16 +1,12 @@
 package com.roslin.mwicks.spring.variation.message;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.io.FileSystemUtils;
 import org.apache.commons.io.IOUtils;
 
 import org.springframework.http.HttpInputMessage;
@@ -22,8 +18,8 @@ import org.springframework.http.converter.HttpMessageNotWritableException;
 
 import com.roslin.mwicks.spring.variation.model.other.CSVResponse;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
+
 import com.roslin.mwicks.utility.CsvUtil;
-import com.roslin.mwicks.utility.FileUtil;
 
 
 public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CSVResponse> {

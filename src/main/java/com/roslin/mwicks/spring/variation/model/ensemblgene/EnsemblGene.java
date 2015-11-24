@@ -1,4 +1,4 @@
-package com.roslin.mwicks.spring.variation.model.ensemblegene;
+package com.roslin.mwicks.spring.variation.model.ensemblgene;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 

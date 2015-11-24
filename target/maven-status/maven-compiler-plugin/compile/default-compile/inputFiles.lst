@@ -52,6 +52,7 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome27.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosomeW.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome4.java
+/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGene.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome26.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/DTODownload.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome27.java
@@ -63,7 +64,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome3.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome22.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome9.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/ensemblegene/EnsemblGene.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome3.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome6.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome18.java
@@ -89,7 +89,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeZ.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome10.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/SearchAlternative.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dummy/DummyDB.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome7.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome7.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/offline/InsertTest.java
@@ -104,7 +103,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome10.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/config/MyOfflineApplicationContext.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome24.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dummy/AutocompleteDB.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome12.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome25.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/other/PageSNPChromosome.java
@@ -115,11 +113,9 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/DTOSNPChromosome.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/exception/ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosomeLGE22C19W28_E50C23.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/controller/UserController.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome5.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/DownloadFormat.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/message/CSVResponseMessageConverter.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/other/User.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome1.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome23.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/controller/ControllerEnsemblGene.java
@@ -151,6 +147,7 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome14.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome18.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome11.java
+/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/autocomplete/AutocompleteDB.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome15.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/exception/ExceptionSNPChromosomeNotFound.java

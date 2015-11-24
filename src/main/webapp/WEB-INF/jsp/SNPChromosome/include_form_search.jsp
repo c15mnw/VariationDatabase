@@ -2,6 +2,11 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
+<script>
+    $("#searchGeneName").autocomplete("getEnsemblIds.jsp");
+</script>
+        
+
 <form:form action="${pageContext.request.contextPath}/search" commandName="dtoSearch" method="POST">
 
     <fieldset>
@@ -14,6 +19,10 @@
             <form:label path="searchGeneName"><spring:message code="snpchromosome.search.searchGeneName.label"/></form:label>
             <form:input path="searchGeneName" type="text"/>
         </div>
+        
+<script>
+    $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsemblIds.jsp");
+</script>
         
         <div>
             <form:label path="searchDownStream"><spring:message code="snpchromosome.search.searchDownStream.label"/></form:label>

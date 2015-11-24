@@ -5,9 +5,15 @@
 <html>
 
 <head>
-    <title><spring:message code="spring.data.jpa.variation.title"/></title>
+
+<title><spring:message code="spring.data.jpa.variation.title"/></title>
     
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/possible.css" type="text/css"/> 
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/possible.css" type="text/css"/> 
+    
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/jquery.autocomplete.css" />
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery.autocomplete.js"></script>  
     
 </head>
 

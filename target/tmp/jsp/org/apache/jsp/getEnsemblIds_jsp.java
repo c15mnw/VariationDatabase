@@ -3,8 +3,11 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.util.Iterator;
+import java.util.List;
+import com.roslin.mwicks.spring.variation.autocomplete.AutocompleteDB;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class getEnsemblIds_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -41,33 +44,27 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \n");
-      out.write("\"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"static/css/jquery.autocomplete.css\" />\n");
-      out.write("    <script type=\"text/javascript\"\n");
-      out.write("            src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></script>\n");
-      out.write("    <script src=\"static/js/jquery.autocomplete.js\"></script>  \n");
-      out.write("    <style>\n");
-      out.write("        input {\n");
-      out.write("            font-size: 120%;\n");
-      out.write("        }\n");
-      out.write("    </style>\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("    <h3>Country</h3>\n");
-      out.write("    <input type=\"text\" id=\"country\" name=\"country\"/>\n");
-      out.write("    \n");
-      out.write("    <p>Context Path = ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("</p>\n");
-      out.write("     \n");
-      out.write("    <script>\n");
-      out.write("        $(\"#country\").autocomplete(\"getdata.jsp\");\n");
-      out.write("    </script>\n");
-      out.write("</body>\n");
-      out.write("</html>");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+
+
+    AutocompleteDB db = new AutocompleteDB();
+ 
+    String query = request.getParameter("q");
+     
+    List<String> ensemblgenes = db.getEnsemblIds(query);
+ 
+    Iterator<String> iteratorensemblgenes = ensemblgenes.iterator();
+    
+    while(iteratorensemblgenes.hasNext()) {
+    	
+        String ensemblgene = (String) iteratorensemblgenes.next();
+
+        out.println(ensemblgene);
+    }
+    
+
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

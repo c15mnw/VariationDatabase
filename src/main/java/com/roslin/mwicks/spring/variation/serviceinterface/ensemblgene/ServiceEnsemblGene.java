@@ -2,8 +2,11 @@ package com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
-import com.roslin.mwicks.spring.variation.model.ensemblegene.EnsemblGene;
+import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 
 /**
  * Declares methods used to obtain and modify SNPChromosome information.
@@ -40,4 +43,11 @@ public interface ServiceEnsemblGene {
      * @return  A list of snpchromosome.
      */
 	public List<EnsemblGene> findByGeneName(String strGeneName);
+
+	
+	/**
+     * Finds all snpchromosome.
+     * @return  A list of snpchromosome.
+     */
+	public Page<EnsemblGene> findByEnsemblIdLike(String strGeneName, Pageable pageable);
 }
