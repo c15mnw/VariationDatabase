@@ -939,6 +939,48 @@ public class SNPChromosome1 {
         		strainCAlleleRatio );
     }
     
+    
+    public static Builder getBuilder(SNPChromosome snpchromosome
+    		) {
+    	
+        return new Builder(
+        		snpchromosome.getSnpId(),
+        		snpchromosome.getChromosomeId(),
+        		snpchromosome.getPosition(),
+        		snpchromosome.getReference(),    
+        		snpchromosome.getAlternative(),
+        		snpchromosome.getRegion(),
+        		snpchromosome.getEnsemblGene(),
+        		snpchromosome.getEnsemblTranscript(),
+        		snpchromosome.getEnsemblAnnotation(),
+        		snpchromosome.getStrain7Allele(),
+        		snpchromosome.getStrain7AlleleFixed(),
+        		snpchromosome.getStrain7AlleleRatio(),
+        		snpchromosome.getStrainPAllele(),
+        		snpchromosome.getStrainPAlleleFixed(),
+        		snpchromosome.getStrainPAlleleRatio(),
+        		snpchromosome.getStrainWAllele(),
+        		snpchromosome.getStrainWAlleleFixed(),
+        		snpchromosome.getStrainWAlleleRatio(),
+        		snpchromosome.getStrainNAllele(),
+        		snpchromosome.getStrainNAlleleFixed(),
+        		snpchromosome.getStrainNAlleleRatio(),
+        		snpchromosome.getStrain15IAllele(),
+        		snpchromosome.getStrain15IAlleleFixed(),
+        		snpchromosome.getStrain15IAlleleRatio(),
+        		snpchromosome.getStrainZEROAllele(),
+        		snpchromosome.getStrainZEROAlleleFixed(),
+        		snpchromosome.getStrainZEROAlleleRatio(),
+        		snpchromosome.getStrain6Allele(),
+        		snpchromosome.getStrain6AlleleFixed(),
+        		snpchromosome.getStrain6AlleleRatio(),
+        		snpchromosome.getStrainCAllele(),
+        		snpchromosome.getStrainCAlleleFixed(),
+        		snpchromosome.getStrainCAlleleRatio()
+        		);
+    }
+    
+
     /**
      * A Builder class used to create new SNPChromosome1 objects.
      */

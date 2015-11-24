@@ -5,15 +5,18 @@ import com.roslin.mwicks.spring.variation.dto.DTODownload;
 import com.roslin.mwicks.spring.variation.dto.DTOSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFound;
+
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome20;
+
 import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosome20;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome20;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -23,8 +26,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -41,9 +47,52 @@ public class ServiceRepositorySNPChromosome20 implements ServiceSNPChromosome20 
     
     private static final int NUMBER_OF_SNPCHROMOSOMES_PER_PAGE = 30;
 
+    @PersistenceContext
+    private EntityManager entityManager;
+     
     @Resource
     private RepositorySNPChromosome20 repositorysnpchromosome;
 
+    
+    @Transactional
+    @Override
+    public <T extends SNPChromosome20> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
+    	
+    	final List<T> savedEntities = new ArrayList<T>(entities.size());
+    	int i = 0;
+
+    	for (T t : entities) {
+    	    
+    		//savedEntities.add(persistOrMerge(t));
+    		entityManager.persist(t);
+
+    		i++;
+    	    
+    		if (i % intBatchSize == 0) {
+
+    			// Flush a batch of inserts and release memory.
+    			entityManager.flush();
+    			entityManager.clear();
+    		}
+    	}
+    	
+    	return savedEntities;
+    }
+    	 
+    
+    private <T extends SNPChromosome20> T persistOrMerge(T t) {
+    
+    	if (t.getOid() == 0) {
+    	
+    		entityManager.persist(t);
+    		return t;
+    	} 
+    	else {
+    	
+    		return entityManager.merge(t);
+    	}
+    }
+    
     
     @Transactional(readOnly = true)
     @Override

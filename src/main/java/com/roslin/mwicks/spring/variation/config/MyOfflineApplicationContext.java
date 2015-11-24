@@ -46,7 +46,7 @@ import java.util.Properties;
                                "com.roslin.mwicks.spring.variation.service.ensemblgene"})
 @EnableTransactionManagement
 @ImportResource("classpath:applicationContext.xml")
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:offline_application.properties")
 public class MyOfflineApplicationContext {
 
     private static final String PROPERTY_NAME_DATABASE_DRIVER = "db.driver";
@@ -59,6 +59,8 @@ public class MyOfflineApplicationContext {
     private static final String PROPERTY_NAME_HIBERNATE_HBM2DDL_AUTO = "hibernate.hbm2ddl.auto";
     private static final String PROPERTY_NAME_HIBERNATE_NAMING_STRATEGY = "hibernate.ejb.naming_strategy";
     private static final String PROPERTY_NAME_HIBERNATE_SHOW_SQL = "hibernate.show_sql";
+    private static final String PROPERTY_NAME_HIBERNATE_JDBC_BATCH_SIZE = "hibernate.jdbc.batch_size";
+    
     private static final String PROPERTY_NAME_ENTITYMANAGER_PACKAGES_TO_SCAN = "entitymanager.packages.to.scan";
 
 
@@ -106,12 +108,10 @@ public class MyOfflineApplicationContext {
         jpaProterties.put(PROPERTY_NAME_HIBERNATE_HBM2DDL_AUTO, environment.getRequiredProperty(PROPERTY_NAME_HIBERNATE_HBM2DDL_AUTO));
         jpaProterties.put(PROPERTY_NAME_HIBERNATE_NAMING_STRATEGY, environment.getRequiredProperty(PROPERTY_NAME_HIBERNATE_NAMING_STRATEGY));
         jpaProterties.put(PROPERTY_NAME_HIBERNATE_SHOW_SQL, environment.getRequiredProperty(PROPERTY_NAME_HIBERNATE_SHOW_SQL));
+        jpaProterties.put(PROPERTY_NAME_HIBERNATE_JDBC_BATCH_SIZE, environment.getRequiredProperty(PROPERTY_NAME_HIBERNATE_JDBC_BATCH_SIZE));
 
         entityManagerFactoryBean.setJpaProperties(jpaProterties);
 
         return entityManagerFactoryBean;
     }
-
-    
-
 }

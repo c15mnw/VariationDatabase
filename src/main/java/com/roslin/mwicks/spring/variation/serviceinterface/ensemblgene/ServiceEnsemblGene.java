@@ -1,11 +1,13 @@
 package com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene;
 
+import java.util.Collection;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
+
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 
 /**
@@ -13,6 +15,15 @@ import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
  * @author Mike Wicks
  */
 public interface ServiceEnsemblGene {
+
+	
+    /**
+     * Saves a List of EnsemblGene
+     * @param created   The information of the created snpchromosome.
+     * @return  The created snpchromosome.
+     */
+	public <T extends EnsemblGene> Collection<T> bulkSave(int intBatchSize, Collection<T> entities);
+	
 	
     /**
      * Creates a new snpchromosome.
@@ -21,6 +32,7 @@ public interface ServiceEnsemblGene {
      */
     public EnsemblGene create(EnsemblGene created);
 
+    
     /**
      * Deletes a snpchromosome.
      * @param snpchromosomeId  The id of the deleted snpchromosome.

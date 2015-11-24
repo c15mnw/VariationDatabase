@@ -1,5 +1,6 @@
 package com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome;
 
+import java.util.Collection;
 import java.util.List;
 
 import com.roslin.mwicks.spring.variation.dto.DTOSearch;
@@ -16,6 +17,14 @@ import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome1;
  * @author Mike Wicks
  */
 public interface ServiceSNPChromosome1 {
+	
+    /**
+     * Saves a List of SNPChromosome1
+     * @param created   The information of the created snpchromosome.
+     * @return  The created snpchromosome.
+     */
+	public <T extends SNPChromosome1> Collection<T> bulkSave(int intBatchSize, Collection<T> entities);
+	
 	
     /**
      * Creates a new snpchromosome.

@@ -2,7 +2,9 @@ package com.roslin.mwicks.spring.variation.service.ensemblgene;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome1;
 import com.roslin.mwicks.spring.variation.repository.ensemblgene.RepositoryEnsemblGene;
+import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosome1;
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
 import org.slf4j.Logger;
@@ -14,6 +16,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -29,6 +36,49 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     
     @Resource
     private RepositoryEnsemblGene repositoryensemblgene;
+    
+    @PersistenceContext
+    private EntityManager entityManager;
+     
+    
+    @Transactional
+    @Override
+    public <T extends EnsemblGene> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
+    	
+    	final List<T> savedEntities = new ArrayList<T>(entities.size());
+    	int i = 0;
+
+    	for (T t : entities) {
+    	    
+    		//savedEntities.add(persistOrMerge(t));
+    		entityManager.persist(t);
+
+    		i++;
+    	    
+    		if (i % intBatchSize == 0) {
+
+    			// Flush a batch of inserts and release memory.
+    			entityManager.flush();
+    			entityManager.clear();
+    		}
+    	}
+    	
+    	return savedEntities;
+    }
+    	 
+    
+    private <T extends EnsemblGene> T persistOrMerge(T t) {
+    
+    	if (t.getOid() == 0) {
+    	
+    		entityManager.persist(t);
+    		return t;
+    	} 
+    	else {
+    	
+    		return entityManager.merge(t);
+    	}
+    }
 
     
     @Transactional(readOnly = true)

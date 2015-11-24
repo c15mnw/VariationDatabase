@@ -413,7 +413,7 @@ public class DTOSNPChromosome {
     
     public boolean isStrain7AlleleFixedABoolean() {
 
-    	if ( this.strain7AlleleFixed.equals("1") || this.strain7AlleleFixed.equals("0")) {
+    	if ( this.strain7AlleleFixed.equals("1") || this.strain7AlleleFixed.equals("0") || this.strain7AlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -431,7 +431,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainPAlleleFixedABoolean() {
 
-    	if ( this.strainPAlleleFixed.equals("1") || this.strainPAlleleFixed.equals("0")) {
+    	if ( this.strainPAlleleFixed.equals("1") || this.strainPAlleleFixed.equals("0") || this.strainPAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -449,7 +449,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainWAlleleFixedABoolean() {
 
-    	if ( this.strainWAlleleFixed.equals("1") || this.strainWAlleleFixed.equals("0")) {
+    	if ( this.strainWAlleleFixed.equals("1") || this.strainWAlleleFixed.equals("0") || this.strainWAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -467,7 +467,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainNAlleleFixedABoolean() {
 
-    	if ( this.strainNAlleleFixed.equals("1") || this.strainNAlleleFixed.equals("0")) {
+    	if ( this.strainNAlleleFixed.equals("1") || this.strainNAlleleFixed.equals("0") || this.strainNAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -485,7 +485,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrain15IAlleleFixedABoolean() {
 
-    	if ( this.strain15IAlleleFixed.equals("1") || this.strain15IAlleleFixed.equals("0")) {
+    	if ( this.strain15IAlleleFixed.equals("1") || this.strain15IAlleleFixed.equals("0") || this.strain15IAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -503,7 +503,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainZEROAlleleFixedABoolean() {  
 
-    	if ( this.strainZEROAlleleFixed.equals("1") || this.strainZEROAlleleFixed.equals("0")) {
+    	if ( this.strainZEROAlleleFixed.equals("1") || this.strainZEROAlleleFixed.equals("0") || this.strainZEROAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -521,7 +521,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrain6AlleleFixedABoolean() {
 
-    	if ( this.strain6AlleleFixed.equals("1") || this.strain6AlleleFixed.equals("0")) {
+    	if ( this.strain6AlleleFixed.equals("1") || this.strain6AlleleFixed.equals("0") || this.strain6AlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -539,7 +539,7 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainCAlleleFixedABoolean() {
 
-    	if ( this.strainCAlleleFixed.equals("1") || this.strainCAlleleFixed.equals("0")) {
+    	if ( this.strainCAlleleFixed.equals("1") || this.strainCAlleleFixed.equals("0") || this.strainCAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
@@ -564,21 +564,13 @@ public class DTOSNPChromosome {
 
         if (this.isPositionAnInteger() && 
         	    this.isStrain7AlleleFixedABoolean() && 
-        	    this.isStrain7AlleleRatioALong() &&
         	    this.isStrainPAlleleFixedABoolean() &&
-        	    this.isStrainPAlleleRatioALong() && 
         	    this.isStrainWAlleleFixedABoolean() && 
-        	    this.isStrainWAlleleRatioALong() && 
         	    this.isStrainNAlleleFixedABoolean() && 
-        	    this.isStrainNAlleleRatioALong() && 
         	    this.isStrain15IAlleleFixedABoolean() && 
-        	    this.isStrain15IAlleleRatioALong() && 
         	    this.isStrainZEROAlleleFixedABoolean() && 
-        	    this.isStrainZEROAlleleRatioALong() && 
         	    this.isStrain6AlleleFixedABoolean() && 
-        	    this.isStrain6AlleleRatioALong() && 
-        	    this.isStrainCAlleleFixedABoolean() && 
-        	    this.isStrainCAlleleRatioALong() 
+        	    this.isStrainCAlleleFixedABoolean()  
         	    ) {
 
         	return true;
