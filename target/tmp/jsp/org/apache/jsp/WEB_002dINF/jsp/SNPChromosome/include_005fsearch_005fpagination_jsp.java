@@ -99,8 +99,12 @@ public final class include_005fsearch_005fpagination_jsp extends org.apache.jasp
     int _jspx_eval_c_if_0 = _jspx_th_c_if_0.doStartTag();
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write('\n');
-        out.write('\n');
+        out.write("\n");
+        out.write("\n");
+        out.write("<div class=\"row spacer\">\n");
+        out.write("    <div class=\"span12\">\n");
+        out.write("        <div class=\"pagination\">\n");
+        out.write("        \n");
         if (_jspx_meth_c_url_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_0, _jspx_page_context))
           return true;
         out.write('\n');
@@ -114,7 +118,6 @@ public final class include_005fsearch_005fpagination_jsp extends org.apache.jasp
           return true;
         out.write("\n");
         out.write("\n");
-        out.write("<div class=\"pagination\">\n");
         out.write("    <ul>\n");
         out.write("        ");
         if (_jspx_meth_c_choose_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_0, _jspx_page_context))
@@ -132,6 +135,9 @@ public final class include_005fsearch_005fpagination_jsp extends org.apache.jasp
         out.write("\n");
         out.write("        \n");
         out.write("    </ul>\n");
+        out.write("    \n");
+        out.write("        </div>\n");
+        out.write("    </div>\n");
         out.write("</div>\n");
         out.write("\n");
         int evalDoAfterBody = _jspx_th_c_if_0.doAfterBody();

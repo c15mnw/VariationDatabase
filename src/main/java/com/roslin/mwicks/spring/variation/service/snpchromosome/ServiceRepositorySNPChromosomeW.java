@@ -54,7 +54,8 @@ public class ServiceRepositorySNPChromosomeW implements ServiceSNPChromosomeW {
     @PersistenceContext
     private EntityManager entityManager;
      
-    
+    @Transactional
+    @Override
     public <T extends SNPChromosomeW> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
     	
     	final List<T> savedEntities = new ArrayList<T>(entities.size());

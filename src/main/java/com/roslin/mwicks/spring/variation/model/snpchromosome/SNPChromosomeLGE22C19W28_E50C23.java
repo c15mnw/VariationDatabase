@@ -173,6 +173,12 @@ public class SNPChromosomeLGE22C19W28_E50C23 {
     public String getEnsemblAnnotation() {
     	return this.ensemblAnnotation;
     }
+    public String getEnsemblTranscriptMultiLines() {
+    	return this.ensemblTranscript.replaceAll(",", ",\n").replaceAll(".", ".\n").replaceAll(":", ":\n").replaceAll(";", ";\n");
+    }
+    public String getEnsemblAnnotationMultiLines() {
+    	return this.ensemblAnnotation.replaceAll(",", ",\n").replaceAll(".", ".\n").replaceAll(":", ":\n").replaceAll(";", ";\n");
+    }
     public String getStrain7Allele() {
     	return this.strain7Allele;
     }

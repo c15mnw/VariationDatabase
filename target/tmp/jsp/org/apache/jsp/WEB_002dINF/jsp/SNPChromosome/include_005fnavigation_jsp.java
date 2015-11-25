@@ -54,14 +54,30 @@ public final class include_005fnavigation_jsp extends org.apache.jasper.runtime.
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<div>\n");
-      out.write("    <a href=\"");
+      out.write("    <div class=\"row\">\n");
+      out.write("        <div class=\"span12\">\n");
+      out.write("            <ul class=\"breadcrumb\">\n");
+      out.write("                <li><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/\">");
       if (_jspx_meth_spring_message_0(_jspx_page_context))
         return;
-      out.write("</a>\n");
-      out.write("</div>\n");
+      out.write("</a> <span class=\"divider\">/</span></li>\n");
+      out.write("                <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/\">");
+      if (_jspx_meth_spring_message_1(_jspx_page_context))
+        return;
+      out.write("</a> <span class=\"divider\">/</span></li>\n");
+      out.write("                <li class=\"active\">");
+      if (_jspx_meth_spring_message_2(_jspx_page_context))
+        return;
+      out.write("</li>\n");
+      out.write("            </ul>\n");
+      out.write("        </div>\n");
+      out.write("    </div>\n");
+      out.write("    <!-- Three columns of text below the carousel -->\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -97,6 +113,58 @@ public final class include_005fnavigation_jsp extends org.apache.jasper.runtime.
     } finally {
       _jspx_th_spring_message_0.doFinally();
       _jspx_tagPool_spring_message_code_nobody.reuse(_jspx_th_spring_message_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_message_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:message
+    org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_message_1 = (org.springframework.web.servlet.tags.MessageTag) _jspx_tagPool_spring_message_code_nobody.get(org.springframework.web.servlet.tags.MessageTag.class);
+    _jspx_th_spring_message_1.setPageContext(_jspx_page_context);
+    _jspx_th_spring_message_1.setParent(null);
+    _jspx_th_spring_message_1.setCode("snpchromosome.list.link.search");
+    int[] _jspx_push_body_count_spring_message_1 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_message_1 = _jspx_th_spring_message_1.doStartTag();
+      if (_jspx_th_spring_message_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_message_1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_message_1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_message_1.doFinally();
+      _jspx_tagPool_spring_message_code_nobody.reuse(_jspx_th_spring_message_1);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_message_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:message
+    org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_message_2 = (org.springframework.web.servlet.tags.MessageTag) _jspx_tagPool_spring_message_code_nobody.get(org.springframework.web.servlet.tags.MessageTag.class);
+    _jspx_th_spring_message_2.setPageContext(_jspx_page_context);
+    _jspx_th_spring_message_2.setParent(null);
+    _jspx_th_spring_message_2.setCode("snpchromosome.list.link.search.results");
+    int[] _jspx_push_body_count_spring_message_2 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_message_2 = _jspx_th_spring_message_2.doStartTag();
+      if (_jspx_th_spring_message_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_message_2[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_message_2.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_message_2.doFinally();
+      _jspx_tagPool_spring_message_code_nobody.reuse(_jspx_th_spring_message_2);
     }
     return false;
   }

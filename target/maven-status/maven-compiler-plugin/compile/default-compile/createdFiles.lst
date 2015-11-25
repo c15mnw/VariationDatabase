@@ -45,7 +45,6 @@ com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromos
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome7$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome15$Builder.class
 com/roslin/mwicks/spring/variation/dto/DTOSNPChromosome.class
-com/roslin/mwicks/spring/variation/offline/InsertData$Config.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome23.class
 com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGene$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome13.class
@@ -110,8 +109,8 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome3.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome10.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome28.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome24.class
+com/roslin/mwicks/spring/variation/offline/InsertEnsemblGene.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome21.class
-com/roslin/mwicks/spring/variation/offline/InsertTest.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome13$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome18$Builder.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome6.class
@@ -133,9 +132,10 @@ com/roslin/mwicks/spring/variation/dto/DTOSearch.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome22.class
 com/roslin/mwicks/spring/variation/dto/SearchReference.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome5$Builder.class
+com/roslin/mwicks/spring/variation/offline/InsertSNPChromosome.class
 com/roslin/mwicks/spring/variation/config/MyAutocompleteApplicationContext.class
+com/roslin/mwicks/spring/variation/routines/ConvertFiletoEnsemblGeneList.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome6.class
-com/roslin/mwicks/spring/variation/offline/InsertData$MyBean.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome12.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome9$Builder.class
 com/roslin/mwicks/spring/variation/message/CSVResponseMessageConverter.class
@@ -147,7 +147,6 @@ com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromos
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome25.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome22.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeLGE22C19W28_E50C23.class
-com/roslin/mwicks/spring/variation/offline/InsertData.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosomeW.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome18.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome21$Builder.class

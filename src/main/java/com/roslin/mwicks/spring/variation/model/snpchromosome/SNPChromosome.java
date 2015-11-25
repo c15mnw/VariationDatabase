@@ -20,9 +20,11 @@ import com.roslin.mwicks.utility.ObjectConverter;
 public class SNPChromosome {
     
     // Constants ----------------------------------------------------------------------------------
-	protected static final String TRUE = "True";
-	protected static final String FALSE = "False";
+	protected static final String TRUE = "1";
+	protected static final String FALSE = "0";
 	protected static final String NA = "N/A";
+	protected static final String ONE = "True";
+	protected static final String ZERO = "False";
 
 	protected static final String ONLY_NONE = "NONE";
 	protected static final String ONLY_1 = "1";
@@ -205,6 +207,23 @@ public class SNPChromosome {
     public String getEnsemblAnnotation() {
     	return this.ensemblAnnotation;
     }
+    public String getRegionMultiLines() {
+    	String noCommas = this.region.replaceAll(",", ",\n");
+    	return noCommas.replaceAll(";", ";\n");
+    }
+    public String getEnsemblGeneMultiLines() {
+    	String noCommas = this.ensemblGene.replaceAll(",", ",\n");
+    	return noCommas.replaceAll(";", ";\n");
+    }
+    public String getEnsemblTranscriptMultiLines() {
+    	String noCommas = this.ensemblTranscript.replaceAll(",", ",\n");
+    	return noCommas.replaceAll(";", ";\n");
+    }
+    public String getEnsemblAnnotationMultiLines() {
+    	String noCommas = this.ensemblAnnotation.replaceAll(",", ",\n");
+    	String noColons = noCommas.replaceAll(";", ";\n");
+    	return noColons.replaceAll(":", ":\n");
+    }
     public String getStrain7Allele() {
     	return this.strain7Allele;
     }
@@ -374,6 +393,103 @@ public class SNPChromosome {
     public long getVersion() {
         return this.version;
     }
+    public String getStrain7AlleleFixedAsString() {
+    	if ( this.strain7AlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strain7AlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strain7AlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrainPAlleleFixedAsString() {
+    	if ( this.strainPAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strainPAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strainPAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrainWAlleleFixedAsString() {
+    	if ( this.strainWAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strainWAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strainWAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrainNAlleleFixedAsString() {
+    	if ( this.strainNAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strainNAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strainNAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrain15IAlleleFixedAsString() {
+    	if ( this.strain15IAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strain15IAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strain15IAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrainZEROAlleleFixedAsString() {  
+    	if ( this.strainZEROAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strainZEROAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strainZEROAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrain6AlleleFixedAsString() {
+    	if ( this.strain6AlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strain6AlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strain6AlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+    public String getStrainCAlleleFixedAsString() {
+    	if ( this.strainCAlleleFixed.equals(FALSE) ) {
+    		return ZERO;
+    	}
+    	if ( this.strainCAlleleFixed.equals(TRUE)) {
+    		return ONE;
+    	}
+    	if ( this.strainCAlleleFixed.equals(NA) ) {
+    		return NA;
+    	}
+    	return "";
+    }
+
     
     // Getters As Strings -------------------------------------------------------------------------
     public String getOidAsString() {
@@ -382,50 +498,26 @@ public class SNPChromosome {
     public String getPositionAsString() {
     	return ObjectConverter.convert(position, String.class);
     }
-    public String getStrain7AlleleFixedAsString() {
-    	return ObjectConverter.convert(strain7AlleleFixed, String.class);
-    }
     public String getStrain7AlleleRatioAsString() {
     	return ObjectConverter.convert(strain7AlleleRatio, String.class);
-    }
-    public String getStrainPAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainPAlleleFixed, String.class);
     }
     public String getStrainPAlleleRatioAsString() {
     	return ObjectConverter.convert(strainPAlleleRatio, String.class);
     }
-    public String getStrainWAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainWAlleleFixed, String.class);
-    }
     public String getStrainWAlleleRatioAsString() {
     	return ObjectConverter.convert(strainWAlleleRatio, String.class);
-    }
-    public String getStrainNAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainNAlleleFixed, String.class);
     }
     public String getStrainNAlleleRatioAsString() {
     	return ObjectConverter.convert(strainNAlleleRatio, String.class);
     }
-    public String getStrain15IAlleleFixedAsString() {
-    	return ObjectConverter.convert(strain15IAlleleFixed, String.class);
-    }
     public String getStrain15IAlleleRatioAsString() {
     	return ObjectConverter.convert(strain15IAlleleRatio, String.class);
-    }
-    public String getStrainZEROAlleleFixedAsString() {  
-    	return ObjectConverter.convert(strainZEROAlleleFixed, String.class);
     }
     public String getStrainZEROAlleleRatioAsString() {
     	return ObjectConverter.convert(strainZEROAlleleRatio, String.class);
     }
-    public String getStrain6AlleleFixedAsString() {
-    	return ObjectConverter.convert(strain6AlleleFixed, String.class);
-    }
     public String getStrain6AlleleRatioAsString() {
     	return ObjectConverter.convert(strain6AlleleRatio, String.class);
-    }
-    public String getStrainCAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainCAlleleFixed, String.class);
     }
     public String getStrainCAlleleRatioAsString() {
     	return ObjectConverter.convert(strainCAlleleRatio, String.class);

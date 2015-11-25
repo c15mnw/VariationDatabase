@@ -96,8 +96,11 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
     int _jspx_eval_c_if_0 = _jspx_th_c_if_0.doStartTag();
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write('\n');
-        out.write('\n');
+        out.write("\n");
+        out.write("\n");
+        out.write("<div class=\"row spacer\">\n");
+        out.write("    <div class=\"span12\">\n");
+        out.write("\n");
         if (_jspx_meth_form_form_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_0, _jspx_page_context))
           return true;
         out.write('\n');
@@ -156,60 +159,92 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadAlternative}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" />\n");
           out.write("\n");
-          out.write("        <div>\n");
+          out.write("    </div><!-- close span12 -->\n");
+          out.write("</div><!-- close row -->\n");
+          out.write("\n");
+          out.write("<div class=\"row\">\n");
+          out.write("    <div class=\"span12\">\n");
+          out.write("        <div class=\"row\">\n");
+          out.write("            <div class=\"span6\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
-          out.write("\n");
+          out.write("                <div class=\"row-fluid\">\n");
+          out.write("                    <div class=\"span8\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                    </div>\n");
+          out.write("                    <div class=\"span4\">\n");
           out.write("            ");
           if (_jspx_meth_form_radiobutton_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                    </div>\n");
+          out.write("                    <div class=\"row-fluid\">\n");
+          out.write("                        <div class=\"span8\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                        </div>\n");
+          out.write("                        <div class=\"span4\">\n");
           out.write("            ");
           if (_jspx_meth_form_radiobutton_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
-          out.write("        </div>\n");
-          out.write("        \n");
-          out.write("        <div>\n");
+          out.write("                        </div>\n");
+          out.write("                    </div>\n");
+          out.write("                </div>\n");
+          out.write("            </div>\n");
+          out.write("            <div class=\"span6\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
-          out.write("\n");
+          out.write("                <div class=\"row-fluid\">\n");
+          out.write("                    <div class=\"span8\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                    </div>\n");
+          out.write("                    <div class=\"span4\">\n");
           out.write("            ");
           if (_jspx_meth_form_radiobutton_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                    </div>\n");
+          out.write("                    <div class=\"row-fluid\">\n");
+          out.write("                        <div class=\"span8\">\n");
           out.write("            ");
           if (_jspx_meth_form_label_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                        </div>\n");
+          out.write("                        <div class=\"span4\">\n");
           out.write("            ");
           if (_jspx_meth_form_radiobutton_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\n");
+          out.write("                        </div>\n");
+          out.write("                    </div>\n");
+          out.write("                </div>\n");
+          out.write("            </div>\n");
           out.write("        </div>\n");
-          out.write("\n");
-          out.write("        <div>\n");
+          out.write("    </div>\n");
+          out.write("    \n");
+          out.write("    <div class=\"row spacer\">\n");
+          out.write("        <div class=\"span12\">\n");
           out.write("            <input type=\"submit\" value=\"");
           if (_jspx_meth_spring_message_7((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("\"/>\n");
-          out.write("        </div>\n");
+          out.write("        </div><!-- close span12 -->\n");
+          out.write("    </div><!-- close row -->\n");
+          out.write("</div>\n");
           out.write("        \n");
           out.write("    </fieldset>\n");
           out.write("    \n");
@@ -272,8 +307,10 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
       int _jspx_eval_form_label_0 = _jspx_th_form_label_0.doStartTag();
       if (_jspx_eval_form_label_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
+          out.write("<h4>");
           if (_jspx_meth_spring_message_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_label_0, _jspx_page_context, _jspx_push_body_count_form_label_0))
             return true;
+          out.write("</h4>");
           int evalDoAfterBody = _jspx_th_form_label_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -509,8 +546,10 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
       int _jspx_eval_form_label_3 = _jspx_th_form_label_3.doStartTag();
       if (_jspx_eval_form_label_3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
+          out.write("<h4>");
           if (_jspx_meth_spring_message_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_label_3, _jspx_page_context, _jspx_push_body_count_form_label_3))
             return true;
+          out.write("</h4>");
           int evalDoAfterBody = _jspx_th_form_label_3.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;

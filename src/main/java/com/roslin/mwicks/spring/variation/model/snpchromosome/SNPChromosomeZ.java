@@ -170,6 +170,12 @@ public class SNPChromosomeZ {
     public String getEnsemblTranscript() {
     	return this.ensemblTranscript;
     }
+    public String getEnsemblTranscriptMultiLines() {
+    	return this.ensemblTranscript.replaceAll(",", ",\n").replaceAll(".", ".\n").replaceAll(":", ":\n").replaceAll(";", ";\n");
+    }
+    public String getEnsemblAnnotationMultiLines() {
+    	return this.ensemblAnnotation.replaceAll(",", ",\n").replaceAll(".", ".\n").replaceAll(":", ":\n").replaceAll(";", ";\n");
+    }
     public String getEnsemblAnnotation() {
     	return this.ensemblAnnotation;
     }

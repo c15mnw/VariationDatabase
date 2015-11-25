@@ -58,7 +58,7 @@ public final class include_005fmessages_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<div class=\"messages\">\n");
+      out.write("<!-- <div class=\"messages alert alert-danger\"> -->\n");
       out.write("\n");
       out.write("    ");
       if (_jspx_meth_c_if_0(_jspx_page_context))
@@ -70,7 +70,7 @@ public final class include_005fmessages_jsp extends org.apache.jasper.runtime.Ht
         return;
       out.write("\n");
       out.write("    \n");
-      out.write("</div>\n");
+      out.write("<!-- </div> -->\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -97,7 +97,7 @@ public final class include_005fmessages_jsp extends org.apache.jasper.runtime.Ht
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("        <div class=\"messageblock\">");
+        out.write("        <div class=\"messages alert alert-info\">");
         if (_jspx_meth_c_out_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_0, _jspx_page_context))
           return true;
         out.write("</div>\n");
@@ -146,7 +146,7 @@ public final class include_005fmessages_jsp extends org.apache.jasper.runtime.Ht
     if (_jspx_eval_c_if_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("        <div class=\"errorblock\">");
+        out.write("        <div class=\"messages alert alert-danger\">");
         if (_jspx_meth_c_out_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_if_1, _jspx_page_context))
           return true;
         out.write("</div>\n");
