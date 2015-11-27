@@ -105,13 +105,13 @@ public class SNPChromosome16 {
     private long strain15IAlleleRatio;
     
     @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE", nullable = false)
-    private String strainZEROAllele;
+    private String strainZeroAllele;
     
     @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_FIXED", nullable = false)
-    private String strainZEROAlleleFixed;
+    private String strainZeroAlleleFixed;
     
     @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_RATIO", nullable = false)
-    private long strainZEROAlleleRatio;
+    private long strainZeroAlleleRatio;
     
     @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE", nullable = false)
     private String strain6Allele;
@@ -279,25 +279,25 @@ public class SNPChromosome16 {
     public long getStrain15IAlleleRatio() {
     	return this.strain15IAlleleRatio;
     }
-    public String getStrainZEROAllele() {
-    	return this.strainZEROAllele;
+    public String getStrainZeroAllele() {
+    	return this.strainZeroAllele;
     }
-    public String getStrainZEROAlleleFixed() {  
-    	return this.strainZEROAlleleFixed;
+    public String getStrainZeroAlleleFixed() {  
+    	return this.strainZeroAlleleFixed;
     }
-    public boolean isStrainZEROAlleleFixed() {
-    	if ( this.strainZEROAlleleFixed.equals(FALSE) || this.strainZEROAlleleFixed.equals(NA) ) {
+    public boolean isstrainZeroAlleleFixed() {
+    	if ( this.strainZeroAlleleFixed.equals(FALSE) || this.strainZeroAlleleFixed.equals(NA) ) {
     		return false;
     	}
-    	if ( this.strainZEROAlleleFixed.equals(TRUE)) {
+    	if ( this.strainZeroAlleleFixed.equals(TRUE)) {
     		return true;
     	}
     	else {
     		return false;
     	}
     }
-    public long getStrainZEROAlleleRatio() {
-    	return this.strainZEROAlleleRatio;
+    public long getStrainZeroAlleleRatio() {
+    	return this.strainZeroAlleleRatio;
     }
     public String getStrain6Allele() {
     	return this.strain6Allele;
@@ -386,11 +386,11 @@ public class SNPChromosome16 {
     public String getStrain15IAlleleRatioAsString() {
     	return ObjectConverter.convert(strain15IAlleleRatio, String.class);
     }
-    public String getStrainZEROAlleleFixedAsString() {  
-    	return ObjectConverter.convert(strainZEROAlleleFixed, String.class);
+    public String getStrainZeroAlleleFixedAsString() {  
+    	return ObjectConverter.convert(strainZeroAlleleFixed, String.class);
     }
-    public String getStrainZEROAlleleRatioAsString() {
-    	return ObjectConverter.convert(strainZEROAlleleRatio, String.class);
+    public String getStrainZeroAlleleRatioAsString() {
+    	return ObjectConverter.convert(strainZeroAlleleRatio, String.class);
     }
     public String getStrain6AlleleFixedAsString() {
     	return ObjectConverter.convert(strain6AlleleFixed, String.class);
@@ -451,11 +451,11 @@ public class SNPChromosome16 {
     public String getStrain15IAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strain15IAlleleRatio, String.class) + '\"';
     }
-    public String getStrainZEROAlleleFixedAsStringQuoted() {  
-    	return '\"' + ObjectConverter.convert(strainZEROAlleleFixed, String.class) + '\"';
+    public String getStrainZeroAlleleFixedAsStringQuoted() {  
+    	return '\"' + ObjectConverter.convert(strainZeroAlleleFixed, String.class) + '\"';
     }
-    public String getStrainZEROAlleleRatioAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strainZEROAlleleRatio, String.class) + '\"';
+    public String getStrainZeroAlleleRatioAsStringQuoted() {
+    	return '\"' + ObjectConverter.convert(strainZeroAlleleRatio, String.class) + '\"';
     }
     public String getStrain6AlleleFixedAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strain6AlleleFixed, String.class) + '\"';
@@ -517,8 +517,8 @@ public class SNPChromosome16 {
     public String getStrain15IAlleleQuoted() {
     	return '\"' + strain15IAllele + '\"';
     }
-    public String getStrainZEROAlleleQuoted() {
-    	return '\"' + strainZEROAllele + '\"';
+    public String getStrainZeroAlleleQuoted() {
+    	return '\"' + strainZeroAllele + '\"';
     }
     public String getStrain6AlleleQuoted() {
     	return '\"' + strain6Allele + '\"';
@@ -603,14 +603,14 @@ public class SNPChromosome16 {
     public void setStrain15IAlleleRatio(long strain15IAlleleRatio) {
     	this.strain15IAlleleRatio = strain15IAlleleRatio;
     }
-    public void setStrainZEROAllele(String strainZEROAllele) {
-    	this.strainZEROAllele = strainZEROAllele;
+    public void setstrainZeroAllele(String strainZeroAllele) {
+    	this.strainZeroAllele = strainZeroAllele;
     }
-    public void setStrainZEROAlleleFixed(String strainZEROAlleleFixed) {  
-    	this.strainZEROAlleleFixed = strainZEROAlleleFixed;
+    public void setstrainZeroAlleleFixed(String strainZeroAlleleFixed) {  
+    	this.strainZeroAlleleFixed = strainZeroAlleleFixed;
     }
-    public void setStrainZEROAlleleRatio(long strainZEROAlleleRatio) {
-    	this.strainZEROAlleleRatio = strainZEROAlleleRatio;
+    public void setstrainZeroAlleleRatio(long strainZeroAlleleRatio) {
+    	this.strainZeroAlleleRatio = strainZeroAlleleRatio;
     }
     public void setStrain6Allele(String strain6Allele) {
     	this.strain6Allele = strain6Allele;
@@ -669,9 +669,9 @@ public class SNPChromosome16 {
         snpchromosome.setStrain15IAllele(this.getStrain15IAllele());
         snpchromosome.setStrain15IAlleleFixed(this.getStrain15IAlleleFixed());
         snpchromosome.setStrain15IAlleleRatio(this.getStrain15IAlleleRatio());
-        snpchromosome.setStrainZEROAllele(this.getStrainZEROAllele());
-        snpchromosome.setStrainZEROAlleleFixed(this.getStrainZEROAlleleFixed());  
-        snpchromosome.setStrainZEROAlleleRatio(this.getStrainZEROAlleleRatio());
+        snpchromosome.setstrainZeroAllele(this.getStrainZeroAllele());
+        snpchromosome.setstrainZeroAlleleFixed(this.getStrainZeroAlleleFixed());  
+        snpchromosome.setstrainZeroAlleleRatio(this.getStrainZeroAlleleRatio());
         snpchromosome.setStrain6Allele(this.getStrain6Allele());
         snpchromosome.setStrain6AlleleFixed(this.getStrain6AlleleFixed());
         snpchromosome.setStrain6AlleleRatio(this.getStrain6AlleleRatio());
@@ -713,9 +713,9 @@ public class SNPChromosome16 {
         	    this.getStrain15IAllele().equals(snpchromosome.getStrain15IAllele()) && 
         	    this.getStrain15IAlleleFixed() == snpchromosome.getStrain15IAlleleFixed()  && 
         	    this.getStrain15IAlleleRatio() == snpchromosome.getStrain15IAlleleRatio() && 
-        	    this.getStrainZEROAllele().equals(snpchromosome.getStrainZEROAllele()) && 
-        	    this.getStrainZEROAlleleFixed() == snpchromosome.getStrainZEROAlleleFixed() &&  
-        	    this.getStrainZEROAlleleRatio() == snpchromosome.getStrainZEROAlleleRatio() && 
+        	    this.getStrainZeroAllele().equals(snpchromosome.getStrainZeroAllele()) && 
+        	    this.getStrainZeroAlleleFixed() == snpchromosome.getStrainZeroAlleleFixed() &&  
+        	    this.getStrainZeroAlleleRatio() == snpchromosome.getStrainZeroAlleleRatio() && 
         	    this.getStrain6Allele().equals(snpchromosome.getStrain6Allele()) && 
         	    this.getStrain6AlleleFixed() == snpchromosome.getStrain6AlleleFixed() && 
         	    this.getStrain6AlleleRatio() == snpchromosome.getStrain6AlleleRatio() && 
@@ -769,9 +769,9 @@ public class SNPChromosome16 {
     		String strain15IAllele,
     		String strain15IAlleleFixed,
     		long strain15IAlleleRatio,
-    		String strainZEROAllele,
-    		String strainZEROAlleleFixed,
-    		long strainZEROAlleleRatio,
+    		String strainZeroAllele,
+    		String strainZeroAlleleFixed,
+    		long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
     		long strain6AlleleRatio,
@@ -803,9 +803,9 @@ public class SNPChromosome16 {
     	this.strain15IAllele = strain15IAllele;
     	this.strain15IAlleleFixed = strain15IAlleleFixed;
     	this.strain15IAlleleRatio = strain15IAlleleRatio;
-    	this.strainZEROAllele = strainZEROAllele;
-    	this.strainZEROAlleleFixed = strainZEROAlleleFixed;
-    	this.strainZEROAlleleRatio = strainZEROAlleleRatio;
+    	this.strainZeroAllele = strainZeroAllele;
+    	this.strainZeroAlleleFixed = strainZeroAlleleFixed;
+    	this.strainZeroAlleleRatio = strainZeroAlleleRatio;
     	this.strain6Allele = strain6Allele;
     	this.strain6AlleleFixed = strain6AlleleFixed;
     	this.strain6AlleleRatio = strain6AlleleRatio;
@@ -863,9 +863,9 @@ public class SNPChromosome16 {
      * @param strain15IAllele For Strain 15I the Alternative Allele
      * @param strain15IAlleleFixed For Strain 15I is this fixed or not
      * @param strain15IAlleleRatio For Strain 15I for not fixed alleles what is the ratio that this occurs else 1 for fixed
-     * @param strainZEROAllele For Strain ZERO the Alternative Allele
-     * @param strainZEROAlleleFixed For Strain ZERO is this fixed or not
-     * @param strainZEROAlleleRatio For Strain ZERO for not fixed alleles what is the ratio that this occurs else 1 for fixed
+     * @param strainZeroAllele For Strain ZERO the Alternative Allele
+     * @param strainZeroAlleleFixed For Strain ZERO is this fixed or not
+     * @param strainZeroAlleleRatio For Strain ZERO for not fixed alleles what is the ratio that this occurs else 1 for fixed
      * @param strain6Allele For Strain 6 the Alternative Allele
      * @param strain6AlleleFixed For Strain 6 is this fixed or not
      * @param strain6AlleleRatio For Strain 6 for not fixed alleles what is the ratio that this occurs else 1 for fixed
@@ -900,9 +900,9 @@ public class SNPChromosome16 {
     		String strain15IAllele,
     		String strain15IAlleleFixed,
     		long strain15IAlleleRatio,
-    		String strainZEROAllele,
-    		String strainZEROAlleleFixed,
-    		long strainZEROAlleleRatio,
+    		String strainZeroAllele,
+    		String strainZeroAlleleFixed,
+    		long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
     		long strain6AlleleRatio,
@@ -935,9 +935,9 @@ public class SNPChromosome16 {
         		strain15IAllele,
         		strain15IAlleleFixed,
         		strain15IAlleleRatio,
-        		strainZEROAllele,
-        		strainZEROAlleleFixed,
-        		strainZEROAlleleRatio,
+        		strainZeroAllele,
+        		strainZeroAlleleFixed,
+        		strainZeroAlleleRatio,
         		strain6Allele,
         		strain6AlleleFixed,
         		strain6AlleleRatio,
@@ -979,9 +979,9 @@ public class SNPChromosome16 {
          * @param strain15IAllele For Strain 15I the Alternative Allele
          * @param strain15IAlleleFixed For Strain 15I is this fixed or not
          * @param strain15IAlleleRatio For Strain 15I for not fixed alleles what is the ratio that this occurs else 1 for fixed
-         * @param strainZEROAllele For Strain ZERO the Alternative Allele
-         * @param strainZEROAlleleFixed For Strain ZERO is this fixed or not
-         * @param strainZEROAlleleRatio For Strain ZERO for not fixed alleles what is the ratio that this occurs else 1 for fixed
+         * @param strainZeroAllele For Strain ZERO the Alternative Allele
+         * @param strainZeroAlleleFixed For Strain ZERO is this fixed or not
+         * @param strainZeroAlleleRatio For Strain ZERO for not fixed alleles what is the ratio that this occurs else 1 for fixed
          * @param strain6Allele For Strain 6 the Alternative Allele
          * @param strain6AlleleFixed For Strain 6 is this fixed or not
          * @param strain6AlleleRatio For Strain 6 for not fixed alleles what is the ratio that this occurs else 1 for fixed
@@ -1014,9 +1014,9 @@ public class SNPChromosome16 {
         		String strain15IAllele,
         		String strain15IAlleleFixed,
         		long strain15IAlleleRatio,
-        		String strainZEROAllele,
-        		String strainZEROAlleleFixed,
-        		long strainZEROAlleleRatio,
+        		String strainZeroAllele,
+        		String strainZeroAlleleFixed,
+        		long strainZeroAlleleRatio,
         		String strain6Allele,
         		String strain6AlleleFixed,
         		long strain6AlleleRatio,
@@ -1050,9 +1050,9 @@ public class SNPChromosome16 {
         	built.strain15IAllele = strain15IAllele;
         	built.strain15IAlleleFixed = strain15IAlleleFixed;
         	built.strain15IAlleleRatio = strain15IAlleleRatio;
-        	built.strainZEROAllele = strainZEROAllele;
-        	built.strainZEROAlleleFixed = strainZEROAlleleFixed;
-        	built.strainZEROAlleleRatio = strainZEROAlleleRatio;
+        	built.strainZeroAllele = strainZeroAllele;
+        	built.strainZeroAlleleFixed = strainZeroAlleleFixed;
+        	built.strainZeroAlleleRatio = strainZeroAlleleRatio;
         	built.strain6Allele = strain6Allele;
         	built.strain6AlleleFixed = strain6AlleleFixed;
         	built.strain6AlleleRatio = strain6AlleleRatio;
@@ -1100,9 +1100,9 @@ public class SNPChromosome16 {
         		snpchromosome.getStrain15IAllele(),
         		snpchromosome.getStrain15IAlleleFixed(),
         		snpchromosome.getStrain15IAlleleRatio(),
-        		snpchromosome.getStrainZEROAllele(),
-        		snpchromosome.getStrainZEROAlleleFixed(),
-        		snpchromosome.getStrainZEROAlleleRatio(),
+        		snpchromosome.getStrainZeroAllele(),
+        		snpchromosome.getStrainZeroAlleleFixed(),
+        		snpchromosome.getStrainZeroAlleleRatio(),
         		snpchromosome.getStrain6Allele(),
         		snpchromosome.getStrain6AlleleFixed(),
         		snpchromosome.getStrain6AlleleRatio(),

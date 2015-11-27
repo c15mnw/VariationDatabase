@@ -38,8 +38,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strain15IAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrain7NEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strainZEROAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrain7NEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strainZeroAllele )" )
+    public Page<SNPChromosome4> findByRangeANDStrain7NEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strain6Allele )" )
     public Page<SNPChromosome4> findByRangeANDStrain7NEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -56,8 +56,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strain15IAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrainPNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strainZEROAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrainPNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strainZeroAllele )" )
+    public Page<SNPChromosome4> findByRangeANDStrainPNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strain6Allele )" )
     public Page<SNPChromosome4> findByRangeANDStrainPNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -71,8 +71,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strain15IAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrainWNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strainZEROAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrainWNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strainZeroAllele )" )
+    public Page<SNPChromosome4> findByRangeANDStrainWNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strain6Allele )" )
     public Page<SNPChromosome4> findByRangeANDStrainWNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -83,8 +83,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strain15IAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrainNNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainZEROAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrainNNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainZeroAllele )" )
+    public Page<SNPChromosome4> findByRangeANDStrainNNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strain6Allele )" )
     public Page<SNPChromosome4> findByRangeANDStrainNNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -92,8 +92,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainCAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrainNNEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainZEROAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrain15INEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainZeroAllele )" )
+    public Page<SNPChromosome4> findByRangeANDStrain15INEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strain6Allele )" )
     public Page<SNPChromosome4> findByRangeANDStrain15INEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -101,11 +101,11 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainCAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrain15INEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZEROAllele = p.strain6Allele )" )
-    public Page<SNPChromosome4> findByRangeANDStrainZERONEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZeroAllele = p.strain6Allele )" )
+    public Page<SNPChromosome4> findByRangeANDstrainZeroNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZEROAllele = p.strainCAllele )" )
-    public Page<SNPChromosome4> findByRangeANDStrainZERONEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZeroAllele = p.strainCAllele )" )
+    public Page<SNPChromosome4> findByRangeANDstrainZeroNEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
 	
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain6Allele = p.strainCAllele )" )
     public Page<SNPChromosome4> findByRangeANDStrain6NEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange, Pageable pageable);
@@ -130,8 +130,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strain15IAllele )" )
     public List<SNPChromosome4> listByRangeANDStrain7NEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strainZEROAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrain7NEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strainZeroAllele )" )
+    public List<SNPChromosome4> listByRangeANDStrain7NEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain7Allele = p.strain6Allele )" )
     public List<SNPChromosome4> listByRangeANDStrain7NEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
@@ -148,8 +148,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strain15IAllele )" )
     public List<SNPChromosome4> listByRangeANDStrainPNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strainZEROAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrainPNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strainZeroAllele )" )
+    public List<SNPChromosome4> listByRangeANDStrainPNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainPAllele = p.strain6Allele )" )
     public List<SNPChromosome4> listByRangeANDStrainPNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
@@ -163,8 +163,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strain15IAllele )" )
     public List<SNPChromosome4> listByRangeANDStrainWNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strainZEROAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrainWNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strainZeroAllele )" )
+    public List<SNPChromosome4> listByRangeANDStrainWNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainWAllele = p.strain6Allele )" )
     public List<SNPChromosome4> listByRangeANDStrainWNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
@@ -175,8 +175,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strain15IAllele )" )
     public List<SNPChromosome4> listByRangeANDStrainNNEStrain15I(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainZEROAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrainNNEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainZeroAllele )" )
+    public List<SNPChromosome4> listByRangeANDStrainNNEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strain6Allele )" )
     public List<SNPChromosome4> listByRangeANDStrainNNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
@@ -184,8 +184,8 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainNAllele = p.strainCAllele )" )
     public List<SNPChromosome4> listByRangeANDStrainNNEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainZEROAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrain15INEStrainZERO(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainZeroAllele )" )
+    public List<SNPChromosome4> listByRangeANDStrain15INEstrainZero(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strain6Allele )" )
     public List<SNPChromosome4> listByRangeANDStrain15INEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
@@ -193,11 +193,11 @@ public interface RepositorySNPChromosome4 extends JpaRepository<SNPChromosome4, 
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain15IAllele = p.strainCAllele )" )
     public List<SNPChromosome4> listByRangeANDStrain15INEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZEROAllele = p.strain6Allele )" )
-    public List<SNPChromosome4> listByRangeANDStrainZERONEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZeroAllele = p.strain6Allele )" )
+    public List<SNPChromosome4> listByRangeANDstrainZeroNEStrain6(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 
-	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZEROAllele = p.strainCAllele )" )
-    public List<SNPChromosome4> listByRangeANDStrainZERONEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
+	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strainZeroAllele = p.strainCAllele )" )
+    public List<SNPChromosome4> listByRangeANDstrainZeroNEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);
 	
 	@Query("Select p from SNPChromosome4 p where p.position > :intLowRange and p.position < :intHighRange and not ( p.strain6Allele = p.strainCAllele )" )
     public List<SNPChromosome4> listByRangeANDStrain6NEStrainC(@Param("intLowRange") int intLowRange, @Param("intHighRange") int intHighRange);

@@ -15,6 +15,7 @@
     	
         String ensemblgene = (String) iteratorensemblgenes.next();
 
+        System.out.println("ensemblgene : " + ensemblgene);
         out.println(ensemblgene);
     }
     

@@ -19,11 +19,11 @@
 
         <div>
             <form:label path="searchGeneName"><spring:message code="snpchromosome.search.searchGeneName.label"/></form:label>
-            <form:input path="searchGeneName" type="text"/>
+            <form:input  class="typeahead" path="searchGeneName" type="text"/>
         </div>
         
 <script>
-    $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsemblIds.jsp");
+$("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsemblIds.jsp");
 </script>
         
         <div class="spacer">

@@ -29,8 +29,8 @@
             <td><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></td>
             <td><spring:message code="snpchromosome.list.label.strain15IAllele"/></td>
             <td><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainZEROAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainZEROAlleleFixed"/></td>
+            <td><spring:message code="snpchromosome.list.label.strainZeroAllele"/></td>
+            <td><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></td>
             <td><spring:message code="snpchromosome.list.label.strain6Allele"/></td>
             <td><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></td>
             <td><spring:message code="snpchromosome.list.label.strainCAllele"/></td>
@@ -59,8 +59,8 @@
                 <td><c:out value="${snpchromosome.getStrainNAlleleFixedAsString()}"/></td>
                 <td><c:out value="${snpchromosome.strain15IAllele}"/></td>
                 <td><c:out value="${snpchromosome.getStrain15IAlleleFixedAsString()}"/></td>
-                <td><c:out value="${snpchromosome.strainZEROAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainZEROAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.strainZeroAllele}"/></td>
+                <td><c:out value="${snpchromosome.getStrainZeroAlleleFixedAsString()}"/></td>
                 <td><c:out value="${snpchromosome.strain6Allele}"/></td>
                 <td><c:out value="${snpchromosome.getStrain6AlleleFixedAsString()}"/></td>
                 <td><c:out value="${snpchromosome.strainCAllele}"/></td>

@@ -93,13 +93,13 @@ public class DTOSNPChromosome {
     private String strain15IAlleleRatio;
     
     @NotEmpty
-    private String strainZEROAllele;
+    private String strainZeroAllele;
     
     @NotEmpty
-    private String strainZEROAlleleFixed;
+    private String strainZeroAlleleFixed;
     
     @NotEmpty
-    private String strainZEROAlleleRatio;
+    private String strainZeroAlleleRatio;
     
     @NotEmpty
     private String strain6Allele;
@@ -209,14 +209,14 @@ public class DTOSNPChromosome {
     public String getStrain15IAlleleRatio() {
     	return strain15IAlleleRatio;
     }
-    public String getStrainZEROAllele() {
-    	return strainZEROAllele;
+    public String getStrainZeroAllele() {
+    	return strainZeroAllele;
     }
-    public String getStrainZEROAlleleFixed() {  
-    	return strainZEROAlleleFixed;
+    public String getStrainZeroAlleleFixed() {  
+    	return strainZeroAlleleFixed;
     }
-    public String getStrainZEROAlleleRatio() {
-    	return strainZEROAlleleRatio;
+    public String getStrainZeroAlleleRatio() {
+    	return strainZeroAlleleRatio;
     }
     public String getStrain6Allele() {
     	return strain6Allele;
@@ -268,8 +268,8 @@ public class DTOSNPChromosome {
     public long getStrain15IAlleleRatioAsLong() {
     	return ObjectConverter.convert(strain15IAlleleRatio, Long.class);
     }
-    public long getStrainZEROAlleleRatioAsLong() {
-    	return ObjectConverter.convert(strainZEROAlleleRatio, Long.class);
+    public long getStrainZeroAlleleRatioAsLong() {
+    	return ObjectConverter.convert(strainZeroAlleleRatio, Long.class);
     }
     public long getStrain6AlleleRatioAsLong() {
     	return ObjectConverter.convert(strain6AlleleRatio, Long.class);
@@ -363,14 +363,14 @@ public class DTOSNPChromosome {
     public void setStrain15IAlleleRatio(String strain15IAlleleRatio) {
     	this.strain15IAlleleRatio = strain15IAlleleRatio;
     }
-    public void setStrainZEROAllele(String strainZEROAllele) {
-    	this.strainZEROAllele = strainZEROAllele;
+    public void setstrainZeroAllele(String strainZeroAllele) {
+    	this.strainZeroAllele = strainZeroAllele;
     }
-    public void setStrainZEROAlleleFixed(String strainZEROAlleleFixed) {  
-    	this.strainZEROAlleleFixed = strainZEROAlleleFixed;
+    public void setstrainZeroAlleleFixed(String strainZeroAlleleFixed) {  
+    	this.strainZeroAlleleFixed = strainZeroAlleleFixed;
     }
-    public void setStrainZEROAlleleRatio(String strainZEROAlleleRatio) {
-    	this.strainZEROAlleleRatio = strainZEROAlleleRatio;
+    public void setstrainZeroAlleleRatio(String strainZeroAlleleRatio) {
+    	this.strainZeroAlleleRatio = strainZeroAlleleRatio;
     }
     public void setStrain6Allele(String strain6Allele) {
     	this.strain6Allele = strain6Allele;
@@ -501,18 +501,18 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainZEROAlleleFixedABoolean() {  
+    public boolean isstrainZeroAlleleFixedABoolean() {  
 
-    	if ( this.strainZEROAlleleFixed.equals("1") || this.strainZEROAlleleFixed.equals("0") || this.strainZEROAlleleFixed.equals("NA")) {
+    	if ( this.strainZeroAlleleFixed.equals("1") || this.strainZeroAlleleFixed.equals("0") || this.strainZeroAlleleFixed.equals("NA")) {
     		return true;
     	}
     	else {
     		return false;
     	}
     }
-    public boolean isStrainZEROAlleleRatioALong() {
+    public boolean isstrainZeroAlleleRatioALong() {
 
-    	if ( StringUtility.isItNumeric(this.strainZEROAlleleRatio) ) {
+    	if ( StringUtility.isItNumeric(this.strainZeroAlleleRatio) ) {
     		return true;
     	}
     	else {
@@ -568,7 +568,7 @@ public class DTOSNPChromosome {
         	    this.isStrainWAlleleFixedABoolean() && 
         	    this.isStrainNAlleleFixedABoolean() && 
         	    this.isStrain15IAlleleFixedABoolean() && 
-        	    this.isStrainZEROAlleleFixedABoolean() && 
+        	    this.isstrainZeroAlleleFixedABoolean() && 
         	    this.isStrain6AlleleFixedABoolean() && 
         	    this.isStrainCAlleleFixedABoolean()  
         	    ) {
@@ -612,9 +612,9 @@ public class DTOSNPChromosome {
         		this.getStrain15IAllele(),
         		this.getStrain15IAlleleFixed(),
         		this.getStrain15IAlleleRatioAsLong(),
-        		this.getStrainZEROAllele(),
-        		this.getStrainZEROAlleleFixed(),
-        		this.getStrainZEROAlleleRatioAsLong(),
+        		this.getStrainZeroAllele(),
+        		this.getStrainZeroAlleleFixed(),
+        		this.getStrainZeroAlleleRatioAsLong(),
         		this.getStrain6Allele(),
         		this.getStrain6AlleleFixed(),
         		this.getStrain6AlleleRatioAsLong(),

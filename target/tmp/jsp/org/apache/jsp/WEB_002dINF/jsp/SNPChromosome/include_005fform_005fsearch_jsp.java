@@ -14,6 +14,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_form_method_commandName_action;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_message_code_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_label_path;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_type_path_class_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_type_path_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_select_path;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_option_value;
@@ -28,6 +29,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     _jspx_tagPool_form_form_method_commandName_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_spring_message_code_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_label_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_form_input_type_path_class_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_input_type_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_select_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_option_value = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -37,6 +39,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     _jspx_tagPool_form_form_method_commandName_action.release();
     _jspx_tagPool_spring_message_code_nobody.release();
     _jspx_tagPool_form_label_path.release();
+    _jspx_tagPool_form_input_type_path_class_nobody.release();
     _jspx_tagPool_form_input_type_path_nobody.release();
     _jspx_tagPool_form_select_path.release();
     _jspx_tagPool_form_option_value.release();
@@ -118,7 +121,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             out.write("        </div>\n");
             out.write("        \n");
             out.write("<script>\n");
-            out.write("    $(\"#searchGeneName\").autocomplete(\"");
+            out.write("$(\"#searchGeneName\").autocomplete(\"");
             out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
             out.write("/getEnsemblIds.jsp\");\n");
             out.write("</script>\n");
@@ -2483,9 +2486,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_0 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_0 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_0.setPageContext(_jspx_page_context);
     _jspx_th_form_input_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_input_0.setDynamicAttribute(null, "class", new String("typeahead"));
     _jspx_th_form_input_0.setPath("searchGeneName");
     _jspx_th_form_input_0.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_0 = new int[] { 0 };
@@ -2500,7 +2504,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       _jspx_th_form_input_0.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_input_0.doFinally();
-      _jspx_tagPool_form_input_type_path_nobody.reuse(_jspx_th_form_input_0);
+      _jspx_tagPool_form_input_type_path_class_nobody.reuse(_jspx_th_form_input_0);
     }
     return false;
   }

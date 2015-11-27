@@ -120,8 +120,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain7NEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference7() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain7NEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain7NEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain7NEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain7NEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference7() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain7NEStrain6");
@@ -149,8 +149,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainPNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceP() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainPNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainPNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainPNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainPNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceP() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainPNEStrain6");
@@ -178,8 +178,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceW() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainWNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainWNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceW() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainWNEStrain6");
@@ -207,8 +207,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainNNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceN() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainNNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainNNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainNNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainNNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceN() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainNNEStrain6");
@@ -236,8 +236,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference15I() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain15INEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain15INEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference15I() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrain15INEStrain6");
@@ -249,32 +249,32 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
         }
 
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative7()) {
-            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrain7NEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain7NEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrain7NEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain7NEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeP()) {
-            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainPNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainPNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainPNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainPNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeN()) {
-            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainNNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainNNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainNNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainNNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeW()) {
-            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainWNEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrainWNEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainWNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative15I()) {
-            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrain15INEStrainZERO");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrain15INEstrainZero");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative6()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainZERONEStrain6");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainZERONEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDstrainZeroNEStrain6");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeC()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
 
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternative7()) {
@@ -298,12 +298,12 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainZERONEStrain6");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainZERONEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDstrainZeroNEStrain6");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternativeC()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
 
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternative7()) {
@@ -327,8 +327,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             snpchromosome25s = repositorysnpchromosome.listByRangeANDStrain15INEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosome25s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosome25s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternativeC()) {
             LOGGER.debug("Searching snpchromosome25s by using listByRangeANDStrain6NEStrainC");
@@ -379,8 +379,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain7NEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference7() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain7NEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain7NEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain7NEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain7NEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference7() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain7NEStrain6");
@@ -408,8 +408,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainPNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceP() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainPNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainPNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainPNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainPNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceP() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainPNEStrain6");
@@ -437,8 +437,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceW() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainWNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainWNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceW() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainWNEStrain6");
@@ -466,8 +466,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainNNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceN() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainNNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainNNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainNNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainNNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceN() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainNNEStrain6");
@@ -495,8 +495,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference15I() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain15INEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain15INEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference15I() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrain15INEStrain6");
@@ -508,32 +508,32 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
         }
 
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative7()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrain7NEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain7NEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrain7NEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain7NEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeP()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainPNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainPNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainPNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainPNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeN()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainNNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainNNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainNNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainNNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeW()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainWNEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrainWNEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainWNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative15I()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrain15INEStrainZERO");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrain15INEstrainZero");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative6()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainZERONEStrain6");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainZERONEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDstrainZeroNEStrain6");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeC()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
 
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternative7()) {
@@ -557,12 +557,12 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainZERONEStrain6");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainZERONEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDstrainZeroNEStrain6");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternativeC()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
 
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternative7()) {
@@ -586,8 +586,8 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
             pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrain15INEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosome25s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosome25s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternativeC()) {
             LOGGER.debug("Searching pagesnpchromosome25s by using listByRangeANDStrain6NEStrainC");
@@ -676,9 +676,9 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
         		created.getStrain15IAllele(),
         		created.getStrain15IAlleleFixed(),
         		created.getStrain15IAlleleRatioAsLong(),
-        		created.getStrainZEROAllele(),
-        		created.getStrainZEROAlleleFixed(),
-        		created.getStrainZEROAlleleRatioAsLong(),
+        		created.getStrainZeroAllele(),
+        		created.getStrainZeroAlleleFixed(),
+        		created.getStrainZeroAlleleRatioAsLong(),
         		created.getStrain6Allele(),
         		created.getStrain6AlleleFixed(),
         		created.getStrain6AlleleRatioAsLong(),
@@ -751,9 +751,9 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
         		updated.getStrain15IAllele(),
         		updated.getStrain15IAlleleFixed(),
         		updated.getStrain15IAlleleRatioAsLong(),
-        		updated.getStrainZEROAllele(),
-        		updated.getStrainZEROAlleleFixed(),
-        		updated.getStrainZEROAlleleRatioAsLong(),
+        		updated.getStrainZeroAllele(),
+        		updated.getStrainZeroAlleleFixed(),
+        		updated.getStrainZeroAlleleRatioAsLong(),
         		updated.getStrain6Allele(),
         		updated.getStrain6AlleleFixed(),
         		updated.getStrain6AlleleRatioAsLong(),

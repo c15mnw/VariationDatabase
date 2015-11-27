@@ -728,7 +728,7 @@ public final class include_005flist_005fsnpchromosome_jsp extends org.apache.jas
     org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_message_19 = (org.springframework.web.servlet.tags.MessageTag) _jspx_tagPool_spring_message_code_nobody.get(org.springframework.web.servlet.tags.MessageTag.class);
     _jspx_th_spring_message_19.setPageContext(_jspx_page_context);
     _jspx_th_spring_message_19.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_if_0);
-    _jspx_th_spring_message_19.setCode("snpchromosome.list.label.strainZEROAllele");
+    _jspx_th_spring_message_19.setCode("snpchromosome.list.label.strainZeroAllele");
     int[] _jspx_push_body_count_spring_message_19 = new int[] { 0 };
     try {
       int _jspx_eval_spring_message_19 = _jspx_th_spring_message_19.doStartTag();
@@ -754,7 +754,7 @@ public final class include_005flist_005fsnpchromosome_jsp extends org.apache.jas
     org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_message_20 = (org.springframework.web.servlet.tags.MessageTag) _jspx_tagPool_spring_message_code_nobody.get(org.springframework.web.servlet.tags.MessageTag.class);
     _jspx_th_spring_message_20.setPageContext(_jspx_page_context);
     _jspx_th_spring_message_20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_if_0);
-    _jspx_th_spring_message_20.setCode("snpchromosome.list.label.strainZEROAlleleFixed");
+    _jspx_th_spring_message_20.setCode("snpchromosome.list.label.strainZeroAlleleFixed");
     int[] _jspx_push_body_count_spring_message_20 = new int[] { 0 };
     try {
       int _jspx_eval_spring_message_20 = _jspx_th_spring_message_20.doStartTag();
@@ -1365,7 +1365,7 @@ public final class include_005flist_005fsnpchromosome_jsp extends org.apache.jas
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_out_19 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _jspx_tagPool_c_out_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_out_19.setPageContext(_jspx_page_context);
     _jspx_th_c_out_19.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_forEach_0);
-    _jspx_th_c_out_19.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${snpchromosome.strainZEROAllele}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_out_19.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${snpchromosome.strainZeroAllele}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     int _jspx_eval_c_out_19 = _jspx_th_c_out_19.doStartTag();
     if (_jspx_th_c_out_19.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_c_out_value_nobody.reuse(_jspx_th_c_out_19);
@@ -1383,7 +1383,7 @@ public final class include_005flist_005fsnpchromosome_jsp extends org.apache.jas
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_out_20 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _jspx_tagPool_c_out_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_out_20.setPageContext(_jspx_page_context);
     _jspx_th_c_out_20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_forEach_0);
-    _jspx_th_c_out_20.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${snpchromosome.getStrainZEROAlleleFixedAsString()}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_out_20.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${snpchromosome.getStrainZeroAlleleFixedAsString()}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     int _jspx_eval_c_out_20 = _jspx_th_c_out_20.doStartTag();
     if (_jspx_th_c_out_20.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_c_out_value_nobody.reuse(_jspx_th_c_out_20);

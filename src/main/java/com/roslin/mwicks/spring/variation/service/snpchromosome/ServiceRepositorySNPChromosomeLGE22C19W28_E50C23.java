@@ -120,8 +120,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain7NEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference7() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain7NEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain7NEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference7() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEStrain6");
@@ -149,8 +149,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainPNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceP() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainPNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainPNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceP() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEStrain6");
@@ -178,8 +178,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceW() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceW() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEStrain6");
@@ -207,8 +207,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainNNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceN() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainNNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainNNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceN() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEStrain6");
@@ -236,8 +236,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEStrain15I(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference15I() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference15I() && dtoDownload.isDownloadAlternative6()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEStrain6");
@@ -249,32 +249,32 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
         }
 
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative7()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain7NEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain7NEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain7NEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain7NEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeP()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainPNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainPNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainPNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainPNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeN()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainNNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainNNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainNNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainNNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeW()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainWNEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainWNEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainWNEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative15I()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain15INEStrainZERO");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEStrainZERO(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain15INEstrainZero");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEstrainZero(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternative6()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrain6");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainZERONEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrain6");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceZero() && dtoDownload.isDownloadAlternativeC()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
 
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternative7()) {
@@ -298,12 +298,12 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrain6");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainZERONEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrain6");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrain6(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReference6() && dtoDownload.isDownloadAlternativeC()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
 
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternative7()) {
@@ -327,8 +327,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrain15INEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternativeZero()) {
-            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDStrainZERONEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
+            LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            snpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.listByRangeANDstrainZeroNEStrainC(dtoDownload.getDownloadLowRangeAsInt(), dtoDownload.getDownloadHighRangeAsInt());
         }
         if (dtoDownload.isDownloadReferenceC() && dtoDownload.isDownloadAlternativeC()) {
             LOGGER.debug("Searching snpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain6NEStrainC");
@@ -379,8 +379,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain7NEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference7() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain7NEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain7NEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference7() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain7NEStrain6");
@@ -408,8 +408,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainPNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceP() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainPNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainPNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceP() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainPNEStrain6");
@@ -437,8 +437,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceW() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceW() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainWNEStrain6");
@@ -466,8 +466,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainNNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceN() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainNNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainNNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceN() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainNNEStrain6");
@@ -495,8 +495,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEStrain15I(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference15I() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference15I() && dtoSearch.isSearchAlternative6()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrain15INEStrain6");
@@ -508,32 +508,32 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
         }
 
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative7()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain7NEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain7NEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain7NEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain7NEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeP()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainPNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainPNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainPNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainPNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeN()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainNNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainNNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainNNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainNNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeW()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainWNEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrainWNEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainWNEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative15I()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain15INEStrainZERO");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEStrainZERO(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain15INEstrainZero");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEstrainZero(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternative6()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrain6");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainZERONEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrain6");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceZero() && dtoSearch.isSearchAlternativeC()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
 
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternative7()) {
@@ -557,12 +557,12 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrain6");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainZERONEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrain6");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrain6(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReference6() && dtoSearch.isSearchAlternativeC()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
 
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternative7()) {
@@ -586,8 +586,8 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
             pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrain15INEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternativeZero()) {
-            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDStrainZERONEStrainC");
-            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDStrainZERONEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
+            LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using findByRangeANDstrainZeroNEStrainC");
+            pagesnpchromosomeLGE22C19W28_E50C23s = repositorysnpchromosome.findByRangeANDstrainZeroNEStrainC(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);
         }
         if (dtoSearch.isSearchReferenceC() && dtoSearch.isSearchAlternativeC()) {
             LOGGER.debug("Searching pagesnpchromosomeLGE22C19W28_E50C23s by using listByRangeANDStrain6NEStrainC");
@@ -676,9 +676,9 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
         		created.getStrain15IAllele(),
         		created.getStrain15IAlleleFixed(),
         		created.getStrain15IAlleleRatioAsLong(),
-        		created.getStrainZEROAllele(),
-        		created.getStrainZEROAlleleFixed(),
-        		created.getStrainZEROAlleleRatioAsLong(),
+        		created.getStrainZeroAllele(),
+        		created.getStrainZeroAlleleFixed(),
+        		created.getStrainZeroAlleleRatioAsLong(),
         		created.getStrain6Allele(),
         		created.getStrain6AlleleFixed(),
         		created.getStrain6AlleleRatioAsLong(),
@@ -751,9 +751,9 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
         		updated.getStrain15IAllele(),
         		updated.getStrain15IAlleleFixed(),
         		updated.getStrain15IAlleleRatioAsLong(),
-        		updated.getStrainZEROAllele(),
-        		updated.getStrainZEROAlleleFixed(),
-        		updated.getStrainZEROAlleleRatioAsLong(),
+        		updated.getStrainZeroAllele(),
+        		updated.getStrainZeroAlleleFixed(),
+        		updated.getStrainZeroAlleleRatioAsLong(),
         		updated.getStrain6Allele(),
         		updated.getStrain6AlleleFixed(),
         		updated.getStrain6AlleleRatioAsLong(),

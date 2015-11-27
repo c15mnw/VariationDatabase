@@ -54,31 +54,3 @@
         </div>
     </div><!-- /.container -->
 </div>
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="${pageContext.request.contextPath}/static/js/jquery.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-transition.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-alert.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-modal.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-dropdown.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-scrollspy.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-tab.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-tooltip.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-popover.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-button.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-collapse.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-carousel.js"></script>
-    <script src="${pageContext.request.contextPath}/static/js/bootstrap-typeahead.js"></script>
-
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-
-    <script src="${pageContext.request.contextPath}/static/js/holder/holder.js"></script>
