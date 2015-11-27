@@ -62,117 +62,43 @@ public class SNPChromosome {
 
 	// Properties ---------------------------------------------------------------------------------
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "VSS_OID", nullable = false)
     private Long oid;
-    
-    @Column(name = "VSS_SNP_ID", nullable = false)
-    private String snpId;
-    
-    @Column(name = "VSS_ONLY_ID", nullable = false)
+
+	private String snpId;
     private String chromosomeId;
-    
-    @Column(name = "VSS_POSITION", nullable = false)
     private int position;
-    
-    @Column(name = "VSS_REFERENCE", nullable = false)
     private String reference;    
-    
-    @Column(name = "VSS_ALTERNATIVE", nullable = false)
     private String alternative;
-    
-    @Column(name = "VSS_REGION", nullable = false)
     private String region;
-    
-    @Column(name = "VSS_ENSEMBL_GENE", nullable = false)
     private String ensemblGene;
-    
-    @Column(name = "VSS_ENSEMBL_TRANSCRIPT", nullable = false)
     private String ensemblTranscript;
-    
-    @Column(name = "VSS_ENSEMBL_ANNOTATION", nullable = false)
     private String ensemblAnnotation;
-    
-    @Column(name = "VSS_STRAIN_7_ALTERNATIVE_ALLELE", nullable = false)
     private String strain7Allele;
-    
-    @Column(name = "VSS_STRAIN_7_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strain7AlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_7_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain7AlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_P_ALTERNATIVE_ALLELE", nullable = false)
     private String strainPAllele;
-    
-    @Column(name = "VSS_STRAIN_P_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strainPAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_P_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainPAlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_W_ALTERNATIVE_ALLELE", nullable = false)
     private String strainWAllele;
-    
-    @Column(name = "VSS_STRAIN_W_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strainWAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_W_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainWAlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_N_ALTERNATIVE_ALLELE", nullable = false)
     private String strainNAllele;
-    
-    @Column(name = "VSS_STRAIN_N_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strainNAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_N_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainNAlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_15I_ALTERNATIVE_ALLELE", nullable = false)
     private String strain15IAllele;
-    
-    @Column(name = "VSS_STRAIN_15I_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strain15IAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_15I_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain15IAlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE", nullable = false)
     private String strainZeroAllele;
-    
-    @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strainZeroAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_ZERO_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainZeroAlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE", nullable = false)
     private String strain6Allele;
-    
-    @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strain6AlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_6_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strain6AlleleRatio;
-    
-    @Column(name = "VSS_STRAIN_C_ALTERNATIVE_ALLELE", nullable = false)
     private String strainCAllele;
-    
-    @Column(name = "VSS_STRAIN_C_ALTERNATIVE_ALLELE_FIXED", nullable = false)
     private String strainCAlleleFixed;
-    
-    @Column(name = "VSS_STRAIN_C_ALTERNATIVE_ALLELE_RATIO", nullable = false)
     private long strainCAlleleRatio;
-    
-    @Column(name = "VSS_CREATION_TIME", nullable = false)
     private Date creationTime;
-    
-    @Column(name = "VSS_MODIFICATION_TIME", nullable = true)
     private Date modificationTime;
-    
-    @Version
-    @Column(name = "VSS_VERSION", nullable = false)
     private long version;
     
 

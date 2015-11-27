@@ -15,7 +15,6 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_message_code_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_label_path;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_type_path_class_nobody;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_type_path_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_select_path;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_option_value;
 
@@ -30,7 +29,6 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     _jspx_tagPool_spring_message_code_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_label_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_input_type_path_class_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_form_input_type_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_select_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_option_value = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
@@ -40,7 +38,6 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     _jspx_tagPool_spring_message_code_nobody.release();
     _jspx_tagPool_form_label_path.release();
     _jspx_tagPool_form_input_type_path_class_nobody.release();
-    _jspx_tagPool_form_input_type_path_nobody.release();
     _jspx_tagPool_form_select_path.release();
     _jspx_tagPool_form_option_value.release();
   }
@@ -74,6 +71,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("<div class=\"row spacer\">\n");
+      out.write("\n");
+      out.write("    <div class=\"span12\">\n");
+      out.write("\n");
       //  form:form
       org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_form_0 = (org.springframework.web.servlet.tags.form.FormTag) _jspx_tagPool_form_form_method_commandName_action.get(org.springframework.web.servlet.tags.form.FormTag.class);
       _jspx_th_form_form_0.setPageContext(_jspx_page_context);
@@ -95,10 +96,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               return;
             out.write("</legend>\n");
             out.write("\n");
-            out.write("<div class=\"row spacer\">\n");
+            out.write("        <div class=\"row\">\n");
             out.write("\n");
-            out.write("    <div class=\"span4\">\n");
-            out.write("        \n");
+            out.write("            <div class=\"span4\">\n");
+            out.write("\n");
             out.write("        <h3>");
             if (_jspx_meth_spring_message_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -109,7 +110,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               return;
             out.write("</strong></p>\n");
             out.write("\n");
-            out.write("        <div>\n");
+            out.write("                <div>\n");
             out.write("            ");
             if (_jspx_meth_form_label_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -118,7 +119,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_form_input_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                </div>\n");
             out.write("        \n");
             out.write("<script>\n");
             out.write("$(\"#searchGeneName\").autocomplete(\"");
@@ -126,7 +127,8 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             out.write("/getEnsemblIds.jsp\");\n");
             out.write("</script>\n");
             out.write("        \n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -135,9 +137,11 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_form_input_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
             out.write("        \n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -146,11 +150,12 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_form_input_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
             out.write("        \n");
-            out.write("    </div>\n");
+            out.write("            </div><!-- close span4 --> \n");
             out.write("    \n");
-            out.write("    <div class=\"span4\">\n");
+            out.write("            <div class=\"span4\">\n");
             out.write("        \n");
             out.write("        <h3>");
             if (_jspx_meth_spring_message_6((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
@@ -162,7 +167,8 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               return;
             out.write("</strong></p>\n");
             out.write("\n");
-            out.write("        <div>\n");
+            out.write("                <div>\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -1484,9 +1490,11 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               _jspx_tagPool_form_select_path.reuse(_jspx_th_form_select_0);
             }
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div>\n");
             out.write("\n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -1495,9 +1503,11 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_form_input_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
             out.write("        \n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -1506,11 +1516,12 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_form_input_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
             out.write("        \n");
-            out.write("    </div><!-- close span4 -->      \n");
+            out.write("            </div><!-- close span4 -->      \n");
             out.write("    \n");
-            out.write("    <div class=\"span4\">\n");
+            out.write("            <div class=\"span4\">\n");
             out.write("        \n");
             out.write("        <h3>");
             if (_jspx_meth_spring_message_44((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
@@ -1522,7 +1533,8 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               return;
             out.write("</strong></p>\n");
             out.write("        \n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_6((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -1908,9 +1920,11 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               _jspx_tagPool_form_select_path.reuse(_jspx_th_form_select_1);
             }
             out.write("\n");
-            out.write("        </div>\n");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
             out.write("        \n");
-            out.write("        <div class=\"spacer\">\n");
+            out.write("                <div class=\"spacer\">\n");
+            out.write("                \n");
             out.write("            ");
             if (_jspx_meth_form_label_7((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
@@ -2296,15 +2310,26 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
               _jspx_tagPool_form_select_path.reuse(_jspx_th_form_select_2);
             }
             out.write("\n");
-            out.write("        </div>\n");
-            out.write("\n");
-            out.write("        <div>\n");
-            out.write("            <input type=\"submit\" value=\"");
+            out.write("                \n");
+            out.write("                </div><!-- close spacer --> \n");
+            out.write("        \n");
+            out.write("            </div><!-- close span4 -->\n");
+            out.write("            \n");
+            out.write("        </div><!-- close row -->\n");
+            out.write("        \n");
+            out.write("        <div class=\"row spacer\">\n");
+            out.write("        \n");
+            out.write("            <div class=\"span12\">\n");
+            out.write("            \n");
+            out.write("                <input type=\"submit\" value=\"");
             if (_jspx_meth_spring_message_66((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\"/>\n");
-            out.write("        </div>\n");
             out.write("        \n");
+            out.write("            </div><!-- close span12 -->\n");
+            out.write("        \n");
+            out.write("        </div><!-- close row spacer -->\n");
+            out.write("\n");
             out.write("    </fieldset>\n");
             out.write("    \n");
             int evalDoAfterBody = _jspx_th_form_form_0.doAfterBody();
@@ -2324,11 +2349,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
         _jspx_tagPool_form_form_method_commandName_action.reuse(_jspx_th_form_form_0);
       }
       out.write("\n");
-      out.write("    \n");
-      out.write("    </div><!-- close span4 -->    \n");
+      out.write("\n");
+      out.write("    </div><!-- close span12 -->    \n");
       out.write("    \n");
       out.write("</div><!-- close row --> \n");
-      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -2489,7 +2513,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_0 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_0.setPageContext(_jspx_page_context);
     _jspx_th_form_input_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
-    _jspx_th_form_input_0.setDynamicAttribute(null, "class", new String("typeahead"));
+    _jspx_th_form_input_0.setDynamicAttribute(null, "class", new String("input-large"));
     _jspx_th_form_input_0.setPath("searchGeneName");
     _jspx_th_form_input_0.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_0 = new int[] { 0 };
@@ -2575,9 +2599,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_1 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_1 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_1.setPageContext(_jspx_page_context);
     _jspx_th_form_input_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_input_1.setDynamicAttribute(null, "class", new String("input-large"));
     _jspx_th_form_input_1.setPath("searchDownStream");
     _jspx_th_form_input_1.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_1 = new int[] { 0 };
@@ -2592,7 +2617,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       _jspx_th_form_input_1.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_input_1.doFinally();
-      _jspx_tagPool_form_input_type_path_nobody.reuse(_jspx_th_form_input_1);
+      _jspx_tagPool_form_input_type_path_class_nobody.reuse(_jspx_th_form_input_1);
     }
     return false;
   }
@@ -2663,9 +2688,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_2 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_2 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_2.setPageContext(_jspx_page_context);
     _jspx_th_form_input_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_input_2.setDynamicAttribute(null, "class", new String("input-large"));
     _jspx_th_form_input_2.setPath("searchUpStream");
     _jspx_th_form_input_2.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_2 = new int[] { 0 };
@@ -2680,7 +2706,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       _jspx_th_form_input_2.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_input_2.doFinally();
-      _jspx_tagPool_form_input_type_path_nobody.reuse(_jspx_th_form_input_2);
+      _jspx_tagPool_form_input_type_path_class_nobody.reuse(_jspx_th_form_input_2);
     }
     return false;
   }
@@ -3722,9 +3748,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_3 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_3 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_3.setPageContext(_jspx_page_context);
     _jspx_th_form_input_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_input_3.setDynamicAttribute(null, "class", new String("input-large"));
     _jspx_th_form_input_3.setPath("searchLowRange");
     _jspx_th_form_input_3.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_3 = new int[] { 0 };
@@ -3739,7 +3766,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       _jspx_th_form_input_3.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_input_3.doFinally();
-      _jspx_tagPool_form_input_type_path_nobody.reuse(_jspx_th_form_input_3);
+      _jspx_tagPool_form_input_type_path_class_nobody.reuse(_jspx_th_form_input_3);
     }
     return false;
   }
@@ -3810,9 +3837,10 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_4 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_4 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_type_path_class_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
     _jspx_th_form_input_4.setPageContext(_jspx_page_context);
     _jspx_th_form_input_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_input_4.setDynamicAttribute(null, "class", new String("input-large"));
     _jspx_th_form_input_4.setPath("searchHighRange");
     _jspx_th_form_input_4.setDynamicAttribute(null, "type", new String("text"));
     int[] _jspx_push_body_count_form_input_4 = new int[] { 0 };
@@ -3827,7 +3855,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
       _jspx_th_form_input_4.doCatch(_jspx_exception);
     } finally {
       _jspx_th_form_input_4.doFinally();
-      _jspx_tagPool_form_input_type_path_nobody.reuse(_jspx_th_form_input_4);
+      _jspx_tagPool_form_input_type_path_class_nobody.reuse(_jspx_th_form_input_4);
     }
     return false;
   }

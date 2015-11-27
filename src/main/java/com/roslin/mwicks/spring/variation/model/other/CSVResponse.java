@@ -3,8 +3,8 @@ package com.roslin.mwicks.spring.variation.model.other;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import com.roslin.mwicks.spring.variation.dto.DownloadFormat;
-import com.roslin.mwicks.spring.variation.dto.DownloadQuotes;
+import com.roslin.mwicks.spring.variation.dto.DTODownload;
+
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 
 
@@ -12,99 +12,112 @@ import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 public class CSVResponse extends ArrayList<SNPChromosome> {
 
     // Constants ----------------------------------------------------------------------------------
-	protected static final String QUOTES_NONE = "QUOTES_NONE";
-	protected static final String QUOTES_YES = "QUOTES_YES";
-	protected static final String QUOTES_NO = "QUOTES_NO";
 
-	protected static final String FORMAT_NONE = "FORMAT_NONE";
-	protected static final String FORMAT_CSV = "FORMAT_CSV";
-	protected static final String FORMAT_TSV = "FORMAT_TSV";
-
-
+	
 	// Properties ---------------------------------------------------------------------------------
-    private DownloadFormat downloadFormat;
-    private DownloadQuotes downloadQuotes;
+    private DTODownload dtoDownload;
 
     
     // Constructor --------------------------------------------------------------------------------
 	public CSVResponse() {
     }
 
-    public CSVResponse(DownloadFormat downloadFormat, DownloadQuotes downloadQuotes, Collection<? extends SNPChromosome> c) {
+    public CSVResponse(DTODownload dtoDownload, Collection<? extends SNPChromosome> c) {
      
     	super(c);
 
-    	this.downloadFormat = downloadFormat;
-    	this.downloadQuotes = downloadQuotes;
+    	this.dtoDownload = dtoDownload;
     }
 
     
     // Getters ------------------------------------------------------------------------------------
-    public DownloadFormat getDownloadFormat() {
-        return downloadFormat;
-    }
-    public DownloadQuotes getDownloadQuotes() {
-        return downloadQuotes;
+    public DTODownload getDTODownload() {
+        return this.dtoDownload;
     }
 
     
     // Setters ------------------------------------------------------------------------------------
-    public void setDownloadFormat(DownloadFormat downloadFormat) {
-        this.downloadFormat = downloadFormat;
-    }
-    public void setDownloadQuotes(DownloadQuotes downloadQuotes) {
-        this.downloadQuotes = downloadQuotes;
+    public void setDTODownload(DTODownload dtoDownload) {
+        this.dtoDownload = dtoDownload;
     }
 
     
     // Helpers ------------------------------------------------------------------------------------
     public boolean isDownloadFormatNone() {
-    	if ( this.downloadFormat.name().equals(FORMAT_NONE)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadFormatNone(); 
     }
     public boolean isDownloadFormatCSV() {
-    	if ( this.downloadFormat.name().equals(FORMAT_CSV)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadFormatCSV(); 
     }
     public boolean isDownloadFormatTSV() {
-    	if ( this.downloadFormat.name().equals(FORMAT_TSV)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadFormatTSV(); 
     }
 
     public boolean isDownloadQuotesNone() {
-    	if ( this.downloadQuotes.name().equals(QUOTES_NONE)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadQuotesNone();
     }
     public boolean isDownloadQuotesYes() {
-    	if ( this.downloadQuotes.name().equals(QUOTES_YES)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadQuotesYes();
     }
     public boolean isDownloadQuotesNo() {
-    	if ( this.downloadQuotes.name().equals(QUOTES_NO)) {
-    		return true;
-    	}
-    	else {
-    		return false;
-    	}
+    	return this.dtoDownload.isDownloadQuotesNo();
     }
+    
+    public boolean isDownloadReferenceNone() {
+        return this.dtoDownload.isDownloadReferenceNone();
+    }
+    public boolean isDownloadReference7() {
+        return this.dtoDownload.isDownloadReference7();
+    }
+    public boolean isDownloadReferenceP() {
+        return this.dtoDownload.isDownloadReferenceP();
+    }
+    public boolean isDownloadReferenceW() {
+        return this.dtoDownload.isDownloadReferenceW();
+    }
+    public boolean isDownloadReferenceN() {
+        return this.dtoDownload.isDownloadReferenceN();
+    }
+    public boolean isDownloadReference15I() {
+        return this.dtoDownload.isDownloadReference15I();
+    }
+    public boolean isDownloadReferenceZero() {
+        return this.dtoDownload.isDownloadReferenceZero();
+    }
+    public boolean isDownloadReference6() {
+        return this.dtoDownload.isDownloadReference6();
+    }
+    public boolean isDownloadReferenceC() {
+        return this.dtoDownload.isDownloadReferenceC();
+    }
+
+    public boolean isDownloadAlternativeNone() {
+        return this.dtoDownload.isDownloadAlternativeNone();
+    }
+    public boolean isDownloadAlternative7() {
+        return this.dtoDownload.isDownloadAlternative7();
+    }
+    public boolean isDownloadAlternativeP() {
+        return this.dtoDownload.isDownloadAlternativeP();
+    }
+    public boolean isDownloadAlternativeW() {
+        return this.dtoDownload.isDownloadAlternativeW();
+    }
+    public boolean isDownloadAlternativeN() {
+        return this.dtoDownload.isDownloadAlternativeN();
+    }
+    public boolean isDownloadAlternative15I() {
+        return this.dtoDownload.isDownloadAlternative15I();
+    }
+    public boolean isDownloadAlternativeZero() {
+        return this.dtoDownload.isDownloadAlternativeZero();
+    }
+    public boolean isDownloadAlternative6() {
+        return this.dtoDownload.isDownloadAlternative6();
+    }
+    public boolean isDownloadAlternativeC() {
+        return this.dtoDownload.isDownloadAlternativeC();
+    }
+
+
 }

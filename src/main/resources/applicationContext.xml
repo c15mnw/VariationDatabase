@@ -26,7 +26,6 @@
         are still served by the containers default servlet. Requires Spring Framework
         3.0 or higher.
     -->
-
     <mvc:default-servlet-handler/>
 
     <!--
@@ -34,26 +33,9 @@
     -->
     <jpa:repositories base-package="com.roslin.mwicks.spring.variation.repository" entity-manager-factory-ref="entityManagerFactoryBean"/>
     
-    
     <!--
         Configures Custom Data Converter
     -->
     <context:annotation-config />
     
-    <!--
-    <mvc:annotation-driven>
-      <mvc:message-converters  register-defaults="true"> 
-        <bean class="com.roslin.mwicks.spring.variation.message.CSVMessageConvertor" /> 
-      </mvc:message-converters> 
-    </mvc:annotation-driven>
-    
-    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-      <property name="converters">
-        <list>
-            <bean class="com.roslin.mwicks.spring.variation.message.CSVMessageConvertor"/>
-        </list>
-      </property>
-    </bean>
-    -->
-      
 </beans>

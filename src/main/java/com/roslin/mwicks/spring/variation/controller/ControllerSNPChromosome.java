@@ -789,8 +789,7 @@ public class ControllerSNPChromosome extends AbstractController {
         }
 
         CSVResponse csvresponse = new CSVResponse(
-        		dtoDownload.getDownloadFormat(),
-        		dtoDownload.getDownloadQuotes(),
+        		dtoDownload,
         		snpchromosomes);
         
         return csvresponse;

@@ -78,34 +78,52 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
         	
             for (SNPChromosome snpchromosome : csvResponse) {
 
-                csvList.add(Arrays.asList(
-                		snpchromosome.getSnpIdQuoted(),
-                		snpchromosome.getChromosomeIdQuoted(),
-                		snpchromosome.getPositionAsStringQuoted(),
-                		snpchromosome.getReferenceQuoted(),
-                		snpchromosome.getAlternativeQuoted(),
-                		snpchromosome.getRegionQuoted(),
-                		snpchromosome.getEnsemblGeneQuoted(),
-                		snpchromosome.getEnsemblTranscriptQuoted(),
-                		snpchromosome.getEnsemblAnnotationQuoted(),
-                		snpchromosome.getStrain7AlleleQuoted(),
-                		snpchromosome.getStrain7AlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrainPAlleleQuoted(),
-                		snpchromosome.getStrainPAlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrainWAlleleQuoted(),
-                		snpchromosome.getStrainWAlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrainNAlleleQuoted(),
-                		snpchromosome.getStrainNAlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrain15IAlleleQuoted(),
-                		snpchromosome.getStrain15IAlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrainZeroAlleleQuoted(),
-                		snpchromosome.getStrainZeroAlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrain6AlleleQuoted(),
-                		snpchromosome.getStrain6AlleleFixedAsStringQuoted(),
-                		snpchromosome.getStrainCAlleleQuoted(),
-                		snpchromosome.getStrainCAlleleFixedAsStringQuoted(),
-                		snpchromosome.getVersionAsStringQuoted()
-                	));
+                List<String> outputList = new ArrayList<String>();
+                
+            	outputList.add(snpchromosome.getSnpIdQuoted());
+            	outputList.add(snpchromosome.getChromosomeIdQuoted());
+            	outputList.add(snpchromosome.getPositionAsStringQuoted());
+            	outputList.add(snpchromosome.getReferenceQuoted());
+            	outputList.add(snpchromosome.getAlternativeQuoted());
+            	outputList.add(snpchromosome.getRegionQuoted());
+            	outputList.add(snpchromosome.getEnsemblGeneQuoted());
+            	outputList.add(snpchromosome.getEnsemblTranscriptQuoted());
+            	outputList.add(snpchromosome.getEnsemblAnnotationQuoted());
+
+            	if ( csvResponse.isDownloadReference7() || csvResponse.isDownloadAlternative7() ) {
+            		outputList.add(snpchromosome.getStrain7AlleleQuoted());
+                	outputList.add(snpchromosome.getStrain7AlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReferenceP() || csvResponse.isDownloadAlternativeP() ) {
+            		outputList.add(snpchromosome.getStrainPAlleleQuoted());
+                	outputList.add(snpchromosome.getStrainPAlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReferenceW() || csvResponse.isDownloadAlternativeW() ) {
+            		outputList.add(snpchromosome.getStrainWAlleleQuoted());
+                	outputList.add(snpchromosome.getStrainWAlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReferenceN() || csvResponse.isDownloadAlternativeN() ) {
+            		outputList.add(snpchromosome.getStrainNAlleleQuoted());
+                	outputList.add(snpchromosome.getStrainNAlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReference15I() || csvResponse.isDownloadAlternative15I() ) {
+            		outputList.add(snpchromosome.getStrain15IAlleleQuoted());
+                	outputList.add(snpchromosome.getStrain15IAlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReferenceZero() || csvResponse.isDownloadAlternativeZero() ) {
+            		outputList.add(snpchromosome.getStrainZeroAlleleQuoted());
+                	outputList.add(snpchromosome.getStrainZeroAlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReference6() || csvResponse.isDownloadAlternative6() ) {
+            		outputList.add(snpchromosome.getStrain6AlleleQuoted());
+                	outputList.add(snpchromosome.getStrain6AlleleFixedAsStringQuoted());
+            	}
+            	if ( csvResponse.isDownloadReferenceC() || csvResponse.isDownloadAlternativeC() ) {
+            		outputList.add(snpchromosome.getStrainCAlleleQuoted());
+                	outputList.add(snpchromosome.getStrainCAlleleFixedAsStringQuoted());
+            	}
+            		
+                csvList.add(outputList);
             }
         }
         
@@ -113,34 +131,52 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
         	
             for (SNPChromosome snpchromosome : csvResponse) {
 
-                csvList.add(Arrays.asList(
-                		snpchromosome.getSnpId(),
-                		snpchromosome.getChromosomeId(),
-                		snpchromosome.getPositionAsString(),
-                		snpchromosome.getReference(),
-                		snpchromosome.getAlternative(),
-                		snpchromosome.getRegion(),
-                		snpchromosome.getEnsemblGene(),
-                		snpchromosome.getEnsemblTranscript(),
-                		snpchromosome.getEnsemblAnnotation(),
-                		snpchromosome.getStrain7Allele(),
-                		snpchromosome.getStrain7AlleleFixedAsString(),
-                		snpchromosome.getStrainPAllele(),
-                		snpchromosome.getStrainPAlleleFixedAsString(),
-                		snpchromosome.getStrainWAllele(),
-                		snpchromosome.getStrainWAlleleFixedAsString(),
-                		snpchromosome.getStrainNAllele(),
-                		snpchromosome.getStrainNAlleleFixedAsString(),
-                		snpchromosome.getStrain15IAllele(),
-                		snpchromosome.getStrain15IAlleleFixedAsString(),
-                		snpchromosome.getStrainZeroAllele(),
-                		snpchromosome.getStrainZeroAlleleFixedAsString(),
-                		snpchromosome.getStrain6Allele(),
-                		snpchromosome.getStrain6AlleleFixedAsString(),
-                		snpchromosome.getStrainCAllele(),
-                		snpchromosome.getStrainCAlleleFixedAsString(),
-                		snpchromosome.getVersionAsString()
-                	));
+                List<String> outputList = new ArrayList<String>();
+                
+            	outputList.add(snpchromosome.getSnpId());
+            	outputList.add(snpchromosome.getChromosomeId());
+            	outputList.add(snpchromosome.getPositionAsString());
+            	outputList.add(snpchromosome.getReference());
+            	outputList.add(snpchromosome.getAlternative());
+            	outputList.add(snpchromosome.getRegion());
+            	outputList.add(snpchromosome.getEnsemblGene());
+            	outputList.add(snpchromosome.getEnsemblTranscript());
+            	outputList.add(snpchromosome.getEnsemblAnnotation());
+
+            	if ( csvResponse.isDownloadReference7() || csvResponse.isDownloadAlternative7() ) {
+            		outputList.add(snpchromosome.getStrain7Allele());
+                	outputList.add(snpchromosome.getStrain7AlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReferenceP() || csvResponse.isDownloadAlternativeP() ) {
+            		outputList.add(snpchromosome.getStrainPAllele());
+                	outputList.add(snpchromosome.getStrainPAlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReferenceW() || csvResponse.isDownloadAlternativeW() ) {
+            		outputList.add(snpchromosome.getStrainWAllele());
+                	outputList.add(snpchromosome.getStrainWAlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReferenceN() || csvResponse.isDownloadAlternativeN() ) {
+            		outputList.add(snpchromosome.getStrainNAllele());
+                	outputList.add(snpchromosome.getStrainNAlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReference15I() || csvResponse.isDownloadAlternative15I() ) {
+            		outputList.add(snpchromosome.getStrain15IAllele());
+                	outputList.add(snpchromosome.getStrain15IAlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReferenceZero() || csvResponse.isDownloadAlternativeZero() ) {
+            		outputList.add(snpchromosome.getStrainZeroAllele());
+                	outputList.add(snpchromosome.getStrainZeroAlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReference6() || csvResponse.isDownloadAlternative6() ) {
+            		outputList.add(snpchromosome.getStrain6Allele());
+                	outputList.add(snpchromosome.getStrain6AlleleFixedAsString());
+            	}
+            	if ( csvResponse.isDownloadReferenceC() || csvResponse.isDownloadAlternativeC() ) {
+            		outputList.add(snpchromosome.getStrainCAllele());
+                	outputList.add(snpchromosome.getStrainCAlleleFixedAsString());
+            	}
+            		
+                csvList.add(outputList);
             }
         }
         
