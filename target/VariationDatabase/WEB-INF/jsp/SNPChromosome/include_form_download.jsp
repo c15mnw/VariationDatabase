@@ -81,6 +81,58 @@
             </div><!-- close span6 -->
         </div><!-- close row -->
         
+        <div class="row">
+            <div class="span6">
+            
+            <form:label path="DownloadHeaders"><h4><spring:message code="snpchromosome.download.headers.label"/></h4></form:label>
+                <div class="row-fluid">
+                    <div class="span8">
+            
+            <form:label path="DownloadHeaders"><spring:message code="DownloadHeaders.HEADERS_YES"/></form:label>
+            
+                    </div><!-- close span8 -->
+                    <div class="span4">
+            
+            <form:radiobutton path="DownloadHeaders" value="HEADERS_YES"/>
+            
+                    </div><!-- close span4 -->
+                    <div class="row-fluid">
+                        <div class="span8">
+            
+            <form:label path="DownloadHeaders"><spring:message code="DownloadHeaders.HEADERS_NO"/></form:label>
+            
+                        </div><!-- close span8 -->
+                        <div class="span4">
+            
+            <form:radiobutton path="DownloadHeaders" value="HEADERS_NO"/>
+            
+                        </div><!-- close span4 -->
+                    </div><!-- close row-fluid -->
+                </div><!-- close row-fluid -->
+            </div><!-- close span6 -->
+            
+            <div class="span6">
+            
+                <div class="row-fluid">
+                    <div class="span8">
+            
+                    </div><!-- close span8 -->
+                    <div class="span4">
+            
+                    </div><!-- close span4 -->
+                    <div class="row-fluid">
+                        <div class="span8">
+            
+                        </div><!-- close span8 -->
+                        <div class="span4">
+            
+                        </div><!-- close span4 -->
+                    </div><!-- close row-fluid -->
+                </div><!-- close row-fluid -->
+            </div><!-- close span6 -->
+  
+        </div><!-- close row -->
+
         <div class="row spacer">
             <div class="span12">
                 <input type="submit" value="<spring:message code="snpchromosome.download.form.submit.label"/>"/>

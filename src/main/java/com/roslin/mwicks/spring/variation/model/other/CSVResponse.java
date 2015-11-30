@@ -63,6 +63,16 @@ public class CSVResponse extends ArrayList<SNPChromosome> {
     	return this.dtoDownload.isDownloadQuotesNo();
     }
     
+    public boolean isDownloadHeadersNone() {
+    	return this.dtoDownload.isDownloadHeadersNone();
+    }
+    public boolean isDownloadHeadersYes() {
+    	return this.dtoDownload.isDownloadHeadersYes();
+    }
+    public boolean isDownloadHeadersNo() {
+    	return this.dtoDownload.isDownloadHeadersNo();
+    }
+    
     public boolean isDownloadReferenceNone() {
         return this.dtoDownload.isDownloadReferenceNone();
     }

@@ -12,6 +12,10 @@ import com.roslin.mwicks.utility.ObjectConverter;
 public class DTODownload {
 
     // Constants ----------------------------------------------------------------------------------
+	protected static final String HEADERS_NONE = "HEADERS_NONE";
+	protected static final String HEADERS_YES = "HEADERS_YES";
+	protected static final String HEADERS_NO = "HEADERS_NO";
+
 	protected static final String QUOTES_NONE = "QUOTES_NONE";
 	protected static final String QUOTES_YES = "QUOTES_YES";
 	protected static final String QUOTES_NO = "QUOTES_NO";
@@ -77,6 +81,7 @@ public class DTODownload {
     
     private DownloadFormat downloadFormat;
     private DownloadQuotes downloadQuotes;
+    private DownloadHeaders downloadHeaders;
 
     private SearchChromosome downloadChromosome;
 
@@ -95,6 +100,7 @@ public class DTODownload {
 
         this.downloadFormat = DownloadFormat.FORMAT_CSV;
         this.downloadQuotes = DownloadQuotes.QUOTES_NO;
+        this.downloadHeaders = DownloadHeaders.HEADERS_NO;
 
         this.downloadChromosome = SearchChromosome.CHROMOSOME_NONE;
     }
@@ -124,6 +130,9 @@ public class DTODownload {
     public DownloadQuotes getDownloadQuotes() {
         return this.downloadQuotes;
     }
+    public DownloadHeaders getDownloadHeaders() {
+        return this.downloadHeaders;
+    }
     public SearchChromosome getDownloadChromosome() {
         return this.downloadChromosome;
     }
@@ -152,6 +161,9 @@ public class DTODownload {
     }
     public void setDownloadQuotes(DownloadQuotes downloadQuotes) {
         this.downloadQuotes = downloadQuotes;
+    }
+    public void setDownloadHeaders(DownloadHeaders downloadHeaders) {
+        this.downloadHeaders = downloadHeaders;
     }
     public void setDownloadChromosome(SearchChromosome downloadChromosome) {
     	this.downloadChromosome = downloadChromosome;
@@ -325,6 +337,32 @@ public class DTODownload {
     		return false;
     	}
     }
+
+    public boolean isDownloadHeadersNone() {
+    	if ( this.downloadHeaders.name().equals(HEADERS_NONE)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isDownloadHeadersYes() {
+    	if ( this.downloadHeaders.name().equals(HEADERS_YES)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isDownloadHeadersNo() {
+    	if ( this.downloadHeaders.name().equals(HEADERS_NO)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+
 
     public boolean isDownloadReferenceNone() {
     	if ( this.downloadReference.name().equals(STRAIN_NONE)) {

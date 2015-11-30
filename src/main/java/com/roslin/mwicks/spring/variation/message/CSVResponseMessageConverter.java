@@ -69,15 +69,123 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
         char comma = ',';
 
     	output.getHeaders().setContentType(MEDIA_TYPE);
-        output.getHeaders().set("Content-Disposition", "attachment; filename=\" download.csv \"");
-		
+
+
+    	// Set Download File SUFFIX and Format
+        if ( csvResponse.isDownloadFormatTSV() ) {
+            output.getHeaders().set("Content-Disposition", "attachment; filename=\" download.tsv \"");
+        	separator = tab;
+        }
+        if ( csvResponse.isDownloadFormatCSV() ) {
+            output.getHeaders().set("Content-Disposition", "attachment; filename=\" download.csv \"");
+        	separator = comma;
+        }
+
         // Create CSV.
         List<List<String>> csvList = new ArrayList<List<String>>();
         
+        List<String> headerList = new ArrayList<String>();
+
+        if ( csvResponse.isDownloadHeadersYes() && csvResponse.isDownloadQuotesNo()) {
+        	
+        	headerList.add("SNP Identifier");
+        	headerList.add("Chromosome Identifier");
+        	headerList.add("Position");
+        	headerList.add("Reference Allele");
+        	headerList.add("Alternative Allele");
+        	headerList.add("Region");
+        	headerList.add("Ensembl Gene");
+        	headerList.add("Ensembl Transcript");
+        	headerList.add("Ensembl Coding Predictions");
+
+        	if ( csvResponse.isDownloadReference7() || csvResponse.isDownloadAlternative7() ) {
+        		headerList.add("Strain 7 Allele");
+            	headerList.add("Strain 7 Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReferenceP() || csvResponse.isDownloadAlternativeP() ) {
+        		headerList.add("Strain P Allele");
+            	headerList.add("Strain P Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReferenceW() || csvResponse.isDownloadAlternativeW() ) {
+        		headerList.add("Strain W Allele");
+            	headerList.add("Strain W Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReferenceN() || csvResponse.isDownloadAlternativeN() ) {
+        		headerList.add("Strain N Allele");
+            	headerList.add("Strain N Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReference15I() || csvResponse.isDownloadAlternative15I() ) {
+        		headerList.add("Strain 15I Allele");
+            	headerList.add("Strain 15I Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReferenceZero() || csvResponse.isDownloadAlternativeZero() ) {
+        		headerList.add("Strain Zero Allele");
+            	headerList.add("Strain Zero Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReference6() || csvResponse.isDownloadAlternative6() ) {
+        		headerList.add("Strain 6 Allele");
+            	headerList.add("Strain 6 Allele Fixed?");
+        	}
+        	if ( csvResponse.isDownloadReferenceC() || csvResponse.isDownloadAlternativeC() ) {
+        		headerList.add("Strain C Allele");
+            	headerList.add("Strain C Allele Fixed?");
+        	}
+        		
+            csvList.add(headerList);
+        }
+
+        if ( csvResponse.isDownloadHeadersYes() && csvResponse.isDownloadQuotesYes()) {
+        	
+        	headerList.add("\"SNP Identifier\"");
+        	headerList.add("\"Chromosome Identifier\"");
+        	headerList.add("\"Position\"");
+        	headerList.add("\"Reference Allele\"");
+        	headerList.add("\"Alternative Allele\"");
+        	headerList.add("\"Region\"");
+        	headerList.add("\"Ensembl Gene\"");
+        	headerList.add("\"Ensembl Transcript\"");
+        	headerList.add("\"Ensembl Coding Predictions\"");
+
+        	if ( csvResponse.isDownloadReference7() || csvResponse.isDownloadAlternative7() ) {
+        		headerList.add("\"Strain 7 Allele\"");
+            	headerList.add("\"Strain 7 Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReferenceP() || csvResponse.isDownloadAlternativeP() ) {
+        		headerList.add("\"Strain P Allele\"");
+            	headerList.add("\"Strain P Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReferenceW() || csvResponse.isDownloadAlternativeW() ) {
+        		headerList.add("\"Strain W Allele\"");
+            	headerList.add("\"Strain W Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReferenceN() || csvResponse.isDownloadAlternativeN() ) {
+        		headerList.add("\"Strain N Allele\"");
+            	headerList.add("\"Strain N Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReference15I() || csvResponse.isDownloadAlternative15I() ) {
+        		headerList.add("\"Strain 15I Allele\"");
+            	headerList.add("\"Strain 15I Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReferenceZero() || csvResponse.isDownloadAlternativeZero() ) {
+        		headerList.add("\"Strain Zero Allele\"");
+            	headerList.add("\"Strain Zero Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReference6() || csvResponse.isDownloadAlternative6() ) {
+        		headerList.add("\"Strain 6 Allele\"");
+            	headerList.add("\"Strain 6 Allele Fixed?\"");
+        	}
+        	if ( csvResponse.isDownloadReferenceC() || csvResponse.isDownloadAlternativeC() ) {
+        		headerList.add("\"Strain C Allele\"");
+            	headerList.add("\"Strain C Allele Fixed?\"");
+        	}
+        		
+            csvList.add(headerList);
+        }
+
         if ( csvResponse.isDownloadQuotesYes() ) {
         	
             for (SNPChromosome snpchromosome : csvResponse) {
-
+            	
                 List<String> outputList = new ArrayList<String>();
                 
             	outputList.add(snpchromosome.getSnpIdQuoted());
@@ -132,7 +240,7 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
             for (SNPChromosome snpchromosome : csvResponse) {
 
                 List<String> outputList = new ArrayList<String>();
-                
+
             	outputList.add(snpchromosome.getSnpId());
             	outputList.add(snpchromosome.getChromosomeId());
             	outputList.add(snpchromosome.getPositionAsString());
@@ -180,13 +288,6 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
             }
         }
         
-        // Format TSV or CSV
-        if ( csvResponse.isDownloadFormatTSV() ) {
-        	separator = tab;
-        }
-        if ( csvResponse.isDownloadFormatCSV() ) {
-        	separator = comma;
-        }
         
         InputStream csvInput = CsvUtil.formatCsvWithQuotes(csvList, separator);
 

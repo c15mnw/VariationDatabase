@@ -109,8 +109,6 @@ public class ControllerSNPChromosome extends AbstractController {
     
     protected static final String REQUEST_MAPPING_LIST = "/";
 
-    protected static final String MODEL_ATTRIBUTE_DOWNLOAD_FILENAME = "download.csv";
-
     protected static final int ONE_MILLION = 1000000;
     protected static final int TEN_THOUSAND = 10000;
 
