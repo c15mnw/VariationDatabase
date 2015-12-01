@@ -12,7 +12,9 @@
 
     <fieldset>
     
+        <div id="legend1" onclick="document.getElementById('downloadform1').style.display= 'initial';">
         <legend><spring:message code="snpchromosome.download.form.legend"/></legend>
+        </div>
         
         <input type="hidden" id="downloadChromosome" name="downloadChromosome" value="${dtoDownload.downloadChromosome}" />
         <input type="hidden" id="downloadLowRange" name="downloadLowRange" value="${dtoDownload.downloadLowRange}" />
@@ -20,6 +22,8 @@
         <input type="hidden" id="downloadReference" name="downloadReference" value="${dtoDownload.downloadReference}" />
         <input type="hidden" id="downloadAlternative" name="downloadAlternative" value="${dtoDownload.downloadAlternative}" />
 
+        <div id="downloadform1" style="display: none;">
+        
         <div class="row">
             <div class="span6">
             
@@ -138,6 +142,8 @@
                 <input type="submit" value="<spring:message code="snpchromosome.download.form.submit.label"/>"/>
             </div><!-- close span12 -->
         </div><!-- close row spacer -->
+        
+        </div> 
         
     </fieldset>
     

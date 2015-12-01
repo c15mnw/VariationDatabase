@@ -200,6 +200,7 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome3$Builder.cl
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome20.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome19$Builder.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome1.class
+com/roslin/mwicks/spring/variation/dto/DownloadHeaders.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome3.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome13.class
 com/roslin/mwicks/spring/variation/exception/ExceptionSNPChromosomeReferenceAlleleNotSupplied.class

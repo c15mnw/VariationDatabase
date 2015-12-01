@@ -1278,7 +1278,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 20px;
+  height: 30px;
   padding: 4px 6px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -1292,7 +1292,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  width: 220px;
 }
 textarea {
   height: auto;
@@ -1460,7 +1460,7 @@ textarea::-webkit-input-placeholder {
   width: 150px;
 }
 .input-large {
-  width: 210px;
+  width: 220px;
 }
 .input-xlarge {
   width: 270px;
@@ -1547,7 +1547,7 @@ textarea.span4,
 input.span3,
 textarea.span3,
 .uneditable-input.span3 {
-  width: 206px;
+  width: 220px;
 }
 input.span2,
 textarea.span2,
