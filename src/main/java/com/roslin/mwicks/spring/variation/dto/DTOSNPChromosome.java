@@ -363,13 +363,13 @@ public class DTOSNPChromosome {
     public void setStrain15IAlleleRatio(String strain15IAlleleRatio) {
     	this.strain15IAlleleRatio = strain15IAlleleRatio;
     }
-    public void setstrainZeroAllele(String strainZeroAllele) {
+    public void setStrainZeroAllele(String strainZeroAllele) {
     	this.strainZeroAllele = strainZeroAllele;
     }
-    public void setstrainZeroAlleleFixed(String strainZeroAlleleFixed) {  
+    public void setStrainZeroAlleleFixed(String strainZeroAlleleFixed) {  
     	this.strainZeroAlleleFixed = strainZeroAlleleFixed;
     }
-    public void setstrainZeroAlleleRatio(String strainZeroAlleleRatio) {
+    public void setStrainZeroAlleleRatio(String strainZeroAlleleRatio) {
     	this.strainZeroAlleleRatio = strainZeroAlleleRatio;
     }
     public void setStrain6Allele(String strain6Allele) {

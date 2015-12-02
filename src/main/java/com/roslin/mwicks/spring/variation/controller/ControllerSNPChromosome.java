@@ -29,11 +29,17 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoo
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoordinateNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleEqualsAlternativeAllele;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleNotSupplied;
+
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
+
 import com.roslin.mwicks.spring.variation.model.other.CSVResponse;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
+
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
+
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
+
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome1;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome10;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome11;
@@ -66,6 +72,7 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeW;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeZ;
+
 import com.roslin.mwicks.utility.ObjectConverter;
 
 
@@ -113,6 +120,8 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final int TEN_THOUSAND = 10000;
 
     
+    @Resource
+    private ServiceSNPChromosome servicesnpchromosome;
     @Resource
     private ServiceSNPChromosome1 servicesnpchromosome1;
     @Resource
@@ -798,8 +807,8 @@ public class ControllerSNPChromosome extends AbstractController {
      * This setter method should only be used by unit tests
      * @param serviceSNPChromosome
      */
-    protected void setServiceSNPChromosome(ServiceSNPChromosome1 servicesnpchromosome) {
+    protected void setServiceSNPChromosome(ServiceSNPChromosome servicesnpchromosome) {
     	
-        this.servicesnpchromosome1 = servicesnpchromosome;
+        this.servicesnpchromosome = servicesnpchromosome;
     }
 }

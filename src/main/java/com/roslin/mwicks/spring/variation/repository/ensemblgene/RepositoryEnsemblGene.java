@@ -36,5 +36,5 @@ public interface RepositoryEnsemblGene extends JpaRepository<EnsemblGene, Long> 
      */
 	@Query("Select p from EnsemblGene p where p.ensemblId like '%' || lower(:ensemblId)" )
 	public Page<EnsemblGene> findByEnsemblIdLike(@Param("ensemblId") String ensemblId, @Param("pageable") Pageable pageable);
-
+	
 }

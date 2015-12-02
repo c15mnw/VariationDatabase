@@ -50,7 +50,7 @@ public final class ConvertFiletoSNPChromosomeList {
 	        	    dtosnpchromosome.setStrainWAlleleRatio("0");
 	        	    dtosnpchromosome.setStrainNAlleleRatio("0");
 	        	    dtosnpchromosome.setStrain15IAlleleRatio("0");
-	        	    dtosnpchromosome.setstrainZeroAlleleRatio("0");
+	        	    dtosnpchromosome.setStrainZeroAlleleRatio("0");
 	        	    dtosnpchromosome.setStrain6AlleleRatio("0");
 	        	    dtosnpchromosome.setStrainCAlleleRatio("0");
 
@@ -112,10 +112,10 @@ public final class ConvertFiletoSNPChromosomeList {
 		        	    dtosnpchromosome.setStrain15IAlleleFixed(column.trim());
 	        		}
 	        		if ( i == 20 ) {
-		        	    dtosnpchromosome.setstrainZeroAllele(column.trim());
+		        	    dtosnpchromosome.setStrainZeroAllele(column.trim());
 	        		}
 	        		if ( i == 21 ) {
-		        	    dtosnpchromosome.setstrainZeroAlleleFixed(column.trim());
+		        	    dtosnpchromosome.setStrainZeroAlleleFixed(column.trim());
 	        		}
 	        		if ( i == 22 ) {
 		        	    dtosnpchromosome.setStrain6Allele(column.trim());

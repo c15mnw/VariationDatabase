@@ -62,7 +62,7 @@ public class EnsemblGene {
     
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return this.oid;
     }
     public String getEnsemblId() {
@@ -95,9 +95,14 @@ public class EnsemblGene {
     
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    /**
+     * This setter method should only be used by unit tests.
+     * @param oid
+     */
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
+    // Setters ------------------------------------------------------------------------------------
     public void setEnsemblId(String ensemblId) {
     	this.ensemblId = ensemblId;
     }
@@ -299,11 +304,4 @@ public class EnsemblGene {
         }
     }
 
-    /**
-     * This setter method should only be used by unit tests.
-     * @param oid
-     */
-    protected void setId(Long oid) {
-        this.oid = oid;
-    }
 }

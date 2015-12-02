@@ -1,0 +1,9 @@
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/controller/SNPChromosomeControllerTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGeneTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractControllerTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/service/ensemblgene/RepositoryEnsemblGeneServiceTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeTestUtil.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/context/TestContext.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractTestController.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/model/ensemblgene/EnsemblGeneTestUtil.java

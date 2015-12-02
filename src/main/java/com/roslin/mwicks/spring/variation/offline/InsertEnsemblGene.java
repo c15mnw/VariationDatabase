@@ -19,7 +19,9 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import com.roslin.mwicks.spring.variation.config.MyOfflineApplicationContext;
 
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
+
 import com.roslin.mwicks.spring.variation.routines.ConvertFiletoEnsemblGeneList;
+
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
 import com.roslin.mwicks.utility.FileUtil;

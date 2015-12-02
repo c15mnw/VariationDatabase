@@ -53,7 +53,7 @@ public class DTOEnsemblGene {
     }
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return oid;
     }
     public String getEnsemblId() {
@@ -105,7 +105,7 @@ public class DTOEnsemblGene {
     }
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
     public void setEnsemblId(String ensemblId) {

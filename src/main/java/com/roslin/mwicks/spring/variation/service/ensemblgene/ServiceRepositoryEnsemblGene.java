@@ -1,11 +1,14 @@
 package com.roslin.mwicks.spring.variation.service.ensemblgene;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
+
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
-import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome1;
+
 import com.roslin.mwicks.spring.variation.repository.ensemblgene.RepositoryEnsemblGene;
-import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosome1;
+
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
+
+import com.roslin.mwicks.spring.variation.dto.DTOEnsemblGene;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,6 +43,26 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     @PersistenceContext
     private EntityManager entityManager;
      
+    
+    @Transactional(readOnly = true)
+    @Override
+    public List<EnsemblGene> findAll() {
+    	
+        LOGGER.debug("Finding all EnsemblGene");
+        
+        return repositoryensemblgene.findAll();
+    }
+
+    
+    @Transactional(readOnly = true)
+    @Override
+    public EnsemblGene findByOid(Long oid) {
+    	
+        LOGGER.debug("Finding EnsemblGene by oid: " + oid);
+        
+        return repositoryensemblgene.findOne(oid);
+    }
+
     
     @Transactional
     @Override
@@ -85,7 +108,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     @Override
     public List<EnsemblGene> findByGeneName(String strGeneName) {
         
-    	LOGGER.debug("Searching SNPChromosomes with search criteria: " + strGeneName);
+    	LOGGER.debug("Searching Ensembl Genes with search criteria: " + strGeneName);
 
     	List<EnsemblGene> ensemblgenes = repositoryensemblgene.findByGeneName(strGeneName);
         
@@ -97,7 +120,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     @Override
     public Page<EnsemblGene> findByEnsemblIdLike(String strGeneName, Pageable pageable) {
         
-    	LOGGER.debug("Searching SNPChromosomes with search criteria: " + strGeneName);
+    	LOGGER.debug("Searching Ensembl Genes with search criteria: " + strGeneName);
 
     	Page<EnsemblGene> ensemblgenes = repositoryensemblgene.findByEnsemblIdLike(strGeneName, pageable);
         
@@ -107,7 +130,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
 
     @Transactional
     @Override
-    public EnsemblGene create(EnsemblGene created) {
+    public EnsemblGene create(DTOEnsemblGene created) {
     	
         LOGGER.debug("Creating a new snpchromosome with information: " + created);
         
@@ -115,8 +138,8 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
         	    created.getEnsemblId(),
         	    created.getRegion(),
         	    created.getChromosomeId(),
-        	    created.getStart(),
-        	    created.getEnd(),
+        	    created.getStartAsLong(),
+        	    created.getEndAsLong(),
         	    created.getStrand()
         		).build();
         
@@ -147,7 +170,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     
     @Transactional(rollbackFor = ExceptionEnsemblGeneNotFound.class)
     @Override
-    public EnsemblGene update(EnsemblGene updated) throws ExceptionEnsemblGeneNotFound {
+    public EnsemblGene update(DTOEnsemblGene updated) throws ExceptionEnsemblGeneNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);
         
@@ -177,7 +200,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
      * This setter method should be used only by unit tests.
      * @param repositorySNPChromosome
      */
-    protected void setRepositorySNPChromosome(RepositoryEnsemblGene repositoryensemblgene) {
+    protected void setRepositoryEnsemblGene(RepositoryEnsemblGene repositoryensemblgene) {
     	
         this.repositoryensemblgene = repositoryensemblgene;
     }
