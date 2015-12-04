@@ -9,7 +9,6 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFou
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome3;
-
 import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosome3;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome3;
@@ -17,7 +16,6 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -53,6 +51,16 @@ public class ServiceRepositorySNPChromosome3 implements ServiceSNPChromosome3 {
      
     @Resource
     private RepositorySNPChromosome3 repositorysnpchromosome;
+
+    
+    @Transactional(readOnly = true)
+    @Override
+    public SNPChromosome3 findByOid(Long oid) {
+    	
+        LOGGER.debug("Finding SNPChromosome by oid: " + oid);
+        
+        return repositorysnpchromosome.findOne(oid);
+    }
 
     
     @Transactional
@@ -361,7 +369,7 @@ public class ServiceRepositorySNPChromosome3 implements ServiceSNPChromosome3 {
     	Page<SNPChromosome3> pagesnpchromosome3s = null;
 
     	PageRequest pageRequest = new PageRequest(pageNumber - 1, NUMBER_OF_SNPCHROMOSOMES_PER_PAGE, Sort.Direction.ASC, "snpId");
-
+    	
         if (dtoSearch.isSearchReference7() && dtoSearch.isSearchAlternativeP()) {
             LOGGER.debug("Searching pagesnpchromosome3s by using findByRangeANDStrain7NEStrainP");
             pagesnpchromosome3s = repositorysnpchromosome.findByRangeANDStrain7NEStrainP(dtoSearch.getSearchLowRangeAsInt(), dtoSearch.getSearchHighRangeAsInt(), pageRequest);

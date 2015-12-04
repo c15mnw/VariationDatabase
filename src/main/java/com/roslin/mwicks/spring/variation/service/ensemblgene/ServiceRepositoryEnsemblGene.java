@@ -58,7 +58,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     @Override
     public EnsemblGene findByOid(Long oid) {
     	
-        LOGGER.debug("Finding EnsemblGene by oid: " + oid);
+        LOGGER.debug("Finding ensemblgene by oid: " + oid);
         
         return repositoryensemblgene.findOne(oid);
     }

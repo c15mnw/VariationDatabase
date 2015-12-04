@@ -142,7 +142,7 @@ public class SNPChromosome1 {
     
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return this.oid;
     }
     public String getSnpId() {
@@ -527,7 +527,7 @@ public class SNPChromosome1 {
     }
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
     public void setSnpId(String snpId) {

@@ -10,6 +10,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import java.io.IOException;
@@ -39,7 +40,6 @@ import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome1;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome10;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome11;
@@ -120,8 +120,6 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final int TEN_THOUSAND = 10000;
 
     
-    @Resource
-    private ServiceSNPChromosome servicesnpchromosome;
     @Resource
     private ServiceSNPChromosome1 servicesnpchromosome1;
     @Resource
@@ -494,37 +492,39 @@ public class ControllerSNPChromosome extends AbstractController {
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
             return createRedirectViewPath(REQUEST_MAPPING_LIST);
         }
-
-        int current = pagesnpchromosome.getPageNumber() + 1;
-        int begin = Math.max(1, current - 5);
-        int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
-        int totalPages = pagesnpchromosome.getTotalPages();
-
-        model.addAttribute("SNPChromosome", pagesnpchromosome);
-        model.addAttribute("beginIndex", begin);
-        model.addAttribute("endIndex", end);
-        model.addAttribute("currentIndex", current);
-        model.addAttribute("totalPages", totalPages);
         
-        model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
-        
-        DTODownload dtoDownload = new DTODownload();
-        
-        dtoDownload.setDownloadChromosome(dtoSearch.getSearchChromosome());
-        
-        dtoDownload.setDownloadLowRange(dtoSearch.getSearchLowRange());
-        dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
-        
-        dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
-        dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
-        
-        model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
-
         if ( pagesnpchromosome == null ) {
             LOGGER.debug("EMPTY SNPChromosomes !!! ");
+            
             model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, 0));
         }
         else {
+        	
+            int current = pagesnpchromosome.getPageNumber() + 1;
+            int begin = Math.max(1, current - 5);
+            int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
+            int totalPages = pagesnpchromosome.getTotalPages();
+
+            model.addAttribute("SNPChromosome", pagesnpchromosome);
+            model.addAttribute("beginIndex", begin);
+            model.addAttribute("endIndex", end);
+            model.addAttribute("currentIndex", current);
+            model.addAttribute("totalPages", totalPages);
+            
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
+            
+            DTODownload dtoDownload = new DTODownload();
+            
+            dtoDownload.setDownloadChromosome(dtoSearch.getSearchChromosome());
+            
+            dtoDownload.setDownloadLowRange(dtoSearch.getSearchLowRange());
+            dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
+            
+            dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
+            dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
+            
+            model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
+
             model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, pagesnpchromosome.getTotalElements()));
         }
 
@@ -655,37 +655,39 @@ public class ControllerSNPChromosome extends AbstractController {
         }
 
         if ( pagesnpchromosome == null ) {
+        	
             LOGGER.debug("EMPTY SNPChromosomes !!! ");
             model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, 0));
         }
         else {
+        	
             model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, pagesnpchromosome.getTotalElements()));
+            
+            int current = pagesnpchromosome.getPageNumber() + 1;
+            int begin = Math.max(1, current - 5);
+            int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
+            int totalPages = pagesnpchromosome.getTotalPages();
+
+            model.addAttribute("SNPChromosome", pagesnpchromosome);
+            model.addAttribute("beginIndex", begin);
+            model.addAttribute("endIndex", end);
+            model.addAttribute("currentIndex", current);
+            model.addAttribute("totalPages", totalPages);
+
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
+
+            DTODownload dtoDownload = new DTODownload();
+            
+            dtoDownload.setDownloadChromosome(dtoSearch.getSearchChromosome());
+            
+            dtoDownload.setDownloadLowRange(dtoSearch.getSearchLowRange());
+            dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
+            
+            dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
+            dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
+            
+            model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
         }
-
-        int current = pagesnpchromosome.getPageNumber() + 1;
-        int begin = Math.max(1, current - 5);
-        int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
-        int totalPages = pagesnpchromosome.getTotalPages();
-
-        model.addAttribute("SNPChromosome", pagesnpchromosome);
-        model.addAttribute("beginIndex", begin);
-        model.addAttribute("endIndex", end);
-        model.addAttribute("currentIndex", current);
-        model.addAttribute("totalPages", totalPages);
-
-        model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
-
-        DTODownload dtoDownload = new DTODownload();
-        
-        dtoDownload.setDownloadChromosome(dtoSearch.getSearchChromosome());
-        
-        dtoDownload.setDownloadLowRange(dtoSearch.getSearchLowRange());
-        dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
-        
-        dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
-        dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
-        
-        model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
 
         return SNPCHROMOSOME_SEARCH_RESULT_VIEW;
     }
@@ -696,7 +698,9 @@ public class ControllerSNPChromosome extends AbstractController {
     	
         LOGGER.debug("Downloading SNPChromosomes with search criteria: " + dtoDownload);
         
-        List<SNPChromosome> snpchromosomes = servicesnpchromosome1.download(dtoDownload);
+        CSVResponse csvresponse = new CSVResponse();
+
+        List<SNPChromosome> snpchromosomes = new ArrayList<SNPChromosome>();
 
         if ( dtoDownload.isDownloadChromosome1() ) {
         	snpchromosomes = servicesnpchromosome1.download(dtoDownload);
@@ -794,10 +798,17 @@ public class ControllerSNPChromosome extends AbstractController {
         if ( dtoDownload.isDownloadChromosomeLGE64() ) {
         	snpchromosomes = servicesnpchromosomeLGE64.download(dtoDownload);
         }
+        
+        csvresponse.setDTODownload(dtoDownload);
+        
+        if ( snpchromosomes == null ) {
+        	
+            LOGGER.debug("EMPTY SNPChromosomes !!! ");
+        }
+        else {
 
-        CSVResponse csvresponse = new CSVResponse(
-        		dtoDownload,
-        		snpchromosomes);
+        	csvresponse.addAll(snpchromosomes);
+        }
         
         return csvresponse;
     }
@@ -807,8 +818,101 @@ public class ControllerSNPChromosome extends AbstractController {
      * This setter method should only be used by unit tests
      * @param serviceSNPChromosome
      */
-    protected void setServiceSNPChromosome(ServiceSNPChromosome servicesnpchromosome) {
-    	
-        this.servicesnpchromosome = servicesnpchromosome;
+    protected void setServiceSNPChromosome1(ServiceSNPChromosome1 servicesnpchromosome1) {
+        this.servicesnpchromosome1 = servicesnpchromosome1;
     }
+    protected void setServiceSNPChromosome3(ServiceSNPChromosome3 servicesnpchromosome3) {
+        this.servicesnpchromosome3 = servicesnpchromosome3;
+    }
+    protected void setServiceSNPChromosome4(ServiceSNPChromosome4 servicesnpchromosome4) {
+        this.servicesnpchromosome4 = servicesnpchromosome4;
+    }
+    protected void setServiceSNPChromosome5(ServiceSNPChromosome5 servicesnpchromosome5) {
+        this.servicesnpchromosome5 = servicesnpchromosome5;
+    }
+    protected void setServiceSNPChromosome6(ServiceSNPChromosome6 servicesnpchromosome6) {
+        this.servicesnpchromosome6 = servicesnpchromosome6;
+    }
+    protected void setServiceSNPChromosome7(ServiceSNPChromosome7 servicesnpchromosome7) {
+        this.servicesnpchromosome7 = servicesnpchromosome7;
+    }
+    protected void setServiceSNPChromosome8(ServiceSNPChromosome8 servicesnpchromosome8) {
+        this.servicesnpchromosome8 = servicesnpchromosome8;
+    }
+    protected void setServiceSNPChromosome9(ServiceSNPChromosome9 servicesnpchromosome9) {
+        this.servicesnpchromosome9 = servicesnpchromosome9;
+    }
+    protected void setServiceSNPChromosome10(ServiceSNPChromosome10 servicesnpchromosome10) {
+        this.servicesnpchromosome10 = servicesnpchromosome10;
+    }
+    protected void setServiceSNPChromosome11(ServiceSNPChromosome11 servicesnpchromosome11) {
+        this.servicesnpchromosome11 = servicesnpchromosome11;
+    }
+    protected void setServiceSNPChromosome12(ServiceSNPChromosome12 servicesnpchromosome12) {
+        this.servicesnpchromosome12 = servicesnpchromosome12;
+    }
+    protected void setServiceSNPChromosome13(ServiceSNPChromosome13 servicesnpchromosome13) {
+        this.servicesnpchromosome13 = servicesnpchromosome13;
+    }
+    protected void setServiceSNPChromosome14(ServiceSNPChromosome14 servicesnpchromosome14) {
+        this.servicesnpchromosome14 = servicesnpchromosome14;
+    }
+    protected void setServiceSNPChromosome15(ServiceSNPChromosome15 servicesnpchromosome15) {
+        this.servicesnpchromosome15 = servicesnpchromosome15;
+    }
+    protected void setServiceSNPChromosome16(ServiceSNPChromosome16 servicesnpchromosome16) {
+        this.servicesnpchromosome16 = servicesnpchromosome16;
+    }
+    protected void setServiceSNPChromosome17(ServiceSNPChromosome17 servicesnpchromosome17) {
+        this.servicesnpchromosome17 = servicesnpchromosome17;
+    }
+    protected void setServiceSNPChromosome18(ServiceSNPChromosome18 servicesnpchromosome18) {
+        this.servicesnpchromosome18 = servicesnpchromosome18;
+    }
+    protected void setServiceSNPChromosome19(ServiceSNPChromosome19 servicesnpchromosome19) {
+        this.servicesnpchromosome19 = servicesnpchromosome19;
+    }
+    protected void setServiceSNPChromosome20(ServiceSNPChromosome20 servicesnpchromosome20) {
+        this.servicesnpchromosome20 = servicesnpchromosome20;
+    }
+    protected void setServiceSNPChromosome21(ServiceSNPChromosome21 servicesnpchromosome21) {
+        this.servicesnpchromosome21 = servicesnpchromosome21;
+    }
+    protected void setServiceSNPChromosome22(ServiceSNPChromosome22 servicesnpchromosome22) {
+        this.servicesnpchromosome22 = servicesnpchromosome22;
+    }
+    protected void setServiceSNPChromosome23(ServiceSNPChromosome23 servicesnpchromosome23) {
+        this.servicesnpchromosome23 = servicesnpchromosome23;
+    }
+    protected void setServiceSNPChromosome24(ServiceSNPChromosome24 servicesnpchromosome24) {
+        this.servicesnpchromosome24 = servicesnpchromosome24;
+    }
+    protected void setServiceSNPChromosome25(ServiceSNPChromosome25 servicesnpchromosome25) {
+        this.servicesnpchromosome25 = servicesnpchromosome25;
+    }
+    protected void setServiceSNPChromosome26(ServiceSNPChromosome26 servicesnpchromosome26) {
+        this.servicesnpchromosome26 = servicesnpchromosome26;
+    }
+    protected void setServiceSNPChromosome27(ServiceSNPChromosome27 servicesnpchromosome27) {
+        this.servicesnpchromosome27 = servicesnpchromosome27;
+    }
+    protected void setServiceSNPChromosome28(ServiceSNPChromosome28 servicesnpchromosome28) {
+        this.servicesnpchromosome28 = servicesnpchromosome28;
+    }
+    protected void setServiceSNPChromosome32(ServiceSNPChromosome32 servicesnpchromosome32) {
+        this.servicesnpchromosome32 = servicesnpchromosome32;
+    }
+    protected void setServiceSNPChromosomeW(ServiceSNPChromosomeW servicesnpchromosomeW) {
+        this.servicesnpchromosomeW = servicesnpchromosomeW;
+    }
+    protected void setServiceSNPChromosomeZ(ServiceSNPChromosomeZ servicesnpchromosomeZ) {
+        this.servicesnpchromosomeZ = servicesnpchromosomeZ;
+    }
+    protected void setServiceSNPChromosomeLGE64(ServiceSNPChromosomeLGE64 servicesnpchromosomeLGE64) {
+        this.servicesnpchromosomeLGE64 = servicesnpchromosomeLGE64;
+    }
+    protected void setServiceSNPChromosomeLGE22C19W28_E50C23(ServiceSNPChromosomeLGE22C19W28_E50C23 servicesnpchromosomeLGE22C19W28_E50C23) {
+        this.servicesnpchromosomeLGE22C19W28_E50C23 = servicesnpchromosomeLGE22C19W28_E50C23;
+    }
+
 }

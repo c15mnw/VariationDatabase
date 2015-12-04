@@ -88,10 +88,10 @@ public class DTOEnsemblGene {
     public long getOidAsString() {
     	return ObjectConverter.convert(this.oid, Long.class);
     }
-    public long getStartAsLong() {
+    public Long getStartAsLong() {
     	return ObjectConverter.convert(this.start, Long.class);
     }
-    public long getEndAsLong() {
+    public Long getEndAsLong() {
     	return ObjectConverter.convert(this.end, Long.class);
     }
     public String getCreationTimeAsString() {

@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.Date;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
 
 import static org.junit.Assert.assertNull;
@@ -162,6 +161,7 @@ public class SNPChromosomeTest {
 
         assertNull(built.getCreationTime());
         assertNull(built.getModificationTime());
+        
         assertNull(built.getOid());
     }
     
@@ -258,7 +258,7 @@ public class SNPChromosomeTest {
         built.prePersist();
         
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             //Back to work
         }

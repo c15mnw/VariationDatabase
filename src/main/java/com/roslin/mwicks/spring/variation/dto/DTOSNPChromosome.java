@@ -134,7 +134,7 @@ public class DTOSNPChromosome {
     }
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return oid;
     }
     public String getSnpId() {
@@ -288,7 +288,7 @@ public class DTOSNPChromosome {
     }
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
     public void setSnpId(String snpId) {

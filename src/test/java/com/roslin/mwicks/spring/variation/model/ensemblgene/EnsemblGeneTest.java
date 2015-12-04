@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.Date;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
 
 import static org.junit.Assert.assertNull;
@@ -19,15 +18,15 @@ public class EnsemblGeneTest {
     private static final String ENSEMBL_ID = "Foo_AA";
     private static final String REGION = "Foo_AE";
     private static final String CHROMOSOME_ID = "Foo_AB";
-    private static final long START = 100;
-    private static final long END = 200;    
+    private static final Long START_LONG = (long) 100;
+    private static final Long END_LONG = (long) 200;    
     private static final String STRAND = "Foo_AD";
 
     private static final String ENSEMBL_ID_UPDATED = "Bar_AA";
     private static final String REGION_UPDATED = "Bar_AE";
     private static final String CHROMOSOME_ID_UPDATED = "Bar_AB";
-    private static final long START_UPDATED = 101;
-    private static final long END_UPDATED = 201;    
+    private static final Long START_LONG_UPDATED = (long) 101;
+    private static final Long END_LONG_UPDATED = (long) 201;    
     private static final String STRAND_UPDATED = "Bar_AD";
 
 
@@ -38,16 +37,16 @@ public class EnsemblGeneTest {
             ENSEMBL_ID,
             REGION,
             CHROMOSOME_ID,
-            START,
-            END,
+            START_LONG,
+            END_LONG,
             STRAND
             ).build();
         
         assertEquals(ENSEMBL_ID, built.getEnsemblId());
         assertEquals(REGION, built.getRegion());
         assertEquals(CHROMOSOME_ID, built.getChromosomeId());
-        assertEquals(START, built.getStart());
-        assertEquals(END, built.getEnd());
+        assertEquals(START_LONG, built.getStart());
+        assertEquals(END_LONG, built.getEnd());
         assertEquals(STRAND, built.getStrand());
         
         assertEquals(0, built.getVersion());
@@ -65,8 +64,8 @@ public class EnsemblGeneTest {
             ENSEMBL_ID,
             REGION,
             CHROMOSOME_ID,
-            START,
-            END,
+            START_LONG,
+            END_LONG,
             STRAND
             ).build();
 
@@ -88,15 +87,15 @@ public class EnsemblGeneTest {
             ENSEMBL_ID,
             REGION,
             CHROMOSOME_ID,
-            START,
-            END,
+            START_LONG,
+            END_LONG,
             STRAND
             ).build();
 
         built.prePersist();
         
         try {
-            Thread.sleep(1000);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             //Back to work
         }
@@ -119,8 +118,8 @@ public class EnsemblGeneTest {
             ENSEMBL_ID,
             REGION,
             CHROMOSOME_ID,
-            START,
-            END,
+            START_LONG,
+            END_LONG,
             STRAND
             ).build();
 
@@ -130,16 +129,16 @@ public class EnsemblGeneTest {
             ENSEMBL_ID_UPDATED,
             REGION_UPDATED,
             CHROMOSOME_ID_UPDATED,
-            START_UPDATED,
-            END_UPDATED,
+            START_LONG_UPDATED,
+            END_LONG_UPDATED,
             STRAND_UPDATED
         );
         
         assertEquals(ENSEMBL_ID_UPDATED, built.getEnsemblId());
         assertEquals(REGION_UPDATED, built.getRegion());
         assertEquals(CHROMOSOME_ID_UPDATED, built.getChromosomeId());
-        assertEquals(START_UPDATED, built.getStart());
-        assertEquals(END_UPDATED, built.getEnd());
+        assertEquals(START_LONG_UPDATED, built.getStart());
+        assertEquals(END_LONG_UPDATED, built.getEnd());
         assertEquals(STRAND_UPDATED, built.getStrand());
     }
     

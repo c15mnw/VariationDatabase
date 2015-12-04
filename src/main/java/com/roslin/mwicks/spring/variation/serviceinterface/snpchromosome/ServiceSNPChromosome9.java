@@ -13,6 +13,7 @@ import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome9;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeLGE22C19W28_E50C23;
 
 /**
  * Declares methods used to obtain and modify SNPChromosome9 information.
@@ -70,6 +71,14 @@ public interface ServiceSNPChromosome9 {
     public List<SNPChromosome> download(DTODownload dtoDownload);
 
     
+    /**
+     * Finds ensemblgene by id.
+     * @param oid    The oid of the wanted ensemblgene.
+     * @return  The found ensemblgene. If no ensemblgene is found, this method returns null.
+     */
+    public SNPChromosome9 findByOid(Long oid);
+
+
     /**
      * Finds all snpchromosome.
      * @return  A list of snpchromosome.

@@ -74,10 +74,10 @@ public class EnsemblGene {
     public String getChromosomeId() {
     	return chromosomeId;
     }
-    public long getStart() {
+    public Long getStart() {
     	return this.start;
     }
-    public long getEnd() {
+    public Long getEnd() {
     	return this.end;
     }
     public String getStrand() {
@@ -112,10 +112,10 @@ public class EnsemblGene {
     public void setChromosomeId(String chromosomeId) {
     	this.chromosomeId = chromosomeId;
     }
-    public void setStart(long start) {
+    public void setStart(Long start) {
     	this.start = start;
     }
-    public void setEnd(long end) {
+    public void setEnd(Long end) {
     	this.end = end;
     }
     public void setStrand(String strand) {
@@ -189,8 +189,8 @@ public class EnsemblGene {
     		String ensemblId,
     		String region,
     		String chromosomeId,    
-    		long start,
-    		long end,
+    		Long start,
+    		Long end,
     		String strand
     		) {
 
@@ -243,8 +243,8 @@ public class EnsemblGene {
     		String ensemblId,
     		String region,
     		String chromosomeId,    
-    		long start,
-    		long end,
+    		Long start,
+    		Long end,
     		String strand
     		) {
     	
@@ -278,8 +278,8 @@ public class EnsemblGene {
         		String ensemblId,
         		String region,
         		String chromosomeId,    
-        		long start,
-        		long end,
+        		Long start,
+        		Long end,
         		String strand
         		) {
         	

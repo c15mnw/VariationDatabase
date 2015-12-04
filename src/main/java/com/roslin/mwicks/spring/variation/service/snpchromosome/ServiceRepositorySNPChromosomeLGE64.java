@@ -9,7 +9,7 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFou
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeLGE64;
-
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeZ;
 import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosomeLGE64;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
@@ -54,6 +54,16 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     @PersistenceContext
     private EntityManager entityManager;
      
+    
+    @Transactional(readOnly = true)
+    @Override
+    public SNPChromosomeLGE64 findByOid(Long oid) {
+    	
+        LOGGER.debug("Finding SNPChromosome by oid: " + oid);
+        
+        return repositorysnpchromosome.findOne(oid);
+    }
+
     
     @Transactional
     @Override

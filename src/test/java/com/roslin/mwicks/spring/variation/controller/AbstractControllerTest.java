@@ -35,17 +35,21 @@ public class AbstractControllerTest {
     
     @Before
     public void setUp() {
+    	
         controller = new TestController();
 
         messageSourceMock = mock(MessageSource.class);
+        
         controller.setMessageSource(messageSourceMock);
     }
 
     
     @Test
     public void addErrorMessage() {
+    	
         RedirectAttributes model = new RedirectAttributesModelMap();
         Object[] params = new Object[0];
+        
         when(messageSourceMock.getMessage(eq(ERROR_MESSAGE_CODE), eq(params), any(Locale.class))).thenReturn(ERROR_MESSAGE);
 
         controller.addErrorMessage(model, ERROR_MESSAGE_CODE, params);
@@ -60,8 +64,10 @@ public class AbstractControllerTest {
 
     @Test
     public void addFeedbackMessage() {
+    	
         RedirectAttributes model = new RedirectAttributesModelMap();
         Object[] params = new Object[0];
+        
         when(messageSourceMock.getMessage(eq(FEEDBACK_MESSAGE_CODE), eq(params), any(Locale.class))).thenReturn(FEEDBACK_MESSAGE);
 
         controller.addFeedbackMessage(model, FEEDBACK_MESSAGE_CODE, params);
@@ -76,6 +82,7 @@ public class AbstractControllerTest {
 
     @Test
     public void createRedirectViewPath() {
+    	
         String redirectView = controller.createRedirectViewPath(REDIRECT_PATH);
         String expectedView = buildExpectedRedirectViewPath(REDIRECT_PATH);
 
@@ -85,6 +92,7 @@ public class AbstractControllerTest {
     
     
     private String buildExpectedRedirectViewPath(String redirectPath) {
+    	
         StringBuilder builder = new StringBuilder();
         builder.append(VIEW_REDIRECT_PREFIX);
         builder.append(redirectPath);

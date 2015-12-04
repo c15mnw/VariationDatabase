@@ -2,15 +2,17 @@ package com.roslin.mwicks.spring.variation.model.other;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
+import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome1;
 
 /**
  * An entity class which contains the information of a single SNPChromosome1 Table Row.
  * @author Mike Wicks
  */
 
-public class PageSNPChromosome extends ArrayList<SNPChromosome>{
+public class PageSNPChromosome extends ArrayList<SNPChromosome> {
     
     // Properties ----------------------------------------------------------------------------------
     private int pageNumber;

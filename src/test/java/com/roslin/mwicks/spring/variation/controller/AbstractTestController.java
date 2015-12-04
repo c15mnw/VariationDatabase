@@ -53,7 +53,9 @@ public abstract class AbstractTestController {
     
     @Before
     public void setUp() {
+    	
         messageSourceMock = mock(MessageSource.class);
+        
         setUpTest();
     }
 
@@ -67,6 +69,7 @@ public abstract class AbstractTestController {
      * @param messageCode   The message code of the expected error message.
      */
     protected void assertErrorMessage(RedirectAttributes model, String messageCode) {
+    	
         assertFlashMessages(model, messageCode, FLASH_ERROR_MESSAGE);
     }
 
@@ -77,11 +80,13 @@ public abstract class AbstractTestController {
      * @param messageCode
      */
     protected void assertFeedbackMessage(RedirectAttributes model, String messageCode) {
+    	
         assertFlashMessages(model, messageCode, FLASH_FEEDBACK_MESSAGE);
     }
     
 
     private void assertFlashMessages(RedirectAttributes model, String messageCode, String flashMessageParameterName) {
+    	
         Map<String, ?> flashMessages = model.getFlashAttributes();
         Object message = flashMessages.get(flashMessageParameterName);
         assertNotNull(message);
@@ -99,8 +104,11 @@ public abstract class AbstractTestController {
      * @param fieldNames    The names which should have validation errors.
      */
     protected void assertFieldErrors(BindingResult result, String... fieldNames) {
+    	
         assertEquals(fieldNames.length, result.getFieldErrorCount());
+        
         for (String fieldName : fieldNames) {
+        	
             assertNotNull(result.getFieldError(fieldName));
         }
     }
@@ -113,10 +121,13 @@ public abstract class AbstractTestController {
      * @return  A binding result containing the outcome of binding and validation.
      */
     protected BindingResult bindAndValidate(HttpServletRequest request, Object formObject) {
+    	
         WebDataBinder binder = new WebDataBinder(formObject);
+        
         binder.setValidator(validator);
         binder.bind(new MutablePropertyValues(request.getParameterMap()));
         binder.getValidator().validate(binder.getTarget(), binder.getBindingResult());
+        
         return binder.getBindingResult();
     }
 
@@ -127,9 +138,12 @@ public abstract class AbstractTestController {
      * @return  The expected redirect view path.
      */
     protected String createExpectedRedirectViewPath(String path) {
+    	
         StringBuilder builder = new StringBuilder();
+        
         builder.append(VIEW_REDIRECT_PREFIX);
         builder.append(path);
+        
         return builder.toString();
     }
     
@@ -141,6 +155,7 @@ public abstract class AbstractTestController {
      * @param errorMessageCode  The wanted error message code.
      */
     protected void initMessageSourceForErrorMessage(String errorMessageCode) {
+    	
         when(messageSourceMock.getMessage(eq(errorMessageCode), any(Object[].class), any(Locale.class))).thenReturn(ERROR_MESSAGE);
     }
     
@@ -152,6 +167,7 @@ public abstract class AbstractTestController {
      * @param feedbackMessageCode   The wanted feedback message code.
      */
     protected void initMessageSourceForFeedbackMessage(String feedbackMessageCode) {
+    	
         when(messageSourceMock.getMessage(eq(feedbackMessageCode), any(Object[].class), any(Locale.class))).thenReturn(FEEDBACK_MESSAGE);
     }
     
@@ -161,6 +177,7 @@ public abstract class AbstractTestController {
      * @return
      */
     protected MessageSource getMessageSourceMock() {
+    	
         return messageSourceMock;
     }
 }

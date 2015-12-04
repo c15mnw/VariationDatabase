@@ -61,7 +61,6 @@ public final class getEnsemblIds_jsp extends org.apache.jasper.runtime.HttpJspBa
     	
         String ensemblgene = (String) iteratorensemblgenes.next();
 
-        //System.out.println("ensemblgene : " + ensemblgene);
         out.println(ensemblgene);
     }
     

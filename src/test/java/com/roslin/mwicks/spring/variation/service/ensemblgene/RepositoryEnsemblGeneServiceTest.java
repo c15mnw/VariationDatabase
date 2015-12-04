@@ -32,8 +32,7 @@ public class RepositoryEnsemblGeneServiceTest {
 
     private static final int NUMBER_OF_ENSEMBL_GENES_PER_PAGE = 30;
 
-    private static final Long ENSEMBL_GENE_OID = Long.valueOf(5);
-    
+    private static final Long ENSEMBL_GENE_OID = Long.valueOf(40431);
     private static final String ENSEMBL_ID = "ENSGALT00000012809";
     private static final String REGION = "transcript";
     private static final String CHROMOSOME_ID = "3";
@@ -43,6 +42,7 @@ public class RepositoryEnsemblGeneServiceTest {
     private static final long END_LONG = 901472;    
     private static final String STRAND = "+";
 
+    private static final Long ENSEMBL_GENE_OID_UPDATED = Long.valueOf(40432);
     private static final String ENSEMBL_ID_UPDATED = "ENSGALG00000007879";
     private static final String REGION_UPDATED = "gene";
     private static final String CHROMOSOME_ID_UPDATED = "3";
@@ -67,7 +67,7 @@ public class RepositoryEnsemblGeneServiceTest {
     @Test
     public void create() {
         
-    	DTOEnsemblGene created = EnsemblGeneTestUtil.createDTO(null, 
+    	DTOEnsemblGene createdDTOEnsemblGene = EnsemblGeneTestUtil.createDTO(null, 
     			ENSEMBL_ID,
                 REGION,
                 CHROMOSOME_ID,
@@ -76,7 +76,7 @@ public class RepositoryEnsemblGeneServiceTest {
                 STRAND
                 );
         
-        EnsemblGene persisted = EnsemblGeneTestUtil.createModelObject(
+        EnsemblGene persistedEnsemblGene = EnsemblGeneTestUtil.createModelObject(
         		ENSEMBL_GENE_OID,
     			ENSEMBL_ID,
                 REGION,
@@ -86,17 +86,18 @@ public class RepositoryEnsemblGeneServiceTest {
                 STRAND
                 );
         
-        when(repositoryEnsemblGeneMock.save(any(EnsemblGene.class))).thenReturn(persisted);
+        when(repositoryEnsemblGeneMock.save(any(EnsemblGene.class))).thenReturn(persistedEnsemblGene);
         
-        EnsemblGene returned = serviceEnsemblGene.create(created);
+        EnsemblGene returnedEnsemblGene = serviceEnsemblGene.create(createdDTOEnsemblGene);
 
         ArgumentCaptor<EnsemblGene> ensemblgeneArgument = ArgumentCaptor.forClass(EnsemblGene.class);
         
         verify(repositoryEnsemblGeneMock, times(1)).save(ensemblgeneArgument.capture());
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
 
-        assertEnsemblGene(created, ensemblgeneArgument.getValue());
-        assertEquals(persisted, returned);
+        assertEnsemblGene(createdDTOEnsemblGene, ensemblgeneArgument.getValue());
+        
+        assertEquals(persistedEnsemblGene, returnedEnsemblGene);
     }
     
     
@@ -115,13 +116,13 @@ public class RepositoryEnsemblGeneServiceTest {
         
         when(repositoryEnsemblGeneMock.findOne(ENSEMBL_GENE_OID)).thenReturn(deleted);
         
-        EnsemblGene returned = serviceEnsemblGene.delete(ENSEMBL_GENE_OID);
+        EnsemblGene returnedEnsemblGene = serviceEnsemblGene.delete(ENSEMBL_GENE_OID);
         
         verify(repositoryEnsemblGeneMock, times(1)).findOne(ENSEMBL_GENE_OID);
         verify(repositoryEnsemblGeneMock, times(1)).delete(deleted);
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEquals(deleted, returned);
+        assertEquals(deleted, returnedEnsemblGene);
     }
     
     
@@ -144,12 +145,12 @@ public class RepositoryEnsemblGeneServiceTest {
         
         when(repositoryEnsemblGeneMock.findAll()).thenReturn(ensemblgenes);
         
-        List<EnsemblGene> returned = serviceEnsemblGene.findAll();
+        List<EnsemblGene> returnedEnsemblGene = serviceEnsemblGene.findAll();
         
         verify(repositoryEnsemblGeneMock, times(1)).findAll();
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEquals(ensemblgenes, returned);
+        assertEquals(ensemblgenes, returnedEnsemblGene);
     }
     
     
@@ -168,48 +169,48 @@ public class RepositoryEnsemblGeneServiceTest {
         
         when(repositoryEnsemblGeneMock.findOne(ENSEMBL_GENE_OID)).thenReturn(ensemblgene);
         
-        EnsemblGene returned = serviceEnsemblGene.findByOid(ENSEMBL_GENE_OID);
+        EnsemblGene returnedEnsemblGene = serviceEnsemblGene.findByOid(ENSEMBL_GENE_OID);
         
         verify(repositoryEnsemblGeneMock, times(1)).findOne(ENSEMBL_GENE_OID);
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEquals(ensemblgene, returned);
+        assertEquals(ensemblgene, returnedEnsemblGene);
     }
     
     
     @Test
     public void findByGeneName() {
     	
-        List<EnsemblGene> expected = new ArrayList<EnsemblGene>();
+        List<EnsemblGene> expectedDTOEnsemblGene = new ArrayList<EnsemblGene>();
         
-        when(repositoryEnsemblGeneMock.findByGeneName(ENSEMBL_ID)).thenReturn(expected);
+        when(repositoryEnsemblGeneMock.findByGeneName(ENSEMBL_ID)).thenReturn(expectedDTOEnsemblGene);
         
-        List<EnsemblGene> actual = serviceEnsemblGene.findByGeneName(ENSEMBL_ID);
+        List<EnsemblGene> actualEnsemblGene = serviceEnsemblGene.findByGeneName(ENSEMBL_ID);
         
         verify(repositoryEnsemblGeneMock, times(1)).findByGeneName(ENSEMBL_ID);
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEquals(expected, actual);
+        assertEquals(expectedDTOEnsemblGene, actualEnsemblGene);
     }
     
     
     @Test
     public void findByEnsemblIdLike() {
     	
-    	Page<EnsemblGene> expected = null;
+    	Page<EnsemblGene> expectedDTOEnsemblGene = null;
     	
     	Integer pageNumber = 1;
     	
     	PageRequest pageRequest = new PageRequest(pageNumber - 1, NUMBER_OF_ENSEMBL_GENES_PER_PAGE, Sort.Direction.ASC, "ensemblId");
         
-        when(repositoryEnsemblGeneMock.findByEnsemblIdLike(ENSEMBL_ID, pageRequest)).thenReturn(expected);
+        when(repositoryEnsemblGeneMock.findByEnsemblIdLike(ENSEMBL_ID, pageRequest)).thenReturn(expectedDTOEnsemblGene);
         
-        Page<EnsemblGene> actual = serviceEnsemblGene.findByEnsemblIdLike(ENSEMBL_ID, pageRequest);
+        Page<EnsemblGene> actualEnsemblGene = serviceEnsemblGene.findByEnsemblIdLike(ENSEMBL_ID, pageRequest);
         
         verify(repositoryEnsemblGeneMock, times(1)).findByEnsemblIdLike(ENSEMBL_ID, pageRequest);
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEquals(expected, actual);
+        assertEquals(expectedDTOEnsemblGene, actualEnsemblGene);
     }
     
     
@@ -217,14 +218,25 @@ public class RepositoryEnsemblGeneServiceTest {
     @Test
     public void update() throws ExceptionEnsemblGeneNotFound {
     	
-        DTOEnsemblGene updated = EnsemblGeneTestUtil.createDTO(
-        		ENSEMBL_GENE_OID,
+    	/*
+        DTOEnsemblGene updatedDTOEnsemblGene = EnsemblGeneTestUtil.createDTO(
+        		ENSEMBL_GENE_OID_UPDATED,
     			ENSEMBL_ID_UPDATED,
                 REGION_UPDATED,
                 CHROMOSOME_ID_UPDATED,
                 START_UPDATED,
                 END_UPDATED,
                 STRAND_UPDATED
+        		);
+    	 */
+        DTOEnsemblGene updatedDTOEnsemblGene = EnsemblGeneTestUtil.createDTO(
+        		ENSEMBL_GENE_OID,
+    			ENSEMBL_ID,
+                REGION,
+                CHROMOSOME_ID,
+                START,
+                END,
+                STRAND
         		);
         
         EnsemblGene ensemblgene = EnsemblGeneTestUtil.createModelObject(
@@ -237,21 +249,21 @@ public class RepositoryEnsemblGeneServiceTest {
                 STRAND
         		);
         
-        when(repositoryEnsemblGeneMock.findOne(updated.getOid())).thenReturn(ensemblgene);
+        when(repositoryEnsemblGeneMock.findOne(updatedDTOEnsemblGene.getOid())).thenReturn(ensemblgene);
         
-        EnsemblGene returned = serviceEnsemblGene.update(updated);
+        EnsemblGene returnedEnsemblGene = serviceEnsemblGene.update(updatedDTOEnsemblGene);
         
-        verify(repositoryEnsemblGeneMock, times(1)).findOne(updated.getOid());
+        verify(repositoryEnsemblGeneMock, times(1)).findOne(updatedDTOEnsemblGene.getOid());
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
         
-        assertEnsemblGene(updated, returned);
+        assertEnsemblGene(updatedDTOEnsemblGene, returnedEnsemblGene);
     }
     
     
     @Test(expected = ExceptionEnsemblGeneNotFound.class)
     public void updateWhenEnsemblGeneIsNotFound() throws ExceptionEnsemblGeneNotFound {
     	
-        DTOEnsemblGene updated = EnsemblGeneTestUtil.createDTO(
+        DTOEnsemblGene updatedDTOEnsemblGene = EnsemblGeneTestUtil.createDTO(
         		ENSEMBL_GENE_OID,
     			ENSEMBL_ID_UPDATED,
                 REGION_UPDATED,
@@ -261,25 +273,25 @@ public class RepositoryEnsemblGeneServiceTest {
                 STRAND_UPDATED
         		);
         
-        when(repositoryEnsemblGeneMock.findOne(updated.getOid())).thenReturn(null);
+        when(repositoryEnsemblGeneMock.findOne(updatedDTOEnsemblGene.getOid())).thenReturn(null);
 
-        serviceEnsemblGene.update(updated);
+        serviceEnsemblGene.update(updatedDTOEnsemblGene);
 
-        verify(repositoryEnsemblGeneMock, times(1)).findOne(updated.getOid());
+        verify(repositoryEnsemblGeneMock, times(1)).findOne(updatedDTOEnsemblGene.getOid());
         verifyNoMoreInteractions(repositoryEnsemblGeneMock);
     }
 
     
-    private void assertEnsemblGene(DTOEnsemblGene expected, EnsemblGene actual) {
+    private void assertEnsemblGene(DTOEnsemblGene expectedDTOEnsemblGene, EnsemblGene actualEnsemblGene) {
     	
-        assertEquals(expected.getOid(), actual.getOid());
+        assertEquals(expectedDTOEnsemblGene.getOid(), actualEnsemblGene.getOid());
         
-        assertEquals(expected.getEnsemblId(), actual.getEnsemblId());
-        assertEquals(expected.getRegion(), actual.getRegion());
-        assertEquals(expected.getChromosomeId(), actual.getChromosomeId());
-        assertEquals(expected.getStart(), actual.getStart());
-        assertEquals(expected.getEnd(), actual.getEnd());
-        assertEquals(expected.getStrand(), actual.getStrand());
+        assertEquals(expectedDTOEnsemblGene.getEnsemblId(), actualEnsemblGene.getEnsemblId());
+        assertEquals(expectedDTOEnsemblGene.getRegion(), actualEnsemblGene.getRegion());
+        assertEquals(expectedDTOEnsemblGene.getChromosomeId(), actualEnsemblGene.getChromosomeId());
+        assertEquals(expectedDTOEnsemblGene.getStartAsLong(), actualEnsemblGene.getStart());
+        assertEquals(expectedDTOEnsemblGene.getEndAsLong(), actualEnsemblGene.getEnd());
+        assertEquals(expectedDTOEnsemblGene.getStrand(), actualEnsemblGene.getStrand());
     }
 
 }

@@ -9,7 +9,6 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFou
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome25;
-
 import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosome25;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome25;
@@ -17,7 +16,6 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -53,6 +51,16 @@ public class ServiceRepositorySNPChromosome25 implements ServiceSNPChromosome25 
      
     @Resource
     private RepositorySNPChromosome25 repositorysnpchromosome;
+
+    
+    @Transactional(readOnly = true)
+    @Override
+    public SNPChromosome25 findByOid(Long oid) {
+    	
+        LOGGER.debug("Finding SNPChromosome by oid: " + oid);
+        
+        return repositorysnpchromosome.findOne(oid);
+    }
 
     
     @Transactional

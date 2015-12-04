@@ -71,6 +71,14 @@ public interface ServiceSNPChromosome20 {
 
     
     /**
+     * Finds ensemblgene by id.
+     * @param oid    The oid of the wanted ensemblgene.
+     * @return  The found ensemblgene. If no ensemblgene is found, this method returns null.
+     */
+    public SNPChromosome20 findByOid(Long oid);
+
+
+    /**
      * Finds all snpchromosome.
      * @return  A list of snpchromosome.
      */

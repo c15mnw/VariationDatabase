@@ -8,7 +8,6 @@ import javax.persistence.*;
 
 import java.util.Date;
 
-import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome1.Builder;
 import com.roslin.mwicks.utility.ObjectConverter;
 
 /**
@@ -143,7 +142,7 @@ public class SNPChromosomeLGE64 {
     
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return this.oid;
     }
     public String getSnpId() {
@@ -528,7 +527,7 @@ public class SNPChromosomeLGE64 {
     }
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
     public void setSnpId(String snpId) {

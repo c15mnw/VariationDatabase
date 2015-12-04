@@ -13,9 +13,9 @@ import com.roslin.mwicks.utility.ObjectConverter;
 /**
  * An entity class which contains the information of a single SNPChromosome Table Row.
  * @author Mike Wicks
+ * @Entity
+ * @Transactional
  */
-@Entity
-@Transactional
 
 public class SNPChromosome {
     
@@ -103,7 +103,7 @@ public class SNPChromosome {
     
 
     // Getters ------------------------------------------------------------------------------------
-    public long getOid() {
+    public Long getOid() {
     	return this.oid;
     }
     public String getSnpId() {
@@ -572,7 +572,7 @@ public class SNPChromosome {
     }
 
     // Setters ------------------------------------------------------------------------------------
-    public void setOid(long oid) {
+    public void setOid(Long oid) {
     	this.oid = oid;
     }
     public void setSnpId(String snpId) {

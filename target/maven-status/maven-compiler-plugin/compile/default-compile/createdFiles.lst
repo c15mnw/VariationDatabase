@@ -7,12 +7,10 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome27.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome3.class
 com/roslin/mwicks/spring/variation/model/other/PageSNPChromosome.class
 com/roslin/mwicks/spring/variation/service/ensemblgene/ServiceRepositoryEnsemblGene.class
-com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome14.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome24.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome16.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome17.class
-com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome.class
 com/roslin/mwicks/spring/variation/exception/ExceptionSNPChromosomeLowCoordinateNotNumeric.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome9.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome8.class
@@ -99,7 +97,6 @@ com/roslin/mwicks/spring/variation/serviceinterface/ensemblgene/ServiceEnsemblGe
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome10$Builder.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome14.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome7.class
-com/roslin/mwicks/spring/variation/controller/ControllerEnsemblGene.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome7.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome32.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeZ.class
@@ -206,4 +203,3 @@ com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChr
 com/roslin/mwicks/spring/variation/exception/ExceptionSNPChromosomeReferenceAlleleNotSupplied.class
 com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome1.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome15.class
-com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome.class

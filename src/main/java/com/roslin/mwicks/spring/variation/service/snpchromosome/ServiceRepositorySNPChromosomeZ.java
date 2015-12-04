@@ -55,6 +55,16 @@ public class ServiceRepositorySNPChromosomeZ implements ServiceSNPChromosomeZ {
     private EntityManager entityManager;
      
     
+    @Transactional(readOnly = true)
+    @Override
+    public SNPChromosomeZ findByOid(Long oid) {
+    	
+        LOGGER.debug("Finding SNPChromosome by oid: " + oid);
+        
+        return repositorysnpchromosome.findOne(oid);
+    }
+
+    
     @Transactional
     @Override
     public <T extends SNPChromosomeZ> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {

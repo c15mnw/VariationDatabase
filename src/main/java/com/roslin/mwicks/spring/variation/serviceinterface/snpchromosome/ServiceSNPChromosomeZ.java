@@ -8,7 +8,7 @@ import com.roslin.mwicks.spring.variation.dto.DTODownload;
 import com.roslin.mwicks.spring.variation.dto.DTOSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFound;
-
+import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
@@ -70,6 +70,14 @@ public interface ServiceSNPChromosomeZ {
     public List<SNPChromosome> download(DTODownload dtoDownload);
 
     
+    /**
+     * Finds ensemblgene by id.
+     * @param oid    The oid of the wanted ensemblgene.
+     * @return  The found ensemblgene. If no ensemblgene is found, this method returns null.
+     */
+    public SNPChromosomeZ findByOid(Long oid);
+
+
     /**
      * Finds all snpchromosome.
      * @return  A list of snpchromosome.
