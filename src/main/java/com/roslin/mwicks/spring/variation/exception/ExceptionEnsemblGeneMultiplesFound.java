@@ -5,6 +5,7 @@ package com.roslin.mwicks.spring.variation.exception;
  * This exception is thrown if the wanted SNPChromosome is not found.
  * @author Mike Wicks
  */
+@SuppressWarnings("serial")
 public class ExceptionEnsemblGeneMultiplesFound extends Exception {
     // Constructors -------------------------------------------------------------------------------
     /*

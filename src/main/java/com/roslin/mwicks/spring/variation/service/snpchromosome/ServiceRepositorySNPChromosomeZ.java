@@ -17,7 +17,6 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -90,8 +89,8 @@ public class ServiceRepositorySNPChromosomeZ implements ServiceSNPChromosomeZ {
     	
     	return savedEntities;
     }
-    	 
     
+    /*
     private <T extends SNPChromosomeZ> T persistOrMerge(T t) {
     
     	if (t.getOid() == 0) {
@@ -104,6 +103,8 @@ public class ServiceRepositorySNPChromosomeZ implements ServiceSNPChromosomeZ {
     		return entityManager.merge(t);
     	}
     }
+     */
+    
     
     
     @Transactional(readOnly = true)

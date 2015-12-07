@@ -42,7 +42,7 @@ public class RepositoryEnsemblGeneServiceTest {
     private static final long END_LONG = 901472;    
     private static final String STRAND = "+";
 
-    private static final Long ENSEMBL_GENE_OID_UPDATED = Long.valueOf(40432);
+    //private static final Long ENSEMBL_GENE_OID_UPDATED = Long.valueOf(40432);
     private static final String ENSEMBL_ID_UPDATED = "ENSGALG00000007879";
     private static final String REGION_UPDATED = "gene";
     private static final String CHROMOSOME_ID_UPDATED = "3";

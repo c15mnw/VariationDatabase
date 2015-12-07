@@ -2,8 +2,6 @@ package com.roslin.mwicks.spring.variation.model.snpchromosome;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-import org.springframework.transaction.annotation.Transactional;
-
 import javax.persistence.*;
 
 import java.util.Date;

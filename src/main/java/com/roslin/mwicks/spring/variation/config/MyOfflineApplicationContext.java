@@ -2,13 +2,9 @@ package com.roslin.mwicks.spring.variation.config;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 
-import com.roslin.mwicks.spring.variation.message.CSVResponseMessageConverter;
-
 import org.hibernate.ejb.HibernatePersistence;
 
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.*;
-import org.springframework.context.support.ResourceBundleMessageSource;
 
 import org.springframework.core.env.Environment;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -16,20 +12,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.HttpMessageConverter;
-
 import javax.annotation.Resource;
 
 import javax.sql.DataSource;
 
-import java.nio.charset.Charset;
-import java.util.List;
 import java.util.Properties;
 
 /**

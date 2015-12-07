@@ -90,7 +90,7 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     }
     	 
     
-    private <T extends EnsemblGene> T persistOrMerge(T t) {
+    /*private <T extends EnsemblGene> T persistOrMerge(T t) {
     
     	if (t.getOid() == 0) {
     	
@@ -102,6 +102,17 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     		return entityManager.merge(t);
     	}
     }
+   
+    	if (t.getOid() == 0) {
+    	
+    		entityManager.persist(t);
+    		return t;
+    	} 
+    	else {
+    	
+    		return entityManager.merge(t);
+    	}
+    }*/
 
     
     @Transactional(readOnly = true)

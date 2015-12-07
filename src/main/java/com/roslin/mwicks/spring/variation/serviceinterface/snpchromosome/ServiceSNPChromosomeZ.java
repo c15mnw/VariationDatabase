@@ -8,7 +8,6 @@ import com.roslin.mwicks.spring.variation.dto.DTODownload;
 import com.roslin.mwicks.spring.variation.dto.DTOSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFound;
-import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;

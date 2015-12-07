@@ -89,7 +89,7 @@ public class ServiceRepositorySNPChromosome14 implements ServiceSNPChromosome14 
     	return savedEntities;
     }
     	 
-    
+    /*
     private <T extends SNPChromosome14> T persistOrMerge(T t) {
     
     	if (t.getOid() == 0) {
@@ -101,7 +101,7 @@ public class ServiceRepositorySNPChromosome14 implements ServiceSNPChromosome14 
     	
     		return entityManager.merge(t);
     	}
-    }
+    }*/
     
     
     @Transactional(readOnly = true)

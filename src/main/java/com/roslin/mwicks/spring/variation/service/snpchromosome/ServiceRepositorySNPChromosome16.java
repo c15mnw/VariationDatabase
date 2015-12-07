@@ -89,7 +89,7 @@ public class ServiceRepositorySNPChromosome16 implements ServiceSNPChromosome16 
     	return savedEntities;
     }
     	 
-    
+    /*
     private <T extends SNPChromosome16> T persistOrMerge(T t) {
     
     	if (t.getOid() == 0) {
@@ -101,7 +101,7 @@ public class ServiceRepositorySNPChromosome16 implements ServiceSNPChromosome16 
     	
     		return entityManager.merge(t);
     	}
-    }
+    }*/
     
     
     @Transactional(readOnly = true)

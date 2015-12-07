@@ -8,8 +8,6 @@ import javax.persistence.*;
 
 import java.util.Date;
 
-import com.roslin.mwicks.utility.ObjectConverter;
-
 /**
  * An entity class which contains the information of a single SNPChromosome Table Row.
  * @author Mike Wicks

@@ -9,7 +9,6 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotFou
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeLGE64;
-import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeZ;
 import com.roslin.mwicks.spring.variation.repository.snpchromosome.RepositorySNPChromosomeLGE64;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
@@ -17,7 +16,6 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -90,7 +88,7 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     	return savedEntities;
     }
     	 
-    
+    /*
     private <T extends SNPChromosomeLGE64> T persistOrMerge(T t) {
     
     	if (t.getOid() == 0) {
@@ -102,7 +100,7 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     	
     		return entityManager.merge(t);
     	}
-    }
+    }*/
     
     
     @Transactional(readOnly = true)

@@ -207,7 +207,6 @@ public class ControllerSNPChromosome extends AbstractController {
     }
 
     
-    @SuppressWarnings("unused")
 	@RequestMapping(value = "/search", method = RequestMethod.POST)
     public String search(@ModelAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA) DTOSearch dtoSearch, Model model, RedirectAttributes attributes) {
     	

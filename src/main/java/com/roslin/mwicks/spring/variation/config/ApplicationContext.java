@@ -28,7 +28,6 @@ import javax.annotation.Resource;
 
 import javax.sql.DataSource;
 
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Properties;
 

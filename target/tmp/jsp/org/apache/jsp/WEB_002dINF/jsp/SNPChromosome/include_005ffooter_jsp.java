@@ -45,6 +45,7 @@ public final class include_005ffooter_jsp extends org.apache.jasper.runtime.Http
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("<div>\n");
       out.write("    <div id=\"footer\">\n");
       out.write("        <div class=\"container\">\n");
       out.write("            <div class=\"row\">\n");
@@ -103,7 +104,7 @@ public final class include_005ffooter_jsp extends org.apache.jasper.runtime.Http
       out.write("            <div class=\"row\">\n");
       out.write("                <div class=\"span9\">\n");
       out.write("                </div>\n");
-      out.write("                <div class=\"span3\"><p>&copy; NARF 2013 | <a href=\"http://www.narf.ac.uk/privacy-cookies.html\">Privacy & Cookies</a></p>\n");
+      out.write("                <div class=\"span3\"><p>&copy; NARF 2013 | <a href=\"http://www.narf.ac.uk/privacy-cookies.html\">Privacy &amp; Cookies</a></p>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");

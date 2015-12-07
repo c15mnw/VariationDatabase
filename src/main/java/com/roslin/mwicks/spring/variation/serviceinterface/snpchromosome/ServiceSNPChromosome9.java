@@ -13,7 +13,6 @@ import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome9;
-import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosomeLGE22C19W28_E50C23;
 
 /**
  * Declares methods used to obtain and modify SNPChromosome9 information.
