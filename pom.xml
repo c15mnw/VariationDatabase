@@ -41,9 +41,16 @@
         <jackson.version>2.6.3</jackson.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springdata.version>1.9.1.RELEASE</springdata.version>
+        <javax.el-api.version>3.0.0</javax.el-api.version>
     </properties>
     
     <dependencies>
+    
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>${javax.el-api.version}</version>
+        </dependency>
 
         <!-- Apache Commons -->
         <dependency>

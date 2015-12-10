@@ -11,7 +11,7 @@ import java.util.Date;
 import com.roslin.mwicks.utility.ObjectConverter;
 
 /**
- * An entity class which contains the information of a single SNPChromosome1 Table Row.
+ * An entity class which contains the information of a single SNPChromosomeLGE64 Table Row.
  * @author Mike Wicks
  */
 @Entity
@@ -21,9 +21,10 @@ import com.roslin.mwicks.utility.ObjectConverter;
 public class SNPChromosomeLGE64 {
     
     // Constants ----------------------------------------------------------------------------------
-	protected static final String TRUE = "True";
-	protected static final String FALSE = "False";
-	protected static final String NA = "N/A";
+	protected static final String STRING_NA = "N/A";
+	protected static final String STRING_FIXED = "Fixed";
+	protected static final String STRING_NOT_FIXED = "Not Fixed";
+	protected static final String STRING_REFERENCE = "Ref.";
 
 	// Properties ---------------------------------------------------------------------------------
 	@Id
@@ -185,10 +186,31 @@ public class SNPChromosomeLGE64 {
     	return this.strain7AlleleFixed;
     }
     public boolean isStrain7AlleleFixed() {
-    	if ( this.strain7AlleleFixed.equals(FALSE) || this.strain7AlleleFixed.equals(NA) ) {
+    	if ( this.strain7AlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strain7AlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrain7AlleleNotFixed() {
+    	if ( this.strain7AlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain7AlleleRef() {
+    	if ( this.strain7AlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain7AlleleNA() {
+    	if ( this.strain7AlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -205,10 +227,31 @@ public class SNPChromosomeLGE64 {
     	return this.strainPAlleleFixed;
     }
     public boolean isStrainPAlleleFixed() {
-    	if ( this.strainPAlleleFixed.equals(FALSE) || this.strainPAlleleFixed.equals(NA) ) {
+    	if ( this.strainPAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strainPAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrainPAlleleNotFixed() {
+    	if ( this.strainPAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainPAlleleRef() {
+    	if ( this.strainPAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainPAlleleNA() {
+    	if ( this.strainPAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -225,10 +268,31 @@ public class SNPChromosomeLGE64 {
     	return this.strainWAlleleFixed;
     }
     public boolean isStrainWAlleleFixed() {
-    	if ( this.strainWAlleleFixed.equals(FALSE) || this.strainWAlleleFixed.equals(NA) ) {
+    	if ( this.strainWAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strainWAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrainWAlleleNotFixed() {
+    	if ( this.strainWAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainWAlleleRef() {
+    	if ( this.strainWAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainWAlleleNA() {
+    	if ( this.strainWAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -245,10 +309,31 @@ public class SNPChromosomeLGE64 {
     	return this.strainNAlleleFixed;
     }
     public boolean isStrainNAlleleFixed() {
-    	if ( this.strainNAlleleFixed.equals(FALSE) || this.strainNAlleleFixed.equals(NA) ) {
+    	if ( this.strainNAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strainNAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrainNAlleleNotFixed() {
+    	if ( this.strainNAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainNAlleleRef() {
+    	if ( this.strainNAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainNAlleleNA() {
+    	if ( this.strainNAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -265,10 +350,31 @@ public class SNPChromosomeLGE64 {
     	return this.strain15IAlleleFixed;
     }
     public boolean isStrain15IAlleleFixed() {
-    	if ( this.strain15IAlleleFixed.equals(FALSE) || this.strain15IAlleleFixed.equals(NA) ) {
+    	if ( this.strain15IAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strain15IAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrain15IAlleleNotFixed() {
+    	if ( this.strain15IAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain15IAlleleRef() {
+    	if ( this.strain15IAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain15IAlleleNA() {
+    	if ( this.strain15IAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -284,11 +390,32 @@ public class SNPChromosomeLGE64 {
     public String getStrainZeroAlleleFixed() {  
     	return this.strainZeroAlleleFixed;
     }
-    public boolean isstrainZeroAlleleFixed() {
-    	if ( this.strainZeroAlleleFixed.equals(FALSE) || this.strainZeroAlleleFixed.equals(NA) ) {
+    public boolean isStrainZeroAlleleFixed() {
+    	if ( this.strainZeroAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strainZeroAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrainZeroAlleleNotFixed() {
+    	if ( this.strainZeroAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainZeroAlleleRef() {
+    	if ( this.strainZeroAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainZeroAlleleNA() {
+    	if ( this.strainZeroAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -305,10 +432,31 @@ public class SNPChromosomeLGE64 {
     	return this.strain6AlleleFixed;
     }
     public boolean isStrain6AlleleFixed() {
-    	if ( this.strain6AlleleFixed.equals(FALSE) || this.strain6AlleleFixed.equals(NA) ) {
+    	if ( this.strain6AlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strain6AlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrain6AlleleNotFixed() {
+    	if ( this.strain6AlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain6AlleleRef() {
+    	if ( this.strain6AlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrain6AlleleNA() {
+    	if ( this.strain6AlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -325,10 +473,31 @@ public class SNPChromosomeLGE64 {
     	return this.strainCAlleleFixed;
     }
     public boolean isStrainCAlleleFixed() {
-    	if ( this.strainCAlleleFixed.equals(FALSE) || this.strainCAlleleFixed.equals(NA) ) {
+    	if ( this.strainCAlleleFixed.equals(STRING_FIXED) ) {
+    		return true;
+    	}
+    	else {
     		return false;
     	}
-    	if ( this.strainCAlleleFixed.equals(TRUE)) {
+    }
+    public boolean isStrainCAlleleNotFixed() {
+    	if ( this.strainCAlleleFixed.equals(STRING_NOT_FIXED) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainCAlleleRef() {
+    	if ( this.strainCAlleleFixed.equals(STRING_REFERENCE) ) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isStrainCAlleleNA() {
+    	if ( this.strainCAlleleFixed.equals(STRING_NA) ) {
     		return true;
     	}
     	else {
@@ -355,50 +524,26 @@ public class SNPChromosomeLGE64 {
     public String getPositionAsString() {
     	return ObjectConverter.convert(position, String.class);
     }
-    public String getStrain7AlleleFixedAsString() {
-    	return ObjectConverter.convert(strain7AlleleFixed, String.class);
-    }
     public String getStrain7AlleleRatioAsString() {
     	return ObjectConverter.convert(strain7AlleleRatio, String.class);
-    }
-    public String getStrainPAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainPAlleleFixed, String.class);
     }
     public String getStrainPAlleleRatioAsString() {
     	return ObjectConverter.convert(strainPAlleleRatio, String.class);
     }
-    public String getStrainWAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainWAlleleFixed, String.class);
-    }
     public String getStrainWAlleleRatioAsString() {
     	return ObjectConverter.convert(strainWAlleleRatio, String.class);
-    }
-    public String getStrainNAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainNAlleleFixed, String.class);
     }
     public String getStrainNAlleleRatioAsString() {
     	return ObjectConverter.convert(strainNAlleleRatio, String.class);
     }
-    public String getStrain15IAlleleFixedAsString() {
-    	return ObjectConverter.convert(strain15IAlleleFixed, String.class);
-    }
     public String getStrain15IAlleleRatioAsString() {
     	return ObjectConverter.convert(strain15IAlleleRatio, String.class);
-    }
-    public String getStrainZeroAlleleFixedAsString() {  
-    	return ObjectConverter.convert(strainZeroAlleleFixed, String.class);
     }
     public String getStrainZeroAlleleRatioAsString() {
     	return ObjectConverter.convert(strainZeroAlleleRatio, String.class);
     }
-    public String getStrain6AlleleFixedAsString() {
-    	return ObjectConverter.convert(strain6AlleleFixed, String.class);
-    }
     public String getStrain6AlleleRatioAsString() {
     	return ObjectConverter.convert(strain6AlleleRatio, String.class);
-    }
-    public String getStrainCAlleleFixedAsString() {
-    	return ObjectConverter.convert(strainCAlleleFixed, String.class);
     }
     public String getStrainCAlleleRatioAsString() {
     	return ObjectConverter.convert(strainCAlleleRatio, String.class);
@@ -420,50 +565,50 @@ public class SNPChromosomeLGE64 {
     public String getPositionAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(position, String.class) + '\"';
     }
-    public String getStrain7AlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strain7AlleleFixed, String.class) + '\"';
+    public String getStrain7AlleleFixedQuoted() {
+    	return '\"' + strain7AlleleFixed + '\"';
     }
     public String getStrain7AlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strain7AlleleRatio, String.class) + '\"';
     }
-    public String getStrainPAlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strainPAlleleFixed, String.class) + '\"';
+    public String getStrainPAlleleFixedQuoted() {
+    	return '\"' + strainPAlleleFixed + '\"';
     }
     public String getStrainPAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strainPAlleleRatio, String.class) + '\"';
     }
-    public String getStrainWAlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strainWAlleleFixed, String.class) + '\"';
+    public String getStrainWAlleleFixedQuoted() {
+    	return '\"' + strainWAlleleFixed + '\"';
     }
     public String getStrainWAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strainWAlleleRatio, String.class) + '\"';
     }
-    public String getStrainNAlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strainNAlleleFixed, String.class) + '\"';
+    public String getStrainNAlleleFixedQuoted() {
+    	return '\"' + strainNAlleleFixed + '\"';
     }
     public String getStrainNAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strainNAlleleRatio, String.class) + '\"';
     }
-    public String getStrain15IAlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strain15IAlleleFixed, String.class) + '\"';
+    public String getStrain15IAlleleFixedQuoted() {
+    	return '\"' + strain15IAlleleFixed + '\"';
     }
     public String getStrain15IAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strain15IAlleleRatio, String.class) + '\"';
     }
-    public String getStrainZeroAlleleFixedAsStringQuoted() {  
-    	return '\"' + ObjectConverter.convert(strainZeroAlleleFixed, String.class) + '\"';
+    public String getStrainZeroAlleleFixedQuoted() {  
+    	return '\"' + strainZeroAlleleFixed + '\"';
     }
     public String getStrainZeroAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strainZeroAlleleRatio, String.class) + '\"';
     }
-    public String getStrain6AlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strain6AlleleFixed, String.class) + '\"';
+    public String getStrain6AlleleFixedQuoted() {
+    	return '\"' + strain6AlleleFixed + '\"';
     }
     public String getStrain6AlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strain6AlleleRatio, String.class) + '\"';
     }
-    public String getStrainCAlleleFixedAsStringQuoted() {
-    	return '\"' + ObjectConverter.convert(strainCAlleleFixed, String.class) + '\"';
+    public String getStrainCAlleleFixedQuoted() {
+    	return '\"' + strainCAlleleFixed + '\"';
     }
     public String getStrainCAlleleRatioAsStringQuoted() {
     	return '\"' + ObjectConverter.convert(strainCAlleleRatio, String.class) + '\"';
@@ -834,9 +979,9 @@ public class SNPChromosomeLGE64 {
         return ToStringBuilder.reflectionToString(this);
     }
 
-    // SNPChromosome1 Builder ---------------------------------------------------------------------
+    // SNPChromosomeLGE64 Builder ---------------------------------------------------------------------
     /**
-     * Gets a builder which is used to create SNPChromosome1 objects.
+     * Gets a builder which is used to create SNPChromosomeLGE64 objects.
      * 
      * @param snpId The SNP ID
      * @param chromosomeId The Chromosome ID
@@ -945,8 +1090,50 @@ public class SNPChromosomeLGE64 {
         		strainCAlleleRatio );
     }
     
+    
+    public static Builder getBuilder(SNPChromosome snpchromosome
+    		) {
+    	
+        return new Builder(
+        		snpchromosome.getSnpId(),
+        		snpchromosome.getChromosomeId(),
+        		snpchromosome.getPosition(),
+        		snpchromosome.getReference(),    
+        		snpchromosome.getAlternative(),
+        		snpchromosome.getRegion(),
+        		snpchromosome.getEnsemblGene(),
+        		snpchromosome.getEnsemblTranscript(),
+        		snpchromosome.getEnsemblAnnotation(),
+        		snpchromosome.getStrain7Allele(),
+        		snpchromosome.getStrain7AlleleFixed(),
+        		snpchromosome.getStrain7AlleleRatio(),
+        		snpchromosome.getStrainPAllele(),
+        		snpchromosome.getStrainPAlleleFixed(),
+        		snpchromosome.getStrainPAlleleRatio(),
+        		snpchromosome.getStrainWAllele(),
+        		snpchromosome.getStrainWAlleleFixed(),
+        		snpchromosome.getStrainWAlleleRatio(),
+        		snpchromosome.getStrainNAllele(),
+        		snpchromosome.getStrainNAlleleFixed(),
+        		snpchromosome.getStrainNAlleleRatio(),
+        		snpchromosome.getStrain15IAllele(),
+        		snpchromosome.getStrain15IAlleleFixed(),
+        		snpchromosome.getStrain15IAlleleRatio(),
+        		snpchromosome.getStrainZeroAllele(),
+        		snpchromosome.getStrainZeroAlleleFixed(),
+        		snpchromosome.getStrainZeroAlleleRatio(),
+        		snpchromosome.getStrain6Allele(),
+        		snpchromosome.getStrain6AlleleFixed(),
+        		snpchromosome.getStrain6AlleleRatio(),
+        		snpchromosome.getStrainCAllele(),
+        		snpchromosome.getStrainCAlleleFixed(),
+        		snpchromosome.getStrainCAlleleRatio()
+        		);
+    }
+    
+
     /**
-     * A Builder class used to create new SNPChromosome1 objects.
+     * A Builder class used to create new SNPChromosomeLGE64 objects.
      */
     public static class Builder {
     	
@@ -1061,54 +1248,14 @@ public class SNPChromosomeLGE64 {
         }
 
         /**
-         * Builds the new SNPChromosome1 object.
+         * Builds the new SNPChromosomeLGE64 object.
          * 
-         * @return this. The created SNPChromosome1 object.
+         * @return this. The created SNPChromosomeLGE64 object.
          */
         public SNPChromosomeLGE64 build() {
         	
             return built;
         }
-    }
-
-    public static Builder getBuilder(SNPChromosome snpchromosome
-    		) {
-    	
-        return new Builder(
-        		snpchromosome.getSnpId(),
-        		snpchromosome.getChromosomeId(),
-        		snpchromosome.getPosition(),
-        		snpchromosome.getReference(),    
-        		snpchromosome.getAlternative(),
-        		snpchromosome.getRegion(),
-        		snpchromosome.getEnsemblGene(),
-        		snpchromosome.getEnsemblTranscript(),
-        		snpchromosome.getEnsemblAnnotation(),
-        		snpchromosome.getStrain7Allele(),
-        		snpchromosome.getStrain7AlleleFixed(),
-        		snpchromosome.getStrain7AlleleRatio(),
-        		snpchromosome.getStrainPAllele(),
-        		snpchromosome.getStrainPAlleleFixed(),
-        		snpchromosome.getStrainPAlleleRatio(),
-        		snpchromosome.getStrainWAllele(),
-        		snpchromosome.getStrainWAlleleFixed(),
-        		snpchromosome.getStrainWAlleleRatio(),
-        		snpchromosome.getStrainNAllele(),
-        		snpchromosome.getStrainNAlleleFixed(),
-        		snpchromosome.getStrainNAlleleRatio(),
-        		snpchromosome.getStrain15IAllele(),
-        		snpchromosome.getStrain15IAlleleFixed(),
-        		snpchromosome.getStrain15IAlleleRatio(),
-        		snpchromosome.getStrainZeroAllele(),
-        		snpchromosome.getStrainZeroAlleleFixed(),
-        		snpchromosome.getStrainZeroAlleleRatio(),
-        		snpchromosome.getStrain6Allele(),
-        		snpchromosome.getStrain6AlleleFixed(),
-        		snpchromosome.getStrain6AlleleRatio(),
-        		snpchromosome.getStrainCAllele(),
-        		snpchromosome.getStrainCAlleleFixed(),
-        		snpchromosome.getStrainCAlleleRatio()
-        		);
     }
 
     /**

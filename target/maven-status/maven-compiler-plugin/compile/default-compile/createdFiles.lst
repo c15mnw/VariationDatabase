@@ -51,7 +51,6 @@ com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromos
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome12.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome10.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosomeLGE22C19W28_E50C23.class
-com/roslin/mwicks/spring/variation/routines/ConvertFiletoSNPChromosomeList.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome1.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome26.class
 com/roslin/mwicks/spring/variation/exception/ExceptionSNPChromosomeSearchRangeGreaterThanOneMillion.class
@@ -106,7 +105,6 @@ com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome3.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome10.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome28.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome24.class
-com/roslin/mwicks/spring/variation/offline/InsertEnsemblGene.class
 com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome21.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome13$Builder.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome18$Builder.class
@@ -129,9 +127,7 @@ com/roslin/mwicks/spring/variation/dto/DTOSearch.class
 com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome22.class
 com/roslin/mwicks/spring/variation/dto/SearchReference.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome5$Builder.class
-com/roslin/mwicks/spring/variation/offline/InsertSNPChromosome.class
 com/roslin/mwicks/spring/variation/config/MyAutocompleteApplicationContext.class
-com/roslin/mwicks/spring/variation/routines/ConvertFiletoEnsemblGeneList.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome6.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome12.class
 com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome9$Builder.class

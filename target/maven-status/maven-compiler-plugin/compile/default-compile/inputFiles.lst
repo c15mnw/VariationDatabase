@@ -28,7 +28,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome19.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome20.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome10.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/offline/InsertSNPChromosome.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome8.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome21.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome5.java
@@ -76,7 +75,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome19.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/repository/snpchromosome/RepositorySNPChromosome18.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/SearchChromosome.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/routines/ConvertFiletoEnsemblGeneList.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/exception/ExceptionEnsemblGeneMultiplesFound.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/other/CSVResponse.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeLGE22C19W28_E50C23.java
@@ -111,7 +109,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/service/snpchromosome/ServiceRepositorySNPChromosome32.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/DTOSNPChromosome.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/exception/ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/offline/InsertEnsemblGene.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosomeLGE22C19W28_E50C23.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome5.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/dto/DownloadFormat.java
@@ -129,7 +126,6 @@
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome9.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosome22.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/config/DataJPAExampleInitializer.java
-/Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/routines/ConvertFiletoSNPChromosomeList.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome18.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/serviceinterface/snpchromosome/ServiceSNPChromosome21.java
 /Users/mwicks23/workspace/VariationDatabase/src/main/java/com/roslin/mwicks/spring/variation/model/snpchromosome/SNPChromosomeW.java

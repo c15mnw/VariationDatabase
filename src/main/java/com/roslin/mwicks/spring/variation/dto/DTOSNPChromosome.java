@@ -19,11 +19,10 @@ import com.roslin.mwicks.utility.StringUtility;
 public class DTOSNPChromosome {
     
     // Constants ----------------------------------------------------------------------------------
-	protected static final String STRING_NA = "NA";
+	protected static final String STRING_NA = "N/A";
 	protected static final String STRING_FIXED = "Fixed";
 	protected static final String STRING_NOT_FIXED = "Not Fixed";
-	protected static final String STRING_REFERENCE = "Reference";
-
+	protected static final String STRING_REFERENCE = "Ref.";
 	
     // Properties ---------------------------------------------------------------------------------
 	private Long oid;
@@ -419,7 +418,7 @@ public class DTOSNPChromosome {
     	}
     }
     
-    public boolean isStrain7AlleleFixedABoolean() {
+    public boolean isStrain7AlleleFixedAValidValue() {
 
     	if ( this.strain7AlleleFixed.equals(STRING_FIXED) || 
     			this.strain7AlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -440,7 +439,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainPAlleleFixedABoolean() {
+    public boolean isStrainPAlleleFixedAValidValue() {
 
     	if ( this.strainPAlleleFixed.equals(STRING_FIXED) || 
     			this.strainPAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -461,7 +460,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainWAlleleFixedABoolean() {
+    public boolean isStrainWAlleleFixedAValidValue() {
 
     	if ( this.strainWAlleleFixed.equals(STRING_FIXED) || 
     			this.strainWAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -482,7 +481,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainNAlleleFixedABoolean() {
+    public boolean isStrainNAlleleFixedAValidValue() {
 
     	if ( this.strainNAlleleFixed.equals(STRING_FIXED) || 
     			this.strainNAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -503,7 +502,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrain15IAlleleFixedABoolean() {
+    public boolean isStrain15IAlleleFixedAValidValue() {
 
     	if ( this.strain15IAlleleFixed.equals(STRING_FIXED) || 
     			this.strain15IAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -524,7 +523,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainZeroAlleleFixedABoolean() {  
+    public boolean isStrainZeroAlleleFixedAValidValue() {  
 
     	if ( this.strainZeroAlleleFixed.equals(STRING_FIXED) || 
     			this.strainZeroAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -545,7 +544,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrain6AlleleFixedABoolean() {
+    public boolean isStrain6AlleleFixedAValidValue() {
 
     	if ( this.strain6AlleleFixed.equals(STRING_FIXED) || 
     			this.strain6AlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -566,7 +565,7 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isStrainCAlleleFixedABoolean() {
+    public boolean isStrainCAlleleFixedAValidValue() {
 
     	if ( this.strainCAlleleFixed.equals(STRING_FIXED) || 
     			this.strainCAlleleFixed.equals(STRING_NOT_FIXED) || 
@@ -595,14 +594,14 @@ public class DTOSNPChromosome {
     public boolean isThisAValidSNPChromosome(){
 
         if (this.isPositionAnInteger() && 
-        	    this.isStrain7AlleleFixedABoolean() && 
-        	    this.isStrainPAlleleFixedABoolean() &&
-        	    this.isStrainWAlleleFixedABoolean() && 
-        	    this.isStrainNAlleleFixedABoolean() && 
-        	    this.isStrain15IAlleleFixedABoolean() && 
-        	    this.isStrainZeroAlleleFixedABoolean() && 
-        	    this.isStrain6AlleleFixedABoolean() && 
-        	    this.isStrainCAlleleFixedABoolean()  
+        	    this.isStrain7AlleleFixedAValidValue() && 
+        	    this.isStrainPAlleleFixedAValidValue() &&
+        	    this.isStrainWAlleleFixedAValidValue() && 
+        	    this.isStrainNAlleleFixedAValidValue() && 
+        	    this.isStrain15IAlleleFixedAValidValue() && 
+        	    this.isStrainZeroAlleleFixedAValidValue() && 
+        	    this.isStrain6AlleleFixedAValidValue() && 
+        	    this.isStrainCAlleleFixedAValidValue()  
         	    ) {
 
         	return true;

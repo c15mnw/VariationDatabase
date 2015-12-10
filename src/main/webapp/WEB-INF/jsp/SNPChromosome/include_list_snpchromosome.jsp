@@ -66,36 +66,36 @@
                 <td><c:out value="${snpchromosome.getEnsemblTranscriptMultiLines()}"/></td>
                 <td><c:out value="${snpchromosome.getEnsemblAnnotationMultiLines()}"/></td>
                 <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
-                <td><c:out value="${snpchromosome.strain7Allele}"/></td>
-                <td><c:out value="${snpchromosome.getStrain7AlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain7Allele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain7AlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
-                <td><c:out value="${snpchromosome.strainPAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainPAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainPAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainPAlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
-                <td><c:out value="${snpchromosome.strainWAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainWAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainWAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainWAlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
-                <td><c:out value="${snpchromosome.strainNAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainNAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainNAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainNAlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
-                <td><c:out value="${snpchromosome.strain15IAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrain15IAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain15IAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain15IAlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
-                <td><c:out value="${snpchromosome.strainZeroAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainZeroAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainZeroAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainZeroAlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
-                <td><c:out value="${snpchromosome.strain6Allele}"/></td>
-                <td><c:out value="${snpchromosome.getStrain6AlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain6Allele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrain6AlleleFixed()}"/></td>
                 </c:if>
                 <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
-                <td><c:out value="${snpchromosome.strainCAllele}"/></td>
-                <td><c:out value="${snpchromosome.getStrainCAlleleFixedAsString()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainCAllele()}"/></td>
+                <td><c:out value="${snpchromosome.getStrainCAlleleFixed()}"/></td>
                 </c:if>
             </tr>
         </c:forEach>
