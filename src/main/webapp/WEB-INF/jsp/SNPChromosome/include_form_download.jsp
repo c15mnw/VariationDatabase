@@ -51,6 +51,18 @@
             
                         </div><!-- close span4 -->
                     </div><!-- close row-fluid -->
+                    <div class="row-fluid">
+                        <div class="span8">
+            
+            <form:label path="DownloadFormat"><spring:message code="DownloadFormat.FORMAT_VCF"/></form:label>
+            
+                        </div><!-- close span8 -->
+                        <div class="span4">
+            
+            <form:radiobutton path="DownloadFormat" value="FORMAT_VCF"/>
+            
+                        </div><!-- close span4 -->
+                    </div><!-- close row-fluid -->
                 </div><!-- close row-fluid -->
             </div><!-- close span6 -->
             

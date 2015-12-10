@@ -23,6 +23,7 @@ public class DTODownload {
 	protected static final String FORMAT_NONE = "FORMAT_NONE";
 	protected static final String FORMAT_CSV = "FORMAT_CSV";
 	protected static final String FORMAT_TSV = "FORMAT_TSV";
+	protected static final String FORMAT_VCF = "FORMAT_VCF";
 
 	protected static final String STRAIN_NONE = "STRAIN_NONE";
 	protected static final String STRAIN_7 = "STRAIN_7";
@@ -306,6 +307,14 @@ public class DTODownload {
     }
     public boolean isDownloadFormatTSV() {
     	if ( this.downloadFormat.name().equals(FORMAT_TSV)) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    public boolean isDownloadFormatVCF() {
+    	if ( this.downloadFormat.name().equals(FORMAT_VCF)) {
     		return true;
     	}
     	else {

@@ -52,6 +52,9 @@ public class CSVResponse extends ArrayList<SNPChromosome> {
     public boolean isDownloadFormatTSV() {
     	return this.dtoDownload.isDownloadFormatTSV(); 
     }
+    public boolean isDownloadFormatVCF() {
+    	return this.dtoDownload.isDownloadFormatVCF(); 
+    }
 
     public boolean isDownloadQuotesNone() {
     	return this.dtoDownload.isDownloadQuotesNone();

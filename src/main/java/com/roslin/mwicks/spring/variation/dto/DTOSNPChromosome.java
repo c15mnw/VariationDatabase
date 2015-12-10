@@ -18,7 +18,15 @@ import com.roslin.mwicks.utility.StringUtility;
  */
 public class DTOSNPChromosome {
     
-    private Long oid;
+    // Constants ----------------------------------------------------------------------------------
+	protected static final String STRING_NA = "NA";
+	protected static final String STRING_FIXED = "Fixed";
+	protected static final String STRING_NOT_FIXED = "Not Fixed";
+	protected static final String STRING_REFERENCE = "Reference";
+
+	
+    // Properties ---------------------------------------------------------------------------------
+	private Long oid;
     
     @NotEmpty
     private String snpId;
@@ -413,7 +421,10 @@ public class DTOSNPChromosome {
     
     public boolean isStrain7AlleleFixedABoolean() {
 
-    	if ( this.strain7AlleleFixed.equals("1") || this.strain7AlleleFixed.equals("0") || this.strain7AlleleFixed.equals("NA")) {
+    	if ( this.strain7AlleleFixed.equals(STRING_FIXED) || 
+    			this.strain7AlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strain7AlleleFixed.equals(STRING_NA) || 
+    			this.strain7AlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -431,7 +442,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainPAlleleFixedABoolean() {
 
-    	if ( this.strainPAlleleFixed.equals("1") || this.strainPAlleleFixed.equals("0") || this.strainPAlleleFixed.equals("NA")) {
+    	if ( this.strainPAlleleFixed.equals(STRING_FIXED) || 
+    			this.strainPAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strainPAlleleFixed.equals(STRING_NA) || 
+     			this.strainPAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -449,7 +463,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainWAlleleFixedABoolean() {
 
-    	if ( this.strainWAlleleFixed.equals("1") || this.strainWAlleleFixed.equals("0") || this.strainWAlleleFixed.equals("NA")) {
+    	if ( this.strainWAlleleFixed.equals(STRING_FIXED) || 
+    			this.strainWAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strainWAlleleFixed.equals(STRING_NA) || 
+    			this.strainWAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -467,7 +484,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainNAlleleFixedABoolean() {
 
-    	if ( this.strainNAlleleFixed.equals("1") || this.strainNAlleleFixed.equals("0") || this.strainNAlleleFixed.equals("NA")) {
+    	if ( this.strainNAlleleFixed.equals(STRING_FIXED) || 
+    			this.strainNAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strainNAlleleFixed.equals(STRING_NA) || 
+    			this.strainNAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -485,7 +505,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrain15IAlleleFixedABoolean() {
 
-    	if ( this.strain15IAlleleFixed.equals("1") || this.strain15IAlleleFixed.equals("0") || this.strain15IAlleleFixed.equals("NA")) {
+    	if ( this.strain15IAlleleFixed.equals(STRING_FIXED) || 
+    			this.strain15IAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strain15IAlleleFixed.equals(STRING_NA) || 
+    			this.strain15IAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -501,16 +524,19 @@ public class DTOSNPChromosome {
     		return false;
     	}
     }
-    public boolean isstrainZeroAlleleFixedABoolean() {  
+    public boolean isStrainZeroAlleleFixedABoolean() {  
 
-    	if ( this.strainZeroAlleleFixed.equals("1") || this.strainZeroAlleleFixed.equals("0") || this.strainZeroAlleleFixed.equals("NA")) {
+    	if ( this.strainZeroAlleleFixed.equals(STRING_FIXED) || 
+    			this.strainZeroAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strainZeroAlleleFixed.equals(STRING_NA) || 
+    			this.strainZeroAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
     		return false;
     	}
     }
-    public boolean isstrainZeroAlleleRatioALong() {
+    public boolean isStrainZeroAlleleRatioALong() {
 
     	if ( StringUtility.isItNumeric(this.strainZeroAlleleRatio) ) {
     		return true;
@@ -521,7 +547,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrain6AlleleFixedABoolean() {
 
-    	if ( this.strain6AlleleFixed.equals("1") || this.strain6AlleleFixed.equals("0") || this.strain6AlleleFixed.equals("NA")) {
+    	if ( this.strain6AlleleFixed.equals(STRING_FIXED) || 
+    			this.strain6AlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strain6AlleleFixed.equals(STRING_NA) || 
+    			this.strain6AlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -539,7 +568,10 @@ public class DTOSNPChromosome {
     }
     public boolean isStrainCAlleleFixedABoolean() {
 
-    	if ( this.strainCAlleleFixed.equals("1") || this.strainCAlleleFixed.equals("0") || this.strainCAlleleFixed.equals("NA")) {
+    	if ( this.strainCAlleleFixed.equals(STRING_FIXED) || 
+    			this.strainCAlleleFixed.equals(STRING_NOT_FIXED) || 
+    			this.strainCAlleleFixed.equals(STRING_NA) || 
+    			this.strainCAlleleFixed.equals(STRING_REFERENCE) ) {
     		return true;
     	}
     	else {
@@ -568,7 +600,7 @@ public class DTOSNPChromosome {
         	    this.isStrainWAlleleFixedABoolean() && 
         	    this.isStrainNAlleleFixedABoolean() && 
         	    this.isStrain15IAlleleFixedABoolean() && 
-        	    this.isstrainZeroAlleleFixedABoolean() && 
+        	    this.isStrainZeroAlleleFixedABoolean() && 
         	    this.isStrain6AlleleFixedABoolean() && 
         	    this.isStrainCAlleleFixedABoolean()  
         	    ) {

@@ -18,5 +18,6 @@ package com.roslin.mwicks.spring.variation.dto;
 public enum DownloadFormat {
 	FORMAT_NONE,
 	FORMAT_CSV,
-	FORMAT_TSV
+	FORMAT_TSV,
+	FORMAT_VCF
 }
