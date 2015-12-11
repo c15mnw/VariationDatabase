@@ -772,7 +772,6 @@ public class SNPChromosomeControllerTest extends AbstractTestController {
     private ServiceSNPChromosomeLGE22C19W28_E50C23 serviceSNPChromosomeLGE22C19W28_E50C23Mock;
 
     
-    @Override
     public void setUpTest() {
     
     	controller = new ControllerSNPChromosome();

@@ -218,7 +218,6 @@ public class EnsemblGene {
     }
 
     
-    @Override
     public String toString() {
     	
         return ToStringBuilder.reflectionToString(this);

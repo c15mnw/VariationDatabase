@@ -973,7 +973,6 @@ public class SNPChromosomeLGE22C19W28_E50C23 {
         this.modificationTime = now;
     }
 
-    @Override
     public String toString() {
     	
         return ToStringBuilder.reflectionToString(this);

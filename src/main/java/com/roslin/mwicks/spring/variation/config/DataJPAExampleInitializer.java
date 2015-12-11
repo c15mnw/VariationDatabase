@@ -18,7 +18,6 @@ public class DataJPAExampleInitializer implements WebApplicationInitializer {
     private static final String DISPATCHER_SERVLET_MAPPING = "/";
     
     
-    @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
     	
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();

@@ -195,7 +195,6 @@ public class DTOEnsemblGene {
     }
 
     
-    @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }

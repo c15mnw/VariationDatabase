@@ -54,7 +54,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
      
     
     @Transactional(readOnly = true)
-    @Override
     public SNPChromosomeLGE64 findByOid(Long oid) {
     	
         LOGGER.debug("Finding SNPChromosome by oid: " + oid);
@@ -64,7 +63,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
 
     
     @Transactional
-    @Override
     public <T extends SNPChromosomeLGE64> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
     	
     	final List<T> savedEntities = new ArrayList<T>(entities.size());
@@ -104,7 +102,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     
     
     @Transactional(readOnly = true)
-    @Override
     public List<SNPChromosome> download(DTODownload dtoDownload) {
         
     	LOGGER.debug("Downloading snpchromosomes with download criteria: " + dtoDownload);
@@ -361,7 +358,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
 
     
     @Transactional(readOnly = true)
-    @Override
     public PageSNPChromosome search(DTOSearch dtoSearch, Integer pageNumber) {
         
     	LOGGER.debug("Searching snpchromosomes with search criteria: " + dtoSearch);
@@ -623,7 +619,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     
     
     @Transactional(readOnly = true)
-    @Override
     public PageSNPChromosome findAll(Integer pageNumber) {
     	
         LOGGER.debug("Finding all snpchromosomes");
@@ -654,7 +649,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     
 
     @Transactional
-    @Override
     public SNPChromosomeLGE64 create(DTOSNPChromosome created) {
     	
         LOGGER.debug("Creating a new snpchromosome with information: " + created);
@@ -700,7 +694,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
     
 
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    @Override
     public SNPChromosomeLGE64 delete(Long snpchromosomeId) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Deleting snpchromosome with id: " + snpchromosomeId);
@@ -720,7 +713,6 @@ public class ServiceRepositorySNPChromosomeLGE64 implements ServiceSNPChromosome
 
     
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    @Override
     public SNPChromosomeLGE64 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);

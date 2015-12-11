@@ -658,7 +658,6 @@ public class DTOSNPChromosome {
     }
 
     
-    @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }

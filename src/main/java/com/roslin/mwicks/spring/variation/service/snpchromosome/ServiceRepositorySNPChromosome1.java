@@ -55,7 +55,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
 
     
     @Transactional(readOnly = true)
-    @Override
     public SNPChromosome1 findByOid(Long oid) {
     	
         LOGGER.debug("Finding SNPChromosome by oid: " + oid);
@@ -65,7 +64,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
 
     
     @Transactional
-    @Override
     public <T extends SNPChromosome1> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
     	
     	final List<T> savedEntities = new ArrayList<T>(entities.size());
@@ -105,7 +103,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
     
     
     @Transactional(readOnly = true)
-    @Override
     public List<SNPChromosome> download(DTODownload dtoDownload) {
         
     	LOGGER.debug("Downloading snpchromosomes with download criteria: " + dtoDownload);
@@ -362,7 +359,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
 
     
     @Transactional(readOnly = true)
-    @Override
     public PageSNPChromosome search(DTOSearch dtoSearch, Integer pageNumber) {
         
     	LOGGER.debug("Searching snpchromosomes with search criteria: " + dtoSearch);
@@ -624,7 +620,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
     
     
     @Transactional(readOnly = true)
-    @Override
     public PageSNPChromosome findAll(Integer pageNumber) {
     	
         LOGGER.debug("Finding all snpchromosomes");
@@ -655,7 +650,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
     
 
     @Transactional
-    @Override
     public SNPChromosome1 create(DTOSNPChromosome created) {
     	
         LOGGER.debug("Creating a new snpchromosome with information: " + created);
@@ -701,7 +695,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
     
 
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    @Override
     public SNPChromosome1 delete(Long snpchromosomeId) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Deleting snpchromosome with id: " + snpchromosomeId);
@@ -721,7 +714,6 @@ public class ServiceRepositorySNPChromosome1 implements ServiceSNPChromosome1 {
 
     
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    @Override
     public SNPChromosome1 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);

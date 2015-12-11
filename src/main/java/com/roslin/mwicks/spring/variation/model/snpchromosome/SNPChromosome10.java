@@ -973,7 +973,6 @@ public class SNPChromosome10 {
         this.modificationTime = now;
     }
 
-    @Override
     public String toString() {
     	
         return ToStringBuilder.reflectionToString(this);

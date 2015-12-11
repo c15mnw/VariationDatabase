@@ -27,7 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/mwicks23/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6796001731829738524.tmp"/>
+    <property name="classworlds.conf" value="/Users/mwicks23/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4304962133353086956.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/mwicks23/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -63,10 +63,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="create" time="0.007"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="create" time="0.006"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="delete" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="findByGeneName" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="findAll" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="findAll" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="update" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="findByEnsemblIdLike" time="0.002"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.ensemblgene.RepositoryEnsemblGeneServiceTest" name="deleteWhenEnsemblGeneIsNotFound" time="0"/>

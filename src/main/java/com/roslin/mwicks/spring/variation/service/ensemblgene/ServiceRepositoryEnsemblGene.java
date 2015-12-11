@@ -45,7 +45,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
      
     
     @Transactional(readOnly = true)
-    @Override
     public List<EnsemblGene> findAll() {
     	
         LOGGER.debug("Finding all EnsemblGene");
@@ -55,7 +54,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
 
     
     @Transactional(readOnly = true)
-    @Override
     public EnsemblGene findByOid(Long oid) {
     	
         LOGGER.debug("Finding ensemblgene by oid: " + oid);
@@ -65,7 +63,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
 
     
     @Transactional
-    @Override
     public <T extends EnsemblGene> Collection<T> bulkSave(int intBatchSize, Collection<T> entities) {
     	
     	final List<T> savedEntities = new ArrayList<T>(entities.size());
@@ -116,7 +113,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
 
     
     @Transactional(readOnly = true)
-    @Override
     public List<EnsemblGene> findByGeneName(String strGeneName) {
         
     	LOGGER.debug("Searching Ensembl Genes with search criteria: " + strGeneName);
@@ -128,7 +124,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     
 
     @Transactional(readOnly = true)
-    @Override
     public Page<EnsemblGene> findByEnsemblIdLike(String strGeneName, Pageable pageable) {
         
     	LOGGER.debug("Searching Ensembl Genes with search criteria: " + strGeneName);
@@ -140,7 +135,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     
 
     @Transactional
-    @Override
     public EnsemblGene create(DTOEnsemblGene created) {
     	
         LOGGER.debug("Creating a new snpchromosome with information: " + created);
@@ -159,7 +153,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
     
 
     @Transactional(rollbackFor = ExceptionEnsemblGeneNotFound.class)
-    @Override
     public EnsemblGene delete(Long oid) throws ExceptionEnsemblGeneNotFound {
     	
         LOGGER.debug("Deleting snpchromosome with id: " + oid);
@@ -180,7 +173,6 @@ public class ServiceRepositoryEnsemblGene implements ServiceEnsemblGene {
 
     
     @Transactional(rollbackFor = ExceptionEnsemblGeneNotFound.class)
-    @Override
     public EnsemblGene update(DTOEnsemblGene updated) throws ExceptionEnsemblGeneNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);

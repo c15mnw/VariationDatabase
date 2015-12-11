@@ -67,7 +67,6 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
 		return CSVResponse.class.equals(clazz);
 	}
 
-    @Override
     protected CSVResponse readInternal(Class<? extends CSVResponse> clazz, HttpInputMessage inputMessage) throws IOException, HttpMessageNotReadableException {
         
         CSVResponse csvResponse = new CSVResponse();
@@ -77,7 +76,6 @@ public class CSVResponseMessageConverter extends AbstractHttpMessageConverter<CS
         return csvResponse;
     }
 
-    @Override
 	protected void writeInternal(CSVResponse csvResponse, HttpOutputMessage output) throws IOException, HttpMessageNotWritableException {
 	
         char separator = ',';
