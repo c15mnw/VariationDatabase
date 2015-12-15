@@ -7,13 +7,16 @@
     <version>1.0.0</version>
     <name>Variation Database Search Facility</name>
     <description>Variation Database Search Facility</description>
+    
     <licenses>
         <license>
             <name>Apache License 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+    
     <url>http://www.roslin.ed.ac.uk</url>
+    
     <repositories>
         <repository>
             <id>repository.jboss.org-public</id>

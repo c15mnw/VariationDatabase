@@ -713,7 +713,7 @@ public class ServiceRepositorySNPChromosome10 implements ServiceSNPChromosome10 
 
     
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    public SNPChromosome10 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
+    public SNPChromosome10 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);
         

@@ -49,7 +49,7 @@ public interface ServiceSNPChromosome20 {
      * @return  The updated snpchromosome.
      * @throws SNPChromosome20NotFoundException  if no snpchromosome is found with given id.
      */
-    public SNPChromosome20 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
+    public SNPChromosome20 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
 
     /**
      * Searches SNPChromosome20s by using the search criteria given as a parameter.

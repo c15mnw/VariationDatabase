@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="192" failures="0" name="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" time="0.372" errors="0" skipped="0">
+<testsuite tests="192" failures="0" name="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" time="0.375" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib"/>
@@ -27,7 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/mwicks23/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4304962133353086956.tmp"/>
+    <property name="classworlds.conf" value="/Users/mwicks23/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8628960701062197336.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/mwicks23/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -63,25 +63,25 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find24ByOid" time="0.272"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete6WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find25ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find24ByOid" time="0.282"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete6WhenSNPChromosomeIsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find25ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find26ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find27ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find27ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update5WhenSNPChromosome5IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update24WhenSNPChromosome24IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find28ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete27WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteWWhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update24WhenSNPChromosome24IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find28ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete27WhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteWWhenSNPChromosomeIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete14WhenSNPChromosomeIsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update1WhenSNPChromosome1IsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete5WhenSNPChromosomeIsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE22C19W28_E50C23" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update16WhenSNPChromosome16IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update16WhenSNPChromosome16IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete26WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete13WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete4WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete25WhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete13WhenSNPChromosomeIsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete4WhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete25WhenSNPChromosomeIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update11WhenSNPChromosome11IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete12WhenSNPChromosomeIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete3WhenSNPChromosomeIsNotFound" time="0.001"/>
@@ -89,7 +89,7 @@
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find32ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete24WhenSNPChromosomeIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete11WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE64" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE64" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update18WhenSNPChromosome18IsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update8WhenSNPChromosome8IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete23WhenSNPChromosomeIsNotFound" time="0"/>
@@ -102,122 +102,122 @@
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete1WhenSNPChromosomeIsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find4ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find5ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find6ByOid" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find7ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update13WhenSNPChromosome13IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete22WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find8ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find6ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find7ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update13WhenSNPChromosome13IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete22WhenSNPChromosomeIsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find8ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateZZhenSNPChromosomeZIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find9ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update28WhenSNPChromosome28IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE64" time="0.002"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createLGE64" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete21WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update23WhenSNPChromosome23IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update1" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update3" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE64" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createLGE64" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete21WhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update23WhenSNPChromosome23IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update1" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update3" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update4" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update5" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update6" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update7" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update6" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update7" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update8" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update9" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateW" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateZ" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete20WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete32WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update15WhenSNPChromosome15IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update7WhenSNPChromosome7IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update3WhenSNPChromosome3IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete32WhenSNPChromosomeIsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update15WhenSNPChromosome15IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update7WhenSNPChromosome7IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update3WhenSNPChromosome3IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findWByOid" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteZZhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE64LGE64henSNPChromosomeLGE64IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findZByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteZZhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE64LGE64henSNPChromosomeLGE64IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findZByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update10WhenSNPChromosome10IsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE22C19W28_E50C23" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update25WhenSNPChromosome25IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findLGE22C19W28_E50C23ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update17WhenSNPChromosome17IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update20WhenSNPChromosome20IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete10" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete11" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete12" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete13" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update25WhenSNPChromosome25IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findLGE22C19W28_E50C23ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update17WhenSNPChromosome17IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update20WhenSNPChromosome20IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete10" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete11" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete12" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete13" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete14" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete15" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete16" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete17" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete18" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete19" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete19" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete20" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete21" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete22" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete23" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete24" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete25" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete25" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete26" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete27" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete27" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete28" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete32" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create1" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create3" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create4" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create3" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create4" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create5" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create6" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create6" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create7" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create8" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create9" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createW" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createZ" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createW" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="createZ" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update12WhenSNPChromosome12IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="updateLGE22C19W28_E50C23LGE22C19W28_E50C23henSNPChromosomeLGE22C19W28_E50C23IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete19WhenSNPChromosomeIsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE22C19W28_E50C23LGE22C19W28_E50C23henSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update6WhenSNPChromosome6IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find10ByOid" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find11ByOid" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update27WhenSNPChromosome27IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find12ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete19WhenSNPChromosomeIsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE22C19W28_E50C23LGE22C19W28_E50C23henSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update6WhenSNPChromosome6IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find10ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find11ByOid" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update27WhenSNPChromosome27IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find12ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find13ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find14ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find15ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find16ByOid" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update10" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update11" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update12" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update13" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update14" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update12" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update13" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update14" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update15" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update16" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update17" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update18" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update19" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update16" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update17" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update18" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update19" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update20" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update21" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update22" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update23" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update23" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update24" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update25" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update26" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update27" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update28" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update26" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update27" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update28" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update32" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete18WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find17ByOid" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find18ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find17ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find18ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find19ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete9WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update19WhenSNPChromosome19IsNotFound" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update22WhenSNPChromosome22IsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete1" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete3" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete4" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete5" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete6" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update19WhenSNPChromosome19IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update22WhenSNPChromosome22IsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete1" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete3" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete4" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete5" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete6" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete7" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete8" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete9" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteW" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteW" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteZ" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="deleteLGE64LGE64henSNPChromosomeIsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete17WhenSNPChromosomeIsNotFound" time="0.001"/>
@@ -225,27 +225,27 @@
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update14WhenSNPChromosome14IsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create10" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create11" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create12" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create13" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create14" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create15" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create16" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create17" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create12" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create13" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create14" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create15" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create16" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create17" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create18" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create19" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create20" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create21" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create19" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create20" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create21" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create22" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create23" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create24" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create25" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create26" time="0.001"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create27" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create28" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create24" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create25" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create26" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create27" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create28" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="create32" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete16WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete7WhenSNPChromosomeIsNotFound" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findLGE64ByOid" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete7WhenSNPChromosomeIsNotFound" time="0.001"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="findLGE64ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update32WhenSNPChromosome32IsNotFound" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete28WhenSNPChromosomeIsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find20ByOid" time="0"/>
@@ -254,5 +254,5 @@
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find22ByOid" time="0"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="delete15WhenSNPChromosomeIsNotFound" time="0.001"/>
   <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="find23ByOid" time="0"/>
-  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update9WhenSNPChromosome9IsNotFound" time="0"/>
+  <testcase classname="com.roslin.mwicks.spring.variation.service.snpchromosome.RepositorySNPChromosomeServiceTest" name="update9WhenSNPChromosome9IsNotFound" time="0.001"/>
 </testsuite>

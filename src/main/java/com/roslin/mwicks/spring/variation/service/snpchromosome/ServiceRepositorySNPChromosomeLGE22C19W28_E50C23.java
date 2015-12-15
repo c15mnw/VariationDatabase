@@ -713,7 +713,7 @@ public class ServiceRepositorySNPChromosomeLGE22C19W28_E50C23 implements Service
 
     
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    public SNPChromosomeLGE22C19W28_E50C23 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
+    public SNPChromosomeLGE22C19W28_E50C23 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);
         
