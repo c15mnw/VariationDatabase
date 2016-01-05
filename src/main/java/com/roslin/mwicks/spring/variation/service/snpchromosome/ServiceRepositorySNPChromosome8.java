@@ -665,28 +665,20 @@ public class ServiceRepositorySNPChromosome8 implements ServiceSNPChromosome8 {
         		created.getEnsemblAnnotation(),
         		created.getStrain7Allele(),
         		created.getStrain7AlleleFixed(),
-        		created.getStrain7AlleleRatioAsLong(),
         		created.getStrainPAllele(),
         		created.getStrainPAlleleFixed(),
-        		created.getStrainPAlleleRatioAsLong(),
         		created.getStrainWAllele(),
         		created.getStrainWAlleleFixed(),
-        		created.getStrainWAlleleRatioAsLong(),
         		created.getStrainNAllele(),
         		created.getStrainNAlleleFixed(),
-        		created.getStrainNAlleleRatioAsLong(),
         		created.getStrain15IAllele(),
         		created.getStrain15IAlleleFixed(),
-        		created.getStrain15IAlleleRatioAsLong(),
         		created.getStrainZeroAllele(),
         		created.getStrainZeroAlleleFixed(),
-        		created.getStrainZeroAlleleRatioAsLong(),
         		created.getStrain6Allele(),
         		created.getStrain6AlleleFixed(),
-        		created.getStrain6AlleleRatioAsLong(),
         		created.getStrainCAllele(),
-        		created.getStrainCAlleleFixed(),
-        		created.getStrainCAlleleRatioAsLong()
+        		created.getStrainCAlleleFixed()
         		).build();
         
         return repositorysnpchromosome.save(snpchromosome);
@@ -713,7 +705,7 @@ public class ServiceRepositorySNPChromosome8 implements ServiceSNPChromosome8 {
 
     
     @Transactional(rollbackFor = ExceptionSNPChromosomeNotFound.class)
-    public SNPChromosome8 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
+    public SNPChromosome8 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound {
     	
         LOGGER.debug("Updating snpchromosome with information: " + updated);
         
@@ -738,28 +730,20 @@ public class ServiceRepositorySNPChromosome8 implements ServiceSNPChromosome8 {
         		updated.getEnsemblAnnotation(),
         		updated.getStrain7Allele(),
         		updated.getStrain7AlleleFixed(),
-        		updated.getStrain7AlleleRatioAsLong(),
         		updated.getStrainPAllele(),
         		updated.getStrainPAlleleFixed(),
-        		updated.getStrainPAlleleRatioAsLong(),
         		updated.getStrainWAllele(),
         		updated.getStrainWAlleleFixed(),
-        		updated.getStrainWAlleleRatioAsLong(),
         		updated.getStrainNAllele(),
         		updated.getStrainNAlleleFixed(),
-        		updated.getStrainNAlleleRatioAsLong(),
         		updated.getStrain15IAllele(),
         		updated.getStrain15IAlleleFixed(),
-        		updated.getStrain15IAlleleRatioAsLong(),
         		updated.getStrainZeroAllele(),
         		updated.getStrainZeroAlleleFixed(),
-        		updated.getStrainZeroAlleleRatioAsLong(),
         		updated.getStrain6Allele(),
         		updated.getStrain6AlleleFixed(),
-        		updated.getStrain6AlleleRatioAsLong(),
         		updated.getStrainCAllele(),
-        		updated.getStrainCAlleleFixed(),
-        		updated.getStrainCAlleleRatioAsLong()
+        		updated.getStrainCAlleleFixed()
         		);
 
         return snpchromosome;

@@ -22,28 +22,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		String strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		String strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		String strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		String strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		String strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		String strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		String strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		String strainCAlleleRatio         
+    		String strainCAlleleFixed         
     		) {
     
         DTOSNPChromosome dto = new DTOSNPChromosome();
@@ -60,28 +52,20 @@ public class SNPChromosomeTestUtil {
         dto.setEnsemblAnnotation(ensemblAnnotation);
         dto.setStrain7Allele(strain7Allele);
         dto.setStrain7AlleleFixed(strain7AlleleFixed);
-        dto.setStrain7AlleleRatio(strain7AlleleRatio);
         dto.setStrainPAllele(strainPAllele);
         dto.setStrainPAlleleFixed(strainPAlleleFixed);
-        dto.setStrainPAlleleRatio(strainPAlleleRatio);
         dto.setStrainWAllele(strainWAllele);
         dto.setStrainWAlleleFixed(strainWAlleleFixed);
-        dto.setStrainWAlleleRatio(strainWAlleleRatio);
         dto.setStrainNAllele(strainNAllele);
         dto.setStrainNAlleleFixed(strainNAlleleFixed);
-        dto.setStrainNAlleleRatio(strainNAlleleRatio);
         dto.setStrain15IAllele(strain15IAllele);
         dto.setStrain15IAlleleFixed(strain15IAlleleFixed);
-        dto.setStrain15IAlleleRatio(strain15IAlleleRatio);
         dto.setStrainZeroAllele(strainZeroAllele);
         dto.setStrainZeroAlleleFixed(strainZeroAlleleFixed);  
-        dto.setStrainZeroAlleleRatio(strainZeroAlleleRatio);
         dto.setStrain6Allele(strain6Allele);
         dto.setStrain6AlleleFixed(strain6AlleleFixed);
-        dto.setStrain6AlleleRatio(strain6AlleleRatio);
         dto.setStrainCAllele(strainCAllele);
         dto.setStrainCAlleleFixed(strainCAlleleFixed);
-        dto.setStrainCAlleleRatio(strainCAlleleRatio);
 
         return dto;
     }
@@ -100,28 +84,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed
         ) {
     
         SNPChromosome model = SNPChromosome.getBuilder(
@@ -136,28 +112,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -179,28 +147,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome1 model = SNPChromosome1.getBuilder(
@@ -215,28 +175,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -258,28 +210,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome3 model = SNPChromosome3.getBuilder(
@@ -294,28 +238,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -337,28 +273,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome4 model = SNPChromosome4.getBuilder(
@@ -373,28 +301,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -416,28 +336,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome5 model = SNPChromosome5.getBuilder(
@@ -452,28 +364,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -495,28 +399,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome6 model = SNPChromosome6.getBuilder(
@@ -531,28 +427,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -574,28 +462,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome7 model = SNPChromosome7.getBuilder(
@@ -610,28 +490,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -653,28 +525,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome8 model = SNPChromosome8.getBuilder(
@@ -689,28 +553,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -732,28 +588,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain5IAllele,
     		String strain5IAlleleFixed,
-    		Long strain5IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome9 model = SNPChromosome9.getBuilder(
@@ -768,28 +616,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain5IAllele,
     		strain5IAlleleFixed,
-    		strain5IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -810,28 +650,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome10 model = SNPChromosome10.getBuilder(
@@ -846,28 +678,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -889,28 +713,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome11 model = SNPChromosome11.getBuilder(
@@ -925,28 +741,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -968,28 +776,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome12 model = SNPChromosome12.getBuilder(
@@ -1004,28 +804,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1047,28 +839,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome13 model = SNPChromosome13.getBuilder(
@@ -1083,28 +867,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1126,28 +902,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome14 model = SNPChromosome14.getBuilder(
@@ -1162,28 +930,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1205,28 +965,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome15 model = SNPChromosome15.getBuilder(
@@ -1241,28 +993,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1284,28 +1028,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome16 model = SNPChromosome16.getBuilder(
@@ -1320,28 +1056,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1363,28 +1091,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome17 model = SNPChromosome17.getBuilder(
@@ -1399,28 +1119,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1442,28 +1154,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome18 model = SNPChromosome18.getBuilder(
@@ -1478,28 +1182,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1521,28 +1217,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome19 model = SNPChromosome19.getBuilder(
@@ -1557,28 +1245,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1600,28 +1280,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome20 model = SNPChromosome20.getBuilder(
@@ -1636,28 +1308,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1679,28 +1343,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome21 model = SNPChromosome21.getBuilder(
@@ -1715,28 +1371,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1758,28 +1406,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome22 model = SNPChromosome22.getBuilder(
@@ -1794,28 +1434,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1837,28 +1469,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome23 model = SNPChromosome23.getBuilder(
@@ -1873,28 +1497,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1916,28 +1532,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome24 model = SNPChromosome24.getBuilder(
@@ -1952,28 +1560,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -1995,28 +1595,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome25 model = SNPChromosome25.getBuilder(
@@ -2031,28 +1623,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2074,28 +1658,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome26 model = SNPChromosome26.getBuilder(
@@ -2110,28 +1686,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2153,28 +1721,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome27 model = SNPChromosome27.getBuilder(
@@ -2189,28 +1749,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2232,28 +1784,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome28 model = SNPChromosome28.getBuilder(
@@ -2268,28 +1812,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2311,28 +1847,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosome32 model = SNPChromosome32.getBuilder(
@@ -2347,28 +1875,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2390,28 +1910,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosomeW model = SNPChromosomeW.getBuilder(
@@ -2426,28 +1938,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2469,28 +1973,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosomeZ model = SNPChromosomeZ.getBuilder(
@@ -2505,28 +2001,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2548,28 +2036,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosomeLGE22C19W28_E50C23 model = SNPChromosomeLGE22C19W28_E50C23.getBuilder(
@@ -2584,28 +2064,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);
@@ -2627,28 +2099,20 @@ public class SNPChromosomeTestUtil {
     		String ensemblAnnotation,
     		String strain7Allele,
     		String strain7AlleleFixed,
-    		Long strain7AlleleRatio,
     		String strainPAllele,
     		String strainPAlleleFixed,
-    		Long strainPAlleleRatio,
     		String strainWAllele,
     		String strainWAlleleFixed,
-    		Long strainWAlleleRatio,
     		String strainNAllele,
     		String strainNAlleleFixed,
-    		Long strainNAlleleRatio,
     		String strain15IAllele,
     		String strain15IAlleleFixed,
-    		Long strain15IAlleleRatio,
     		String strainZeroAllele,
     		String strainZeroAlleleFixed,
-    		Long strainZeroAlleleRatio,
     		String strain6Allele,
     		String strain6AlleleFixed,
-    		Long strain6AlleleRatio,
     		String strainCAllele,
-    		String strainCAlleleFixed,
-    		Long strainCAlleleRatio         
+    		String strainCAlleleFixed         
         ) {
     
         SNPChromosomeLGE64 model = SNPChromosomeLGE64.getBuilder(
@@ -2663,28 +2127,20 @@ public class SNPChromosomeTestUtil {
     		ensemblAnnotation,
     		strain7Allele,
     		strain7AlleleFixed,
-    		strain7AlleleRatio,
     		strainPAllele,
     		strainPAlleleFixed,
-    		strainPAlleleRatio,
     		strainWAllele,
     		strainWAlleleFixed,
-    		strainWAlleleRatio,
     		strainNAllele,
     		strainNAlleleFixed,
-    		strainNAlleleRatio,
     		strain15IAllele,
     		strain15IAlleleFixed,
-    		strain15IAlleleRatio,
     		strainZeroAllele,
     		strainZeroAlleleFixed,
-    		strainZeroAlleleRatio,
     		strain6Allele,
     		strain6AlleleFixed,
-    		strain6AlleleRatio,
     		strainCAllele,
-    		strainCAlleleFixed,
-    		strainCAlleleRatio         
+    		strainCAlleleFixed         
         ).build();
 
         model.setOid(oid);

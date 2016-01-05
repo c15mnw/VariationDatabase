@@ -132,36 +132,20 @@ public class RepositorySNPChromosomeServiceTest {
     private static final String ENSEMBL_ANNOTATION = "Foo_AH";
     private static final String STRAIN_7_ALLELE = "Foo_AI";
     private static final String STRAIN_7_ALLELE_FIXED = "True";
-    private static final String STRAIN_7_ALLELE_RATIO = "0";
-    private static final Long STRAIN_7_ALLELE_RATIO_LONG = Long.valueOf(0);
     private static final String STRAIN_P_ALLELE = "Foo_AJ";
     private static final String STRAIN_P_ALLELE_FIXED = "False";
-    private static final String STRAIN_P_ALLELE_RATIO = "1";
-    private static final Long STRAIN_P_ALLELE_RATIO_LONG = Long.valueOf(1);
     private static final String STRAIN_W_ALLELE = "Foo_AK";
     private static final String STRAIN_W_ALLELE_FIXED = "True";
-    private static final String STRAIN_W_ALLELE_RATIO = "0";
-    private static final Long STRAIN_W_ALLELE_RATIO_LONG = Long.valueOf(0);
     private static final String STRAIN_N_ALLELE = "Foo_AL";
     private static final String STRAIN_N_ALLELE_FIXED = "False";
-    private static final String STRAIN_N_ALLELE_RATIO = "1";
-    private static final Long STRAIN_N_ALLELE_RATIO_LONG = Long.valueOf(1);
     private static final String STRAIN_15I_ALLELE = "Foo_AM";
     private static final String STRAIN_15I_ALLELE_FIXED = "True";
-    private static final String STRAIN_15I_ALLELE_RATIO = "0";
-    private static final Long STRAIN_15I_ALLELE_RATIO_LONG = Long.valueOf(0);
     private static final String STRAIN_ZERO_ALLELE = "Foo_AN";
     private static final String STRAIN_ZERO_ALLELE_FIXED = "False";
-    private static final String STRAIN_ZERO_ALLELE_RATIO = "1";
-    private static final Long STRAIN_ZERO_ALLELE_RATIO_LONG = Long.valueOf(1);
     private static final String STRAIN_6_ALLELE = "Foo_AO";
     private static final String STRAIN_6_ALLELE_FIXED = "True";
-    private static final String STRAIN_6_ALLELE_RATIO = "0";
-    private static final Long STRAIN_6_ALLELE_RATIO_LONG =Long.valueOf(0);
     private static final String STRAIN_C_ALLELE = "Foo_AP";
     private static final String STRAIN_C_ALLELE_FIXED = "False";
-    private static final String STRAIN_C_ALLELE_RATIO = "1";
-    private static final Long STRAIN_C_ALLELE_RATIO_LONG = Long.valueOf(1);
 
     private static final Long CHROMOSOME_1_OID = Long.valueOf(2937408);
     private static final Long CHROMOSOME_3_OID = Long.valueOf(1682027);
@@ -411,28 +395,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome1 persistedSNPChromosome1 = SNPChromosomeTestUtil.createModelObject1(
@@ -448,28 +424,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome1Mock.save(any(SNPChromosome1.class))).thenReturn(persistedSNPChromosome1);
@@ -503,28 +471,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome1 snpchromosome1 = SNPChromosomeTestUtil.createModelObject1(
@@ -540,28 +500,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome1Mock.findOne(updatedDTOSNPChromosome1.getOid())).thenReturn(snpchromosome1);
@@ -591,28 +543,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome1Mock.findOne(CHROMOSOME_1_OID)).thenReturn(deleted);
@@ -656,28 +600,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome1Mock.findOne(CHROMOSOME_1_OID)).thenReturn(snpchromosome);
@@ -707,28 +643,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome1Mock.findOne(updatedDTOSNPChromosome1.getOid())).thenReturn(null);
@@ -756,28 +684,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome3Mock.findOne(CHROMOSOME_3_OID)).thenReturn(snpchromosome);
@@ -807,28 +727,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome3Mock.findOne(updatedDTOSNPChromosome3.getOid())).thenReturn(null);
@@ -866,28 +778,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome3 persistedSNPChromosome3 = SNPChromosomeTestUtil.createModelObject3(
@@ -903,28 +807,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome3Mock.save(any(SNPChromosome3.class))).thenReturn(persistedSNPChromosome3);
@@ -958,28 +854,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome3 snpchromosome3 = SNPChromosomeTestUtil.createModelObject3(
@@ -995,28 +883,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome3Mock.findOne(updatedDTOSNPChromosome3.getOid())).thenReturn(snpchromosome3);
@@ -1046,28 +926,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome3Mock.findOne(CHROMOSOME_3_OID)).thenReturn(deleted);
@@ -1099,28 +971,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome4Mock.findOne(CHROMOSOME_4_OID)).thenReturn(snpchromosome);
@@ -1150,28 +1014,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome4Mock.findOne(updatedDTOSNPChromosome4.getOid())).thenReturn(null);
@@ -1209,28 +1065,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome4 persistedSNPChromosome4 = SNPChromosomeTestUtil.createModelObject4(
@@ -1246,28 +1094,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome4Mock.save(any(SNPChromosome4.class))).thenReturn(persistedSNPChromosome4);
@@ -1301,28 +1141,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome4 snpchromosome4 = SNPChromosomeTestUtil.createModelObject4(
@@ -1338,28 +1170,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome4Mock.findOne(updatedDTOSNPChromosome4.getOid())).thenReturn(snpchromosome4);
@@ -1389,28 +1213,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome4Mock.findOne(CHROMOSOME_4_OID)).thenReturn(deleted);
@@ -1442,28 +1258,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome5Mock.findOne(CHROMOSOME_5_OID)).thenReturn(snpchromosome);
@@ -1493,28 +1301,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome5Mock.findOne(updatedDTOSNPChromosome5.getOid())).thenReturn(null);
@@ -1552,28 +1352,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome5 persistedSNPChromosome5 = SNPChromosomeTestUtil.createModelObject5(
@@ -1589,28 +1381,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome5Mock.save(any(SNPChromosome5.class))).thenReturn(persistedSNPChromosome5);
@@ -1644,28 +1428,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome5 snpchromosome5 = SNPChromosomeTestUtil.createModelObject5(
@@ -1681,28 +1457,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome5Mock.findOne(updatedDTOSNPChromosome5.getOid())).thenReturn(snpchromosome5);
@@ -1732,28 +1500,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome5Mock.findOne(CHROMOSOME_5_OID)).thenReturn(deleted);
@@ -1785,28 +1545,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome6Mock.findOne(CHROMOSOME_6_OID)).thenReturn(snpchromosome);
@@ -1836,28 +1588,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome6Mock.findOne(updatedDTOSNPChromosome6.getOid())).thenReturn(null);
@@ -1895,28 +1639,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome6 persistedSNPChromosome6 = SNPChromosomeTestUtil.createModelObject6(
@@ -1932,28 +1668,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome6Mock.save(any(SNPChromosome6.class))).thenReturn(persistedSNPChromosome6);
@@ -1987,28 +1715,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome6 snpchromosome6 = SNPChromosomeTestUtil.createModelObject6(
@@ -2024,28 +1744,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome6Mock.findOne(updatedDTOSNPChromosome6.getOid())).thenReturn(snpchromosome6);
@@ -2075,28 +1787,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome6Mock.findOne(CHROMOSOME_6_OID)).thenReturn(deleted);
@@ -2128,28 +1832,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome7Mock.findOne(CHROMOSOME_7_OID)).thenReturn(snpchromosome);
@@ -2179,28 +1875,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome7Mock.findOne(updatedDTOSNPChromosome7.getOid())).thenReturn(null);
@@ -2238,28 +1926,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome7 persistedSNPChromosome7 = SNPChromosomeTestUtil.createModelObject7(
@@ -2275,28 +1955,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome7Mock.save(any(SNPChromosome7.class))).thenReturn(persistedSNPChromosome7);
@@ -2330,28 +2002,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome7 snpchromosome7 = SNPChromosomeTestUtil.createModelObject7(
@@ -2367,28 +2031,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome7Mock.findOne(updatedDTOSNPChromosome7.getOid())).thenReturn(snpchromosome7);
@@ -2418,28 +2074,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome7Mock.findOne(CHROMOSOME_7_OID)).thenReturn(deleted);
@@ -2471,28 +2119,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome8Mock.findOne(CHROMOSOME_7_OID)).thenReturn(snpchromosome);
@@ -2522,28 +2162,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome8Mock.findOne(updatedDTOSNPChromosome8.getOid())).thenReturn(null);
@@ -2581,28 +2213,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome8 persistedSNPChromosome8 = SNPChromosomeTestUtil.createModelObject8(
@@ -2618,28 +2242,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome8Mock.save(any(SNPChromosome8.class))).thenReturn(persistedSNPChromosome8);
@@ -2673,28 +2289,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome8 snpchromosome8 = SNPChromosomeTestUtil.createModelObject8(
@@ -2710,28 +2318,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome8Mock.findOne(updatedDTOSNPChromosome8.getOid())).thenReturn(snpchromosome8);
@@ -2761,28 +2361,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome8Mock.findOne(CHROMOSOME_8_OID)).thenReturn(deleted);
@@ -2814,28 +2406,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome9Mock.findOne(CHROMOSOME_9_OID)).thenReturn(snpchromosome);
@@ -2865,28 +2449,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome9Mock.findOne(updatedDTOSNPChromosome9.getOid())).thenReturn(null);
@@ -2924,28 +2500,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome9 persistedSNPChromosome9 = SNPChromosomeTestUtil.createModelObject9(
@@ -2961,28 +2529,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome9Mock.save(any(SNPChromosome9.class))).thenReturn(persistedSNPChromosome9);
@@ -3016,28 +2576,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome9 snpchromosome9 = SNPChromosomeTestUtil.createModelObject9(
@@ -3053,28 +2605,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome9Mock.findOne(updatedDTOSNPChromosome9.getOid())).thenReturn(snpchromosome9);
@@ -3104,28 +2648,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome9Mock.findOne(CHROMOSOME_9_OID)).thenReturn(deleted);
@@ -3157,28 +2693,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome10Mock.findOne(CHROMOSOME_10_OID)).thenReturn(snpchromosome);
@@ -3208,28 +2736,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome10Mock.findOne(updatedDTOSNPChromosome10.getOid())).thenReturn(null);
@@ -3267,28 +2787,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome10 persistedSNPChromosome10 = SNPChromosomeTestUtil.createModelObject10(
@@ -3304,28 +2816,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome10Mock.save(any(SNPChromosome10.class))).thenReturn(persistedSNPChromosome10);
@@ -3359,28 +2863,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome10 snpchromosome10 = SNPChromosomeTestUtil.createModelObject10(
@@ -3396,28 +2892,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome10Mock.findOne(updatedDTOSNPChromosome10.getOid())).thenReturn(snpchromosome10);
@@ -3447,28 +2935,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome10Mock.findOne(CHROMOSOME_10_OID)).thenReturn(deleted);
@@ -3500,28 +2980,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome11Mock.findOne(CHROMOSOME_11_OID)).thenReturn(snpchromosome);
@@ -3551,28 +3023,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome11Mock.findOne(updatedDTOSNPChromosome11.getOid())).thenReturn(null);
@@ -3610,28 +3074,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome11 persistedSNPChromosome11 = SNPChromosomeTestUtil.createModelObject11(
@@ -3647,28 +3103,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome11Mock.save(any(SNPChromosome11.class))).thenReturn(persistedSNPChromosome11);
@@ -3702,28 +3150,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome11 snpchromosome11 = SNPChromosomeTestUtil.createModelObject11(
@@ -3739,28 +3179,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome11Mock.findOne(updatedDTOSNPChromosome11.getOid())).thenReturn(snpchromosome11);
@@ -3790,28 +3222,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome11Mock.findOne(CHROMOSOME_11_OID)).thenReturn(deleted);
@@ -3843,28 +3267,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome12Mock.findOne(CHROMOSOME_12_OID)).thenReturn(snpchromosome);
@@ -3894,28 +3310,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome12Mock.findOne(updatedDTOSNPChromosome12.getOid())).thenReturn(null);
@@ -3953,28 +3361,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome12 persistedSNPChromosome12 = SNPChromosomeTestUtil.createModelObject12(
@@ -3990,28 +3390,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome12Mock.save(any(SNPChromosome12.class))).thenReturn(persistedSNPChromosome12);
@@ -4045,28 +3437,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome12 snpchromosome12 = SNPChromosomeTestUtil.createModelObject12(
@@ -4082,28 +3466,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome12Mock.findOne(updatedDTOSNPChromosome12.getOid())).thenReturn(snpchromosome12);
@@ -4133,28 +3509,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome12Mock.findOne(CHROMOSOME_12_OID)).thenReturn(deleted);
@@ -4186,28 +3554,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome13Mock.findOne(CHROMOSOME_13_OID)).thenReturn(snpchromosome);
@@ -4237,28 +3597,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome13Mock.findOne(updatedDTOSNPChromosome13.getOid())).thenReturn(null);
@@ -4296,28 +3648,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome13 persistedSNPChromosome13 = SNPChromosomeTestUtil.createModelObject13(
@@ -4333,28 +3677,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome13Mock.save(any(SNPChromosome13.class))).thenReturn(persistedSNPChromosome13);
@@ -4388,28 +3724,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome13 snpchromosome13 = SNPChromosomeTestUtil.createModelObject13(
@@ -4425,28 +3753,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome13Mock.findOne(updatedDTOSNPChromosome13.getOid())).thenReturn(snpchromosome13);
@@ -4476,28 +3796,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome13Mock.findOne(CHROMOSOME_13_OID)).thenReturn(deleted);
@@ -4529,28 +3841,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome14Mock.findOne(CHROMOSOME_14_OID)).thenReturn(snpchromosome);
@@ -4580,28 +3884,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome14Mock.findOne(updatedDTOSNPChromosome14.getOid())).thenReturn(null);
@@ -4639,28 +3935,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome14 persistedSNPChromosome14 = SNPChromosomeTestUtil.createModelObject14(
@@ -4676,28 +3964,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome14Mock.save(any(SNPChromosome14.class))).thenReturn(persistedSNPChromosome14);
@@ -4731,28 +4011,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome14 snpchromosome14 = SNPChromosomeTestUtil.createModelObject14(
@@ -4768,28 +4040,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome14Mock.findOne(updatedDTOSNPChromosome14.getOid())).thenReturn(snpchromosome14);
@@ -4819,28 +4083,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome14Mock.findOne(CHROMOSOME_14_OID)).thenReturn(deleted);
@@ -4872,28 +4128,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome15Mock.findOne(CHROMOSOME_15_OID)).thenReturn(snpchromosome);
@@ -4923,28 +4171,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome15Mock.findOne(updatedDTOSNPChromosome15.getOid())).thenReturn(null);
@@ -4982,28 +4222,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome15 persistedSNPChromosome15 = SNPChromosomeTestUtil.createModelObject15(
@@ -5019,28 +4251,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome15Mock.save(any(SNPChromosome15.class))).thenReturn(persistedSNPChromosome15);
@@ -5074,28 +4298,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome15 snpchromosome15 = SNPChromosomeTestUtil.createModelObject15(
@@ -5111,28 +4327,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome15Mock.findOne(updatedDTOSNPChromosome15.getOid())).thenReturn(snpchromosome15);
@@ -5162,28 +4370,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome15Mock.findOne(CHROMOSOME_15_OID)).thenReturn(deleted);
@@ -5215,28 +4415,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome16Mock.findOne(CHROMOSOME_16_OID)).thenReturn(snpchromosome);
@@ -5266,28 +4458,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome16Mock.findOne(updatedDTOSNPChromosome16.getOid())).thenReturn(null);
@@ -5325,28 +4509,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome16 persistedSNPChromosome16 = SNPChromosomeTestUtil.createModelObject16(
@@ -5362,28 +4538,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome16Mock.save(any(SNPChromosome16.class))).thenReturn(persistedSNPChromosome16);
@@ -5417,28 +4585,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome16 snpchromosome16 = SNPChromosomeTestUtil.createModelObject16(
@@ -5454,28 +4614,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome16Mock.findOne(updatedDTOSNPChromosome16.getOid())).thenReturn(snpchromosome16);
@@ -5505,28 +4657,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome16Mock.findOne(CHROMOSOME_16_OID)).thenReturn(deleted);
@@ -5558,28 +4702,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome17Mock.findOne(CHROMOSOME_17_OID)).thenReturn(snpchromosome);
@@ -5609,28 +4745,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome17Mock.findOne(updatedDTOSNPChromosome17.getOid())).thenReturn(null);
@@ -5668,28 +4796,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome17 persistedSNPChromosome17 = SNPChromosomeTestUtil.createModelObject17(
@@ -5705,28 +4825,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome17Mock.save(any(SNPChromosome17.class))).thenReturn(persistedSNPChromosome17);
@@ -5760,28 +4872,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome17 snpchromosome17 = SNPChromosomeTestUtil.createModelObject17(
@@ -5797,28 +4901,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome17Mock.findOne(updatedDTOSNPChromosome17.getOid())).thenReturn(snpchromosome17);
@@ -5848,28 +4944,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome17Mock.findOne(CHROMOSOME_17_OID)).thenReturn(deleted);
@@ -5901,28 +4989,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome18Mock.findOne(CHROMOSOME_18_OID)).thenReturn(snpchromosome);
@@ -5952,28 +5032,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome18Mock.findOne(updatedDTOSNPChromosome18.getOid())).thenReturn(null);
@@ -6011,28 +5083,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome18 persistedSNPChromosome18 = SNPChromosomeTestUtil.createModelObject18(
@@ -6048,28 +5112,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome18Mock.save(any(SNPChromosome18.class))).thenReturn(persistedSNPChromosome18);
@@ -6103,28 +5159,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome18 snpchromosome18 = SNPChromosomeTestUtil.createModelObject18(
@@ -6140,28 +5188,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome18Mock.findOne(updatedDTOSNPChromosome18.getOid())).thenReturn(snpchromosome18);
@@ -6191,28 +5231,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome18Mock.findOne(CHROMOSOME_18_OID)).thenReturn(deleted);
@@ -6244,28 +5276,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome19Mock.findOne(CHROMOSOME_19_OID)).thenReturn(snpchromosome);
@@ -6295,28 +5319,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome19Mock.findOne(updatedDTOSNPChromosome19.getOid())).thenReturn(null);
@@ -6354,28 +5370,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome19 persistedSNPChromosome19 = SNPChromosomeTestUtil.createModelObject19(
@@ -6391,28 +5399,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome19Mock.save(any(SNPChromosome19.class))).thenReturn(persistedSNPChromosome19);
@@ -6446,28 +5446,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome19 snpchromosome19 = SNPChromosomeTestUtil.createModelObject19(
@@ -6483,28 +5475,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome19Mock.findOne(updatedDTOSNPChromosome19.getOid())).thenReturn(snpchromosome19);
@@ -6534,28 +5518,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome19Mock.findOne(CHROMOSOME_19_OID)).thenReturn(deleted);
@@ -6587,28 +5563,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome20Mock.findOne(CHROMOSOME_20_OID)).thenReturn(snpchromosome);
@@ -6638,28 +5606,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome20Mock.findOne(updatedDTOSNPChromosome20.getOid())).thenReturn(null);
@@ -6697,28 +5657,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome20 persistedSNPChromosome20 = SNPChromosomeTestUtil.createModelObject20(
@@ -6734,28 +5686,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome20Mock.save(any(SNPChromosome20.class))).thenReturn(persistedSNPChromosome20);
@@ -6789,28 +5733,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome20 snpchromosome20 = SNPChromosomeTestUtil.createModelObject20(
@@ -6826,28 +5762,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome20Mock.findOne(updatedDTOSNPChromosome20.getOid())).thenReturn(snpchromosome20);
@@ -6877,28 +5805,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome20Mock.findOne(CHROMOSOME_20_OID)).thenReturn(deleted);
@@ -6930,28 +5850,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome21Mock.findOne(CHROMOSOME_21_OID)).thenReturn(snpchromosome);
@@ -6981,28 +5893,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome21Mock.findOne(updatedDTOSNPChromosome21.getOid())).thenReturn(null);
@@ -7040,28 +5944,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome21 persistedSNPChromosome21 = SNPChromosomeTestUtil.createModelObject21(
@@ -7077,28 +5973,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome21Mock.save(any(SNPChromosome21.class))).thenReturn(persistedSNPChromosome21);
@@ -7132,28 +6020,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome21 snpchromosome21 = SNPChromosomeTestUtil.createModelObject21(
@@ -7169,28 +6049,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome21Mock.findOne(updatedDTOSNPChromosome21.getOid())).thenReturn(snpchromosome21);
@@ -7220,28 +6092,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome21Mock.findOne(CHROMOSOME_21_OID)).thenReturn(deleted);
@@ -7273,28 +6137,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome22Mock.findOne(CHROMOSOME_22_OID)).thenReturn(snpchromosome);
@@ -7324,28 +6180,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome22Mock.findOne(updatedDTOSNPChromosome22.getOid())).thenReturn(null);
@@ -7383,28 +6231,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome22 persistedSNPChromosome22 = SNPChromosomeTestUtil.createModelObject22(
@@ -7420,28 +6260,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome22Mock.save(any(SNPChromosome22.class))).thenReturn(persistedSNPChromosome22);
@@ -7475,28 +6307,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome22 snpchromosome22 = SNPChromosomeTestUtil.createModelObject22(
@@ -7512,28 +6336,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome22Mock.findOne(updatedDTOSNPChromosome22.getOid())).thenReturn(snpchromosome22);
@@ -7563,28 +6379,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome22Mock.findOne(CHROMOSOME_22_OID)).thenReturn(deleted);
@@ -7616,28 +6424,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome23Mock.findOne(CHROMOSOME_23_OID)).thenReturn(snpchromosome);
@@ -7667,28 +6467,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome23Mock.findOne(updatedDTOSNPChromosome23.getOid())).thenReturn(null);
@@ -7726,28 +6518,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome23 persistedSNPChromosome23 = SNPChromosomeTestUtil.createModelObject23(
@@ -7763,28 +6547,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome23Mock.save(any(SNPChromosome23.class))).thenReturn(persistedSNPChromosome23);
@@ -7818,28 +6594,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome23 snpchromosome23 = SNPChromosomeTestUtil.createModelObject23(
@@ -7855,28 +6623,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome23Mock.findOne(updatedDTOSNPChromosome23.getOid())).thenReturn(snpchromosome23);
@@ -7906,28 +6666,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome23Mock.findOne(CHROMOSOME_23_OID)).thenReturn(deleted);
@@ -7959,28 +6711,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome24Mock.findOne(CHROMOSOME_24_OID)).thenReturn(snpchromosome);
@@ -8010,28 +6754,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome24Mock.findOne(updatedDTOSNPChromosome24.getOid())).thenReturn(null);
@@ -8069,28 +6805,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome24 persistedSNPChromosome24 = SNPChromosomeTestUtil.createModelObject24(
@@ -8106,28 +6834,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome24Mock.save(any(SNPChromosome24.class))).thenReturn(persistedSNPChromosome24);
@@ -8161,28 +6881,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome24 snpchromosome24 = SNPChromosomeTestUtil.createModelObject24(
@@ -8198,28 +6910,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome24Mock.findOne(updatedDTOSNPChromosome24.getOid())).thenReturn(snpchromosome24);
@@ -8249,28 +6953,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome24Mock.findOne(CHROMOSOME_24_OID)).thenReturn(deleted);
@@ -8302,28 +6998,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome25Mock.findOne(CHROMOSOME_25_OID)).thenReturn(snpchromosome);
@@ -8353,28 +7041,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome25Mock.findOne(updatedDTOSNPChromosome25.getOid())).thenReturn(null);
@@ -8412,28 +7092,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome25 persistedSNPChromosome25 = SNPChromosomeTestUtil.createModelObject25(
@@ -8449,28 +7121,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome25Mock.save(any(SNPChromosome25.class))).thenReturn(persistedSNPChromosome25);
@@ -8504,28 +7168,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome25 snpchromosome25 = SNPChromosomeTestUtil.createModelObject25(
@@ -8541,28 +7197,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome25Mock.findOne(updatedDTOSNPChromosome25.getOid())).thenReturn(snpchromosome25);
@@ -8592,28 +7240,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome25Mock.findOne(CHROMOSOME_25_OID)).thenReturn(deleted);
@@ -8645,28 +7285,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome26Mock.findOne(CHROMOSOME_26_OID)).thenReturn(snpchromosome);
@@ -8696,28 +7328,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome26Mock.findOne(updatedDTOSNPChromosome26.getOid())).thenReturn(null);
@@ -8755,28 +7379,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome26 persistedSNPChromosome26 = SNPChromosomeTestUtil.createModelObject26(
@@ -8792,28 +7408,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome26Mock.save(any(SNPChromosome26.class))).thenReturn(persistedSNPChromosome26);
@@ -8847,28 +7455,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome26 snpchromosome26 = SNPChromosomeTestUtil.createModelObject26(
@@ -8884,28 +7484,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome26Mock.findOne(updatedDTOSNPChromosome26.getOid())).thenReturn(snpchromosome26);
@@ -8935,28 +7527,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome26Mock.findOne(CHROMOSOME_26_OID)).thenReturn(deleted);
@@ -8988,28 +7572,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome27Mock.findOne(CHROMOSOME_27_OID)).thenReturn(snpchromosome);
@@ -9039,28 +7615,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome27Mock.findOne(updatedDTOSNPChromosome27.getOid())).thenReturn(null);
@@ -9098,28 +7666,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome27 persistedSNPChromosome27 = SNPChromosomeTestUtil.createModelObject27(
@@ -9135,28 +7695,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome27Mock.save(any(SNPChromosome27.class))).thenReturn(persistedSNPChromosome27);
@@ -9190,28 +7742,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome27 snpchromosome27 = SNPChromosomeTestUtil.createModelObject27(
@@ -9227,28 +7771,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome27Mock.findOne(updatedDTOSNPChromosome27.getOid())).thenReturn(snpchromosome27);
@@ -9278,28 +7814,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome27Mock.findOne(CHROMOSOME_27_OID)).thenReturn(deleted);
@@ -9331,28 +7859,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome28Mock.findOne(CHROMOSOME_28_OID)).thenReturn(snpchromosome);
@@ -9382,28 +7902,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome28Mock.findOne(updatedDTOSNPChromosome28.getOid())).thenReturn(null);
@@ -9441,28 +7953,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome28 persistedSNPChromosome28 = SNPChromosomeTestUtil.createModelObject28(
@@ -9478,28 +7982,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome28Mock.save(any(SNPChromosome28.class))).thenReturn(persistedSNPChromosome28);
@@ -9533,28 +8029,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome28 snpchromosome28 = SNPChromosomeTestUtil.createModelObject28(
@@ -9570,28 +8058,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome28Mock.findOne(updatedDTOSNPChromosome28.getOid())).thenReturn(snpchromosome28);
@@ -9621,28 +8101,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome28Mock.findOne(CHROMOSOME_28_OID)).thenReturn(deleted);
@@ -9674,28 +8146,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome32Mock.findOne(CHROMOSOME_32_OID)).thenReturn(snpchromosome);
@@ -9725,28 +8189,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome32Mock.findOne(updatedDTOSNPChromosome32.getOid())).thenReturn(null);
@@ -9784,28 +8240,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosome32 persistedSNPChromosome32 = SNPChromosomeTestUtil.createModelObject32(
@@ -9821,28 +8269,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosome32Mock.save(any(SNPChromosome32.class))).thenReturn(persistedSNPChromosome32);
@@ -9876,28 +8316,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosome32 snpchromosome32 = SNPChromosomeTestUtil.createModelObject32(
@@ -9913,28 +8345,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome32Mock.findOne(updatedDTOSNPChromosome32.getOid())).thenReturn(snpchromosome32);
@@ -9964,28 +8388,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosome32Mock.findOne(CHROMOSOME_32_OID)).thenReturn(deleted);
@@ -10017,28 +8433,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeWMock.findOne(CHROMOSOME_W_OID)).thenReturn(snpchromosome);
@@ -10068,28 +8476,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeWMock.findOne(updatedDTOSNPChromosomeW.getOid())).thenReturn(null);
@@ -10127,28 +8527,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosomeW persistedSNPChromosomeW = SNPChromosomeTestUtil.createModelObjectW(
@@ -10164,28 +8556,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosomeWMock.save(any(SNPChromosomeW.class))).thenReturn(persistedSNPChromosomeW);
@@ -10219,28 +8603,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosomeW snpchromosomeW = SNPChromosomeTestUtil.createModelObjectW(
@@ -10256,28 +8632,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeWMock.findOne(updatedDTOSNPChromosomeW.getOid())).thenReturn(snpchromosomeW);
@@ -10307,28 +8675,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeWMock.findOne(CHROMOSOME_W_OID)).thenReturn(deleted);
@@ -10360,28 +8720,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeZMock.findOne(CHROMOSOME_W_OID)).thenReturn(snpchromosome);
@@ -10411,28 +8763,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeZMock.findOne(updatedDTOSNPChromosomeZ.getOid())).thenReturn(null);
@@ -10470,28 +8814,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosomeZ persistedSNPChromosomeZ = SNPChromosomeTestUtil.createModelObjectZ(
@@ -10507,28 +8843,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosomeZMock.save(any(SNPChromosomeZ.class))).thenReturn(persistedSNPChromosomeZ);
@@ -10562,28 +8890,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosomeZ snpchromosomeZ = SNPChromosomeTestUtil.createModelObjectZ(
@@ -10599,28 +8919,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeZMock.findOne(updatedDTOSNPChromosomeZ.getOid())).thenReturn(snpchromosomeZ);
@@ -10650,28 +8962,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeZMock.findOne(CHROMOSOME_Z_OID)).thenReturn(deleted);
@@ -10703,28 +9007,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE64Mock.findOne(CHROMOSOME_W_OID)).thenReturn(snpchromosome);
@@ -10754,28 +9050,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE64Mock.findOne(updatedDTOSNPChromosomeLGE64.getOid())).thenReturn(null);
@@ -10813,28 +9101,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosomeLGE64 persistedSNPChromosomeLGE64 = SNPChromosomeTestUtil.createModelObjectLGE64(
@@ -10850,28 +9130,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosomeLGE64Mock.save(any(SNPChromosomeLGE64.class))).thenReturn(persistedSNPChromosomeLGE64);
@@ -10905,28 +9177,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosomeLGE64 snpchromosomeLGE64 = SNPChromosomeTestUtil.createModelObjectLGE64(
@@ -10942,28 +9206,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE64Mock.findOne(updatedDTOSNPChromosomeLGE64.getOid())).thenReturn(snpchromosomeLGE64);
@@ -10993,28 +9249,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE64Mock.findOne(CHROMOSOME_LGE64_OID)).thenReturn(deleted);
@@ -11046,28 +9294,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE22C19W28_E50C23Mock.findOne(CHROMOSOME_W_OID)).thenReturn(snpchromosome);
@@ -11097,28 +9337,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE22C19W28_E50C23Mock.findOne(updatedDTOSNPChromosomeLGE22C19W28_E50C23.getOid())).thenReturn(null);
@@ -11156,28 +9388,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
                 );
         
         SNPChromosomeLGE22C19W28_E50C23 persistedSNPChromosomeLGE22C19W28_E50C23 = SNPChromosomeTestUtil.createModelObjectLGE22C19W28_E50C23(
@@ -11193,28 +9417,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
                 );
         
         when(repositorySNPChromosomeLGE22C19W28_E50C23Mock.save(any(SNPChromosomeLGE22C19W28_E50C23.class))).thenReturn(persistedSNPChromosomeLGE22C19W28_E50C23);
@@ -11248,28 +9464,20 @@ public class RepositorySNPChromosomeServiceTest {
     			ENSEMBL_ANNOTATION,
     			STRAIN_7_ALLELE,
     			STRAIN_7_ALLELE_FIXED,
-    			STRAIN_7_ALLELE_RATIO,
     			STRAIN_P_ALLELE,
     			STRAIN_P_ALLELE_FIXED,
-    			STRAIN_P_ALLELE_RATIO,
     			STRAIN_W_ALLELE,
     			STRAIN_W_ALLELE_FIXED,
-    			STRAIN_W_ALLELE_RATIO,
     			STRAIN_N_ALLELE,
     			STRAIN_N_ALLELE_FIXED,
-    			STRAIN_N_ALLELE_RATIO,
     			STRAIN_15I_ALLELE,
     			STRAIN_15I_ALLELE_FIXED,
-    			STRAIN_15I_ALLELE_RATIO,
     			STRAIN_ZERO_ALLELE,
     			STRAIN_ZERO_ALLELE_FIXED,
-    			STRAIN_ZERO_ALLELE_RATIO,
     			STRAIN_6_ALLELE,
     			STRAIN_6_ALLELE_FIXED,
-    			STRAIN_6_ALLELE_RATIO,
     			STRAIN_C_ALLELE,
-    			STRAIN_C_ALLELE_FIXED,
-    			STRAIN_C_ALLELE_RATIO
+    			STRAIN_C_ALLELE_FIXED
         		);
         
         SNPChromosomeLGE22C19W28_E50C23 snpchromosomeLGE22C19W28_E50C23 = SNPChromosomeTestUtil.createModelObjectLGE22C19W28_E50C23(
@@ -11285,28 +9493,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE22C19W28_E50C23Mock.findOne(updatedDTOSNPChromosomeLGE22C19W28_E50C23.getOid())).thenReturn(snpchromosomeLGE22C19W28_E50C23);
@@ -11336,28 +9536,20 @@ public class RepositorySNPChromosomeServiceTest {
         		ENSEMBL_ANNOTATION,
         		STRAIN_7_ALLELE,
         		STRAIN_7_ALLELE_FIXED,
-        		STRAIN_7_ALLELE_RATIO_LONG,
         		STRAIN_P_ALLELE,
         		STRAIN_P_ALLELE_FIXED,
-        		STRAIN_P_ALLELE_RATIO_LONG,
         		STRAIN_W_ALLELE,
         		STRAIN_W_ALLELE_FIXED,
-        		STRAIN_W_ALLELE_RATIO_LONG,
         		STRAIN_N_ALLELE,
         		STRAIN_N_ALLELE_FIXED,
-        		STRAIN_N_ALLELE_RATIO_LONG,
         		STRAIN_15I_ALLELE,
         		STRAIN_15I_ALLELE_FIXED,
-        		STRAIN_15I_ALLELE_RATIO_LONG,
         		STRAIN_ZERO_ALLELE,
         		STRAIN_ZERO_ALLELE_FIXED,
-        		STRAIN_ZERO_ALLELE_RATIO_LONG,
         		STRAIN_6_ALLELE,
         		STRAIN_6_ALLELE_FIXED,
-        		STRAIN_6_ALLELE_RATIO_LONG,
         		STRAIN_C_ALLELE,
-        		STRAIN_C_ALLELE_FIXED,
-        		STRAIN_C_ALLELE_RATIO_LONG
+        		STRAIN_C_ALLELE_FIXED
         		);
         
         when(repositorySNPChromosomeLGE22C19W28_E50C23Mock.findOne(CHROMOSOME_LGE22C19W28_E50C23_OID)).thenReturn(deleted);
@@ -11388,28 +9580,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome3(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome3 actualSNPChromosome) {
@@ -11427,28 +9611,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome4(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome4 actualSNPChromosome) {
@@ -11466,28 +9642,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome5(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome5 actualSNPChromosome) {
@@ -11505,28 +9673,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome6(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome6 actualSNPChromosome) {
@@ -11544,28 +9704,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome7(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome7 actualSNPChromosome) {
@@ -11583,28 +9735,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome8(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome8 actualSNPChromosome) {
@@ -11622,28 +9766,20 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome9(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome9 actualSNPChromosome) {
@@ -11661,28 +9797,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome10(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome10 actualSNPChromosome) {
@@ -11700,28 +9832,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome11(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome11 actualSNPChromosome) {
@@ -11739,28 +9867,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome12(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome12 actualSNPChromosome) {
@@ -11778,28 +9902,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome13(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome13 actualSNPChromosome) {
@@ -11817,28 +9937,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome14(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome14 actualSNPChromosome) {
@@ -11856,28 +9972,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome15(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome15 actualSNPChromosome) {
@@ -11895,28 +10007,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome16(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome16 actualSNPChromosome) {
@@ -11934,28 +10042,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome17(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome17 actualSNPChromosome) {
@@ -11973,28 +10077,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome18(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome18 actualSNPChromosome) {
@@ -12012,28 +10112,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome19(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome19 actualSNPChromosome) {
@@ -12051,28 +10147,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome20(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome20 actualSNPChromosome) {
@@ -12090,28 +10182,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome21(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome21 actualSNPChromosome) {
@@ -12129,28 +10217,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome22(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome22 actualSNPChromosome) {
@@ -12168,28 +10252,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome23(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome23 actualSNPChromosome) {
@@ -12207,28 +10287,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome24(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome24 actualSNPChromosome) {
@@ -12246,28 +10322,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome25(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome25 actualSNPChromosome) {
@@ -12285,28 +10357,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome26(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome26 actualSNPChromosome) {
@@ -12324,28 +10392,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome27(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome27 actualSNPChromosome) {
@@ -12363,28 +10427,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome28(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome28 actualSNPChromosome) {
@@ -12402,28 +10462,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosome32(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosome32 actualSNPChromosome) {
@@ -12441,28 +10497,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosomeW(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosomeW actualSNPChromosome) {
@@ -12480,28 +10532,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosomeZ(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosomeZ actualSNPChromosome) {
@@ -12519,28 +10567,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosomeLGE64(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosomeLGE64 actualSNPChromosome) {
@@ -12558,28 +10602,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
 
     private void assertSNPChromosomeLGE22C19W28_E50C23(DTOSNPChromosome expectedDTOSNPChromosome, SNPChromosomeLGE22C19W28_E50C23 actualSNPChromosome) {
@@ -12597,28 +10637,24 @@ public class RepositorySNPChromosomeServiceTest {
         assertEquals(expectedDTOSNPChromosome.getEnsemblAnnotation(), actualSNPChromosome.getEnsemblAnnotation());
         assertEquals(expectedDTOSNPChromosome.getStrain7Allele(), actualSNPChromosome.getStrain7Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain7AlleleFixed(), actualSNPChromosome.getStrain7AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain7AlleleRatioAsLong(), actualSNPChromosome.getStrain7AlleleRatio());
+        
         assertEquals(expectedDTOSNPChromosome.getStrainPAllele(), actualSNPChromosome.getStrainPAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainPAlleleFixed(), actualSNPChromosome.getStrainPAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainPAlleleRatioAsLong(), actualSNPChromosome.getStrainPAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainWAllele(), actualSNPChromosome.getStrainWAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainWAlleleFixed(), actualSNPChromosome.getStrainWAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainWAlleleRatioAsLong(), actualSNPChromosome.getStrainWAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrainNAllele(), actualSNPChromosome.getStrainNAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainNAlleleFixed(), actualSNPChromosome.getStrainNAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainNAlleleRatioAsLong(), actualSNPChromosome.getStrainNAlleleRatio());
+
         assertEquals(expectedDTOSNPChromosome.getStrain15IAllele(), actualSNPChromosome.getStrain15IAllele());
         assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleFixed(), actualSNPChromosome.getStrain15IAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain15IAlleleRatioAsLong(), actualSNPChromosome.getStrain15IAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAllele(), actualSNPChromosome.getStrainZeroAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleFixed(), actualSNPChromosome.getStrainZeroAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainZeroAlleleRatioAsLong(), actualSNPChromosome.getStrainZeroAlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrain6Allele(), actualSNPChromosome.getStrain6Allele());
         assertEquals(expectedDTOSNPChromosome.getStrain6AlleleFixed(), actualSNPChromosome.getStrain6AlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrain6AlleleRatioAsLong(), actualSNPChromosome.getStrain6AlleleRatio());
         assertEquals(expectedDTOSNPChromosome.getStrainCAllele(), actualSNPChromosome.getStrainCAllele());
         assertEquals(expectedDTOSNPChromosome.getStrainCAlleleFixed(), actualSNPChromosome.getStrainCAlleleFixed());
-        assertEquals(expectedDTOSNPChromosome.getStrainCAlleleRatioAsLong(), actualSNPChromosome.getStrainCAlleleRatio());
     }
     
 }

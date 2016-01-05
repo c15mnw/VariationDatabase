@@ -49,7 +49,7 @@ public interface ServiceSNPChromosomeLGE64 {
      * @return  The updated snpchromosome.
      * @throws SNPChromosomeLGE64NotFoundException  if no snpchromosome is found with given id.
      */
-    public SNPChromosomeLGE64 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
+    public SNPChromosomeLGE64 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
 
     /**
      * Searches SNPChromosomeLGE64s by using the search criteria given as a parameter.

@@ -49,7 +49,7 @@ public interface ServiceSNPChromosomeLGE22C19W28_E50C23 {
      * @return  The updated snpchromosome.
      * @throws SNPChromosomeLGE22C19W28_E50C23NotFoundException  if no snpchromosome is found with given id.
      */
-    public SNPChromosomeLGE22C19W28_E50C23 update(SNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
+    public SNPChromosomeLGE22C19W28_E50C23 update(DTOSNPChromosome updated) throws ExceptionSNPChromosomeNotFound;
 
     /**
      * Searches SNPChromosomeLGE22C19W28_E50C23s by using the search criteria given as a parameter.
