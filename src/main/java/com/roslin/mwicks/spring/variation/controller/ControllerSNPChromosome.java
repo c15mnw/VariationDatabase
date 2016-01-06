@@ -40,7 +40,7 @@ import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome1;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome01;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome10;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome11;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome12;
@@ -60,14 +60,14 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome26;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome27;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome28;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome3;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome03;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome32;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome4;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome5;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome6;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome7;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome8;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome9;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome04;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome05;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome06;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome07;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome08;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome09;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE22C19W28_E50C23;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeW;
@@ -121,21 +121,21 @@ public class ControllerSNPChromosome extends AbstractController {
 
     
     @Resource
-    private ServiceSNPChromosome1 servicesnpchromosome1;
+    private ServiceSNPChromosome01 servicesnpchromosome1;
     @Resource
-    private ServiceSNPChromosome3 servicesnpchromosome3;
+    private ServiceSNPChromosome03 servicesnpchromosome3;
     @Resource
-    private ServiceSNPChromosome4 servicesnpchromosome4;
+    private ServiceSNPChromosome04 servicesnpchromosome4;
     @Resource
-    private ServiceSNPChromosome5 servicesnpchromosome5;
+    private ServiceSNPChromosome05 servicesnpchromosome5;
     @Resource
-    private ServiceSNPChromosome6 servicesnpchromosome6;
+    private ServiceSNPChromosome06 servicesnpchromosome6;
     @Resource
-    private ServiceSNPChromosome7 servicesnpchromosome7;
+    private ServiceSNPChromosome07 servicesnpchromosome7;
     @Resource
-    private ServiceSNPChromosome8 servicesnpchromosome8;
+    private ServiceSNPChromosome08 servicesnpchromosome8;
     @Resource
-    private ServiceSNPChromosome9 servicesnpchromosome9;
+    private ServiceSNPChromosome09 servicesnpchromosome9;
     @Resource
     private ServiceSNPChromosome10 servicesnpchromosome10;
     @Resource
@@ -817,28 +817,28 @@ public class ControllerSNPChromosome extends AbstractController {
      * This setter method should only be used by unit tests
      * @param serviceSNPChromosome
      */
-    protected void setServiceSNPChromosome1(ServiceSNPChromosome1 servicesnpchromosome1) {
+    protected void setServiceSNPChromosome1(ServiceSNPChromosome01 servicesnpchromosome1) {
         this.servicesnpchromosome1 = servicesnpchromosome1;
     }
-    protected void setServiceSNPChromosome3(ServiceSNPChromosome3 servicesnpchromosome3) {
+    protected void setServiceSNPChromosome3(ServiceSNPChromosome03 servicesnpchromosome3) {
         this.servicesnpchromosome3 = servicesnpchromosome3;
     }
-    protected void setServiceSNPChromosome4(ServiceSNPChromosome4 servicesnpchromosome4) {
+    protected void setServiceSNPChromosome4(ServiceSNPChromosome04 servicesnpchromosome4) {
         this.servicesnpchromosome4 = servicesnpchromosome4;
     }
-    protected void setServiceSNPChromosome5(ServiceSNPChromosome5 servicesnpchromosome5) {
+    protected void setServiceSNPChromosome5(ServiceSNPChromosome05 servicesnpchromosome5) {
         this.servicesnpchromosome5 = servicesnpchromosome5;
     }
-    protected void setServiceSNPChromosome6(ServiceSNPChromosome6 servicesnpchromosome6) {
+    protected void setServiceSNPChromosome6(ServiceSNPChromosome06 servicesnpchromosome6) {
         this.servicesnpchromosome6 = servicesnpchromosome6;
     }
-    protected void setServiceSNPChromosome7(ServiceSNPChromosome7 servicesnpchromosome7) {
+    protected void setServiceSNPChromosome7(ServiceSNPChromosome07 servicesnpchromosome7) {
         this.servicesnpchromosome7 = servicesnpchromosome7;
     }
-    protected void setServiceSNPChromosome8(ServiceSNPChromosome8 servicesnpchromosome8) {
+    protected void setServiceSNPChromosome8(ServiceSNPChromosome08 servicesnpchromosome8) {
         this.servicesnpchromosome8 = servicesnpchromosome8;
     }
-    protected void setServiceSNPChromosome9(ServiceSNPChromosome9 servicesnpchromosome9) {
+    protected void setServiceSNPChromosome9(ServiceSNPChromosome09 servicesnpchromosome9) {
         this.servicesnpchromosome9 = servicesnpchromosome9;
     }
     protected void setServiceSNPChromosome10(ServiceSNPChromosome10 servicesnpchromosome10) {
