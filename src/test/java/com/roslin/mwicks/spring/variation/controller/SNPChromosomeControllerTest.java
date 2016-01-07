@@ -1,14 +1,13 @@
 package com.roslin.mwicks.spring.variation.controller;
 
-import com.roslin.mwicks.spring.variation.dto.DTODownload;
-import com.roslin.mwicks.spring.variation.dto.DTOSearch;
-import com.roslin.mwicks.spring.variation.dto.DownloadFormat;
-import com.roslin.mwicks.spring.variation.dto.DownloadHeaders;
-import com.roslin.mwicks.spring.variation.dto.DownloadQuotes;
-import com.roslin.mwicks.spring.variation.dto.SearchChromosome;
-import com.roslin.mwicks.spring.variation.dto.SearchReference;
-import com.roslin.mwicks.spring.variation.dto.SearchAlternative;
-
+import com.roslin.mwicks.spring.variation.dto.web.DTODownload;
+import com.roslin.mwicks.spring.variation.dto.web.DTOSearch;
+import com.roslin.mwicks.spring.variation.dto.web.DownloadFormat;
+import com.roslin.mwicks.spring.variation.dto.web.DownloadHeaders;
+import com.roslin.mwicks.spring.variation.dto.web.DownloadQuotes;
+import com.roslin.mwicks.spring.variation.dto.web.SearchAlternative;
+import com.roslin.mwicks.spring.variation.dto.web.SearchChromosome;
+import com.roslin.mwicks.spring.variation.dto.web.SearchReference;
 import com.roslin.mwicks.spring.variation.model.other.CSVResponse;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;

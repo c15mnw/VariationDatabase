@@ -15,8 +15,8 @@ import java.util.List;
 
 import java.io.IOException;
 
-import com.roslin.mwicks.spring.variation.dto.DTOSearch;
-import com.roslin.mwicks.spring.variation.dto.DTODownload;
+import com.roslin.mwicks.spring.variation.dto.web.DTODownload;
+import com.roslin.mwicks.spring.variation.dto.web.DTOSearch;
 
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchRangeGreaterThanOneMillion;
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneDownStreamNotNumeric;
@@ -30,6 +30,11 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoo
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoordinateNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleEqualsAlternativeAllele;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeReferenceAlleleNotSupplied;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterProteinAlignNumberValueNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterProveanScoreValueNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterSiftConservationScoreValueNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterSiftScoreValueNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterTotalNumberSeqAlignedValueNotNumeric;
 
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 
@@ -105,6 +110,12 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final String ERROR_MESSAGE_SEARCH_NOTCHOSEN_ALTERNATIVE_NOT_SELECTED = "error.message.search.notchosen.alternativeStrain";
     protected static final String ERROR_MESSAGE_SEARCH_EQUALS_REFERENCE_EQUALS_ALTERNATIVE = "error.message.search.equals.referenceStrainEQalternativeStrain";
     
+    protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_SCORE = "error.message.search.filter.notnumeric.searchFilterSiftScore";
+    protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_CONSERVATION_SCORE = "error.message.search.filter.notnumeric.searchFilterSiftConservationScore";
+    protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_PROTEIN_ALIGN_NUMBER = "error.message.search.filter.notnumeric.searchFilterProteinAlignNumber";
+    protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_TOTAL_NUMBER_SEQ_ALIGNED = "error.message.search.filter.notnumeric.searchFilterTotalNumberSeqAligned";
+    protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_PROVEAN_SCORE = "error.message.search.filter.notnumeric.searchFilterProveanScore";
+
     protected static final String MODEL_ATTIRUTE_SNPCHROMOSOME = "SNPChromosome";
     protected static final String MODEL_ATTRIBUTE_SNPCHROMOSOMES = "SNPChromosomes";
     
@@ -225,6 +236,31 @@ public class ControllerSNPChromosome extends AbstractController {
         int intSearchUpDownDiff = 0;
 
         try {
+
+        	if ( !dtoSearch.isSearchFilterProteinAlignNumberValueEmpty() ) {
+        		if ( !dtoSearch.isSearchFilterProteinAlignNumberValueANumber() ) {
+        			throw new ExceptionSNPChromosomeSearchFilterProteinAlignNumberValueNotNumeric("ERROR: Search Filter Protein Alignment Number is NOT Numeric : " + dtoSearch.getSearchFilterProteinAlignNumberValue() + " !!!");
+        		}
+        	}
+        	if ( !dtoSearch.isSearchFilterProveanScoreValueEmpty() ) {
+        		if ( !dtoSearch.isSearchFilterProveanScoreValueANumber() ) {
+        			throw new ExceptionSNPChromosomeSearchFilterProveanScoreValueNotNumeric("ERROR: Search Filter PROVEAN Score is NOT Numeric : " + dtoSearch.getSearchFilterProveanScoreValue() + " !!!");        		}
+        	}
+        	if ( !dtoSearch.isSearchFilterSiftConservationScoreValueEmpty() ) {
+        		if ( !dtoSearch.isSearchFilterSiftConservationScoreValueANumber() ) {
+        			throw new ExceptionSNPChromosomeSearchFilterSiftConservationScoreValueNotNumeric("ERROR: Search Filter SIFT Conservation Score is NOT Numeric : " + dtoSearch.getSearchFilterSiftConservationScoreValue() + " !!!");
+        		}
+        	}
+        	if ( !dtoSearch.isSearchFilterSiftScoreValueEmpty() ) {
+        		if ( !dtoSearch.isSearchFilterSiftScoreValueANumber() ) {
+        			throw new ExceptionSNPChromosomeSearchFilterSiftScoreValueNotNumeric("ERROR: Search Filter SIFT Score is NOT Numeric : " + dtoSearch.getSearchFilterSiftScoreValue() + " !!!");
+        		}
+        	}
+        	if ( !dtoSearch.isSearchFilterTotalNumberSeqAlignedValueEmpty() ) {
+        		if ( !dtoSearch.isSearchFilterTotalNumberSeqAlignedValueANumber() ) {
+        			throw new ExceptionSNPChromosomeSearchFilterTotalNumberSeqAlignedValueNotNumeric("ERROR: Search Filter Total Number of Sequences Aligned is NOT Numeric : " + dtoSearch.getSearchFilterTotalNumberSeqAlignedValue() + " !!!");
+        		}
+        	}
         	
         	if ( dtoSearch.isSearchGeneNameEmpty() ) {
         		
@@ -419,6 +455,36 @@ public class ControllerSNPChromosome extends AbstractController {
             	pagesnpchromosome = servicesnpchromosomeLGE64.search(dtoSearch, firstPage);
             }
         } 
+        catch (ExceptionSNPChromosomeSearchFilterProteinAlignNumberValueNotNumeric e) {
+        	LOGGER.debug("ERROR: The Search Filter Protein Alignment Number is NOT Numeric !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_PROTEIN_ALIGN_NUMBER);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionSNPChromosomeSearchFilterProveanScoreValueNotNumeric e) {
+        	LOGGER.debug("ERROR: The Search Filter PROVEAN Score is NOT Numeric !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_PROVEAN_SCORE);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionSNPChromosomeSearchFilterSiftConservationScoreValueNotNumeric e) {
+        	LOGGER.debug("ERROR: The Search Filter SIFT Conservation Score is NOT Numeric !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_CONSERVATION_SCORE);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionSNPChromosomeSearchFilterSiftScoreValueNotNumeric e) {
+        	LOGGER.debug("ERROR: The Search Filter SIFT Score is NOT Numeric !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_SCORE);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionSNPChromosomeSearchFilterTotalNumberSeqAlignedValueNotNumeric e) {
+        	LOGGER.debug("ERROR: The Search Filter Total Number of Sequence Aligned is NOT Numeric !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_TOTAL_NUMBER_SEQ_ALIGNED);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
         catch (ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand e) {
         	LOGGER.debug("ERROR: Search Range is GREATER THAN Ten Thousand Base Pairs !!!");
             addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_TEN_THOUSAND_BASE_PAIRS);
