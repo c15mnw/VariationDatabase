@@ -51,6 +51,13 @@
             <td><spring:message code="snpchromosome.list.label.strainCAllele"/></td>
             <td><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></td>
             </c:if>
+            <td><spring:message code="snpchromosome.list.label.aminoAcidSubs"/></td>
+            <td><spring:message code="snpchromosome.list.label.predictionCategory"/></td>
+            <td><spring:message code="snpchromosome.list.label.scoreProvean"/></td>
+            <td><spring:message code="snpchromosome.list.label.scoreSift"/></td>
+            <td><spring:message code="snpchromosome.list.label.scoreConservation"/></td>
+            <td><spring:message code="snpchromosome.list.label.proteinAlignNumber"/></td>
+            <td><spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/></td>
         </tr>
         </thead>
         <tbody>
@@ -97,6 +104,13 @@
                 <td><c:out value="${snpchromosome.getStrainCAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainCAlleleFixed()}"/></td>
                 </c:if>
+                <td><c:out value="${snpchromosome.getAminoAcidSubs()}"/></td>
+                <td><c:out value="${snpchromosome.getPredictionCategory()}"/></td>
+                <td><c:out value="${snpchromosome.getScoreProvean()}"/></td>
+                <td><c:out value="${snpchromosome.getScoreSift()}"/></td>
+                <td><c:out value="${snpchromosome.getScoreConservation()}"/></td>
+                <td><c:out value="${snpchromosome.getProteinAlignNumber()}"/></td>
+                <td><c:out value="${snpchromosome.getTotalAlignSequenceNumber()}"/></td>
             </tr>
         </c:forEach>
         </tbody>

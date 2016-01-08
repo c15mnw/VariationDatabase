@@ -22,6 +22,18 @@
         <input type="hidden" id="downloadReference" name="downloadReference" value="${dtoDownload.downloadReference}" />
         <input type="hidden" id="downloadAlternative" name="downloadAlternative" value="${dtoDownload.downloadAlternative}" />
 
+        <input type="hidden" id="downloadFilterSiftScoreValue" name="downloadFilterSiftScoreValue" value="${dtoDownload.downloadFilterSiftScoreValue}" />
+        <input type="hidden" id="downloadFilterSiftConservationScoreValue" name="downloadFilterSiftConservationScoreValue" value="${dtoDownload.downloadFilterSiftConservationScoreValue}" />
+        <input type="hidden" id="downloadFilterProteinAlignNumberValue" name="downloadFilterProteinAlignNumberValue" value="${dtoDownload.downloadFilterProteinAlignNumberValue}" />
+        <input type="hidden" id="downloadFilterTotalNumberSeqAlignedValue" name="downloadFilterTotalNumberSeqAlignedValue" value="${dtoDownload.downloadFilterTotalNumberSeqAlignedValue}" />
+        <input type="hidden" id="downloadFilterProveanScoreValue" name="downloadFilterProveanScoreValue" value="${dtoDownload.downloadFilterProveanScoreValue}" />
+
+        <input type="hidden" id="downloadFilterSiftScore" name="downloadFilterSiftScore" value="${dtoDownload.downloadFilterSiftScore}" />
+        <input type="hidden" id="downloadFilterSiftConservationScore" name="downloadFilterSiftConservationScore" value="${dtoDownload.downloadFilterSiftConservationScore}" />
+        <input type="hidden" id="downloadFilterProteinAlignNumber" name="downloadFilterProteinAlignNumber" value="${dtoDownload.downloadFilterProteinAlignNumber}" />
+        <input type="hidden" id="downloadFilterTotalNumberSeqAligned" name="downloadFilterTotalNumberSeqAligned" value="${dtoDownload.downloadFilterTotalNumberSeqAligned}" />
+        <input type="hidden" id="downloadFilterProveanScore" name="downloadFilterProveanScore" value="${dtoDownload.downloadFilterProveanScore}" />
+
         <div id="downloadform1" style="display: none;">
         
         <div class="row">
