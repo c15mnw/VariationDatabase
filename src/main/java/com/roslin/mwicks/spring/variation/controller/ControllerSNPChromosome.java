@@ -592,19 +592,11 @@ public class ControllerSNPChromosome extends AbstractController {
             	    dtoSearch.getSearchFilterProveanScore(),
             	    pagesnpchromosome);
 
-        	/*
-            int current = pagesnpchromosome.getPageNumber() + 1;
-            int begin = Math.max(1, current - 5);
-            int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
-            int totalPages = pagesnpchromosome.getTotalPages();
-        	 */
-        	
             int current = filteredsnpchromosome.getPageNumber();
             int begin = Math.max(1, current - 5);
             int end = Math.min(begin + 10, filteredsnpchromosome.getTotalPages());
             int totalPages = filteredsnpchromosome.getTotalPages();
 
-            //model.addAttribute("SNPChromosome", pagesnpchromosome);
             model.addAttribute("SNPChromosome", filteredsnpchromosome.getPagedSNPChromosomes());
             model.addAttribute("beginIndex", begin);
             model.addAttribute("endIndex", end);
@@ -637,7 +629,6 @@ public class ControllerSNPChromosome extends AbstractController {
 
             model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
 
-            //model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, pagesnpchromosome.getTotalElements()));
             if ( filteredsnpchromosome.getTotalElements() == 1 ) {
                 model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS_SINGLE, filteredsnpchromosome.getTotalElements()));
             }
@@ -798,7 +789,6 @@ public class ControllerSNPChromosome extends AbstractController {
             	    dtoSearch.getSearchFilterProveanScore(),
             	    pagesnpchromosome);
 
-            //model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS, pagesnpchromosome.getTotalElements()));
             if ( pagesnpchromosome.getTotalElements() == 1 ) {
                 model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS_SINGLE, pagesnpchromosome.getTotalElements()));
             }
@@ -806,19 +796,11 @@ public class ControllerSNPChromosome extends AbstractController {
                 model.addAttribute("feedbackMessage", addFeedbackMessageAsString(FEEDBACK_MESSAGE_KEY_SEARCH_RESULTS_MULTIPLE, pagesnpchromosome.getTotalElements()));
             }
             
-        	/*
-            int current = pagesnpchromosome.getPageNumber() + 1;
-            int begin = Math.max(1, current - 5);
-            int end = Math.min(begin + 10, pagesnpchromosome.getTotalPages());
-            int totalPages = pagesnpchromosome.getTotalPages();
-        	 */
-
             int current = filteredsnpchromosome.getPageNumber();
             int begin = Math.max(1, current - 5);
             int end = Math.min(begin + 10, filteredsnpchromosome.getTotalPages());
             int totalPages = filteredsnpchromosome.getTotalPages();
 
-            //model.addAttribute("SNPChromosome", pagesnpchromosome);
             model.addAttribute("SNPChromosome", filteredsnpchromosome.getPagedSNPChromosomes());
             model.addAttribute("beginIndex", begin);
             model.addAttribute("endIndex", end);

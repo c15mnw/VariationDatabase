@@ -10,7 +10,6 @@
     <table class="table table-bordered table-condensed">
         <thead>
         <tr>
-            <td><spring:message code="snpchromosome.list.label.snpId"/></td>
             <td><spring:message code="snpchromosome.list.label.chromosomeId"/></td>
             <td><spring:message code="snpchromosome.list.label.position"/></td>
             <td><spring:message code="snpchromosome.list.label.reference"/></td>
@@ -63,7 +62,6 @@
         <tbody>
         <c:forEach items="${SNPChromosome}" var="snpchromosome" varStatus="rowStatus">
             <tr>
-                <td><c:out value="${snpchromosome.snpId}"/></td>
                 <td><c:out value="${snpchromosome.chromosomeId}"/></td>
                 <td><c:out value="${snpchromosome.position}"/></td>
                 <td><c:out value="${snpchromosome.reference}"/></td>
