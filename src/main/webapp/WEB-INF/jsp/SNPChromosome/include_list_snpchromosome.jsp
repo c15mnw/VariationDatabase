@@ -5,116 +5,240 @@
 <c:if test="${SNPChromosome != null && totalPages != 0}">
 
 <div class="row spacer">
-    <div class="span12">
+  <div class="span12">
 
     <table class="table table-bordered table-condensed">
-        <thead>
-        <tr>
-            <td><spring:message code="snpchromosome.list.label.chromosomeId"/></td>
-            <td><spring:message code="snpchromosome.list.label.position"/></td>
-            <td><spring:message code="snpchromosome.list.label.reference"/></td>
-            <td><spring:message code="snpchromosome.list.label.alternative"/></td>
-            <td><spring:message code="snpchromosome.list.label.region"/></td>
-            <td><spring:message code="snpchromosome.list.label.ensemblGene"/></td>
-            <td><spring:message code="snpchromosome.list.label.ensemblTranscript"/></td>
-            <td><spring:message code="snpchromosome.list.label.ensemblAnnotation"/></td>
+      <thead>
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.position"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.reference"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.alternative"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.region"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.ensemblGene"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.ensemblTranscript"/>
+        </td>
+        <td>
+          <spring:message code="snpchromosome.list.label.ensemblAnnotation"/>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <spring:message code="snpchromosome.list.label.aminoAcidSubs"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.predictionCategory"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.scoreProvean"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.scoreSift"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.scoreConservation"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.proteinAlignNumber"/>
+          </td>
+          <td>
+            <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <c:forEach items="${SNPChromosome}" var="snpchromosome" varStatus="rowStatus">
+          <tr>
+            <td>
+              <c:out value="${snpchromosome.chromosomeId}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.position}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.reference}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.alternative}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getRegionMultiLines()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getEnsemblGeneMultiLines()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getEnsemblTranscriptMultiLines()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getEnsemblAnnotationMultiLines()}"/>
+            </td>
             <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
-            <td><spring:message code="snpchromosome.list.label.strain7Allele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strain7AlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrain7Allele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrain7AlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
-            <td><spring:message code="snpchromosome.list.label.strainPAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainPAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrainPAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrainPAlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
-            <td><spring:message code="snpchromosome.list.label.strainWAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainWAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrainWAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrainWAlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
-            <td><spring:message code="snpchromosome.list.label.strainNAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrainNAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrainNAlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
-            <td><spring:message code="snpchromosome.list.label.strain15IAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrain15IAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrain15IAlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
-            <td><spring:message code="snpchromosome.list.label.strainZeroAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrainZeroAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrainZeroAlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
-            <td><spring:message code="snpchromosome.list.label.strain6Allele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrain6Allele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrain6AlleleFixed()}"/>
+              </td>
             </c:if>
             <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
-            <td><spring:message code="snpchromosome.list.label.strainCAllele"/></td>
-            <td><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></td>
+              <td>
+                <c:out value="${snpchromosome.getStrainCAllele()}"/>
+              </td>
+              <td>
+                <c:out value="${snpchromosome.getStrainCAlleleFixed()}"/>
+              </td>
             </c:if>
-            <td><spring:message code="snpchromosome.list.label.aminoAcidSubs"/></td>
-            <td><spring:message code="snpchromosome.list.label.predictionCategory"/></td>
-            <td><spring:message code="snpchromosome.list.label.scoreProvean"/></td>
-            <td><spring:message code="snpchromosome.list.label.scoreSift"/></td>
-            <td><spring:message code="snpchromosome.list.label.scoreConservation"/></td>
-            <td><spring:message code="snpchromosome.list.label.proteinAlignNumber"/></td>
-            <td><spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/></td>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach items="${SNPChromosome}" var="snpchromosome" varStatus="rowStatus">
-            <tr>
-                <td><c:out value="${snpchromosome.chromosomeId}"/></td>
-                <td><c:out value="${snpchromosome.position}"/></td>
-                <td><c:out value="${snpchromosome.reference}"/></td>
-                <td><c:out value="${snpchromosome.alternative}"/></td>
-                <td><c:out value="${snpchromosome.getRegionMultiLines()}"/></td>
-                <td><c:out value="${snpchromosome.getEnsemblGeneMultiLines()}"/></td>
-                <td><c:out value="${snpchromosome.getEnsemblTranscriptMultiLines()}"/></td>
-                <td><c:out value="${snpchromosome.getEnsemblAnnotationMultiLines()}"/></td>
-                <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
-                <td><c:out value="${snpchromosome.getStrain7Allele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrain7AlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
-                <td><c:out value="${snpchromosome.getStrainPAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrainPAlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
-                <td><c:out value="${snpchromosome.getStrainWAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrainWAlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
-                <td><c:out value="${snpchromosome.getStrainNAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrainNAlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
-                <td><c:out value="${snpchromosome.getStrain15IAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrain15IAlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
-                <td><c:out value="${snpchromosome.getStrainZeroAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrainZeroAlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
-                <td><c:out value="${snpchromosome.getStrain6Allele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrain6AlleleFixed()}"/></td>
-                </c:if>
-                <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
-                <td><c:out value="${snpchromosome.getStrainCAllele()}"/></td>
-                <td><c:out value="${snpchromosome.getStrainCAlleleFixed()}"/></td>
-                </c:if>
-                <td><c:out value="${snpchromosome.getAminoAcidSubs()}"/></td>
-                <td><c:out value="${snpchromosome.getPredictionCategory()}"/></td>
-                <td><c:out value="${snpchromosome.getScoreProvean()}"/></td>
-                <td><c:out value="${snpchromosome.getScoreSift()}"/></td>
-                <td><c:out value="${snpchromosome.getScoreConservation()}"/></td>
-                <td><c:out value="${snpchromosome.getProteinAlignNumber()}"/></td>
-                <td><c:out value="${snpchromosome.getTotalAlignSequenceNumber()}"/></td>
-            </tr>
+            <td>
+              <c:out value="${snpchromosome.getAminoAcidSubs()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getPredictionCategory()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getScoreProvean()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getScoreSift()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getScoreConservation()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getProteinAlignNumber()}"/>
+            </td>
+            <td>
+              <c:out value="${snpchromosome.getTotalAlignSequenceNumber()}"/>
+            </td>
+          </tr>
         </c:forEach>
-        </tbody>
+      </tbody>
     </table>
 
-    </div> <!-- close span12 -->
-</div>
+  </div><!-- close span12 -->
+</div><!-- close row spacer -->
 
 </c:if>

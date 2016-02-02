@@ -2,8 +2,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<!-- <div class="messages alert alert-danger"> -->
-
     <c:if test="${feedbackMessage != null}">
         <div class="messages alert alert-info"><c:out value="${feedbackMessage}"/></div>
     </c:if>
@@ -12,4 +10,3 @@
         <div class="messages alert alert-danger"><c:out value="${errorMessage}"/></div>
     </c:if>
     
-<!-- </div> -->
