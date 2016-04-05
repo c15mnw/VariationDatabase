@@ -68,7 +68,7 @@
 
     <jsp:include page="include_form_download.jsp"/>
 
-    <jsp:include page="include_search_pagination.jsp"/>
+    <jsp:include page="include_pagination_search_results.jsp"/>
 
     <jsp:include page="include_list_snpchromosome.jsp"/>
 

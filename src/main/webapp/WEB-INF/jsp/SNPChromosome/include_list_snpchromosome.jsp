@@ -9,30 +9,53 @@
 
     <table class="table table-bordered table-condensed">
       <thead>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldPosition() || dtoDownload.isDownloadSortFieldNone()}">
       <tr>
         <td>
           <spring:message code="snpchromosome.list.label.chromosomeId"/>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.position"/>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.reference"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.alternative"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.region"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.ensemblGene"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.ensemblTranscript"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
         <td>
-          <spring:message code="snpchromosome.list.label.ensemblAnnotation"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
@@ -99,27 +122,1987 @@
             </td>
           </c:if>
           <td>
-            <spring:message code="snpchromosome.list.label.aminoAcidSubs"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.predictionCategory"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.scoreProvean"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.scoreSift"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.scoreConservation"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.proteinAlignNumber"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
           <td>
-            <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
           </td>
         </tr>
+      </c:if>
+      
+      <c:if test="${dtoDownload.isDownloadSortFieldReference()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldAlternative()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldRegion()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldEnsemblGene()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldEnsemblTranscript()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldEnsemblAnnotation()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldAminoAcidSubs()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldPredictionCategory()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldScoreSift()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldScoreConservation()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldProteinAlignNumber()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldTotalAlignSequenceNumber()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+        </tr>
+      </c:if>
+
+      <c:if test="${dtoDownload.isDownloadSortFieldScoreProvean()}">
+      <tr>
+        <td>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+        <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+            </a>
+        </td>
+          <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+            </td>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+            </td>
+            <td>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+            </td>
+          </c:if>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+          <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=desc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9662;</span>
+            </a>
+          </c:if>
+          <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </c:if>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+          <td>
+            <a href="/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+            </a>
+          </td>
+        </tr>
+      </c:if>
+        
       </thead>
       <tbody>
         <c:forEach items="${SNPChromosome}" var="snpchromosome" varStatus="rowStatus">
