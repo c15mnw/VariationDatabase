@@ -1,24 +1,21 @@
 package com.roslin.mwicks.spring.variation.autocomplete;
 
+import java.io.File;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.core.io.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Sort;
 
-import com.roslin.mwicks.spring.variation.config.MyAutocompleteApplicationContext;
+import com.roslin.mwicks.utility.FileUtil;
 
-import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
-
-import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 @Service
@@ -35,39 +32,41 @@ public class AutocompleteDB {
     	
     	LOG.trace("AutocompleteDB - getEnsemblIds");
 
-        final AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
+    	final AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
+    	
+    	Resource resourceGeneNames = applicationContext.getResource("classpath:ensembl_gene_names.csv");
+    	
+    	List<String> matched = new ArrayList<String>();
 
-        // setup configuration
-        applicationContext.register(MyAutocompleteApplicationContext.class);
+		try {
 
-        applicationContext.refresh();
-        applicationContext.start();
+			File genesFile = resourceGeneNames.getFile();
+
+	        List<String> genesFileList;
         
-        ServiceEnsemblGene serviceensemblgene = (ServiceEnsemblGene) applicationContext.getBean(ServiceEnsemblGene.class);
+			genesFileList = FileUtil.readRecords(genesFile);
+	    	Iterator<String> iteratorFile = genesFileList.iterator();
 
-        int queryLimit = 10;
-        
-       	PageRequest pageRequest = new PageRequest(0, queryLimit, Sort.Direction.ASC, "ensemblId");
-       	
-       	Page<EnsemblGene> pageensemblgenes = serviceensemblgene.findByEnsemblIdLike(query, pageRequest);
+	    	int matchCount = 0;
 
-        List<EnsemblGene> ensemblgenes = pageensemblgenes.getContent();
-       	
-       	List<String> matched = new ArrayList<String>();
+	    	while (iteratorFile.hasNext()) {
+	    		
+	    		String strGeneName = iteratorFile.next();
+	    		if ( strGeneName.endsWith(query) ) {
 
-        Iterator<EnsemblGene> iteratorEnsemblGene = ensemblgenes.iterator();
-        
-     	while (iteratorEnsemblGene.hasNext()) {
+	    			matchCount++;
+	    			matched.add(strGeneName);
+	    		}
+	    		if ( matchCount > 9) {
+	    			break;
+	    		}
+	    	}
+    	}
+    	catch (Exception e) {
     		
-     		EnsemblGene ensemblgene = iteratorEnsemblGene.next();
+    		e.printStackTrace();
+    	}
 
-            matched.add(ensemblgene.getEnsemblId());
-     	}
-
-        applicationContext.close();
-
-        return matched;
-
+    	return matched;
     }
-
 }
