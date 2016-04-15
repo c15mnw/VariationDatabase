@@ -24,6 +24,12 @@
           </a>
           <span class="divider">/</span>
         </li>
+        <li>
+          <a href="${pageContext.request.contextPath}/static/html/search_help.html">
+            <spring:message code="snpchromosome.list.link.variation.search_help"/>
+          </a>
+          <span class="divider">/</span>
+        </li>
         <li class="active">
           <spring:message code="snpchromosome.list.link.search"/>
         </li>

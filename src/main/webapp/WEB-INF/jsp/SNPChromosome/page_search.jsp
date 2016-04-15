@@ -1,11 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="utf-8">
 <title><spring:message code="spring.data.jpa.variation.title1"/></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +14,8 @@
 <link href="${pageContext.request.contextPath}/static/css/bootstrap.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/docs.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/jquery.autocomplete.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,800' rel='stylesheet' type='text/css'>
 
-<style>
-        input {
-            font-size: 120%;
-        }
-</style>
-  
 <!-- IE Hack
 ============ -->
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -41,8 +33,16 @@
 
 <!-- Javascripts
 ================ -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery.min.js" ></script>
 <script src="${pageContext.request.contextPath}/static/js/jquery.autocomplete.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
+
+<style>
+        input {
+            font-size: 120%;
+        }
+</style>
+
 
 <!-- Google Analytics
 ===================== -->
@@ -54,6 +54,7 @@
   ga('create', 'UA-43390855-1', 'narf.ac.uk');
   ga('send', 'pageview');
 </script>
+
 
 </head>
 
@@ -78,6 +79,12 @@
 </div><!-- /.wrap -->
 
 <jsp:include page="include_footer.jsp"/>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 </body>
 </html>

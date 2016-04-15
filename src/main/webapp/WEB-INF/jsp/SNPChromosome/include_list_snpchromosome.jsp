@@ -13,147 +13,167 @@
       <c:if test="${dtoDownload.isDownloadSortFieldPosition() || dtoDownload.isDownloadSortFieldNone()}">
       <tr>
         <td>
-          <spring:message code="snpchromosome.list.label.chromosomeId"/>
+          <spring:message code="snpchromosome.list.label.chromosomeId"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Chromosome Id"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -166,143 +186,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -315,143 +356,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -464,143 +526,163 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -613,143 +695,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -762,143 +865,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -911,143 +1035,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1060,143 +1205,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1209,143 +1375,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1358,143 +1545,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1507,143 +1715,163 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1656,150 +1884,171 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
@@ -1812,142 +2061,163 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
@@ -1961,143 +2231,164 @@
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=position&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.position"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.position"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Position"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=reference&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.reference"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.reference"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Reference Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=alternative&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.alternative"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.alternative"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Alternative Allele"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=region&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.region"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.region"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblGene&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblGene"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblGene"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblTranscript&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblTranscript"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
         <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=ensemblAnnotation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.ensemblAnnotation"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Ensembl Coding Predictions"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
         </td>
           <c:if test="${dtoDownload.isDownloadReference7() || dtoDownload.isDownloadAlternative7()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain7Allele"/>
+              <spring:message code="snpchromosome.list.label.strain7Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain7AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 7 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceP() || dtoDownload.isDownloadAlternativeP()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAllele"/>
+              <spring:message code="snpchromosome.list.label.strainPAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainPAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain P Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceW() || dtoDownload.isDownloadAlternativeW()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAllele"/>
+              <spring:message code="snpchromosome.list.label.strainWAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainWAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain W Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceN() || dtoDownload.isDownloadAlternativeN()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAllele"/>
+              <spring:message code="snpchromosome.list.label.strainNAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainNAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain N Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference15I() || dtoDownload.isDownloadAlternative15I()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAllele"/>
+              <spring:message code="snpchromosome.list.label.strain15IAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 15I Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceZero() || dtoDownload.isDownloadAlternativeZero()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAllele"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain Zero Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReference6() || dtoDownload.isDownloadAlternative6()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strain6Allele"/>
+              <spring:message code="snpchromosome.list.label.strain6Allele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strain6AlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain 6 Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <c:if test="${dtoDownload.isDownloadReferenceC() || dtoDownload.isDownloadAlternativeC()}">
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAllele"/>
+              <spring:message code="snpchromosome.list.label.strainCAllele"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+
             </td>
             <td>
-              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/>
+              <spring:message code="snpchromosome.list.label.strainCAlleleFixed"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Strain C Fixed?"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
             </td>
           </c:if>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=aminoAcidSubs&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.aminoAcidSubs"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Amino Acid Substitution Information"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=predictionCategory&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.predictionCategory"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.predictionCategory"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Prediction Category"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
           <c:if test="${dtoDownload.isDownloadSortDirectionAsc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=desc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9662;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-213-arrow-down.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           <c:if test="${dtoDownload.isDownloadSortDirectionDesc()}">
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreProvean&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreProvean"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreProvean"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="PROVEAN Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </c:if>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreSift&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreSift"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreSift"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="SIFT Score"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=scoreConservation&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.scoreConservation"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.scoreConservation"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=proteinAlignNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.proteinAlignNumber"/><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
           <td>
             <a href="${pageContext.request.contextPath}/results/1?chr=${dtoDownload.getDownloadChromosomeAsString()}&low=${dtoDownload.downloadLowRange}&high=${dtoDownload.downloadHighRange}&ref=${dtoDownload.getDownloadReferenceAsString()}&alt=${dtoDownload.getDownloadAlternativeAsString()}&sortfield=totalAlignSequenceNumber&sortdir=asc" >
-              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><span class="sortarrow">&#9650;</span>
+              <spring:message code="snpchromosome.list.label.totalAlignSequenceNumber"/><a style="color:#5a5a5a;" href="#" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned"><img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15"></a>
+<img src="${pageContext.request.contextPath}/static/img/png/glyphicons-214-arrow-up.png" alt="Help" height="15" width="15">
             </a>
           </td>
         </tr>
