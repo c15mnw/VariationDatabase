@@ -1,139 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  
-  <title>National Avian Research Facility</title>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-<!-- CSS STYLESHEETS
-================================================== -->
-  <link href="../css/bootstrap.css" rel="stylesheet">
-  <link href="../css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="../css/docs.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,800' rel='stylesheet' type='text/css'>
-   
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-  <![endif]-->
-
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/ico/favicon.png">
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-43390855-1', 'narf.ac.uk');
-  ga('send', 'pageview');
-
-</script>
-</head>
-
-<body>
-<div id="wrap">
-
-<!-- NAVBAR
-================================================== -->
-  <div class="navbar-wrapper">
-    <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div id="sm-navbar-logo">
-            <div class="visible-phone visible-tablet">
-              <a class="brand" href="../index.html"><img src="../img/navbar/logo-sm.png"></a>
-            </div><!--/.visible-phone visible-tablet -->
-          </div><!--/.sm-navbar-logo -->
-          <div class="navbar-logo collapse visible-desktop">
-            <a class="brand" href="../index.html"><img src="../img/navbar/narf-logo-wide.png" alt="NARF"></a>
-          </div><!--/.navbar-logo collapse visible-desktop -->
-          <div class="nav-collapse collapse">
-            <ul class="nav pull-right">
-              <li><a href="index.html">About NARF</a></li>
-              <li><a href="../chickens/index.html">Chickens</a></li>
-              <li><a href="../biological-toolbox/index.html">Biological Toolbox</a></li>
-              <li><a href="../transgenics/index.html">Transgenics</a></li>
-              <li><a href="../genomics/index.html">Genomics</a></li>
-              <li><a href="../education/index.html">Education &amp; Events</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-            </ul>
-          </div><!--/.nav-collapse  collapse -->
-        </div><!-- /.container -->
-      </div><!-- /.navbar-inner -->
-    </div> <!-- /.navbar navbar-fixed-top -->
-  </div><!-- /.navbar-wrapper -->
-
-  <div id="push">
-  </div><!-- /.push -->
-  <div id="push">
-  </div><!-- /.push -->
-  <div id="push">
-  </div><!-- /.push -->
-
-  <div class="container">
-  
-    <div class="row">
-    
-    <!-- BREADCRUMB MENU TOP -->
-      <div class="span4">
-      </div><!-- /.span4 -->
-      <div class="span8">
-        <ul class="breadcrumb"> 
-          <li>
-          <a href="http://www.narf.ac.uk/index.html">Home
-          </a>
-          <span class="divider">/</span>
-        </li>
-        <li>
-          <a href="http://www.narf.ac.uk/genomics/index.html">Genomics
-          </a>
-          <span class="divider">/</span>
-        </li>
-        <li>
-          <a href="http://www.narf.ac.uk/genomics/variation-database.html">Variation Database
-          </a>
-          <span class="divider">/</span>
-        </li>
-        <li>
-          <a href="http://www.narf.ac.uk/VariationDatabase/">Search
-          </a>
-          <span class="divider">/</span>
-        </li>
-        <li class="active">Help
-        </li>
-        </ul>
-      </div><!-- /.span8 -->
-    
-    </div><!-- /.row -->
-
-    <div class="row">
-
-      <div class="span3 bs-docs-sidebar"> 
-      </div><!-- /.span3 bs-docs-sidebar --> 
-
-      <div class="span1"> 
-      </div><!-- /.span1 -->
-
-      <div class="span8">
-      
-      <h2>About the Variation Database Search Facility</h2>
+      <h2><spring:message code="spring.data.jpa.variation.search_results.about"/></h2>
       <br /><br />
       
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat varius ipsum feugiat suscipit. Quisque faucibus urna a urna lacinia porta. Aliquam finibus justo in risus commodo tristique. Aenean aliquet, ipsum sed vehicula malesuada, dolor nisl viverra lorem, tempor porttitor odio nisl sed massa. Proin lacinia dapibus mollis. In at ipsum ante. Duis pharetra mollis arcu id congue. Donec laoreet ex lacus, eget suscipit arcu tempor id. Vivamus in tortor tempus, interdum enim at, tincidunt velit. Quisque elit eros, sagittis sit amet luctus vitae, tempus eu metus. Donec et quam pellentesque, laoreet orci id, dignissim ipsum. Integer tellus odio, cursus eget quam nec, imperdiet elementum sem.</p>
@@ -152,36 +21,43 @@
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="chromosomeIdentifier"></a>
 <h5>1. "ChrId." - Chromosome Identifier</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="position"></a>
 <h5>2. "Pos." - Position</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="referenceAllele"></a>
 <h5>3. "Ref." - Reference Allele</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="alternativeAllele"></a>
 <h5>4. "Alt." - Alternative Allele</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>5. "Region." - Regione</h5>
+<a id="region"></a>
+<h5>5. "Region." - Region</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="ensemblGeneName"></a>
 <h5>6. "Ensembl Gene" - Ensembl Gene Name</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="ensemblTranscript"></a>
 <h5>7. "Ensembl Transcript" - Ensembl Transcript</h5>
       <dl>
         <dt>NA</dt><dd>?</dd>
@@ -192,16 +68,19 @@
       </dl>
       <br />
 
+<a id="ensemblCodingPredictions"></a>
 <h5>8. "Ensembl Coding Predictions" - Ensembl Coding Predictions</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="strainX"></a>
 <h5>9. "Strain X" - </h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
+<a id="strainXFixed"></a>
 <h5>10. "Fixed?" - </h5>
       <dl>
         <dt>Ref.</dt><dd>?</dd>
@@ -210,35 +89,20 @@
       </dl>
       <br />
 
+<a id="strainXRatio"></a>
 <h5>11. "Ratio" - </h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>12. "Strain Y" - </h5>
+<a id="aminoAcidSubsInfo"></a>
+<h5>12. "Amino Acid Subs. Info." - Amino Acid Substitution Information</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>13. "Fixed?" - </h5>
-      <dl>
-        <dt>Ref.</dt><dd>?</dd>
-        <dt>Not Fixed</dt><dd>?</dd>
-        <dt>Fixed</dt><dd>?</dd>
-      </dl>
-      <br />
-
-<h5>14. "Ratio" - </h5>
-      <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
-      <br />
-
-<h5>15. "Amino Acid Subs. Info." - Amino Acid Substitution Information</h5>
-      <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
-      <br />
-
-<h5>16. "Prediction Cat." - Prediction Category</h5>
+<a id="predictionCategory"></a>
+<h5>13. "Prediction Cat." - Prediction Category</h5>
       <dl>
         <dt>blank</dt><dd>?</dd>
         <dt>TOLERATED</dt><dd>?</dd>
@@ -246,27 +110,32 @@
       </dl>
       <br />
 
-<h5>17. "PROVEAN Score" - PROVEAN Scoree</h5>
+<a id="proveanScore"></a>
+<h5>14. "PROVEAN Score" - PROVEAN Score</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>18. "SIFT Score" - SIFT Score</h5>
+<a id="siftScore"></a>
+<h5>15. "SIFT Score" - SIFT Score</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>19. "SIFT Conservation Score" - SIFT Conservation Score</h5>
+<a id="siftConsScore"></a>
+<h5>16. "SIFT Conservation Score" - SIFT Conservation Score</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>20. "Protein Alignment Num." - Protein Alignment Number</h5>
+<a id="proteinAlignNum"></a>
+<h5>17. "Protein Alignment Num." - Protein Alignment Number</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
 
-<h5>21. "Total Num. of Sequence Aligned" - Total Num. of Sequence Aligned</h5>
+<a id="totNumSeqAligned"></a>
+<h5>18. "Total Num. of Sequence Aligned" - Total Num. of Sequence Aligned</h5>
       <br />
       <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
       <br />
@@ -275,115 +144,5 @@
         
       <h5>Contact Us</h5>
         <a href="../mailto:narf@roslin.ed.ac.uk" class="red">narf@roslin.ed.ac.uk</a>
-      
-      </div><!-- /.span8 -->
 
-    </div><!-- /.row -->
-
-  </div><!-- /.container -->
-
-</div><!-- /~wrap -->
-
-<!-- FOOTER
-================================================== -->
-
-<div id="footer">
-  <div class="container">
-    <div class="row">
-      
-      <div class="visible-phone text-center">
-        Our partners:<br /><br />
-        <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a>
-        <hr>
-        <a href="http://www.ed.ac.uk">The University of Edinburgh</a>
-        <hr>
-        <a href="http://www.bbsrc.ac.uk/home/home.aspx">BBSRC</a>
-        <hr>
-        <a href="http://www.roslinbiocentre.com/about/what-we-offer/community/tenants/roslin-foundation">Roslin Foundation</a>
-        <hr>
-        <a href="http://www.roslin.ed.ac.uk/">The Roslin Institute</a>
-        <hr>
-        <a href="http://www.pirbright.ac.uk/">The Pirbright Institute</a>
-        <hr>
-      </div><!-- /.visible-phone text-center -->
-      
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.wellcome.ac.uk/">
-            <img src="../img/partners/wellcome-trust.png" alt="Supported by Wellcome Trust">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.ed.ac.uk">
-            <img src="../img/partners/ed-uni.png" alt="The University of Edinburgh">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.bbsrc.ac.uk/home/home.aspx">
-            <img src="../img/partners/bbsrc.png" alt="BBSRC">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.roslinbiocentre.com/about/what-we-offer/community/tenants/roslin-foundation">
-            <img src="../img/partners/roslin-foundation.png" alt="Roslin Foundation">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.roslin.ed.ac.uk/">
-            <img src="../img/partners/roslin.png" alt="The Roslin Institute">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-      <div class="span2">
-        <div class="partner visible-tablet visible-desktop">
-          <a href="http://www.pirbright.ac.uk/">
-            <img src="../img/partners/pirbright.png" alt="The Pirbright Institute">
-          </a>
-        </div><!-- /.partner visible-tablet visible-desktop -->
-      </div><!-- /.span2 -->
-    
-    </div><!-- /.row -->
-      
-    <div class="row text-right">
-      <p>&copy; NARF 2013 | <a href="privacy-cookies.html">Privacy &amp; Cookies</a></p>
-    </div><!-- /.row text-right -->
-      
-  </div><!-- /.container -->
-</div><!-- /.footer -->
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap-transition.js"></script>
-<script src="../js/bootstrap-alert.js"></script>
-<script src="../js/bootstrap-modal.js"></script>
-<script src="../js/bootstrap-dropdown.js"></script>
-<script src="../js/bootstrap-scrollspy.js"></script>
-<script src="../js/bootstrap-tab.js"></script>
-<script src="../js/bootstrap-tooltip.js"></script>
-<script src="../js/bootstrap-popover.js"></script>
-<script src="../js/bootstrap-button.js"></script>
-<script src="../js/bootstrap-collapse.js"></script>
-<script src="../js/bootstrap-carousel.js"></script>
-<script src="../js/bootstrap-typeahead.js"></script>
-<script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-</script>
-<script src="../js/holder/holder.js"></script>
-
-</body>
-<!-- InstanceEnd --></html>
+        

@@ -16,9 +16,8 @@
 <link href="${pageContext.request.contextPath}/static/css/bootstrap.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/docs.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/jquery.autocomplete.css" rel="stylesheet">
-<link href="${pageContext.request.contextPath}/static/css/bootstrap-glyphicons.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,800' rel='stylesheet' type='text/css'>
-  
+
 <!-- IE Hack
 ============ -->
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -45,7 +44,8 @@
             font-size: 120%;
         }
 </style>
-    
+
+
 <!-- Google Analytics
 ===================== -->
 <script>
@@ -56,6 +56,7 @@
   ga('create', 'UA-43390855-1', 'narf.ac.uk');
   ga('send', 'pageview');
 </script>
+
 
 </head>
 
@@ -72,33 +73,31 @@
 
       <div class="span8">
 
-        <jsp:include page="include_navigation_search_results.jsp"/>
+        <jsp:include page="include_navigation_search_help.jsp"/>
 
       </div><!-- /."span8" -->
     </div><!-- /.row -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar"> 
+      </div><!-- /.span3 bs-docs-sidebar --> 
+      <div class="span1"> 
+      </div><!-- /.span1 -->
+      <div class="span8">
+      
+        <jsp:include page="include_search_help.jsp"/>
 
-    <div class="row spacer">
-      <div class="span12">
-
-        <h1><spring:message code="spring.data.jpa.variation.search_results"/></h1>
-        
-      </div><!-- close span12 -->    
-    </div><!-- close row --> 
-
-    <jsp:include page="include_messages.jsp"/>
-
-    <jsp:include page="include_form_download.jsp"/>
-
-    <jsp:include page="include_pagination_search_results.jsp"/>
-
-    <jsp:include page="include_list_snpchromosome.jsp"/>
-
+      </div><!-- /.span8 -->
+    </div><!-- /.row -->
   </div><!-- /.container -->
 </div><!-- /.wrap -->
 
 <jsp:include page="include_footer.jsp"/>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 </body>
-
 </html>

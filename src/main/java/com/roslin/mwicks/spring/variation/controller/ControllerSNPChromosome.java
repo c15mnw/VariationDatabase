@@ -128,7 +128,9 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final String MODEL_ATTRIBUTE_DOWNLOADCRITERIA = "dtoDownload";
     
     protected static final String SNPCHROMOSOME_LIST_VIEW = "SNPChromosome/page_search";
+    protected static final String SNPCHROMOSOME_LIST_VIEW_HELP = "SNPChromosome/page_search_help";
     protected static final String SNPCHROMOSOME_SEARCH_RESULT_VIEW = "SNPChromosome/page_search_results";
+    protected static final String SNPCHROMOSOME_SEARCH_RESULT_VIEW_HELP = "SNPChromosome/page_search_results_help";
     
     protected static final String REQUEST_MAPPING_LIST = "/";
 
@@ -222,6 +224,38 @@ public class ControllerSNPChromosome extends AbstractController {
         model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, new DTODownload());
 
         return SNPCHROMOSOME_LIST_VIEW;
+    }
+
+    
+    /**
+     * Processes requests to home page which lists all available SNPChromosomes.
+     * @param model
+     * @return  The name of the SNPChromosome list view.
+     */
+    @RequestMapping(value = "/search_help", method = RequestMethod.GET)
+    public String showSearchHelp(
+    	Model model
+    	) {
+    	
+        LOGGER.debug("Rendering SNPChromosome Search Help page");
+
+        return SNPCHROMOSOME_LIST_VIEW_HELP;
+    }
+
+    
+    /**
+     * Processes requests to home page which lists all available SNPChromosomes.
+     * @param model
+     * @return  The name of the SNPChromosome list view.
+     */
+    @RequestMapping(value = "/search_results_help", method = RequestMethod.GET)
+    public String showSearchResultsHelp(
+    	Model model
+    	) {
+    	
+        LOGGER.debug("Rendering SNPChromosome Search Help page");
+
+        return SNPCHROMOSOME_SEARCH_RESULT_VIEW_HELP;
     }
 
     

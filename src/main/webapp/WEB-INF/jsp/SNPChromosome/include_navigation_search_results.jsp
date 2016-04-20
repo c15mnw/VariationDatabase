@@ -1,10 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-  <div class="row">
-    <div class="span4">
-    </div><!-- /.span4 -->
-    <div class="span8">
       <ul class="breadcrumb">
         <li>
           <a href="http://www.narf.ac.uk/index.html">
@@ -25,12 +21,6 @@
           <span class="divider">/</span>
         </li>
         <li>
-          <a href="${pageContext.request.contextPath}/static/html/search_results_help.html">
-            <spring:message code="snpchromosome.list.link.variation.search_results_help"/>
-          </a>
-          <span class="divider">/</span>
-        </li>
-        <li>
           <a href="${pageContext.request.contextPath}/">
             <spring:message code="snpchromosome.list.link.search"/>
           </a>
@@ -38,7 +28,11 @@
         </li>
         <li class="active">
           <spring:message code="snpchromosome.list.link.search.results"/>
+          <span class="divider">/</span>
+        </li>
+        <li>
+          <a href="${pageContext.request.contextPath}/search_results_help" target="_blank">
+            <spring:message code="snpchromosome.list.link.variation.search_results_help"/>
+          </a>
         </li>
       </ul>
-    </div><!-- /.span8 -->
-  </div><!-- /.row -->

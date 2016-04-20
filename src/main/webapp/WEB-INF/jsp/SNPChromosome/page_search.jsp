@@ -4,7 +4,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title><spring:message code="spring.data.jpa.variation.title1"/></title>
+
+<title><spring:message code="spring.data.jpa.variation.title"/></title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -65,17 +67,30 @@
   <jsp:include page="include_header.jsp"/>
 
   <div class="container">
+    <div class="row">
+      <div class="span4">
+      </div><!-- /.span4 -->
 
-    <jsp:include page="include_navigation_search.jsp"/>
- 
-    <h1><spring:message code="spring.data.jpa.variation.title2"/></h1>
+      <div class="span8">
+
+        <jsp:include page="include_navigation_search.jsp"/>
+
+      </div><!-- /."span8" -->
+    </div><!-- /.row -->
 
     <jsp:include page="include_messages.jsp"/>
 
-    <jsp:include page="include_form_search.jsp"/>
+    <div class="row spacer">
+      <div class="span12">
+
+        <h1><spring:message code="spring.data.jpa.variation.search"/></h1>
+
+        <jsp:include page="include_form_search.jsp"/>
+      
+      </div><!-- close span12 -->    
+    </div><!-- close row --> 
 
   </div><!-- /.container -->
-
 </div><!-- /.wrap -->
 
 <jsp:include page="include_footer.jsp"/>

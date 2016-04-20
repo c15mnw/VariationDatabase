@@ -20,13 +20,13 @@
           </a>
           <span class="divider">/</span>
         </li>
-        <li class="active">
-          <spring:message code="snpchromosome.list.link.search"/>
+        <li>
+          <a href="${pageContext.request.contextPath}/">
+             <spring:message code="snpchromosome.list.link.search"/>
+          </a>
           <span class="divider">/</span>
         </li>
-        <li>
-          <a href="${pageContext.request.contextPath}/search_help" target="_blank">
-            <spring:message code="snpchromosome.list.link.variation.search_help"/>
-          </a>
+        <li class="active">
+          <spring:message code="snpchromosome.list.link.variation.search_help"/>
         </li>
       </ul>
