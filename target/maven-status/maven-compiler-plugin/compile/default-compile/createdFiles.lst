@@ -1,3 +1,4 @@
-com/roslin/mwicks/spring/variation/autocomplete/AutocompleteDB.class
+com/jcg/examples/viewBean/LoginBean.class
 com/roslin/mwicks/spring/variation/controller/AbstractController.class
 com/roslin/mwicks/spring/variation/controller/ControllerSNPChromosome.class
+com/roslin/mwicks/spring/variation/autocomplete/AutocompleteDB.class

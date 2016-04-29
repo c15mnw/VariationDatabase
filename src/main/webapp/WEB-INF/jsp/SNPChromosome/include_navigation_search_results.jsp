@@ -21,7 +21,7 @@
           <span class="divider">/</span>
         </li>
         <li>
-          <a href="${pageContext.request.contextPath}/">
+          <a href="${pageContext.request.contextPath}/search">
             <spring:message code="snpchromosome.list.link.search"/>
           </a>
           <span class="divider">/</span>

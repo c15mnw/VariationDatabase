@@ -2,6 +2,44 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
+<script> 
+function exampleChromosome() { 
+	var SearchChromosome="CHROMOSOME_3";
+    document.getElementById("SearchChromosome").value=SearchChromosome; 
+    var searchLowRange=30000; 
+    document.getElementById("searchLowRange").value=searchLowRange; 
+    var searchHighRange=50000; 
+    document.getElementById("searchHighRange").value=searchHighRange; 
+    var searchGeneName=""; 
+    document.getElementById("searchGeneName").value=searchGeneName; 
+    var searchDownStream=""; 
+    document.getElementById("searchDownStream").value=searchDownStream; 
+    var searchUpStream=""; 
+    document.getElementById("searchUpStream").value=searchUpStream; 
+	var SearchReference="STRAIN_7";
+    document.getElementById("SearchReference").value=SearchReference; 
+	var SearchAlternative="STRAIN_6";
+    document.getElementById("SearchAlternative").value=SearchAlternative; 
+} 
+function exampleGeneName() { 
+	var SearchChromosome="CHROMOSOME_NONE";
+    document.getElementById("SearchChromosome").value=SearchChromosome; 
+    var searchLowRange=""; 
+    document.getElementById("searchLowRange").value=searchLowRange; 
+    var searchHighRange=""; 
+    document.getElementById("searchHighRange").value=searchHighRange; 
+    var searchGeneName="ENSGALG00000008117"; 
+    document.getElementById("searchGeneName").value=searchGeneName; 
+    var searchDownStream=400; 
+    document.getElementById("searchDownStream").value=searchDownStream; 
+    var searchUpStream=600; 
+    document.getElementById("searchUpStream").value=searchUpStream; 
+	var SearchReference="STRAIN_7";
+    document.getElementById("SearchReference").value=SearchReference; 
+	var SearchAlternative="STRAIN_6";
+    document.getElementById("SearchAlternative").value=SearchAlternative; 
+} 
+</script>
 
 <form:form action="${pageContext.request.contextPath}/search" commandName="dtoSearch" method="POST">
 
@@ -42,12 +80,7 @@
 
                 <div>
         <p>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/results/1?chr=3&low=34594&high=45745&ref=7&alt=6&sortfield=position&sortdir=asc" target="_self" title="Example Ensembl Gene Name Search">
-                <strong><spring:message code="snpchromosome.search.form.subtitle6"/></strong>: <br />
-                 <strong>&quot;ENSGALG00000008117 &quot;</strong>, <br />
-                 Reference Allele  <strong>&quot;Strain 7 &quot;</strong> and <br /> 
-                 Alternative Allele  <strong>&quot;Strain 6 &quot;</strong>
-            </a>
+        <input type="button" value="Example" name="no" onclick="exampleGeneName()">
         </p>
                 </div>
 
@@ -56,14 +89,7 @@
 
                 <div>
         <p>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/results/1?chr=3&low=30000&high=50000&ref=7&alt=6&sortfield=position&sortdir=asc" target="_self" title="Example Chromosome Co-ordinate Search">
-                <strong><spring:message code="snpchromosome.search.form.subtitle7"/></strong>: <br />
-                 Chromosome <strong>&quot;3&quot;</strong>, <br />
-                 Start (LOW) Co-ordinate <strong>&quot;30000&quot;</strong>, <br /> 
-                 End (HIGH) Co-ordinate <strong>&quot;50000&quot;</strong>, <br />
-                 Reference Allele  <strong>&quot;Strain 7 &quot;</strong>, and <br />
-                 Alternative Allele <strong>&quot;Strain 6 &quot;</strong>
-            </a>
+        <input type="button" value="Example" name="no" onclick="exampleChromosome()">
         </p>
                 </div>
 
@@ -256,14 +282,26 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         
         <div class="row spacer">
             <div class="span12">
+                <input type="submit" value="<spring:message code="snpchromosome.search.form.submit.label"/>"/>
+            </div><!-- close span12 -->
+        
+        </div><!-- close row spacer -->
+
+        <div class="row spacer">
+        </div><!-- close row spacer -->
+
+        <div class="row spacer">
+            <div class="span12">
             </div><!-- close span12 -->
         </div><!-- close row spacer -->
         
-        <div id="legend1" onclick="document.getElementById('filterform1').style.display= 'initial';">
+        <!--  <div id="legend1" onclick="document.getElementById('filterform1').style.display= 'initial';">  -->
+        <div id="legend1">
         <legend><spring:message code="snpchromosome.search.filter.form.legend"/></legend>
         </div>
 
-        <div id="filterform1" style="display: none;">
+        <!--  <div id="filterform1" style="display: none;"> -->
+        <div id="filterform1">
 
         <div class="row">
             <div class="span4">
@@ -290,165 +328,154 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 
 <div class="row spacer">
 <div class="span4">
-<table width="100%" border="0">
-  <tr>
-    <td>
             <form:label path="searchFilterSiftScoreValue"><spring:message code="snpchromosome.search.filter.searchFilterSiftScore.label"/>
             <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#siftScore" target="_blank" data-toggle="tooltip" data-placement="right" title="SIFT Score">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterSiftScore"><spring:message code="SearchFilterSiftScore.SIFT_SCORE_ABOVE"/></form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterSiftScore"><spring:message code="SearchFilterSiftScore.SIFT_SCORE_BELOW"/></form:label>
-    </td>
-  </tr>
-  <tr>
-    <td>
-            <form:input class="input-small" path="searchFilterSiftScoreValue" type="text"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterSiftScore" value="SIFT_SCORE_ABOVE"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterSiftScore" value="SIFT_SCORE_BELOW"/>
-    </td>
-  </tr>
-</table>
 </div><!-- close span4 -->
+<div class="span1">
+            <form:label path="SearchFilterSiftScore"><spring:message code="SearchFilterSiftScore.SIFT_SCORE_ABOVE"/>
+            </form:label>
+</div><!-- close "span1" -->
+<div class="span7">
+            <form:label path="SearchFilterSiftScore"><spring:message code="SearchFilterSiftScore.SIFT_SCORE_BELOW"/>
+            </form:label>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
 
+<div class="row spacer">
 <div class="span4">
-<table width="100%" border="0">
-  <tr>
-    <td>
+            <form:input class="input-small" path="searchFilterSiftScoreValue" type="text"/>
+</div><!-- close span4 -->
+<div class="span1">
+            <form:radiobutton path="SearchFilterSiftScore" value="SIFT_SCORE_ABOVE"/>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:radiobutton path="SearchFilterSiftScore" value="SIFT_SCORE_BELOW"/>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span4">
             <form:label path="searchFilterProveanScoreValue"><spring:message code="snpchromosome.search.filter.searchFilterProveanScore.label"/>
             <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#proveanScore" target="_blank" data-toggle="tooltip" data-placement="right" title="PROVEAN Score">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterProveanScore"><spring:message code="SearchFilterProveanScore.PROVEAN_SCORE_ABOVE"/></form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterProveanScore"><spring:message code="SearchFilterProveanScore.PROVEAN_SCORE_BELOW"/></form:label>
-    </td>
-  </tr>
-  <tr>
-    <td>
-            <form:input class="input-small" path="searchFilterProveanScoreValue" type="text"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterProveanScore" value="PROVEAN_SCORE_ABOVE"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterProveanScore" value="PROVEAN_SCORE_BELOW"/>
-    </td>
-  </tr>
-</table>
 </div><!-- close span4 -->
+<div class="span1">
+            <form:label path="SearchFilterProveanScore"><spring:message code="SearchFilterProveanScore.PROVEAN_SCORE_ABOVE"/>
+            </form:label>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:label path="SearchFilterProveanScore"><spring:message code="SearchFilterProveanScore.PROVEAN_SCORE_BELOW"/>
+            </form:label>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
 
+<div class="row spacer">
 <div class="span4">
-<table width="100%" border="0">
-  <tr>
-    <td>
+            <form:input class="input-small" path="searchFilterProveanScoreValue" type="text"/>
+</div><!-- close span4 -->
+<div class="span1">
+            <form:radiobutton path="SearchFilterProveanScore" value="PROVEAN_SCORE_ABOVE"/>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:radiobutton path="SearchFilterProveanScore" value="PROVEAN_SCORE_BELOW"/>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span4">
             <form:label path="searchFilterSiftConservationScoreValue"><spring:message code="snpchromosome.search.filter.searchFilterSiftConservationScore.label"/>
             <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#siftConsScore" target="_blank" data-toggle="tooltip" data-placement="right" title="SIFT Conservation Score">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterSiftConservationScore"><spring:message code="SearchFilterSiftConservationScore.SIFT_CONSERVATION_SCORE_ABOVE"/></form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterSiftConservationScore"><spring:message code="SearchFilterSiftConservationScore.SIFT_CONSERVATION_SCORE_BELOW"/></form:label>
-    </td>
-  </tr>
-  <tr>
-    <td>
-            <form:input class="input-small" path="searchFilterSiftConservationScoreValue" type="text"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterSiftConservationScore" value="SIFT_CONSERVATION_SCORE_ABOVE"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterSiftConservationScore" value="SIFT_CONSERVATION_SCORE_BELOW"/>
-    </td>
-  </tr>
-</table>
 </div><!-- close span4 -->
+<div class="span1">
+            <form:label path="SearchFilterSiftConservationScore"><spring:message code="SearchFilterSiftConservationScore.SIFT_CONSERVATION_SCORE_ABOVE"/>
+            </form:label>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:label path="SearchFilterSiftConservationScore"><spring:message code="SearchFilterSiftConservationScore.SIFT_CONSERVATION_SCORE_BELOW"/>
+            </form:label>
+</div><!-- close span7 -->
 </div><!-- close row spacer -->
 
 <div class="row spacer">
 <div class="span4">
-<table width="100%" border="0">
-  <tr>
-    <td>
+            <form:input class="input-small" path="searchFilterSiftConservationScoreValue" type="text"/>
+</div><!-- close span4 -->
+<div class="span1">
+            <form:radiobutton path="SearchFilterSiftConservationScore" value="SIFT_CONSERVATION_SCORE_ABOVE"/>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:radiobutton path="SearchFilterSiftConservationScore" value="SIFT_CONSERVATION_SCORE_BELOW"/>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span4">
             <form:label path="searchFilterProteinAlignNumberValue"><spring:message code="snpchromosome.search.filter.searchFilterProteinAlignNumber.label"/>
             <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#proteinAlignNum" target="_blank" data-toggle="tooltip" data-placement="right" title="Protein Alignment Number">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterProteinAlignNumber"><spring:message code="SearchFilterProteinAlignNumber.PROTEIN_ALIGN_NUMBER_ABOVE"/></form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterProteinAlignNumber"><spring:message code="SearchFilterProteinAlignNumber.PROTEIN_ALIGN_NUMBER_BELOW"/></form:label>
-    </td>
-  </tr>
-  <tr>
-    <td>
-            <form:input class="input-small" path="searchFilterProteinAlignNumberValue" type="text"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterProteinAlignNumber" value="PROTEIN_ALIGN_NUMBER_ABOVE"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterProteinAlignNumber" value="PROTEIN_ALIGN_NUMBER_BELOW"/>
-    </td>
-  </tr>
-</table>
 </div><!-- close span4 -->
+<div class="span1">
+            <form:label path="SearchFilterProteinAlignNumber"><spring:message code="SearchFilterProteinAlignNumber.PROTEIN_ALIGN_NUMBER_ABOVE"/>
+            </form:label>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:label path="SearchFilterProteinAlignNumber"><spring:message code="SearchFilterProteinAlignNumber.PROTEIN_ALIGN_NUMBER_BELOW"/>
+            </form:label>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
 
+<div class="row spacer">
 <div class="span4">
-<table width="100%" border="0">
-  <tr>
-    <td>
+            <form:input class="input-small" path="searchFilterProteinAlignNumberValue" type="text"/>
+</div><!-- close span4 -->
+<div class="span1">
+            <form:radiobutton path="SearchFilterProteinAlignNumber" value="PROTEIN_ALIGN_NUMBER_ABOVE"/>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:radiobutton path="SearchFilterProteinAlignNumber" value="PROTEIN_ALIGN_NUMBER_BELOW"/>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span4">
             <form:label path="searchFilterTotalNumberSeqAlignedValue"><spring:message code="snpchromosome.search.filter.searchFilterTotalNumberSeqAligned.label"/>
             <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#totNumSeqAligned" target="_blank" data-toggle="tooltip" data-placement="right" title="Total Number of Sequence Aligned">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterTotalNumberSeqAligned"><spring:message code="SearchFilterTotalNumberSeqAligned.TOTAL_NUMBER_SEQ_ALIGNED_ABOVE"/></form:label>
-    </td>
-    <td>
-            <form:label path="SearchFilterTotalNumberSeqAligned"><spring:message code="SearchFilterTotalNumberSeqAligned.TOTAL_NUMBER_SEQ_ALIGNED_BELOW"/></form:label>
-    </td>
-  </tr>
-  <tr>
-    <td>
-            <form:input class="input-small" path="searchFilterTotalNumberSeqAlignedValue" type="text"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterTotalNumberSeqAligned" value="TOTAL_NUMBER_SEQ_ALIGNED_ABOVE"/>
-    </td>
-    <td>
-            <form:radiobutton path="SearchFilterTotalNumberSeqAligned" value="TOTAL_NUMBER_SEQ_ALIGNED_BELOW"/>
-    </td>
-  </tr>
-</table>
 </div><!-- close span4 -->
-
-<div class="span4">
-</div><!-- close span4 -->
+<div class="span1">
+            <form:label path="SearchFilterTotalNumberSeqAligned"><spring:message code="SearchFilterTotalNumberSeqAligned.TOTAL_NUMBER_SEQ_ALIGNED_ABOVE"/>
+            </form:label>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:label path="SearchFilterTotalNumberSeqAligned"><spring:message code="SearchFilterTotalNumberSeqAligned.TOTAL_NUMBER_SEQ_ALIGNED_BELOW"/>
+            </form:label>
+</div><!-- close span7 -->
 </div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span4">
+            <form:input class="input-small" path="searchFilterTotalNumberSeqAlignedValue" type="text"/>
+</div><!-- close span4 -->
+<div class="span1">
+            <form:radiobutton path="SearchFilterTotalNumberSeqAligned" value="TOTAL_NUMBER_SEQ_ALIGNED_ABOVE"/>
+</div><!-- close span1 -->
+<div class="span7">
+            <form:radiobutton path="SearchFilterTotalNumberSeqAligned" value="TOTAL_NUMBER_SEQ_ALIGNED_BELOW"/>
+</div><!-- close span7 -->
+</div><!-- close row spacer -->
+
 
         </div><!-- close filterform1 -->
         

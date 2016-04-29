@@ -1,4 +1,6 @@
-	package com.roslin.mwicks.spring.variation.controller;
+package com.roslin.mwicks.spring.variation.controller;
+
+import com.jcg.examples.viewBean.LoginBean;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
@@ -18,12 +21,15 @@ import java.io.IOException;
 import com.roslin.mwicks.spring.variation.dto.web.objects.DTODownload;
 import com.roslin.mwicks.spring.variation.dto.web.objects.DTOSearch;
 
-import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchRangeGreaterThanOneMillion;
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneDownStreamNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneMultiplesFound;
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneNotFound;
-import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand;
+import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneUpStreamSearchRangeGreaterThanTenThousand;
+import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneDownStreamSearchRangeGreaterThanTenThousand;
 import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneUpStreamNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionEnsemblGeneSearchRangeLessThanZero;
+
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeNotSelected;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeAlternativeAlleleNotSupplied;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeHighCoordinateNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeLowCoordinateGreaterThanHighCoordinate;
@@ -35,6 +41,8 @@ import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearch
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterSiftConservationScoreValueNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterSiftScoreValueNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchFilterTotalNumberSeqAlignedValueNotNumeric;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSelectedWithGeneName;
+import com.roslin.mwicks.spring.variation.exception.ExceptionSNPChromosomeSearchRangeGreaterThanOneMillion;
 
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 
@@ -103,7 +111,9 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final String ERROR_MESSAGE_SEARCH_NOT_NUMERIC_UP_STREAM = "error.message.search.notnumeric.upstream";
     protected static final String ERROR_MESSAGE_SEARCH_NOT_NUMERIC_DOWN_STREAM = "error.message.search.notnumeric.downstream";
 
-    protected static final String ERROR_MESSAGE_SEARCH_TEN_THOUSAND_BASE_PAIRS = "error.message.search.outsiderange.tenthousand";
+    protected static final String ERROR_MESSAGE_SEARCH_RANGE_NEGATIVE = "error.message.search.range.negative";
+    protected static final String ERROR_MESSAGE_SEARCH_UPSTREAM_TEN_THOUSAND_BASE_PAIRS = "error.message.search.upstream.outsiderange.tenthousand";
+    protected static final String ERROR_MESSAGE_SEARCH_DOWNSTREAM_TEN_THOUSAND_BASE_PAIRS = "error.message.search.downstream.outsiderange.tenthousand";
     protected static final String ERROR_MESSAGE_SEARCH_ONE_MILLION_BASE_PAIRS = "error.message.search.outsiderange.onemillion";
     
     protected static final String ERROR_MESSAGE_SEARCH_OUTSIDE_RANGE_LOW_POSITION_GE_HIGH_POSITION = "error.message.search.outsiderange.lowPositionGEHighPosition";
@@ -111,9 +121,11 @@ public class ControllerSNPChromosome extends AbstractController {
     protected static final String ERROR_MESSAGE_SEARCH_NOT_NUMERIC_LOW_POSITION = "error.message.search.notnumeric.lowPosition";
     protected static final String ERROR_MESSAGE_SEARCH_NOT_NUMERIC_HIGH_POSITION = "error.message.search.notnumeric.highPosition";
     
+    protected static final String ERROR_MESSAGE_SEARCH_NOTCHOSEN_CHROMOSOME_NOT_SELECTED = "error.message.search.notchosen.chromosome";
     protected static final String ERROR_MESSAGE_SEARCH_NOTCHOSEN_REFERENCE_NOT_SELECTED = "error.message.search.notchosen.referenceStrain";
     protected static final String ERROR_MESSAGE_SEARCH_NOTCHOSEN_ALTERNATIVE_NOT_SELECTED = "error.message.search.notchosen.alternativeStrain";
     protected static final String ERROR_MESSAGE_SEARCH_EQUALS_REFERENCE_EQUALS_ALTERNATIVE = "error.message.search.equals.referenceStrainEQalternativeStrain";
+    protected static final String ERROR_MESSAGE_SEARCH_CHOSEN_CHROMOSOME_AND_GENENAME = "error.message.search.notchosen.chromosomeANDgenename";
     
     protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_SCORE = "error.message.search.filter.notnumeric.searchFilterSiftScore";
     protected static final String ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_SIFT_CONSERVATION_SCORE = "error.message.search.filter.notnumeric.searchFilterSiftConservationScore";
@@ -126,9 +138,11 @@ public class ControllerSNPChromosome extends AbstractController {
     
     protected static final String MODEL_ATTRIBUTE_SEARCHCRITERIA = "dtoSearch";
     protected static final String MODEL_ATTRIBUTE_DOWNLOADCRITERIA = "dtoDownload";
+
+    protected static final String MODEL_ATTRIBUTE_LOGINCRITERIA = "loginBean";
     
-    protected static final String SNPCHROMOSOME_LIST_VIEW = "SNPChromosome/page_search";
-    protected static final String SNPCHROMOSOME_LIST_VIEW_HELP = "SNPChromosome/page_search_help";
+    protected static final String SNPCHROMOSOME_SEARCH_VIEW = "SNPChromosome/page_search";
+    protected static final String SNPCHROMOSOME_SEARCH_VIEW_HELP = "SNPChromosome/page_search_help";
     protected static final String SNPCHROMOSOME_SEARCH_RESULT_VIEW = "SNPChromosome/page_search_results";
     protected static final String SNPCHROMOSOME_SEARCH_RESULT_VIEW_HELP = "SNPChromosome/page_search_results_help";
     
@@ -208,11 +222,67 @@ public class ControllerSNPChromosome extends AbstractController {
     private ServiceEnsemblGene serviceensemblgene;
     
     
+	@RequestMapping(value = "/welcome**", method = RequestMethod.GET)
+	public ModelAndView welcomePage() {
+
+		ModelAndView model = new ModelAndView();
+		model.addObject("title", "Spring Security Custom Login Form");
+		model.addObject("message", "This is welcome page!");
+		model.setViewName("hello");
+		return model;
+
+	}
+
+	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
+	public ModelAndView adminPage() {
+
+		ModelAndView model = new ModelAndView();
+		model.addObject("title", "Spring Security Custom Login Form");
+		model.addObject("message", "This is protected page!");
+		model.setViewName("admin");
+
+		return model;
+
+	}
+
+	@RequestMapping(value = "/login", method = RequestMethod.POST )
+	public ModelAndView loginP(
+	    	@ModelAttribute(MODEL_ATTRIBUTE_LOGINCRITERIA) LoginBean loginBean 
+			) {
+
+		ModelAndView model = new ModelAndView();
+
+		model.setViewName("login");
+
+		return model;
+	}
+
+	@RequestMapping(value = "/login", method = RequestMethod.GET )
+	public ModelAndView loginG(@RequestParam(value = "error", required = false) String error,
+			@RequestParam(value = "logout", required = false) String logout) {
+
+		ModelAndView model = new ModelAndView();
+		
+		if (error != null) {
+			model.addObject("error", "Invalid username and password!");
+		}
+
+		if (logout != null) {
+			model.addObject("msg", "You've been logged out successfully.");
+		}
+		
+		model.setViewName("login");
+
+		return model;
+	}
+
+	
     /**
      * Processes requests to home page which lists all available SNPChromosomes.
      * @param model
      * @return  The name of the SNPChromosome list view.
      */
+	/*
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showList(
     	Model model
@@ -223,8 +293,9 @@ public class ControllerSNPChromosome extends AbstractController {
         model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, new DTOSearch());
         model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, new DTODownload());
 
-        return SNPCHROMOSOME_LIST_VIEW;
+        return SNPCHROMOSOME_SEARCH_VIEW;
     }
+	 */
 
     
     /**
@@ -239,7 +310,7 @@ public class ControllerSNPChromosome extends AbstractController {
     	
         LOGGER.debug("Rendering SNPChromosome Search Help page");
 
-        return SNPCHROMOSOME_LIST_VIEW_HELP;
+        return SNPCHROMOSOME_SEARCH_VIEW_HELP;
     }
 
     
@@ -259,8 +330,26 @@ public class ControllerSNPChromosome extends AbstractController {
     }
 
     
+    /**
+     * Processes requests to home page which lists all available SNPChromosomes.
+     * @param model
+     * @return  The name of the SNPChromosome list view.
+     */
+    @RequestMapping(value = { "/", "/search" }, method = RequestMethod.GET)
+    public String searchG(
+    	Model model
+    	) {
+    	
+        LOGGER.debug("Rendering SNPChromosome Search page");
+
+        model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, new DTOSearch());
+
+        return SNPCHROMOSOME_SEARCH_VIEW;
+    }
+
+    
 	@RequestMapping(value = "/search", method = RequestMethod.POST)
-    public String search(
+    public String searchP(
     	@ModelAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA) DTOSearch dtoSearch, 
     	Model model, 
     	RedirectAttributes attributes
@@ -280,7 +369,6 @@ public class ControllerSNPChromosome extends AbstractController {
 
         int intSearchUp = 0;
         int intSearchDown = 0;
-        int intSearchUpDownDiff = 0;
         
         try {
 
@@ -342,6 +430,11 @@ public class ControllerSNPChromosome extends AbstractController {
                 }
         	}
         	else {
+        		
+        		if ( !dtoSearch.isSearchChromosomeNone() ) {
+        			
+                    throw new ExceptionSNPChromosomeSelectedWithGeneName("ERROR: Search Chromosome Supplied AND Ensembl Gene Name Supplied !!!");
+        		}
         		if ( dtoSearch.isSearchDownStreamEmpty() ) {
         			dtoSearch.setSearchDownStream("0");
         		}
@@ -364,9 +457,11 @@ public class ControllerSNPChromosome extends AbstractController {
                         throw new ExceptionEnsemblGeneUpStreamNotNumeric("ERROR: Search Upstream Range is NOT Numeric : " + dtoSearch.getSearchUpStream() + " !!!");
             		}
         		}
-        		intSearchUpDownDiff = intSearchUp + intSearchDown;
-                if ( intSearchUpDownDiff > TEN_THOUSAND) {
-                    throw new ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand("ERROR: Search Range (" + intSearchUpDownDiff + ") is GREATER THAN Ten Thousand Base Pairs !!!");
+                if ( intSearchUp > TEN_THOUSAND) {
+                    throw new ExceptionEnsemblGeneUpStreamSearchRangeGreaterThanTenThousand("ERROR: Up Stream Search Range (" + intSearchUp + ") is GREATER THAN Ten Thousand Base Pairs !!!");
+                }
+                if ( intSearchDown > TEN_THOUSAND) {
+                    throw new ExceptionEnsemblGeneDownStreamSearchRangeGreaterThanTenThousand("ERROR: Down Stream Search Range (" + intSearchDown + ") is GREATER THAN Ten Thousand Base Pairs !!!");
                 }
 
                 List<EnsemblGene> ensemblgenes = serviceensemblgene.findByGeneName(dtoSearch.getSearchGeneName());
@@ -381,18 +476,28 @@ public class ControllerSNPChromosome extends AbstractController {
                 
                 dtoSearch.setSearchChromosome(ensemblgene.getChromosomeId());
                 
+            	long searchLowRange = 0;
+            	long searchHighRange = 0;
+            	
                 if ( ensemblgene.isStrandPositive() ) {
-                	long searchLowRange = ensemblgene.getStart() - dtoSearch.getSearchUpStreamAsInt();
-                	long searchHighRange = ensemblgene.getEnd() + dtoSearch.getSearchDownStreamAsInt();
+                	searchLowRange = ensemblgene.getStart() - dtoSearch.getSearchUpStreamAsInt();
+                	searchHighRange = ensemblgene.getEnd() + dtoSearch.getSearchDownStreamAsInt();
                 	dtoSearch.setSearchHighRange(ObjectConverter.convert(searchHighRange, String.class));
                 	dtoSearch.setSearchLowRange(ObjectConverter.convert(searchLowRange, String.class));
                 }
                 if ( ensemblgene.isStrandNegative() ) {
-                	long searchHighRange = ensemblgene.getStart() - dtoSearch.getSearchUpStreamAsInt();
-                	long searchLowRange = ensemblgene.getEnd() + dtoSearch.getSearchDownStreamAsInt();
+                	searchHighRange = ensemblgene.getStart() - dtoSearch.getSearchUpStreamAsInt();
+                	searchLowRange = ensemblgene.getEnd() + dtoSearch.getSearchDownStreamAsInt();
                 	dtoSearch.setSearchLowRange(ObjectConverter.convert(searchHighRange, String.class));
                 	dtoSearch.setSearchHighRange(ObjectConverter.convert(searchLowRange, String.class));
                 }
+                if ( searchHighRange < 0 ) {
+                    throw new ExceptionEnsemblGeneSearchRangeLessThanZero("ERROR: Search Range (" + searchHighRange + ") is LESS THAN Zero !!!");
+                }
+                if ( searchLowRange < 0 ) {
+                    throw new ExceptionEnsemblGeneSearchRangeLessThanZero("ERROR: Search Range (" + searchLowRange + ") is LESS THAN Zero !!!");
+                }
+
         	}
 
             if ( dtoSearch.isSearchReferenceNone() ) {
@@ -405,103 +510,122 @@ public class ControllerSNPChromosome extends AbstractController {
                 throw new ExceptionSNPChromosomeReferenceAlleleEqualsAlternativeAllele("ERROR: Reference Allele EQUALS Alternative Allele !!!");
             }
 
-            if ( dtoSearch.isSearchChromosome1() ) {
-            	pagesnpchromosome = servicesnpchromosome1.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+            if ( dtoSearch.isSearchChromosomeNone() ) {
+                throw new ExceptionSNPChromosomeNotSelected("ERROR: Search Chromosome Not Supplied !!!");
             }
-            if ( dtoSearch.isSearchChromosome3() ) {
-            	pagesnpchromosome = servicesnpchromosome3.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+            else {
+            	
+                if ( dtoSearch.isSearchChromosome1() ) {
+                	pagesnpchromosome = servicesnpchromosome1.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome3() ) {
+                	pagesnpchromosome = servicesnpchromosome3.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome4() ) {
+                	pagesnpchromosome = servicesnpchromosome4.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome5() ) {
+                	pagesnpchromosome = servicesnpchromosome5.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome6() ) {
+                	pagesnpchromosome = servicesnpchromosome6.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome7() ) {
+                	pagesnpchromosome = servicesnpchromosome7.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome8() ) {
+                	pagesnpchromosome = servicesnpchromosome8.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome9() ) {
+                	pagesnpchromosome = servicesnpchromosome9.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome10() ) {
+                	pagesnpchromosome = servicesnpchromosome10.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome11() ) {
+                	pagesnpchromosome = servicesnpchromosome11.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome12() ) {
+                	pagesnpchromosome = servicesnpchromosome12.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome13() ) {
+                	pagesnpchromosome = servicesnpchromosome13.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome14() ) {
+                	pagesnpchromosome = servicesnpchromosome14.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome15() ) {
+                	pagesnpchromosome = servicesnpchromosome15.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome16() ) {
+                	pagesnpchromosome = servicesnpchromosome16.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome17() ) {
+                	pagesnpchromosome = servicesnpchromosome17.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome18() ) {
+                	pagesnpchromosome = servicesnpchromosome18.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome19() ) {
+                	pagesnpchromosome = servicesnpchromosome19.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome20() ) {
+                	pagesnpchromosome = servicesnpchromosome20.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome21() ) {
+                	pagesnpchromosome = servicesnpchromosome21.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome22() ) {
+                	pagesnpchromosome = servicesnpchromosome22.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome23() ) {
+                	pagesnpchromosome = servicesnpchromosome23.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome24() ) {
+                	pagesnpchromosome = servicesnpchromosome24.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome25() ) {
+                	pagesnpchromosome = servicesnpchromosome25.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome26() ) {
+                	pagesnpchromosome = servicesnpchromosome26.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome27() ) {
+                	pagesnpchromosome = servicesnpchromosome27.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome28() ) {
+                	pagesnpchromosome = servicesnpchromosome28.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosome32() ) {
+                	pagesnpchromosome = servicesnpchromosome32.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosomeW() ) {
+                	pagesnpchromosome = servicesnpchromosomeW.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosomeZ() ) {
+                	pagesnpchromosome = servicesnpchromosomeZ.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosomeLGE22C19W28_E50C23() ) {
+                	pagesnpchromosome = servicesnpchromosomeLGE22C19W28_E50C23.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
+                if ( dtoSearch.isSearchChromosomeLGE64() ) {
+                	pagesnpchromosome = servicesnpchromosomeLGE64.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
             }
-            if ( dtoSearch.isSearchChromosome4() ) {
-            	pagesnpchromosome = servicesnpchromosome4.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome5() ) {
-            	pagesnpchromosome = servicesnpchromosome5.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome6() ) {
-            	pagesnpchromosome = servicesnpchromosome6.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome7() ) {
-            	pagesnpchromosome = servicesnpchromosome7.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome8() ) {
-            	pagesnpchromosome = servicesnpchromosome8.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome9() ) {
-            	pagesnpchromosome = servicesnpchromosome9.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome10() ) {
-            	pagesnpchromosome = servicesnpchromosome10.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome11() ) {
-            	pagesnpchromosome = servicesnpchromosome11.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome12() ) {
-            	pagesnpchromosome = servicesnpchromosome12.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome13() ) {
-            	pagesnpchromosome = servicesnpchromosome13.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome14() ) {
-            	pagesnpchromosome = servicesnpchromosome14.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome15() ) {
-            	pagesnpchromosome = servicesnpchromosome15.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome16() ) {
-            	pagesnpchromosome = servicesnpchromosome16.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome17() ) {
-            	pagesnpchromosome = servicesnpchromosome17.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome18() ) {
-            	pagesnpchromosome = servicesnpchromosome18.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome19() ) {
-            	pagesnpchromosome = servicesnpchromosome19.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome20() ) {
-            	pagesnpchromosome = servicesnpchromosome20.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome21() ) {
-            	pagesnpchromosome = servicesnpchromosome21.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome22() ) {
-            	pagesnpchromosome = servicesnpchromosome22.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome23() ) {
-            	pagesnpchromosome = servicesnpchromosome23.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome24() ) {
-            	pagesnpchromosome = servicesnpchromosome24.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome25() ) {
-            	pagesnpchromosome = servicesnpchromosome25.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome26() ) {
-            	pagesnpchromosome = servicesnpchromosome26.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome27() ) {
-            	pagesnpchromosome = servicesnpchromosome27.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome28() ) {
-            	pagesnpchromosome = servicesnpchromosome28.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosome32() ) {
-            	pagesnpchromosome = servicesnpchromosome32.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosomeW() ) {
-            	pagesnpchromosome = servicesnpchromosomeW.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosomeZ() ) {
-            	pagesnpchromosome = servicesnpchromosomeZ.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosomeLGE22C19W28_E50C23() ) {
-            	pagesnpchromosome = servicesnpchromosomeLGE22C19W28_E50C23.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
-            if ( dtoSearch.isSearchChromosomeLGE64() ) {
-            	pagesnpchromosome = servicesnpchromosomeLGE64.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
-            }
+            
         } 
+        catch (ExceptionSNPChromosomeSelectedWithGeneName e) {
+        	LOGGER.debug("ERROR: Search Chromosome Supplied AND Ensembl Gene Name Supplied !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_CHOSEN_CHROMOSOME_AND_GENENAME);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionSNPChromosomeNotSelected e) {
+        	LOGGER.debug("ERROR: The Search Chromosome has NOT been chosen !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_NOTCHOSEN_CHROMOSOME_NOT_SELECTED);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
         catch (ExceptionSNPChromosomeSearchFilterProteinAlignNumberValueNotNumeric e) {
         	LOGGER.debug("ERROR: The Search Filter Protein Alignment Number is NOT Numeric !!!");
             addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_FILTER_NOT_NUMERIC_PROTEIN_ALIGN_NUMBER);
@@ -532,9 +656,21 @@ public class ControllerSNPChromosome extends AbstractController {
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
             return createRedirectViewPath(REQUEST_MAPPING_LIST);
         }
-        catch (ExceptionEnsemblGeneSearchRangeGreaterThanTenThousand e) {
-        	LOGGER.debug("ERROR: Search Range is GREATER THAN Ten Thousand Base Pairs !!!");
-            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_TEN_THOUSAND_BASE_PAIRS);
+        catch (ExceptionEnsemblGeneSearchRangeLessThanZero e) {
+        	LOGGER.debug("ERROR: Search Range is LESS THAN Zero !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_RANGE_NEGATIVE);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionEnsemblGeneUpStreamSearchRangeGreaterThanTenThousand e) {
+        	LOGGER.debug("ERROR: Up Stream Search Range is GREATER THAN Ten Thousand Base Pairs !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_UPSTREAM_TEN_THOUSAND_BASE_PAIRS);
+            model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
+            return createRedirectViewPath(REQUEST_MAPPING_LIST);
+        }
+        catch (ExceptionEnsemblGeneDownStreamSearchRangeGreaterThanTenThousand e) {
+        	LOGGER.debug("ERROR: Down Stream Search Range is GREATER THAN Ten Thousand Base Pairs !!!");
+            addErrorMessage(attributes, ERROR_MESSAGE_SEARCH_DOWNSTREAM_TEN_THOUSAND_BASE_PAIRS);
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, pagesnpchromosome);
             return createRedirectViewPath(REQUEST_MAPPING_LIST);
         }

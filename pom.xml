@@ -41,11 +41,12 @@
         <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
         <mysql.connector.version>5.1.18</mysql.connector.version>
         <slf4j.version>1.7.13</slf4j.version>
-        <spring.version>4.2.2.RELEASE</spring.version>
+        <spring.version>4.2.5.RELEASE</spring.version>
         <jackson.version>2.6.3</jackson.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springdata.version>1.9.1.RELEASE</springdata.version>
         <javax.el-api.version>3.0.0</javax.el-api.version>
+		<spring.security.version>4.0.4.RELEASE</spring.security.version>
     </properties>
     
     <dependencies>
@@ -223,6 +224,19 @@
             <artifactId>VariationDatabaseDAO</artifactId>
             <version>${VariationDatabaseDAO.version}</version>
         </dependency>
+
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
 
     </dependencies>
     
