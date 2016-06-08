@@ -55,6 +55,14 @@ import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
 import com.roslin.mwicks.spring.variation.serviceinterface.ensemblgene.ServiceEnsemblGene;
 
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome01;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome02;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome03;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome04;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome05;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome06;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome07;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome08;
+import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome09;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome10;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome11;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome12;
@@ -74,14 +82,7 @@ import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.Service
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome26;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome27;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome28;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome03;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome32;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome04;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome05;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome06;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome07;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome08;
-import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosome09;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE22C19W28_E50C23;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeLGE64;
 import com.roslin.mwicks.spring.variation.serviceinterface.snpchromosome.ServiceSNPChromosomeW;
@@ -154,6 +155,8 @@ public class ControllerSNPChromosome extends AbstractController {
     
     @Resource
     private ServiceSNPChromosome01 servicesnpchromosome1;
+    @Resource
+    private ServiceSNPChromosome02 servicesnpchromosome2;
     @Resource
     private ServiceSNPChromosome03 servicesnpchromosome3;
     @Resource
@@ -518,6 +521,9 @@ public class ControllerSNPChromosome extends AbstractController {
                 if ( dtoSearch.isSearchChromosome1() ) {
                 	pagesnpchromosome = servicesnpchromosome1.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
                 }
+                if ( dtoSearch.isSearchChromosome2() ) {
+                	pagesnpchromosome = servicesnpchromosome2.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+                }
                 if ( dtoSearch.isSearchChromosome3() ) {
                 	pagesnpchromosome = servicesnpchromosome3.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
                 }
@@ -856,6 +862,9 @@ public class ControllerSNPChromosome extends AbstractController {
     	if ( dtoSearch.isSearchChromosome1() ) {
         	pagesnpchromosome = servicesnpchromosome1.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
         }
+    	if ( dtoSearch.isSearchChromosome2() ) {
+        	pagesnpchromosome = servicesnpchromosome2.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
+        }
         if ( dtoSearch.isSearchChromosome3() ) {
         	pagesnpchromosome = servicesnpchromosome3.search(dtoSearch, firstPage, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsSortDirection());
         }
@@ -1039,6 +1048,9 @@ public class ControllerSNPChromosome extends AbstractController {
         if ( dtoDownload.isDownloadChromosome1() ) {
         	snpchromosomes = servicesnpchromosome1.download(dtoDownload);
         }
+        if ( dtoDownload.isDownloadChromosome2() ) {
+        	snpchromosomes = servicesnpchromosome2.download(dtoDownload);
+        }
         if ( dtoDownload.isDownloadChromosome3() ) {
         	snpchromosomes = servicesnpchromosome3.download(dtoDownload);
         }
@@ -1173,6 +1185,9 @@ public class ControllerSNPChromosome extends AbstractController {
      */
     protected void setServiceSNPChromosome1(ServiceSNPChromosome01 servicesnpchromosome1) {
         this.servicesnpchromosome1 = servicesnpchromosome1;
+    }
+    protected void setServiceSNPChromosome2(ServiceSNPChromosome02 servicesnpchromosome2) {
+        this.servicesnpchromosome2 = servicesnpchromosome2;
     }
     protected void setServiceSNPChromosome3(ServiceSNPChromosome03 servicesnpchromosome3) {
         this.servicesnpchromosome3 = servicesnpchromosome3;

@@ -109,7 +109,7 @@ function exampleGeneName() {
                 <div class="spacer">
             <form:label path="searchGeneName">
               <spring:message code="snpchromosome.search.searchGeneName.label"/>
-              <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#ensemblGeneName" target="_blank" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name">
+              <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchEnsemblGeneName" target="_blank" data-toggle="tooltip" data-placement="right" title="Ensembl Gene Name">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
               </a>
             </form:label>
@@ -125,7 +125,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 
                 <div class="spacer">
             <form:label path="SearchChromosome"><spring:message code="snpchromosome.search.searchchromosome.label"/>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#chromosomeId" target="_blank" data-toggle="tooltip" data-placement="right" title="Chromosome">
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchCoordindates" target="_blank" data-toggle="tooltip" data-placement="right" title="Chromosome">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
@@ -133,6 +133,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
             <form:select path="SearchChromosome">
                 <form:option value="CHROMOSOME_NONE"><spring:message code="SearchChromosome.CHROMOSOME_NONE"/></form:option>
                 <form:option value="CHROMOSOME_1"><spring:message code="SearchChromosome.CHROMOSOME_1"/></form:option>
+                <form:option value="CHROMOSOME_2"><spring:message code="SearchChromosome.CHROMOSOME_2"/></form:option>
                 <form:option value="CHROMOSOME_3"><spring:message code="SearchChromosome.CHROMOSOME_3"/></form:option>
                 <form:option value="CHROMOSOME_4"><spring:message code="SearchChromosome.CHROMOSOME_4"/></form:option>
                 <form:option value="CHROMOSOME_5"><spring:message code="SearchChromosome.CHROMOSOME_5"/></form:option>
@@ -198,7 +199,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
                 
                 <div>
             <form:label path="searchDownStream"><spring:message code="snpchromosome.search.searchDownStream.label"/>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#addDownstreamRange" target="_blank" data-toggle="tooltip" data-placement="right" title="Additional Downstream Range">
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchEnsemblGeneName" target="_blank" data-toggle="tooltip" data-placement="right" title="Additional Downstream Range">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
@@ -211,7 +212,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 
                 <div>
             <form:label path="searchLowRange"><spring:message code="snpchromosome.search.searchlowrange.label"/>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#startLowCoordinate" target="_blank" data-toggle="tooltip" data-placement="right" title="Start (LOW) Co-ordinate">
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchCoordindates" target="_blank" data-toggle="tooltip" data-placement="right" title="Start (LOW) Co-ordinate">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
@@ -250,7 +251,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 
                 <div>
             <form:label path="searchUpStream"><spring:message code="snpchromosome.search.searchUpStream.label"/>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#addUpstreamRange" target="_blank" data-toggle="tooltip" data-placement="right" title="Additional Upstream Range">
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchEnsemblGeneName" target="_blank" data-toggle="tooltip" data-placement="right" title="Additional Upstream Range">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
@@ -263,7 +264,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 
                 <div>
             <form:label path="searchHighRange"><spring:message code="snpchromosome.search.searchhighrange.label"/>
-            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#endHighCoordinate" target="_blank" data-toggle="tooltip" data-placement="right" title="End (HIGH) Co-ordinate">
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchCoordindates" target="_blank" data-toggle="tooltip" data-placement="right" title="End (HIGH) Co-ordinate">
                 <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
             </a>
             </form:label>
