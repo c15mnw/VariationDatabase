@@ -1,3 +1,3 @@
-/Users/mwicks23/workspace/VariationDatabasePartitioned/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractTestController.java
-/Users/mwicks23/workspace/VariationDatabasePartitioned/src/test/java/com/roslin/mwicks/spring/variation/context/TestContext.java
-/Users/mwicks23/workspace/VariationDatabasePartitioned/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractControllerTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractControllerTest.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/context/TestContext.java
+/Users/mwicks23/workspace/VariationDatabase/src/test/java/com/roslin/mwicks/spring/variation/controller/AbstractTestController.java

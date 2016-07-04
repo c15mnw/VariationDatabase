@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Implementation-Title: VariationDatabasePartitioned
+Implementation-Title: VariationDatabase
 Implementation-Version: 1.2.6.RELEASE
 Built-By: gwentoulin
 Implementation-Vendor-Id: com.example
